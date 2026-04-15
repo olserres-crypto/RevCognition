@@ -7,7 +7,7 @@ const steps = [
     number: "01",
     title: "Cuéntanos quién eres",
     description:
-      "Rellenas un formulario guiado una sola vez: qué problema resuelves, para quién, tu tono, tus servicios, y ejemplos de clientes actuales. El sistema genera tu perfil de cliente ideal en minutos.",
+      "Analizamos tu web y generamos automáticamente propuestas de posicionamiento: qué problema resuelves, tu tono, tus servicios, y tu perfil de cliente ideal. Tú eliges la estrategia que más te representa y puedes añadir contexto adicional si lo deseas.",
     time: "Setup: 10–15 minutos",
   },
   {
@@ -22,7 +22,7 @@ const steps = [
     title: "Cada prospecto recibe un mensaje escrito para él",
     description:
       "Un LLM combina tu perfil, nuestro banco de mensajes comerciales de alto nivel, y los datos del prospecto para escribir un mensaje único. Tú apruebas los envíos diarios o los dejas ir solos.",
-    time: "Opcional: 10 min/día",
+    time: "Validación opcional: 10 min/día",
   },
 ];
 

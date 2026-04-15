@@ -74,7 +74,15 @@ export function Pricing() {
           ))}
         </div>
 
-        <p className="mt-8 text-sm text-[--color-slate-light] max-w-2xl">
+        <div className="mt-8 p-4 bg-[--color-surface] border border-[--color-border] rounded-lg inline-block">
+          <p className="text-sm text-[--color-slate]">
+            <span className="font-semibold text-[--color-ink]">Setup único: 50€</span>
+            {" — "}Configuración inicial del sistema, análisis de tu web y definición de estrategia.
+            Se paga una sola vez.
+          </p>
+        </div>
+
+        <p className="mt-4 text-sm text-[--color-slate-light] max-w-2xl">
           ¿Tienes una base de prospectos propia? Puedes usarla directamente.
           El sistema la enriquece y genera los mensajes sobre ella.
         </p>

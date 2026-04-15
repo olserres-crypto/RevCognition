@@ -25,6 +25,15 @@ export function CtaFinal() {
             >
               Escríbeme directamente.
             </a>
+            {" · "}
+            <a
+              href={CAL_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline decoration-[--color-slate-light] underline-offset-4 hover:text-[--color-ink] transition-colors"
+            >
+              Reservar reunión
+            </a>
           </p>
         </div>
       </div>
