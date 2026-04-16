@@ -43,3 +43,9 @@ next-env.d.ts
 # Legacy files from previous project
 /legacy
 .gstack/
+
+# Local tooling
+.claude/
+graphify-out/
+.graphify_python
+design-preview.html
