@@ -56,18 +56,18 @@ export function Pricing() {
   return (
     <section id="precios" className="py-16 sm:py-24">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
-        <p className="text-sm font-semibold uppercase tracking-widest text-[--color-warm] mb-4">
+        <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-warm)] mb-4">
           Precios
         </p>
-        <h2 className="font-serif text-3xl sm:text-4xl text-[--color-ink] mb-4">
+        <h2 className="font-serif text-3xl sm:text-4xl text-[var(--color-ink)] mb-4">
           1€ por prospecto. Sin sorpresas.
         </h2>
-        <p className="text-[--color-slate] text-lg mb-4 max-w-2xl">
+        <p className="text-[var(--color-slate)] text-lg mb-4 max-w-2xl">
           No pagas por emails. Pagas por un prospecto cualificado que recibe
           hasta 4 mensajes escritos para él. Si contesta antes, el sistema
           se para. Si no, cierra con elegancia.
         </p>
-        <p className="text-[--color-slate] text-sm mb-12 max-w-2xl">
+        <p className="text-[var(--color-slate)] text-sm mb-12 max-w-2xl">
           Cada prospecto incluye: identificación + enriquecimiento con señales
           reales + secuencia completa (apertura, seguimiento, nuevo ángulo,
           cierre). También disponible en un solo mensaje si lo prefieres.
@@ -79,27 +79,27 @@ export function Pricing() {
               key={pack.prospects}
               className={`rounded-xl border p-6 flex flex-col gap-4 ${
                 pack.featured
-                  ? "border-[--color-warm] bg-[--color-warm]/5 ring-1 ring-[--color-warm]/20"
-                  : "border-[--color-border] bg-[--color-paper]"
+                  ? "border-[var(--color-warm)] bg-[var(--color-warm)]/5 ring-1 ring-[var(--color-warm)]/20"
+                  : "border-[var(--color-border)] bg-[var(--color-paper)]"
               }`}
             >
               {pack.featured && (
-                <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[--color-warm]">
+                <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[var(--color-warm)]">
                   Más popular
                 </span>
               )}
               <div>
-                <p className="text-4xl font-semibold text-[--color-ink] tabular-nums">
+                <p className="text-4xl font-semibold text-[var(--color-ink)] tabular-nums">
                   {pack.price}
                 </p>
-                <p className="text-[--color-slate] text-sm mt-1">
+                <p className="text-[var(--color-slate)] text-sm mt-1">
                   {pack.prospects} prospectos cualificados
                 </p>
               </div>
-              <p className="text-xs font-semibold uppercase tracking-widest text-[--color-slate-light]">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[var(--color-slate-light)]">
                 {pack.label}
               </p>
-              <p className="text-[--color-slate] text-sm leading-relaxed flex-1">
+              <p className="text-[var(--color-slate)] text-sm leading-relaxed flex-1">
                 {pack.description}
               </p>
               <div className="flex flex-col gap-2 pt-2">
@@ -108,8 +108,8 @@ export function Pricing() {
                   disabled={loadingId === pack.productId}
                   className={`w-full py-2.5 px-4 rounded-lg text-sm font-semibold transition-colors ${
                     pack.featured
-                      ? "bg-[--color-warm] text-white hover:opacity-90"
-                      : "bg-[--color-ink] text-[--color-paper] hover:opacity-90"
+                      ? "bg-[var(--color-warm)] text-white hover:opacity-90"
+                      : "bg-[var(--color-ink)] text-[var(--color-paper)] hover:opacity-90"
                   } disabled:opacity-60 disabled:cursor-not-allowed`}
                 >
                   {loadingId === pack.productId ? "Redirigiendo…" : "Contratar este pack"}
@@ -118,7 +118,7 @@ export function Pricing() {
                   href={CAL_15MIN_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full py-2 px-4 text-sm text-center text-[--color-slate] hover:text-[--color-ink] transition-colors"
+                  className="w-full py-2 px-4 text-sm text-center text-[var(--color-slate)] hover:text-[var(--color-ink)] transition-colors"
                 >
                   Hablar con el fundador →
                 </a>
@@ -127,15 +127,15 @@ export function Pricing() {
           ))}
         </div>
 
-        <div className="mt-8 p-4 bg-[--color-surface] border border-[--color-border] rounded-lg inline-block">
-          <p className="text-sm text-[--color-slate]">
-            <span className="font-semibold text-[--color-ink]">Setup único: 50€</span>
+        <div className="mt-8 p-4 bg-[var(--color-surface)] border border-[var(--color-border)] rounded-lg inline-block">
+          <p className="text-sm text-[var(--color-slate)]">
+            <span className="font-semibold text-[var(--color-ink)]">Setup único: 50€</span>
             {" — "}Configuración inicial del sistema, análisis de tu web y definición de estrategia.
             Se paga una sola vez.
           </p>
         </div>
 
-        <p className="mt-4 text-sm text-[--color-slate-light] max-w-2xl">
+        <p className="mt-4 text-sm text-[var(--color-slate-light)] max-w-2xl">
           ¿Tienes una base de prospectos propia? Puedes usarla directamente.
           El sistema la enriquece y genera los mensajes sobre ella.
         </p>

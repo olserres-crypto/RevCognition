@@ -12,9 +12,9 @@ export function Button({ variant = "primary", href, target, rel, className, chil
   const base =
     "inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-semibold text-base transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2";
   const variants = {
-    primary: "bg-[--color-warm] text-white hover:bg-[--color-warm-hover] focus-visible:ring-[--color-warm]",
+    primary: "bg-[var(--color-warm)] text-white hover:bg-[var(--color-warm-hover)] focus-visible:ring-[var(--color-warm)]",
     secondary:
-      "border border-[--color-ink] text-[--color-ink] hover:bg-[--color-ink] hover:text-[--color-paper] focus-visible:ring-[--color-ink]",
+      "border border-[var(--color-ink)] text-[var(--color-ink)] hover:bg-[var(--color-ink)] hover:text-[var(--color-paper)] focus-visible:ring-[var(--color-ink)]",
   };
 
   if (href) {

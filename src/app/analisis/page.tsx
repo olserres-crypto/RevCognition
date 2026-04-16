@@ -15,19 +15,19 @@ export default function AnalisisPage() {
       <main className="max-w-5xl mx-auto px-4 sm:px-6 pt-16 pb-24 sm:pt-24">
         <Link
           href="/"
-          className="text-sm text-[--color-slate-light] hover:text-[--color-slate] transition-colors mb-8 inline-block"
+          className="text-sm text-[var(--color-slate-light)] hover:text-[var(--color-slate)] transition-colors mb-8 inline-block"
         >
           ← Volver al inicio
         </Link>
 
         <div className="max-w-xl">
-          <p className="text-sm font-semibold uppercase tracking-widest text-[--color-warm] mb-4">
+          <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-warm)] mb-4">
             Análisis gratuito
           </p>
-          <h1 className="font-serif text-3xl sm:text-4xl text-[--color-ink] mb-4">
+          <h1 className="font-serif text-3xl sm:text-4xl text-[var(--color-ink)] mb-4">
             Te decimos exactamente a quién prospectar
           </h1>
-          <p className="text-[--color-slate] text-lg mb-10 leading-relaxed">
+          <p className="text-[var(--color-slate)] text-lg mb-10 leading-relaxed">
             Analizamos tu web y te preparamos una propuesta de ICP y estrategia
             de captación personalizada. Sin coste. Sin compromiso.
           </p>

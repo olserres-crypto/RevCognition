@@ -27,15 +27,15 @@ const cases = [
 
 export function UseCases() {
   return (
-    <section className="bg-[--color-surface] py-16 sm:py-24">
+    <section className="bg-[var(--color-surface)] py-16 sm:py-24">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
-        <p className="text-sm font-semibold uppercase tracking-widest text-[--color-warm] mb-4">
+        <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-warm)] mb-4">
           Casos reales
         </p>
-        <h2 className="font-serif text-3xl sm:text-4xl text-[--color-ink] mb-4">
+        <h2 className="font-serif text-3xl sm:text-4xl text-[var(--color-ink)] mb-4">
           El sistema entiende tu contexto específico.
         </h2>
-        <p className="text-[--color-slate] text-lg mb-12 max-w-xl">
+        <p className="text-[var(--color-slate)] text-lg mb-12 max-w-xl">
           No manda emails genéricos. Eso lo hace cualquier agencia.
         </p>
 
@@ -47,27 +47,27 @@ export function UseCases() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
               transition={{ delay: i * 0.1, duration: 0.4, ease: "easeOut" }}
-              className="bg-[--color-paper] border border-[--color-border] rounded-xl p-6 sm:p-7 flex flex-col gap-5"
+              className="bg-[var(--color-paper)] border border-[var(--color-border)] rounded-xl p-6 sm:p-7 flex flex-col gap-5"
             >
               <div>
                 <span className="text-3xl">{c.icon}</span>
-                <p className="text-xs font-semibold uppercase tracking-widest text-[--color-slate-light] mt-3 mb-1">
+                <p className="text-xs font-semibold uppercase tracking-widest text-[var(--color-slate-light)] mt-3 mb-1">
                   {c.sector}
                 </p>
-                <h3 className="font-serif text-xl text-[--color-ink]">
+                <h3 className="font-serif text-xl text-[var(--color-ink)]">
                   {c.problem}
                 </h3>
               </div>
 
-              <p className="text-[--color-slate] text-sm leading-relaxed">
+              <p className="text-[var(--color-slate)] text-sm leading-relaxed">
                 {c.problemDetail}
               </p>
 
-              <div className="border-t border-[--color-border] pt-4">
-                <p className="text-xs font-semibold uppercase tracking-widest text-[--color-warm] mb-2">
+              <div className="border-t border-[var(--color-border)] pt-4">
+                <p className="text-xs font-semibold uppercase tracking-widest text-[var(--color-warm)] mb-2">
                   Cómo lo resuelve RevCognition
                 </p>
-                <p className="text-[--color-slate] text-sm leading-relaxed">
+                <p className="text-[var(--color-slate)] text-sm leading-relaxed">
                   {c.solution}
                 </p>
               </div>

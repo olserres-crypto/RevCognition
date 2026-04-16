@@ -9,13 +9,13 @@ export function Hero() {
       <div className="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
         {/* Left: copy */}
         <div>
-          <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[--color-ink] leading-tight">
+          <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[var(--color-ink)] leading-tight">
             Nuevos clientes, cada semana.{" "}
-            <span className="text-[--color-warm]">Sin agencias.</span>{" "}
+            <span className="text-[var(--color-warm)]">Sin agencias.</span>{" "}
             Sin perder el tiempo.
           </h1>
 
-          <p className="mt-6 text-lg sm:text-xl text-[--color-slate] leading-relaxed">
+          <p className="mt-6 text-lg sm:text-xl text-[var(--color-slate)] leading-relaxed">
             RevCognition identifica a tus clientes ideales y les escribe un mensaje
             único a cada uno. Tú no escribes nada. No pagas a ninguna agencia.
             Y no tienes que encontrar el tiempo.
@@ -37,7 +37,7 @@ export function Hero() {
           <p className="mt-4">
             <a
               href="/analisis"
-              className="text-sm text-[--color-slate] underline decoration-[--color-slate-light] underline-offset-4 hover:text-[--color-ink] transition-colors"
+              className="text-sm text-[var(--color-slate)] underline decoration-[var(--color-slate-light)] underline-offset-4 hover:text-[var(--color-ink)] transition-colors"
             >
               Ver propuesta de ICP para mi negocio →
             </a>

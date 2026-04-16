@@ -25,20 +25,20 @@ const problems = [
 
 export function Problem() {
   return (
-    <section className="bg-[--color-surface] py-16 sm:py-24">
+    <section className="bg-[var(--color-surface)] py-16 sm:py-24">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
-        <p className="text-sm font-semibold uppercase tracking-widest text-[--color-warm] mb-4">
+        <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-warm)] mb-4">
           El problema
         </p>
-        <h2 className="font-serif text-3xl sm:text-4xl text-[--color-ink] mb-4">
+        <h2 className="font-serif text-3xl sm:text-4xl text-[var(--color-ink)] mb-4">
           ¿Qué estás haciendo ahora?
         </h2>
-        <p className="text-[--color-slate] text-lg mb-12 max-w-xl">
+        <p className="text-[var(--color-slate)] text-lg mb-12 max-w-xl">
           Todas las opciones tienen un coste real. Solo que en una de ellas ese
           coste aparece en la factura.
         </p>
 
-        <div className="divide-y divide-[--color-border]">
+        <div className="divide-y divide-[var(--color-border)]">
           {problems.map((p, i) => (
             <motion.div
               key={p.label}
@@ -49,13 +49,13 @@ export function Problem() {
               className="py-6 sm:flex sm:items-start sm:gap-8"
             >
               <div className="sm:flex-1">
-                <p className="font-semibold text-[--color-ink] mb-1">{p.label}</p>
-                <p className="text-[--color-slate] text-sm leading-relaxed">
+                <p className="font-semibold text-[var(--color-ink)] mb-1">{p.label}</p>
+                <p className="text-[var(--color-slate)] text-sm leading-relaxed">
                   {p.description}
                 </p>
               </div>
               <div className="mt-2 sm:mt-0 sm:text-right sm:shrink-0">
-                <p className="text-sm font-semibold text-[--color-warm]">
+                <p className="text-sm font-semibold text-[var(--color-warm)]">
                   {p.cost}
                 </p>
               </div>

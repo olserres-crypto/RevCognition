@@ -30,10 +30,10 @@ export function HowItWorks() {
   return (
     <section id="como-funciona" className="py-16 sm:py-24">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
-        <p className="text-sm font-semibold uppercase tracking-widest text-[--color-warm] mb-4">
+        <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-warm)] mb-4">
           Cómo funciona
         </p>
-        <h2 className="font-serif text-3xl sm:text-4xl text-[--color-ink] mb-12">
+        <h2 className="font-serif text-3xl sm:text-4xl text-[var(--color-ink)] mb-12">
           Tres pasos. Luego el sistema trabaja solo.
         </h2>
 
@@ -48,21 +48,21 @@ export function HowItWorks() {
               className="flex gap-6 pb-10 last:pb-0"
             >
               <div className="flex flex-col items-center">
-                <div className="w-10 h-10 rounded-full bg-[--color-warm] text-white text-sm font-semibold flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 rounded-full bg-[var(--color-warm)] text-white text-sm font-semibold flex items-center justify-center flex-shrink-0">
                   {step.number}
                 </div>
                 {i < steps.length - 1 && (
-                  <div className="flex-1 w-px bg-[--color-border] mt-3" />
+                  <div className="flex-1 w-px bg-[var(--color-border)] mt-3" />
                 )}
               </div>
               <div className="pt-1.5 pb-2">
-                <h3 className="font-serif text-xl text-[--color-ink] mb-2">
+                <h3 className="font-serif text-xl text-[var(--color-ink)] mb-2">
                   {step.title}
                 </h3>
-                <p className="text-[--color-slate] leading-relaxed mb-3">
+                <p className="text-[var(--color-slate)] leading-relaxed mb-3">
                   {step.description}
                 </p>
-                <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[--color-slate-light] bg-[--color-surface] border border-[--color-border] px-3 py-1 rounded-full">
+                <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[var(--color-slate-light)] bg-[var(--color-surface)] border border-[var(--color-border)] px-3 py-1 rounded-full">
                   {step.time}
                 </span>
               </div>
