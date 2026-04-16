@@ -3,8 +3,6 @@ export const runtime = "edge";
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY!);
-
 function isValidUrl(value: string): boolean {
   try {
     const url = new URL(value);
@@ -26,6 +24,7 @@ export async function POST(req: NextRequest) {
       );
     }
 
+    const resend = new Resend(process.env.RESEND_API_KEY!);
     await resend.emails.send({
       from: "RevCognition <noreply@revcognition.com>",
       to: "olivier@revcognition.com",
