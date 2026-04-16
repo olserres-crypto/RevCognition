@@ -1,9 +1,16 @@
+"use client";
+
+import { useState } from "react";
+
+const CAL_15MIN_URL = "https://cal.com/olivier-serres-js5hdw/15min";
+
 const packs = [
   {
     prospects: 100,
     price: "100€",
     label: "Para empezar",
     description: "Prueba el sistema con tu primer segmento de mercado.",
+    productId: "price_pack_100",
   },
   {
     prospects: 500,
@@ -11,16 +18,41 @@ const packs = [
     label: "Para crecer",
     description: "Cubre varios segmentos o mercados en paralelo.",
     featured: true,
+    productId: "price_pack_500",
   },
   {
     prospects: 1000,
     price: "1.000€",
     label: "Para escalar",
     description: "Prospección continua sin tener que recargar constantemente.",
+    productId: "price_pack_1000",
   },
 ];
 
 export function Pricing() {
+  const [loadingId, setLoadingId] = useState<string | null>(null);
+
+  async function handleCheckout(productId: string) {
+    setLoadingId(productId);
+    try {
+      const res = await fetch("/api/checkout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ productId }),
+      });
+      const data = await res.json();
+      if (data.url) {
+        window.location.href = data.url;
+      } else {
+        alert("Error al iniciar el pago. Inténtalo de nuevo.");
+      }
+    } catch {
+      alert("Error al conectar con el servidor. Inténtalo de nuevo.");
+    } finally {
+      setLoadingId(null);
+    }
+  }
+
   return (
     <section id="precios" className="py-16 sm:py-24">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
@@ -67,9 +99,30 @@ export function Pricing() {
               <p className="text-xs font-semibold uppercase tracking-widest text-[--color-slate-light]">
                 {pack.label}
               </p>
-              <p className="text-[--color-slate] text-sm leading-relaxed">
+              <p className="text-[--color-slate] text-sm leading-relaxed flex-1">
                 {pack.description}
               </p>
+              <div className="flex flex-col gap-2 pt-2">
+                <button
+                  onClick={() => handleCheckout(pack.productId)}
+                  disabled={loadingId === pack.productId}
+                  className={`w-full py-2.5 px-4 rounded-lg text-sm font-semibold transition-colors ${
+                    pack.featured
+                      ? "bg-[--color-warm] text-white hover:opacity-90"
+                      : "bg-[--color-ink] text-[--color-paper] hover:opacity-90"
+                  } disabled:opacity-60 disabled:cursor-not-allowed`}
+                >
+                  {loadingId === pack.productId ? "Redirigiendo…" : "Contratar este pack"}
+                </button>
+                <a
+                  href={CAL_15MIN_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full py-2 px-4 text-sm text-center text-[--color-slate] hover:text-[--color-ink] transition-colors"
+                >
+                  Hablar con el fundador →
+                </a>
+              </div>
             </div>
           ))}
         </div>

@@ -38,23 +38,27 @@ export function Problem() {
           coste aparece en la factura.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div className="divide-y divide-[--color-border]">
           {problems.map((p, i) => (
             <motion.div
               key={p.label}
-              initial={{ opacity: 0, y: 24 }}
+              initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-60px" }}
-              transition={{ delay: i * 0.1, duration: 0.4 }}
-              className="bg-[--color-paper] border border-[--color-border] rounded-xl p-6"
+              viewport={{ once: true, margin: "-40px" }}
+              transition={{ delay: i * 0.08, duration: 0.35 }}
+              className="py-6 sm:flex sm:items-start sm:gap-8"
             >
-              <p className="text-xs font-semibold uppercase tracking-widest text-[--color-slate-light] mb-1">
-                {p.label}
-              </p>
-              <p className="font-semibold text-[--color-warm] mb-3">{p.cost}</p>
-              <p className="text-[--color-slate] text-sm leading-relaxed">
-                {p.description}
-              </p>
+              <div className="sm:flex-1">
+                <p className="font-semibold text-[--color-ink] mb-1">{p.label}</p>
+                <p className="text-[--color-slate] text-sm leading-relaxed">
+                  {p.description}
+                </p>
+              </div>
+              <div className="mt-2 sm:mt-0 sm:text-right sm:shrink-0">
+                <p className="text-sm font-semibold text-[--color-warm]">
+                  {p.cost}
+                </p>
+              </div>
             </motion.div>
           ))}
         </div>
