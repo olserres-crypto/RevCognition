@@ -3,8 +3,6 @@ export const runtime = "edge";
 import { NextRequest, NextResponse } from "next/server";
 import Stripe from "stripe";
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
-
 const PRODUCTS: Record<string, { name: string; price: number; description: string }> = {
   price_pack_100: {
     name: "Pack 100 Prospectos",
@@ -33,6 +31,7 @@ export async function POST(req: NextRequest) {
     }
 
     const origin = req.headers.get("origin") ?? "https://revcognition.com";
+    const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
 
     const session = await stripe.checkout.sessions.create({
       mode: "payment",
