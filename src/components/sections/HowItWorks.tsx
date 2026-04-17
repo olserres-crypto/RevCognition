@@ -48,7 +48,7 @@ export function HowItWorks() {
               className="flex gap-6 pb-10 last:pb-0"
             >
               <div className="flex flex-col items-center">
-                <div className="w-10 h-10 rounded-full bg-[var(--color-warm)] text-white text-sm font-semibold flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 rounded-full border-2 border-[var(--color-warm)] text-[var(--color-warm)] text-sm font-semibold flex items-center justify-center flex-shrink-0">
                   {step.number}
                 </div>
                 {i < steps.length - 1 && (

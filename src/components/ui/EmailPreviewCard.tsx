@@ -1,7 +1,7 @@
 export function EmailPreviewCard() {
   return (
     <div className="hidden lg:block">
-      <div className="bg-white border border-[var(--color-border)] rounded-xl p-5 shadow-sm max-w-sm">
+      <div className="bg-white border border-[var(--color-border)] border-l-4 border-l-[var(--color-warm)] rounded-xl p-5 shadow-md max-w-sm">
         {/* Email client chrome */}
         <div className="flex items-center gap-1.5 mb-4">
           <div className="w-2.5 h-2.5 rounded-full bg-red-300" />

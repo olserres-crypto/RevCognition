@@ -12,7 +12,7 @@ export function Hero() {
           <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[var(--color-ink)] leading-tight">
             Nuevos clientes, cada semana.{" "}
             <span className="text-[var(--color-warm)]">Sin agencias.</span>{" "}
-            Sin perder el tiempo.
+            <span className="font-light">Sin perder el tiempo.</span>
           </h1>
 
           <p className="mt-6 text-lg sm:text-xl text-[var(--color-slate)] leading-relaxed">

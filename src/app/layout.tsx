@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
-import { DM_Serif_Display, Source_Sans_3 } from "next/font/google";
+import { Fraunces, Instrument_Sans } from "next/font/google";
 import "./globals.css";
 
-const dmSerif = DM_Serif_Display({
-  weight: "400",
+const fraunces = Fraunces({
+  weight: ["300", "400", "500"],
   subsets: ["latin"],
-  variable: "--font-dm-serif",
+  variable: "--font-fraunces",
   display: "swap",
 });
 
-const sourceSans = Source_Sans_3({
-  weight: ["400", "600"],
+const instrumentSans = Instrument_Sans({
+  weight: ["400", "500", "600"],
   subsets: ["latin"],
-  variable: "--font-source-sans",
+  variable: "--font-instrument-sans",
   display: "swap",
 });
 
@@ -30,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={`${dmSerif.variable} ${sourceSans.variable} antialiased`}>
+      <body className={`${fraunces.variable} ${instrumentSans.variable} antialiased`}>
         {children}
       </body>
     </html>
