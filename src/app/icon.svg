@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <rect width="32" height="32" rx="7" fill="#f4f4f2"/>
+  <!-- R: stem + bowl + leg -->
+  <rect x="6" y="7" width="2.5" height="18" rx="1" fill="#1a1a1a"/>
+  <path d="M8.5 7 h4.5 a4.5 4.5 0 0 1 0 9 H8.5 Z" fill="#1a1a1a"/>
+  <path d="M11 16 l5 9" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- C: arc in indigo -->
+  <path d="M22 9.5 a7.5 7.5 0 1 0 0 13" stroke="#6366f1" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+</svg>

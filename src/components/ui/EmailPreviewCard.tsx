@@ -33,7 +33,11 @@ export function EmailPreviewCard() {
             llegar antes que nadie. ¿Tiene sentido hablar 15 minutos?
           </p>
           <p className="text-[var(--color-slate-light)] text-xs pt-1">
-            — Generado por RevCognition para Gab. Martínez & Asoc.
+            — Generado por{" "}
+            <span style={{ fontFamily: "var(--font-serif)", letterSpacing: "-0.02em" }}>
+              <span style={{ fontWeight: 300, color: "var(--color-warm)" }}>Rev</span><span style={{ fontWeight: 500 }}>Cognition</span>
+            </span>
+            {" "}para Gab. Martínez & Asoc.
           </p>
         </div>
       </div>
