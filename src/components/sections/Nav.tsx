@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/Button";
 import { Logo } from "@/components/ui/Logo";
 
-const CAL_URL = "https://cal.com/revcognition/demo";
+const APP_URL = "https://app.revcognition.com";
 
 export function Nav() {
   return (
@@ -18,8 +18,8 @@ export function Nav() {
           </a>
         </div>
 
-        <Button href={CAL_URL} target="_blank" rel="noopener noreferrer" className="text-sm px-4 py-2">
-          Quiero una demo
+        <Button href={APP_URL} target="_blank" rel="noopener noreferrer" className="text-sm px-4 py-2">
+          Acceder a la App
         </Button>
       </div>
     </nav>

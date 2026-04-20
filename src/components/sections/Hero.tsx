@@ -1,8 +1,6 @@
 import { Button } from "@/components/ui/Button";
 import { EmailPreviewCard } from "@/components/ui/EmailPreviewCard";
 
-const CAL_URL = "https://cal.com/revcognition/demo";
-
 export function Hero() {
   return (
     <section className="max-w-5xl mx-auto px-4 sm:px-6 pt-16 pb-20 sm:pt-24 sm:pb-28">
@@ -22,8 +20,8 @@ export function Hero() {
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row gap-3">
-            <Button href={CAL_URL} target="_blank" rel="noopener noreferrer" className="text-base px-7 py-3.5">
-              Quiero una demo
+            <Button href="/analisis" className="text-base px-7 py-3.5">
+              Prueba gratuitamente una estrategia de prospección
             </Button>
             <Button
               variant="secondary"
@@ -34,13 +32,9 @@ export function Hero() {
             </Button>
           </div>
 
-          <p className="mt-4">
-            <a
-              href="/analisis"
-              className="text-sm text-[var(--color-slate)] underline decoration-[var(--color-slate-light)] underline-offset-4 hover:text-[var(--color-ink)] transition-colors"
-            >
-              Ver propuesta de ICP para mi negocio →
-            </a>
+          <p className="mt-4 text-sm text-[var(--color-slate-light)] leading-relaxed max-w-sm">
+            Analizamos tu web y te preparamos una propuesta de ICP y estrategia
+            de captación personalizada. Sin coste. Sin compromiso.
           </p>
         </div>
 

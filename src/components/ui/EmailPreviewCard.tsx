@@ -17,7 +17,7 @@ export function EmailPreviewCard() {
           </p>
           <p className="text-xs text-[var(--color-slate-light)]">
             <span className="font-semibold text-[var(--color-slate)]">Asunto:</span>{" "}
-            El depósito de Laboratorios Roca — una idea rápida
+            Laboratorios Roca — depósito rechazado el 11/04
           </p>
         </div>
 
@@ -25,19 +25,23 @@ export function EmailPreviewCard() {
         <div className="space-y-2 text-sm text-[var(--color-slate)] leading-relaxed">
           <p>Hola Ana,</p>
           <p>
-            Vi que Laboratorios Roca tuvo un depósito de marca rechazado la
-            semana pasada. En casos así, el plazo para actuar es corto.
+            El depósito de marca de Laboratorios Roca (clase 5, solicitud 04287391)
+            fue rechazado el pasado 11 de abril. El plazo de recurso corre y, en
+            nuestra experiencia, el 62&nbsp;% de los titulares aún no tiene abogado
+            de PI asignado a estas alturas.
           </p>
           <p>
-            Trabajamos con gabinetes como el tuyo que usan esa señal para
-            llegar antes que nadie. ¿Tiene sentido hablar 15 minutos?
+            Es exactamente el tipo de señal que gabinetes como Martínez & Asoc.
+            convierten en cliente antes de que el titular busque en Google.
           </p>
+          <a
+            href="https://cal.com/revcognition/demo"
+            className="inline-block mt-1 text-xs font-semibold text-[var(--color-warm)] underline underline-offset-2 hover:opacity-80 transition-opacity"
+          >
+            Hablemos 10 minutos esta semana →
+          </a>
           <p className="text-[var(--color-slate-light)] text-xs pt-1">
-            — Generado por{" "}
-            <span style={{ fontFamily: "var(--font-serif)", letterSpacing: "-0.02em" }}>
-              <span style={{ fontWeight: 300, color: "var(--color-warm)" }}>Rev</span><span style={{ fontWeight: 500 }}>Cognition</span>
-            </span>
-            {" "}para Gab. Martínez & Asoc.
+            Un saludo,<br />Alex
           </p>
         </div>
       </div>
