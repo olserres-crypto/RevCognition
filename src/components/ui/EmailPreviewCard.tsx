@@ -2,15 +2,11 @@ export function EmailPreviewCard() {
   return (
     <div className="hidden lg:block">
       <div className="bg-white border border-[var(--color-border)] border-l-4 border-l-[var(--color-warm)] rounded-xl p-5 shadow-md max-w-sm">
-        {/* Email client chrome */}
-        <div className="flex items-center gap-1.5 mb-4">
-          <div className="w-2.5 h-2.5 rounded-full bg-red-300" />
-          <div className="w-2.5 h-2.5 rounded-full bg-yellow-300" />
-          <div className="w-2.5 h-2.5 rounded-full bg-green-300" />
-        </div>
-
-        {/* Email header */}
-        <div className="border-b border-[var(--color-border)] pb-3 mb-3 space-y-1">
+        <div className="border-b border-[var(--color-border)] pb-3 mb-4 space-y-1">
+          <p className="text-xs text-[var(--color-slate-light)]">
+            <span className="font-semibold text-[var(--color-slate)]">De:</span>{" "}
+            Alex &lt;alex@martinez-asoc.com&gt;
+          </p>
           <p className="text-xs text-[var(--color-slate-light)]">
             <span className="font-semibold text-[var(--color-slate)]">Para:</span>{" "}
             Ana Martínez &lt;a.martinez@gab-marcas.es&gt;
