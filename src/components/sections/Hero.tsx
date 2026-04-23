@@ -1,6 +1,32 @@
 import { Button } from "@/components/ui/Button";
 import { EmailPreviewCard } from "@/components/ui/EmailPreviewCard";
 
+function SignalCard() {
+  return (
+    <div
+      className="flex items-center gap-3 px-4 py-3 rounded-xl select-none max-w-sm"
+      style={{
+        background: "rgba(99,102,241,0.05)",
+        border: "0.5px solid rgba(99,102,241,0.18)",
+      }}
+    >
+      <span style={{ fontSize: 15 }}>⚡</span>
+      <div className="flex-1 min-w-0">
+        <div style={{ fontSize: 11, fontWeight: 590, color: "var(--color-warm)", marginBottom: 2 }}>
+          Señal detectada · hace 3 horas
+        </div>
+        <div style={{ fontSize: 10, color: "#8a8f98" }}>
+          Laboratorios Roca · Depósito OEPM rechazado · clase 5 · 04287391
+        </div>
+      </div>
+      <div className="flex items-center gap-1.5 shrink-0">
+        <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
+        <span style={{ fontSize: 10, color: "#8a8f98" }}>En vivo</span>
+      </div>
+    </div>
+  );
+}
+
 export function Hero() {
   return (
     <section className="max-w-5xl mx-auto px-4 sm:px-6 pt-16 pb-20 sm:pt-24 sm:pb-28">
@@ -38,8 +64,11 @@ export function Hero() {
           </p>
         </div>
 
-        {/* Right: email mockup (desktop only) */}
-        <EmailPreviewCard />
+        {/* Right: señal + email (desktop only) */}
+        <div className="hidden lg:flex flex-col gap-3">
+          <SignalCard />
+          <EmailPreviewCard />
+        </div>
       </div>
     </section>
   );

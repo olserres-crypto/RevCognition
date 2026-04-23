@@ -62,6 +62,27 @@ export function Problem() {
             </motion.div>
           ))}
         </div>
+
+        {/* Contraste RevCognition */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-40px" }}
+          transition={{ delay: 0.28, duration: 0.35 }}
+          className="mt-6 bg-white border border-[var(--color-border)] border-l-4 border-l-[var(--color-warm)] rounded-xl px-6 py-5 sm:flex sm:items-start sm:gap-8"
+        >
+          <div className="sm:flex-1">
+            <p className="font-semibold text-[var(--color-ink)] mb-1">RevCognition</p>
+            <p className="text-[var(--color-slate)] text-sm leading-relaxed">
+              El sistema localiza prospectos que encajan con tu perfil, escribe un mensaje único para cada uno y los envía. Ves cada mensaje antes de salir. Sin configuración técnica, sin intermediarios.
+            </p>
+          </div>
+          <div className="mt-2 sm:mt-0 sm:text-right sm:shrink-0">
+            <p className="text-sm font-semibold text-[var(--color-warm)]">
+              0€ en agencias
+            </p>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
