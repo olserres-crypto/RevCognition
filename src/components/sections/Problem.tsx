@@ -54,10 +54,11 @@ export function Problem() {
                   {p.description}
                 </p>
               </div>
-              <div className="mt-2 sm:mt-0 sm:text-right sm:shrink-0">
-                <p className="text-sm font-semibold text-[var(--color-warm)]">
+              <div className="mt-3 sm:mt-0 sm:shrink-0 flex sm:justify-end">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-[var(--color-surface)] border border-[var(--color-border)] text-xs font-medium text-[var(--color-ink)] whitespace-nowrap">
+                  <span className="text-red-500 font-bold leading-none">×</span>
                   {p.cost}
-                </p>
+                </span>
               </div>
             </motion.div>
           ))}
