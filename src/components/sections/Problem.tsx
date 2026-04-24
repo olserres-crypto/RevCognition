@@ -55,8 +55,7 @@ export function Problem() {
                 </p>
               </div>
               <div className="mt-3 sm:mt-0 sm:shrink-0 flex sm:justify-end">
-                <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-[var(--color-surface)] border border-[var(--color-border)] text-xs font-medium text-[var(--color-ink)] whitespace-nowrap">
-                  <span className="text-red-500 font-bold leading-none">×</span>
+                <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold text-red-600 whitespace-nowrap" style={{ background: "#fef2f2", border: "0.5px solid #fecaca" }}>
                   {p.cost}
                 </span>
               </div>
