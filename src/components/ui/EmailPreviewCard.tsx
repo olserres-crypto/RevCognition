@@ -1,6 +1,6 @@
 export function EmailPreviewCard() {
   return (
-    <div className="hidden lg:block">
+    <div>
       <div className="bg-white border border-[var(--color-border)] border-l-4 border-l-[var(--color-warm)] rounded-xl p-5 shadow-md max-w-sm">
         <div className="border-b border-[var(--color-border)] pb-3 mb-4 space-y-1">
           <p className="text-xs text-[var(--color-slate-light)]">
