@@ -24,10 +24,10 @@ export default function GraciasPage() {
           Recibirás un email con los próximos pasos. Si tienes alguna pregunta,
           escríbenos a{" "}
           <a
-            href="mailto:olivier@revcognition.com"
+            href="mailto:olivier.serres@revcognition.com"
             className="text-[var(--color-ink)] underline underline-offset-4"
           >
-            olivier@revcognition.com
+            olivier.serres@revcognition.com
           </a>
           .
         </p>

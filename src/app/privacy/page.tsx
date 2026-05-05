@@ -31,10 +31,10 @@ export default function PrivacyPage() {
             Texto en lenguaje claro. Si necesitas la versión legal completa o
             quieres ejercer cualquiera de tus derechos, escríbenos a{" "}
             <a
-              href="mailto:olivier@revcognition.com"
+              href="mailto:olivier.serres@revcognition.com"
               className="text-[var(--color-ink)] underline underline-offset-4"
             >
-              olivier@revcognition.com
+              olivier.serres@revcognition.com
             </a>
             .
           </p>
@@ -47,10 +47,10 @@ export default function PrivacyPage() {
               <p>
                 RevCognition (Olivier Serres). Contacto:{" "}
                 <a
-                  href="mailto:olivier@revcognition.com"
+                  href="mailto:olivier.serres@revcognition.com"
                   className="underline underline-offset-4 decoration-[var(--color-slate-light)] hover:text-[var(--color-ink)] transition-colors"
                 >
-                  olivier@revcognition.com
+                  olivier.serres@revcognition.com
                 </a>
                 . Sede en Barcelona, España.
               </p>
@@ -135,10 +135,10 @@ export default function PrivacyPage() {
                 portabilidad. Ejercer cualquiera de ellos es tan sencillo como
                 escribir a{" "}
                 <a
-                  href="mailto:olivier@revcognition.com?subject=Ejercicio%20de%20derechos%20RGPD"
+                  href="mailto:olivier.serres@revcognition.com?subject=Ejercicio%20de%20derechos%20RGPD"
                   className="underline underline-offset-4 decoration-[var(--color-slate-light)] hover:text-[var(--color-ink)] transition-colors"
                 >
-                  olivier@revcognition.com
+                  olivier.serres@revcognition.com
                 </a>
                 . Respondemos en menos de 30 días. Si crees que no lo hemos
                 hecho bien, puedes presentar reclamación ante la Agencia

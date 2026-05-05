@@ -16,7 +16,6 @@ const packs = [
     price: "500€",
     label: "Para crecer",
     description: "Cubre varios segmentos o mercados en paralelo.",
-    featured: true,
     plan: "pack_500",
   },
   {
@@ -28,6 +27,16 @@ const packs = [
   },
 ];
 
+const setupIncludes = [
+  "Compra del dominio de envío",
+  "Auto-configuración de SPF, DKIM y DMARC",
+  "Categorización automática de respuestas (interesado, no interesado, listo para reunión, fuera de oficina)",
+  "Calentamiento ilimitado de cuentas de email",
+  "Configuración de 6 cuentas de email",
+  "Programación con tu calendario",
+  "Gestión de la renovación automática del dominio",
+];
+
 export function Pricing() {
   return (
     <section id="precios" className="py-16 sm:py-24">
@@ -36,7 +45,7 @@ export function Pricing() {
           Precios
         </p>
         <h2 className="font-serif text-3xl sm:text-4xl text-[var(--color-ink)] mb-4">
-          1€ por prospecto. Sin sorpresas.
+          1€ por prospecto. Tres packs para ir a tu propio ritmo.
         </h2>
         <p className="text-[var(--color-slate)] text-lg mb-4 max-w-2xl">
           No pagas por emails. Pagas por un prospecto cualificado que recibe
@@ -53,17 +62,8 @@ export function Pricing() {
           {packs.map((pack) => (
             <div
               key={pack.prospects}
-              className={`rounded-xl border p-6 flex flex-col gap-4 ${
-                pack.featured
-                  ? "border-[var(--color-warm)] bg-[color-mix(in_oklch,var(--color-warm)_5%,transparent)] ring-1 ring-[color-mix(in_oklch,var(--color-warm)_20%,transparent)]"
-                  : "border-[var(--color-border)] bg-[var(--color-paper)]"
-              }`}
+              className="rounded-xl border border-[var(--color-border)] bg-[var(--color-paper)] p-6 flex flex-col gap-4"
             >
-              {pack.featured && (
-                <span className="inline-block text-xs font-semibold uppercase tracking-widest text-[var(--color-warm)]">
-                  Más popular
-                </span>
-              )}
               <div>
                 <p className="text-4xl font-semibold text-[var(--color-ink)] tabular-nums">
                   {pack.price}
@@ -80,7 +80,7 @@ export function Pricing() {
               </p>
               <div className="flex flex-col gap-2 pt-2">
                 <Button
-                  variant={pack.featured ? "warm-solid" : "ink-solid"}
+                  variant="ink-solid"
                   href={`${APP_URL}/?plan=${pack.plan}`}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -101,15 +101,21 @@ export function Pricing() {
           ))}
         </div>
 
-        <div className="mt-8 p-4 bg-[var(--color-surface)] border border-[var(--color-border)] rounded-lg inline-block">
-          <p className="text-sm text-[var(--color-slate)]">
-            <span className="font-semibold text-[var(--color-ink)]">Setup único: 50€.</span>
-            {" "}Configuración inicial del sistema, análisis de tu web y definición de estrategia.
-            Se paga una sola vez.
+        {/* Setup box: lead + bullet list */}
+        <div className="mt-10 p-5 sm:p-6 bg-[var(--color-surface)] border border-[var(--color-border)] rounded-xl max-w-2xl">
+          <p className="text-sm text-[var(--color-slate)] mb-3">
+            <span className="font-semibold text-[var(--color-ink)]">Setup: 50€.</span>
+            {" "}Configuración inicial del sistema, análisis de tu web y
+            definición de estrategia.
           </p>
+          <ul className="text-sm text-[var(--color-slate)] space-y-1.5 list-disc pl-5 marker:text-[var(--color-warm)]">
+            {setupIncludes.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
         </div>
 
-        <p className="mt-4 text-sm text-[var(--color-slate)] max-w-2xl">
+        <p className="mt-6 text-sm text-[var(--color-slate)] max-w-2xl">
           ¿Tienes una base de prospectos propia? Puedes usarla directamente.
           El sistema la enriquece y genera los mensajes sobre ella.
         </p>

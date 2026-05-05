@@ -20,7 +20,7 @@ export function CtaFinal() {
           <p className="mt-6 text-sm text-[var(--color-slate)]">
             ¿Preguntas antes de la demo?{" "}
             <a
-              href="mailto:olivier@revcognition.com"
+              href="mailto:olivier.serres@revcognition.com"
               className="underline decoration-[var(--color-slate-light)] underline-offset-4 hover:text-[var(--color-ink)] transition-colors rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2"
             >
               Escríbeme directamente.

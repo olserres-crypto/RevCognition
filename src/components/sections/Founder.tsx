@@ -7,14 +7,13 @@ export function Founder() {
             Por qué existe esto
           </p>
           <h2 className="font-serif text-3xl sm:text-4xl text-[var(--color-ink)] mb-6">
-            Diez años en enterprise. Ninguna herramienta para el fundador solo.
+            Veinte años en marketing automation. Ninguna herramienta para el fundador solo.
           </h2>
           <div className="space-y-4 text-[var(--color-slate)] leading-relaxed">
             <p>
-              Trabajé durante diez años en customer success en empresas de
-              marketing automation: Selligent, ACTITO, Probance. Vi de cerca
-              cómo las grandes empresas gestionan su captación. Vi también
-              las herramientas que existían para los demás.
+              Llevo veinte años trabajando en marketing automation, viendo
+              de cerca cómo las grandes empresas gestionan su captación.
+              Y también las herramientas que existían para los demás.
             </p>
             <p>
               La mayoría te piden que seas técnico, que escribas los mensajes,

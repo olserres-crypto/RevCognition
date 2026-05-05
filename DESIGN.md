@@ -159,7 +159,7 @@ Texto cambia a contexto específico ("Redirigiendo…"). `disabled={true}` + `di
 - Inline debajo del botón o campo, nunca modal ni `alert()`.
 - Eyebrow `text-xs font-semibold uppercase tracking-widest` en rojo (`#c53030` o `text-red-700`).
 - Mensaje en `text-sm` sobre `paper` (no fondo rojo).
-- Acción de recuperación concreta ("Reintentar" o "Escríbeme a olivier@revcognition.com").
+- Acción de recuperación concreta ("Reintentar" o "Escríbeme a olivier.serres@revcognition.com").
 - **Prohibido**: `alert()`, `confirm()`, `prompt()` nativos.
 
 ### Empty
