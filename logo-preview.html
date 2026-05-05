@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RevCognition — Logo Proposals</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --indigo: #6366f1;
+      --indigo-dark: #4f52e0;
+      --indigo-light: #e0e7ff;
+      --ink: #1a1a1a;
+      --paper: #f4f4f2;
+      --slate: #4a5568;
+      --border: #e2e2e0;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Instrument Sans', sans-serif;
+      background: #f0f0ee;
+      color: var(--ink);
+      padding: 40px 24px;
+    }
+
+    h1 {
+      font-family: 'Fraunces', serif;
+      font-weight: 400;
+      font-size: 28px;
+      letter-spacing: -0.02em;
+      margin-bottom: 6px;
+    }
+    .subtitle {
+      font-size: 14px;
+      color: var(--slate);
+      margin-bottom: 48px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 24px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+
+    .card-header {
+      padding: 10px 20px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .card-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--slate);
+    }
+    .card-tag {
+      font-size: 11px;
+      color: var(--indigo);
+      font-weight: 500;
+    }
+
+    .preview-light {
+      background: var(--paper);
+      padding: 40px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 160px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .preview-dark {
+      background: #0f0f0e;
+      padding: 28px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 80px;
+      border-bottom: 1px solid #222;
+    }
+
+    .preview-nav {
+      background: var(--paper);
+      padding: 0 24px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-spacer {
+      flex: 1;
+    }
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      font-size: 13px;
+      color: var(--slate);
+    }
+    .nav-btn {
+      background: linear-gradient(to bottom, #6366f1, #4f52e0);
+      color: white;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 7px 16px;
+      border-radius: 8px;
+      font-family: 'Instrument Sans', sans-serif;
+    }
+
+    .desc {
+      padding: 16px 20px;
+      font-size: 13px;
+      color: var(--slate);
+      line-height: 1.6;
+    }
+    .desc strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    /* ─── LOGO A: Monograma RC ─── */
+    .logo-a-large {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .logo-a-mark {
+      width: 48px;
+      height: 48px;
+      background: var(--indigo);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .logo-a-mark svg { width: 28px; height: 28px; }
+    .logo-a-text {
+      font-family: 'Fraunces', serif;
+      font-weight: 400;
+      font-size: 26px;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+      line-height: 1;
+    }
+    .logo-a-text .light { font-weight: 300; }
+
+    .logo-a-nav {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+    }
+    .logo-a-nav .mark-sm {
+      width: 28px;
+      height: 28px;
+      background: var(--indigo);
+      border-radius: 7px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .logo-a-nav .mark-sm svg { width: 16px; height: 16px; }
+    .logo-a-nav .name {
+      font-family: 'Fraunces', serif;
+      font-weight: 400;
+      font-size: 17px;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+    }
+
+    /* dark version A */
+    .logo-a-dark .logo-a-text { color: white; }
+    .logo-a-dark .logo-a-nav .name { color: white; }
+
+    /* ─── LOGO B: Símbolo radar + wordmark ─── */
+    .logo-b-large {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .logo-b-text {
+      font-family: 'Fraunces', serif;
+      font-weight: 400;
+      font-size: 28px;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+      line-height: 1;
+    }
+    .logo-b-text .rev { font-weight: 300; font-style: italic; color: var(--indigo); }
+
+    .logo-b-nav {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo-b-nav .name {
+      font-family: 'Fraunces', serif;
+      font-weight: 400;
+      font-size: 17px;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+    }
+    .logo-b-nav .rev { font-weight: 300; font-style: italic; color: var(--indigo); }
+
+    .logo-b-dark .logo-b-text { color: white; }
+    .logo-b-dark .logo-b-nav .name { color: white; }
+
+    /* ─── LOGO C: Wordmark puro ─── */
+    .logo-c-large {
+      font-family: 'Fraunces', serif;
+      letter-spacing: -0.04em;
+      line-height: 1;
+      font-size: 36px;
+      color: var(--ink);
+    }
+    .logo-c-large .rev {
+      font-weight: 300;
+      color: var(--indigo);
+    }
+    .logo-c-large .cog {
+      font-weight: 500;
+      color: var(--ink);
+    }
+
+    .logo-c-nav {
+      font-family: 'Fraunces', serif;
+      font-size: 18px;
+      letter-spacing: -0.03em;
+      line-height: 1;
+      color: var(--ink);
+    }
+    .logo-c-nav .rev { font-weight: 300; color: var(--indigo); }
+    .logo-c-nav .cog { font-weight: 500; }
+
+    .logo-c-dark .logo-c-large .cog { color: white; }
+    .logo-c-dark .logo-c-nav .cog { color: white; }
+
+    /* ─── LOGO D: Punto índigo ─── */
+    .logo-d-large {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .dot-lg {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--indigo);
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+    .logo-d-text {
+      font-family: 'Fraunces', serif;
+      font-weight: 400;
+      font-size: 32px;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+      line-height: 1;
+    }
+
+    .logo-d-nav {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+    .dot-sm {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--indigo);
+      flex-shrink: 0;
+    }
+    .logo-d-nav .name {
+      font-family: 'Fraunces', serif;
+      font-weight: 400;
+      font-size: 17px;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+    }
+
+    .logo-d-dark .logo-d-text { color: white; }
+    .logo-d-dark .logo-d-nav .name { color: white; }
+
+    /* ─── LOGO E: Bracket angular ─── */
+    .logo-e-large {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .logo-e-bracket {
+      font-family: 'Instrument Sans', sans-serif;
+      font-weight: 600;
+      font-size: 36px;
+      color: var(--indigo);
+      letter-spacing: -0.05em;
+      line-height: 1;
+      margin-right: -4px;
+    }
+    .logo-e-text {
+      font-family: 'Fraunces', serif;
+      font-weight: 400;
+      font-size: 30px;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+      line-height: 1;
+    }
+
+    .logo-e-nav {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+    }
+    .logo-e-bracket-sm {
+      font-family: 'Instrument Sans', sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+      color: var(--indigo);
+      letter-spacing: -0.05em;
+      line-height: 1;
+    }
+    .logo-e-nav .name {
+      font-family: 'Fraunces', serif;
+      font-weight: 400;
+      font-size: 17px;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+    }
+
+    .logo-e-dark .logo-e-text { color: white; }
+    .logo-e-dark .logo-e-nav .name { color: white; }
+  </style>
+</head>
+<body>
+
+  <div style="max-width:1100px;margin:0 auto;">
+    <h1>RevCognition — Logo Proposals</h1>
+    <p class="subtitle">5 direcciones · Fondo claro · Fondo oscuro · Vista en nav</p>
+
+    <div class="grid">
+
+      <!-- ══════════════════════════════════════ -->
+      <!-- LOGO A — Monograma RC en bloque índigo -->
+      <!-- ══════════════════════════════════════ -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-label">A — Monograma RC</span>
+          <span class="card-tag">Marca + Wordmark</span>
+        </div>
+
+        <!-- Light -->
+        <div class="preview-light">
+          <div class="logo-a-large">
+            <div class="logo-a-mark">
+              <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- R -->
+                <path d="M5 6h7.5a4 4 0 0 1 0 8H5V6z" fill="white" opacity="0.9"/>
+                <path d="M5 14l5 8" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                <!-- C arc -->
+                <path d="M16 8a7 7 0 0 1 6 10.5" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.75"/>
+              </svg>
+            </div>
+            <div class="logo-a-text">
+              <span class="light">Rev</span>Cognition
+            </div>
+          </div>
+        </div>
+
+        <!-- Dark -->
+        <div class="preview-dark">
+          <div class="logo-a-large logo-a-dark">
+            <div class="logo-a-mark">
+              <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 6h7.5a4 4 0 0 1 0 8H5V6z" fill="white" opacity="0.9"/>
+                <path d="M5 14l5 8" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M16 8a7 7 0 0 1 6 10.5" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.75"/>
+              </svg>
+            </div>
+            <div class="logo-a-text">
+              <span class="light">Rev</span>Cognition
+            </div>
+          </div>
+        </div>
+
+        <!-- Nav -->
+        <div class="preview-nav">
+          <div class="logo-a-nav">
+            <div class="mark-sm">
+              <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 6h7.5a4 4 0 0 1 0 8H5V6z" fill="white" opacity="0.9"/>
+                <path d="M5 14l5 8" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M16 8a7 7 0 0 1 6 10.5" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.75"/>
+              </svg>
+            </div>
+            <span class="name">RevCognition</span>
+          </div>
+          <div class="nav-spacer"></div>
+          <div class="nav-links">
+            <span>Cómo funciona</span>
+            <span>Precios</span>
+          </div>
+          <div style="width:24px"></div>
+          <div class="nav-btn">Demo</div>
+        </div>
+
+        <div class="desc">
+          <strong>Bloque cuadrado índigo</strong> con las letras R y C en blanco. Wordmark en Fraunces con contraste light/regular. Reconocible en tamaños pequeños. Funciona como favicon.
+        </div>
+      </div>
+
+
+      <!-- ══════════════════════════════════ -->
+      <!-- LOGO B — Símbolo radar + wordmark  -->
+      <!-- ══════════════════════════════════ -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-label">B — Símbolo Radar</span>
+          <span class="card-tag">Icono + Wordmark cursiva</span>
+        </div>
+
+        <div class="preview-light">
+          <div class="logo-b-large">
+            <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Concentric arcs — radar/signal -->
+              <circle cx="14" cy="38" r="4" fill="#6366f1"/>
+              <path d="M14 29 a 9 9 0 0 1 9 9" stroke="#6366f1" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+              <path d="M14 20 a 18 18 0 0 1 18 18" stroke="#6366f1" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.55"/>
+              <path d="M14 11 a 27 27 0 0 1 27 27" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.28"/>
+            </svg>
+            <div class="logo-b-text">
+              <span class="rev">Rev</span>Cognition
+            </div>
+          </div>
+        </div>
+
+        <div class="preview-dark">
+          <div class="logo-b-large logo-b-dark">
+            <svg width="44" height="44" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="14" cy="38" r="4" fill="#818cf8"/>
+              <path d="M14 29 a 9 9 0 0 1 9 9" stroke="#818cf8" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+              <path d="M14 20 a 18 18 0 0 1 18 18" stroke="#818cf8" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.55"/>
+              <path d="M14 11 a 27 27 0 0 1 27 27" stroke="#818cf8" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.28"/>
+            </svg>
+            <div class="logo-b-text">
+              <span class="rev">Rev</span>Cognition
+            </div>
+          </div>
+        </div>
+
+        <div class="preview-nav">
+          <div class="logo-b-nav">
+            <svg width="26" height="26" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="14" cy="38" r="4" fill="#6366f1"/>
+              <path d="M14 29 a 9 9 0 0 1 9 9" stroke="#6366f1" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+              <path d="M14 20 a 18 18 0 0 1 18 18" stroke="#6366f1" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.55"/>
+              <path d="M14 11 a 27 27 0 0 1 27 27" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.28"/>
+            </svg>
+            <span class="name"><span class="rev">Rev</span>Cognition</span>
+          </div>
+          <div class="nav-spacer"></div>
+          <div class="nav-links"><span>Cómo funciona</span><span>Precios</span></div>
+          <div style="width:24px"></div>
+          <div class="nav-btn">Demo</div>
+        </div>
+
+        <div class="desc">
+          <strong>Arcos concéntricos tipo radar/sonar</strong> — evoca prospecting, señales, detección. "Rev" en cursiva índigo, el resto en regular. Editorial y con personalidad.
+        </div>
+      </div>
+
+
+      <!-- ════════════════════════════════ -->
+      <!-- LOGO C — Wordmark puro          -->
+      <!-- ════════════════════════════════ -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-label">C — Wordmark Puro</span>
+          <span class="card-tag">Solo tipografía</span>
+        </div>
+
+        <div class="preview-light">
+          <div class="logo-c-large">
+            <span class="rev">Rev</span><span class="cog">Cognition</span>
+          </div>
+        </div>
+
+        <div class="preview-dark">
+          <div class="logo-c-large logo-c-dark">
+            <span class="rev">Rev</span><span class="cog">Cognition</span>
+          </div>
+        </div>
+
+        <div class="preview-nav">
+          <div class="logo-c-nav">
+            <span class="rev">Rev</span><span class="cog">Cognition</span>
+          </div>
+          <div class="nav-spacer"></div>
+          <div class="nav-links"><span>Cómo funciona</span><span>Precios</span></div>
+          <div style="width:24px"></div>
+          <div class="nav-btn">Demo</div>
+        </div>
+
+        <div class="desc">
+          <strong>Sin icono.</strong> "Rev" en Fraunces light índigo + "Cognition" en Fraunces medium negro. Contraste de peso y color dentro del mismo nombre. Limpio, confiado, editorial.
+        </div>
+      </div>
+
+
+      <!-- ════════════════════════════════ -->
+      <!-- LOGO D — Punto índigo           -->
+      <!-- ════════════════════════════════ -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-label">D — Punto Índigo</span>
+          <span class="card-tag">Marca mínima</span>
+        </div>
+
+        <div class="preview-light">
+          <div class="logo-d-large">
+            <div class="dot-lg"></div>
+            <div class="logo-d-text">RevCognition</div>
+          </div>
+        </div>
+
+        <div class="preview-dark">
+          <div class="logo-d-large logo-d-dark">
+            <div class="dot-lg" style="background:#818cf8"></div>
+            <div class="logo-d-text">RevCognition</div>
+          </div>
+        </div>
+
+        <div class="preview-nav">
+          <div class="logo-d-nav">
+            <div class="dot-sm"></div>
+            <span class="name">RevCognition</span>
+          </div>
+          <div class="nav-spacer"></div>
+          <div class="nav-links"><span>Cómo funciona</span><span>Precios</span></div>
+          <div style="width:24px"></div>
+          <div class="nav-btn">Demo</div>
+        </div>
+
+        <div class="desc">
+          <strong>Un punto índigo</strong> antes del wordmark en Fraunces regular. Ultra-minimalista. Acento de color sin símbolo complejo. Recuerda a Linear, Vercel, productos B2B premium.
+        </div>
+      </div>
+
+
+      <!-- ════════════════════════════════ -->
+      <!-- LOGO E — Bracket angular        -->
+      <!-- ════════════════════════════════ -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-label">E — Bracket Angular</span>
+          <span class="card-tag">Símbolo técnico</span>
+        </div>
+
+        <div class="preview-light">
+          <div class="logo-e-large">
+            <span class="logo-e-bracket">[</span>
+            <div class="logo-e-text">RevCognition</div>
+            <span class="logo-e-bracket">]</span>
+          </div>
+        </div>
+
+        <div class="preview-dark">
+          <div class="logo-e-large logo-e-dark">
+            <span class="logo-e-bracket">[</span>
+            <div class="logo-e-text">RevCognition</div>
+            <span class="logo-e-bracket">]</span>
+          </div>
+        </div>
+
+        <div class="preview-nav">
+          <div class="logo-e-nav">
+            <span class="logo-e-bracket-sm">[</span>
+            <span class="name">RC</span>
+            <span class="logo-e-bracket-sm">]</span>
+          </div>
+          <div class="nav-spacer"></div>
+          <div class="nav-links"><span>Cómo funciona</span><span>Precios</span></div>
+          <div style="width:24px"></div>
+          <div class="nav-btn">Demo</div>
+        </div>
+
+        <div class="desc">
+          <strong>Brackets de código</strong> en índigo rodeando el wordmark. Sugiere sistema, automatización, tech. En nav colapsa a <code>[RC]</code>. Más técnico, menos editorial — dependiendo del posicionamiento.
+        </div>
+      </div>
+
+    </div><!-- /grid -->
+
+    <p style="margin-top:40px;font-size:13px;color:#999;text-align:center;">
+      Todos usan Fraunces + Instrument Sans · Acento #6366f1 (índigo) · Tinta #1a1a1a
+    </p>
+  </div>
+
+</body>
+</html>
