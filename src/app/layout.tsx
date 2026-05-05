@@ -32,11 +32,20 @@ export const metadata: Metadata = {
     siteName: "RevCognition",
     locale: "es_ES",
     type: "website",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "RevCognition — Nuevos clientes, cada semana.",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
+    images: ["/og.png"],
   },
 };
 

@@ -1,8 +1,6 @@
-"use client";
-
-import { useState } from "react";
 import { Button } from "@/components/ui/Button";
 
+const APP_URL = "https://app.revcognition.com";
 const CAL_15MIN_URL = "https://cal.com/olivier-serres-js5hdw/15min";
 
 const packs = [
@@ -11,7 +9,7 @@ const packs = [
     price: "100€",
     label: "Para empezar",
     description: "Prueba el sistema con tu primer segmento de mercado.",
-    productId: "price_pack_100",
+    plan: "pack_100",
   },
   {
     prospects: 500,
@@ -19,43 +17,18 @@ const packs = [
     label: "Para crecer",
     description: "Cubre varios segmentos o mercados en paralelo.",
     featured: true,
-    productId: "price_pack_500",
+    plan: "pack_500",
   },
   {
     prospects: 1000,
     price: "1.000€",
     label: "Para escalar",
     description: "Prospección continua sin tener que recargar constantemente.",
-    productId: "price_pack_1000",
+    plan: "pack_1000",
   },
 ];
 
 export function Pricing() {
-  const [loadingId, setLoadingId] = useState<string | null>(null);
-  const [errorId, setErrorId] = useState<string | null>(null);
-
-  async function handleCheckout(productId: string) {
-    setLoadingId(productId);
-    setErrorId(null);
-    try {
-      const res = await fetch("/api/checkout", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ productId }),
-      });
-      const data = await res.json();
-      if (data.url) {
-        window.location.href = data.url;
-      } else {
-        setErrorId(productId);
-      }
-    } catch {
-      setErrorId(productId);
-    } finally {
-      setLoadingId(null);
-    }
-  }
-
   return (
     <section id="precios" className="py-16 sm:py-24">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
@@ -108,29 +81,13 @@ export function Pricing() {
               <div className="flex flex-col gap-2 pt-2">
                 <Button
                   variant={pack.featured ? "warm-solid" : "ink-solid"}
-                  onClick={() => handleCheckout(pack.productId)}
-                  disabled={loadingId === pack.productId}
+                  href={`${APP_URL}/?plan=${pack.plan}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-full text-sm py-3"
                 >
-                  {loadingId === pack.productId ? "Redirigiendo…" : "Contratar este pack"}
+                  Empezar con este pack
                 </Button>
-                {errorId === pack.productId && (
-                  <div className="mt-1">
-                    <p className="text-xs font-semibold uppercase tracking-widest text-[var(--color-danger)] mb-1">
-                      No se pudo iniciar el pago
-                    </p>
-                    <p className="text-sm text-[var(--color-slate)]">
-                      Inténtalo de nuevo o{" "}
-                      <a
-                        href="mailto:olivier@revcognition.com"
-                        className="underline underline-offset-4 decoration-[var(--color-slate-light)] hover:text-[var(--color-ink)]"
-                      >
-                        escríbeme directamente
-                      </a>
-                      .
-                    </p>
-                  </div>
-                )}
                 <a
                   href={CAL_15MIN_URL}
                   target="_blank"
@@ -155,6 +112,11 @@ export function Pricing() {
         <p className="mt-4 text-sm text-[var(--color-slate)] max-w-2xl">
           ¿Tienes una base de prospectos propia? Puedes usarla directamente.
           El sistema la enriquece y genera los mensajes sobre ella.
+        </p>
+
+        <p className="mt-3 text-xs text-[var(--color-slate-light)] max-w-2xl">
+          Sign-up gratis. Pruebas tu ICP y company brain sin coste. El pago
+          solo entra cuando eliges dominio de envío.
         </p>
       </div>
     </section>
