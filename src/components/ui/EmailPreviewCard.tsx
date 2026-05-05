@@ -35,12 +35,9 @@ export function EmailPreviewCard() {
           Es exactamente el tipo de señal que gabinetes como Martínez &amp; Asoc.
           convierten en cliente antes de que el titular busque en Google.
         </p>
-        <a
-          href="https://cal.com/revcognition/demo"
-          className="inline-block mt-1 text-xs font-semibold text-[var(--color-warm)] underline underline-offset-2 hover:opacity-80 transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2 rounded-sm"
-        >
+        <p className="inline-block mt-1 text-xs font-semibold text-[var(--color-warm)] underline underline-offset-2">
           Hablemos 10 minutos esta semana →
-        </a>
+        </p>
         <p className="text-[var(--color-slate-light)] text-xs pt-1">
           Un saludo,<br />Alex
         </p>
