@@ -70,7 +70,12 @@ export function Hero() {
             custom={0.2}
             className="mt-8 flex flex-col sm:flex-row gap-3"
           >
-            <Button href="/analisis" className="text-base px-7 py-3.5">
+            <Button
+              href="https://app.revcognition.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-base px-7 py-3.5"
+            >
               Prueba gratuitamente una estrategia de prospección
             </Button>
             <Button

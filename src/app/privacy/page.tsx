@@ -67,18 +67,25 @@ export default function PrivacyPage() {
               <ul className="space-y-2 list-disc pl-5">
                 <li>
                   <span className="font-semibold text-[var(--color-ink)]">
-                    Formulario de análisis gratuito
+                    Sign-up y onboarding del producto
                   </span>{" "}
-                  (URL de tu web, LinkedIn opcional, descripción del producto):
-                  para preparar tu propuesta de ICP y estrategia y enviártela
-                  por email.
+                  (datos de cuenta, URL de tu web, descripción del producto,
+                  configuración de ICP): para crear tu Company Brain y
+                  ejecutar las campañas. Estos datos viven en{" "}
+                  <a
+                    href="https://app.revcognition.com"
+                    className="underline underline-offset-4 decoration-[var(--color-slate-light)] hover:text-[var(--color-ink)] transition-colors"
+                  >
+                    app.revcognition.com
+                  </a>
+                  , no en esta web.
                 </li>
                 <li>
                   <span className="font-semibold text-[var(--color-ink)]">
                     Datos de pago
                   </span>{" "}
                   (procesados por Stripe, no almacenados por nosotros): para
-                  ejecutar el pago de los packs contratados.
+                  ejecutar el pago de los packs contratados desde la app.
                 </li>
                 <li>
                   <span className="font-semibold text-[var(--color-ink)]">
