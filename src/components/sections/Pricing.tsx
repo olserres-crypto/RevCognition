@@ -28,13 +28,12 @@ const packs = [
 ];
 
 const setupIncludes = [
-  "Compra del dominio de envío",
+  "Compra y renovación automática del dominio de envío",
   "Auto-configuración de SPF, DKIM y DMARC",
   "Categorización automática de respuestas (interesado, no interesado, listo para reunión, fuera de oficina)",
   "Calentamiento ilimitado de cuentas de email",
   "Configuración de 6 cuentas de email",
   "Programación con tu calendario",
-  "Gestión de la renovación automática del dominio",
 ];
 
 export function Pricing() {
