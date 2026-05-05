@@ -11,12 +11,9 @@ export function Logo({ size = "nav", className = "" }: LogoProps) {
   };
 
   return (
-    <span
-      className={`font-serif tracking-[-0.03em] leading-none ${sizes[size]} ${className}`}
-      style={{ fontFamily: "var(--font-serif)" }}
-    >
-      <span style={{ fontWeight: 300, color: "var(--color-warm)" }}>Rev</span>
-      <span style={{ fontWeight: 500 }}>Cognition</span>
+    <span className={`font-serif tracking-[-0.03em] leading-none ${sizes[size]} ${className}`}>
+      <span className="font-light text-[var(--color-warm)]">Rev</span>
+      <span className="font-medium">Cognition</span>
     </span>
   );
 }

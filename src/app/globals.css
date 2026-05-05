@@ -5,6 +5,7 @@
   --font-sans: var(--font-instrument-sans), ui-sans-serif, system-ui, sans-serif;
 
   --color-paper: #f4f4f2;
+  --color-paper-deep: #fafaf9;
   --color-ink: #1a1a1a;
   --color-warm: #6366f1;
   --color-warm-hover: #4f52e0;
@@ -12,6 +13,14 @@
   --color-slate-light: #718096;
   --color-border: #e2e2e0;
   --color-surface: #ebebea;
+
+  --color-success: #15803d;
+  --color-success-tint: #dcfce7;
+  --color-warning: #b45309;
+  --color-warning-tint: #fef3c7;
+  --color-danger: #b91c1c;
+  --color-danger-tint: #fef2f2;
+  --color-danger-border: #fecaca;
 }
 
 :root {

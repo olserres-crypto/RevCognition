@@ -18,16 +18,20 @@ export function Founder() {
             </p>
             <p>
               La mayoría te piden que seas técnico, que escribas los mensajes,
-              que gestiones las secuencias a mano — o que confíes ciegamente
+              que gestiones las secuencias a mano, o que confíes ciegamente
               en una agencia que no entiende tu negocio. Ninguna de las dos
               opciones era aceptable para un fundador con poco tiempo y mucho
               que demostrar.
             </p>
-            <p>
-              RevCognition es lo que yo habría querido tener.
-            </p>
           </div>
         </div>
+
+        {/* Cierre — punto de extrañeza tipográfico (display + light, sale del max-w-2xl) */}
+        <p className="mt-12 font-serif font-light text-3xl sm:text-5xl lg:text-6xl text-[var(--color-ink)] leading-[1.05] tracking-tight max-w-3xl">
+          RevCognition es lo que{" "}
+          <span className="italic text-[var(--color-warm)]">yo</span>{" "}
+          habría querido tener.
+        </p>
       </div>
     </section>
   );

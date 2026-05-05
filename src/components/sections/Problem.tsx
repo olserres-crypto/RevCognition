@@ -7,7 +7,7 @@ const problems = [
     label: "Tu red de contactos",
     cost: "Oportunidades perdidas",
     description:
-      "Prospectas cuando tienes tiempo — que es casi nunca. El sistema se para cuando tú te paras.",
+      "Prospectas cuando tienes tiempo, que es casi nunca. El sistema se para cuando tú te paras.",
   },
   {
     label: "Una agencia de captación",
@@ -19,7 +19,7 @@ const problems = [
     label: "Una herramienta genérica",
     cost: "Horas de configuración, spam",
     description:
-      "Necesitas ser técnico para usarla o aceptar que los mensajes no tienen ningún contexto sobre tu negocio ni el del prospecto.",
+      "Necesitas ser técnico para usarla, o aceptar que los mensajes no tienen ningún contexto sobre tu negocio ni el del prospecto.",
   },
 ];
 
@@ -55,7 +55,7 @@ export function Problem() {
                 </p>
               </div>
               <div className="mt-3 sm:mt-0 sm:shrink-0 flex sm:justify-end">
-                <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold text-red-600 whitespace-nowrap" style={{ background: "#fef2f2", border: "0.5px solid #fecaca" }}>
+                <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold whitespace-nowrap text-[var(--color-danger)] bg-[var(--color-danger-tint)] border border-[var(--color-danger-border)]">
                   {p.cost}
                 </span>
               </div>
@@ -63,16 +63,18 @@ export function Problem() {
           ))}
         </div>
 
-        {/* Contraste RevCognition */}
+        {/* Contraste RevCognition: eyebrow pattern, sin side-stripe */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-40px" }}
           transition={{ delay: 0.28, duration: 0.35 }}
-          className="mt-6 bg-white border border-[var(--color-border)] border-l-4 border-l-[var(--color-warm)] rounded-xl px-6 py-5 sm:flex sm:items-start sm:gap-8"
+          className="mt-8 bg-[var(--color-paper)] border border-[var(--color-border)] rounded-xl px-6 py-5 sm:flex sm:items-start sm:gap-8"
         >
           <div className="sm:flex-1">
-            <p className="font-semibold text-[var(--color-ink)] mb-1">RevCognition</p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-[var(--color-warm)] mb-2">
+              RevCognition
+            </p>
             <p className="text-[var(--color-slate)] text-sm leading-relaxed">
               El sistema localiza prospectos que encajan con tu perfil, escribe un mensaje único para cada uno y los envía. Ves cada mensaje antes de salir. Sin configuración técnica, sin intermediarios.
             </p>

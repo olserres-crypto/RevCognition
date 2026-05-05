@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Button } from "@/components/ui/Button";
 
 const CAL_15MIN_URL = "https://cal.com/olivier-serres-js5hdw/15min";
 
@@ -31,9 +32,11 @@ const packs = [
 
 export function Pricing() {
   const [loadingId, setLoadingId] = useState<string | null>(null);
+  const [errorId, setErrorId] = useState<string | null>(null);
 
   async function handleCheckout(productId: string) {
     setLoadingId(productId);
+    setErrorId(null);
     try {
       const res = await fetch("/api/checkout", {
         method: "POST",
@@ -44,10 +47,10 @@ export function Pricing() {
       if (data.url) {
         window.location.href = data.url;
       } else {
-        alert("Error al iniciar el pago. Inténtalo de nuevo.");
+        setErrorId(productId);
       }
     } catch {
-      alert("Error al conectar con el servidor. Inténtalo de nuevo.");
+      setErrorId(productId);
     } finally {
       setLoadingId(null);
     }
@@ -68,8 +71,8 @@ export function Pricing() {
           se para. Si no, cierra con elegancia.
         </p>
         <p className="text-[var(--color-slate)] text-sm mb-12 max-w-2xl">
-          Cada prospecto incluye: identificación + enriquecimiento con señales
-          reales + secuencia completa (apertura, seguimiento, nuevo ángulo,
+          Cada prospecto incluye: identificación, enriquecimiento con señales
+          reales y secuencia completa (apertura, seguimiento, nuevo ángulo,
           cierre). También disponible en un solo mensaje si lo prefieres.
         </p>
 
@@ -79,7 +82,7 @@ export function Pricing() {
               key={pack.prospects}
               className={`rounded-xl border p-6 flex flex-col gap-4 ${
                 pack.featured
-                  ? "border-[var(--color-warm)] bg-[var(--color-warm)]/5 ring-1 ring-[var(--color-warm)]/20"
+                  ? "border-[var(--color-warm)] bg-[color-mix(in_oklch,var(--color-warm)_5%,transparent)] ring-1 ring-[color-mix(in_oklch,var(--color-warm)_20%,transparent)]"
                   : "border-[var(--color-border)] bg-[var(--color-paper)]"
               }`}
             >
@@ -96,29 +99,43 @@ export function Pricing() {
                   {pack.prospects} prospectos cualificados
                 </p>
               </div>
-              <p className="text-xs font-semibold uppercase tracking-widest text-[var(--color-slate-light)]">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[var(--color-slate)]">
                 {pack.label}
               </p>
               <p className="text-[var(--color-slate)] text-sm leading-relaxed flex-1">
                 {pack.description}
               </p>
               <div className="flex flex-col gap-2 pt-2">
-                <button
+                <Button
+                  variant={pack.featured ? "warm-solid" : "ink-solid"}
                   onClick={() => handleCheckout(pack.productId)}
                   disabled={loadingId === pack.productId}
-                  className={`w-full py-2.5 px-4 rounded-lg text-sm font-semibold transition-colors ${
-                    pack.featured
-                      ? "bg-[var(--color-warm)] text-white hover:opacity-90"
-                      : "bg-[var(--color-ink)] text-[var(--color-paper)] hover:opacity-90"
-                  } disabled:opacity-60 disabled:cursor-not-allowed`}
+                  className="w-full text-sm py-3"
                 >
                   {loadingId === pack.productId ? "Redirigiendo…" : "Contratar este pack"}
-                </button>
+                </Button>
+                {errorId === pack.productId && (
+                  <div className="mt-1">
+                    <p className="text-xs font-semibold uppercase tracking-widest text-[var(--color-danger)] mb-1">
+                      No se pudo iniciar el pago
+                    </p>
+                    <p className="text-sm text-[var(--color-slate)]">
+                      Inténtalo de nuevo o{" "}
+                      <a
+                        href="mailto:olivier@revcognition.com"
+                        className="underline underline-offset-4 decoration-[var(--color-slate-light)] hover:text-[var(--color-ink)]"
+                      >
+                        escríbeme directamente
+                      </a>
+                      .
+                    </p>
+                  </div>
+                )}
                 <a
                   href={CAL_15MIN_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full py-2 px-4 text-sm text-center text-[var(--color-slate)] hover:text-[var(--color-ink)] transition-colors"
+                  className="w-full py-2.5 px-4 text-sm text-center rounded-md text-[var(--color-slate)] hover:text-[var(--color-ink)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2"
                 >
                   Hablar con el fundador →
                 </a>
@@ -129,13 +146,13 @@ export function Pricing() {
 
         <div className="mt-8 p-4 bg-[var(--color-surface)] border border-[var(--color-border)] rounded-lg inline-block">
           <p className="text-sm text-[var(--color-slate)]">
-            <span className="font-semibold text-[var(--color-ink)]">Setup único: 50€</span>
-            {" — "}Configuración inicial del sistema, análisis de tu web y definición de estrategia.
+            <span className="font-semibold text-[var(--color-ink)]">Setup único: 50€.</span>
+            {" "}Configuración inicial del sistema, análisis de tu web y definición de estrategia.
             Se paga una sola vez.
           </p>
         </div>
 
-        <p className="mt-4 text-sm text-[var(--color-slate-light)] max-w-2xl">
+        <p className="mt-4 text-sm text-[var(--color-slate)] max-w-2xl">
           ¿Tienes una base de prospectos propia? Puedes usarla directamente.
           El sistema la enriquece y genera los mensajes sobre ella.
         </p>

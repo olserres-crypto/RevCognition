@@ -1,10 +1,10 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { Button } from "@/components/ui/Button";
 import { EmailPreviewCard } from "@/components/ui/EmailPreviewCard";
 
-const fadeUp = {
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 14 },
   show: (delay: number) => ({
     opacity: 1,
@@ -15,25 +15,19 @@ const fadeUp = {
 
 function SignalCard() {
   return (
-    <div
-      className="flex items-center gap-3 px-4 py-3 rounded-xl select-none max-w-sm"
-      style={{
-        background: "rgba(99,102,241,0.05)",
-        border: "0.5px solid rgba(99,102,241,0.18)",
-      }}
-    >
-      <span style={{ fontSize: 15 }}>⚡</span>
+    <div className="flex items-center gap-3 px-4 py-3 rounded-xl select-none max-w-sm bg-[color-mix(in_oklch,var(--color-warm)_5%,transparent)] border border-[color-mix(in_oklch,var(--color-warm)_18%,transparent)]">
+      <span aria-hidden="true" className="text-[15px]">⚡</span>
       <div className="flex-1 min-w-0">
-        <div style={{ fontSize: 11, fontWeight: 590, color: "var(--color-warm)", marginBottom: 2 }}>
+        <div className="text-[11px] font-semibold text-[var(--color-warm)] mb-0.5">
           Señal detectada · hace 3 horas
         </div>
-        <div style={{ fontSize: 10, color: "#8a8f98" }}>
+        <div className="text-[10px] text-[var(--color-slate-light)]">
           Laboratorios Roca · Depósito OEPM rechazado · clase 5 · 04287391
         </div>
       </div>
       <div className="flex items-center gap-1.5 shrink-0">
-        <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
-        <span style={{ fontSize: 10, color: "#8a8f98" }}>En vivo</span>
+        <span aria-hidden="true" className="w-1.5 h-1.5 rounded-full bg-[var(--color-success)] animate-pulse" />
+        <span className="text-[10px] text-[var(--color-slate-light)]">En vivo</span>
       </div>
     </div>
   );
@@ -44,7 +38,6 @@ export function Hero() {
     <section className="max-w-5xl mx-auto px-4 sm:px-6 pt-16 pb-20 sm:pt-24 sm:pb-28">
       <div className="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
 
-        {/* Left: copy — stagger editorial */}
         <div>
           <motion.h1
             variants={fadeUp}
@@ -101,7 +94,6 @@ export function Hero() {
           </motion.p>
         </div>
 
-        {/* Right: señal + email — entra ligeramente después */}
         <motion.div
           variants={fadeUp}
           initial="hidden"

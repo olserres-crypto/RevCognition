@@ -8,11 +8,17 @@ export function Footer() {
           <Logo size="nav" className="opacity-70" />
           <span>© 2026</span>
         </span>
-        <div className="flex items-center gap-6">
-          <a href="/privacy" className="hover:text-[var(--color-ink)] transition-colors">
+        <div className="flex items-center gap-2">
+          <a
+            href="/privacy"
+            className="px-2 py-2 rounded-md hover:text-[var(--color-ink)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2"
+          >
             Política de privacidad
           </a>
-          <a href="/unsubscribe" className="hover:text-[var(--color-ink)] transition-colors">
+          <a
+            href="mailto:olivier@revcognition.com?subject=Baja%20de%20comunicaciones"
+            className="px-2 py-2 rounded-md hover:text-[var(--color-ink)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2"
+          >
             Unsubscribe
           </a>
         </div>

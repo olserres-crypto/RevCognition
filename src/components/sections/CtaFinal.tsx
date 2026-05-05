@@ -17,11 +17,11 @@ export function CtaFinal() {
           <Button href={CAL_URL} target="_blank" rel="noopener noreferrer" className="text-base px-8 py-4">
             Reservar una demo gratuita
           </Button>
-          <p className="mt-6 text-sm text-[var(--color-slate-light)]">
+          <p className="mt-6 text-sm text-[var(--color-slate)]">
             ¿Preguntas antes de la demo?{" "}
             <a
               href="mailto:olivier@revcognition.com"
-              className="underline decoration-[var(--color-slate-light)] underline-offset-4 hover:text-[var(--color-ink)] transition-colors"
+              className="underline decoration-[var(--color-slate-light)] underline-offset-4 hover:text-[var(--color-ink)] transition-colors rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2"
             >
               Escríbeme directamente.
             </a>
@@ -30,7 +30,7 @@ export function CtaFinal() {
               href={CAL_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="underline decoration-[var(--color-slate-light)] underline-offset-4 hover:text-[var(--color-ink)] transition-colors"
+              className="underline decoration-[var(--color-slate-light)] underline-offset-4 hover:text-[var(--color-ink)] transition-colors rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2"
             >
               Reservar reunión
             </a>

@@ -10,8 +10,13 @@ export default function GraciasPage() {
   return (
     <>
       <Nav />
-      <main className="max-w-5xl mx-auto px-4 sm:px-6 pt-24 pb-32 text-center">
-        <p className="text-5xl mb-6">✓</p>
+      <main id="main" className="max-w-5xl mx-auto px-4 sm:px-6 pt-24 pb-32 text-center">
+        <p
+          aria-hidden="true"
+          className="font-serif text-3xl text-[var(--color-warm)] mb-6"
+        >
+          ✓
+        </p>
         <h1 className="font-serif text-3xl sm:text-4xl text-[var(--color-ink)] mb-4">
           Compra confirmada
         </h1>
@@ -28,7 +33,7 @@ export default function GraciasPage() {
         </p>
         <Link
           href="/"
-          className="text-sm text-[var(--color-slate)] underline decoration-[var(--color-slate-light)] underline-offset-4 hover:text-[var(--color-ink)] transition-colors"
+          className="text-sm text-[var(--color-slate)] underline decoration-[var(--color-slate-light)] underline-offset-4 hover:text-[var(--color-ink)] transition-colors rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2 inline-block px-1 py-1"
         >
           ← Volver al inicio
         </Link>

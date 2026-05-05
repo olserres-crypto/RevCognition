@@ -12,10 +12,10 @@ export default function AnalisisPage() {
   return (
     <>
       <Nav />
-      <main className="max-w-5xl mx-auto px-4 sm:px-6 pt-16 pb-24 sm:pt-24">
+      <main id="main" className="max-w-5xl mx-auto px-4 sm:px-6 pt-16 pb-24 sm:pt-24">
         <Link
           href="/"
-          className="text-sm text-[var(--color-slate-light)] hover:text-[var(--color-slate)] transition-colors mb-8 inline-block"
+          className="text-sm text-[var(--color-slate)] hover:text-[var(--color-ink)] transition-colors mb-8 inline-block px-1 py-1 rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2"
         >
           ← Volver al inicio
         </Link>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Button } from "@/components/ui/Button";
 
 export function AnalisisForm() {
   const [websiteUrl, setWebsiteUrl] = useState("");
@@ -48,8 +49,17 @@ export function AnalisisForm() {
 
   if (submitted) {
     return (
-      <div className="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-xl p-8 text-center">
-        <p className="text-2xl mb-3">✓</p>
+      <div
+        role="status"
+        aria-live="polite"
+        className="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-xl p-8"
+      >
+        <p
+          aria-hidden="true"
+          className="font-serif text-2xl text-[var(--color-warm)] mb-3"
+        >
+          ✓
+        </p>
         <p className="font-semibold text-[var(--color-ink)] mb-2">
           Solicitud recibida
         </p>
@@ -120,17 +130,25 @@ export function AnalisisForm() {
       </div>
 
       {error && (
-        <p className="text-sm text-red-600">{error}</p>
+        <div role="alert">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[var(--color-danger)] mb-1">
+            No pudimos enviar la solicitud
+          </p>
+          <p className="text-sm text-[var(--color-slate)]">
+            {error}
+          </p>
+        </div>
       )}
 
       <div>
-        <button
+        <Button
           type="submit"
+          variant="warm-solid"
           disabled={loading}
-          className="w-full sm:w-auto px-7 py-3 bg-[var(--color-warm)] text-white text-sm font-semibold rounded-lg hover:opacity-90 transition-opacity disabled:opacity-60 disabled:cursor-not-allowed"
+          className="w-full sm:w-auto text-sm"
         >
           {loading ? "Enviando…" : "Enviar solicitud de análisis"}
-        </button>
+        </Button>
         <p className="mt-3 text-xs text-[var(--color-slate-light)]">
           Te respondemos en menos de 24h con tu propuesta.
         </p>
