@@ -38,7 +38,7 @@ const setupIncludes = [
 
 export function Pricing() {
   return (
-    <section id="precios" className="py-16 sm:py-24">
+    <section id="precios" className="py-16 sm:py-24 bg-[var(--color-warm)]/25">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-warm)] mb-4">
           Precios
@@ -54,14 +54,14 @@ export function Pricing() {
         <p className="text-[var(--color-slate)] text-sm mb-12 max-w-2xl">
           Cada prospecto incluye: identificación, enriquecimiento con señales
           reales y secuencia completa (apertura, seguimiento, nuevo ángulo,
-          cierre). También disponible en un solo mensaje si lo prefieres.
+          cierre).
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           {packs.map((pack) => (
             <div
               key={pack.prospects}
-              className="rounded-xl border border-[var(--color-border)] bg-[var(--color-paper)] p-6 flex flex-col gap-4"
+              className="rounded-xl border border-[var(--color-border)] bg-[var(--color-paper)] p-7 sm:p-8 flex flex-col gap-4"
             >
               <div>
                 <p className="text-4xl font-semibold text-[var(--color-ink)] tabular-nums">
@@ -101,7 +101,7 @@ export function Pricing() {
         </div>
 
         {/* Setup box: lead + bullet list */}
-        <div className="mt-10 p-5 sm:p-6 bg-[var(--color-surface)] border border-[var(--color-border)] rounded-xl max-w-2xl">
+        <div className="mt-10 p-5 sm:p-6 bg-[var(--color-paper)] border border-[var(--color-border)] rounded-xl max-w-2xl">
           <p className="text-sm text-[var(--color-slate)] mb-3">
             <span className="font-semibold text-[var(--color-ink)]">Setup: 50€.</span>
             {" "}Configuración inicial del sistema, análisis de tu web y
