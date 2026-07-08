@@ -3,7 +3,7 @@ import { Logo } from "@/components/ui/Logo";
 export function Footer() {
   return (
     <footer className="border-t border-[var(--color-border)] py-8">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-sm text-[var(--color-slate-light)]">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-sm text-[var(--color-slate)]">
         <span className="flex items-baseline gap-1.5">
           <Logo size="nav" className="opacity-70" />
           <span>© 2026</span>

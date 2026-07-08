@@ -1,43 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
-
-function MockupShell({ icon, title, meta, children }: {
-  icon: string;
-  title: string;
-  meta?: { text: string; tone?: "muted" | "success" };
-  children: React.ReactNode;
-}) {
-  const metaTone =
-    meta?.tone === "success"
-      ? "text-[var(--color-success)] font-medium"
-      : "text-[var(--color-slate-light)]";
-  return (
-    <div className="w-[280px] rounded-xl overflow-hidden select-none bg-[var(--color-paper-deep)] border border-[var(--color-border)] shadow-[0_4px_32px_rgba(0,0,0,0.06)]">
-      <div className="flex items-center gap-2 px-4 h-11 border-b border-[var(--color-border)]">
-        <span aria-hidden="true" className="text-[13px] text-[var(--color-warm)]">{icon}</span>
-        <span className="text-[11px] font-semibold text-[var(--color-ink)]">{title}</span>
-        {meta && (
-          <span className={`ml-auto text-[10px] ${metaTone}`}>{meta.text}</span>
-        )}
-      </div>
-      {children}
-    </div>
-  );
-}
-
-function MockupRow({ label, value }: { label: string; value: string }) {
-  return (
-    <div>
-      <div className="text-[10px] font-medium text-[var(--color-slate)] uppercase tracking-wider mb-1">
-        {label}
-      </div>
-      <div className="flex items-center h-8 px-3 rounded-lg border border-[var(--color-border)] text-xs text-[var(--color-ink)]">
-        {value}
-      </div>
-    </div>
-  );
-}
+import { motion, useReducedMotion } from "framer-motion";
+import { MockupShell, MockupRow } from "@/components/ui/MockupShell";
 
 function MockupDiagnostico() {
   const sectores = ["Fusiones M&A", "Litigación laboral", "Deuda corporativa"];
@@ -164,6 +128,7 @@ const steps = [
 ];
 
 export function HowItWorks() {
+  const reduce = useReducedMotion();
   return (
     <section id="como-funciona" className="py-16 sm:py-24">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
@@ -180,7 +145,7 @@ export function HowItWorks() {
             return (
               <motion.div
                 key={step.number}
-                initial={{ opacity: 0, x: -16 }}
+                initial={reduce ? false : { opacity: 0, x: -16 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: "-40px" }}
                 transition={{ delay: i * 0.12, duration: 0.4, ease: "easeOut" }}
@@ -209,7 +174,7 @@ export function HowItWorks() {
                   </div>
 
                   <motion.div
-                    initial={{ opacity: 0, y: 12 }}
+                    initial={reduce ? false : { opacity: 0, y: 12 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-40px" }}
                     transition={{ delay: i * 0.12 + 0.18, duration: 0.4, ease: "easeOut" }}

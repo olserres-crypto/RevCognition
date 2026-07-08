@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 
 const cases = [
   {
@@ -26,6 +26,7 @@ const cases = [
 ];
 
 export function UseCases() {
+  const reduce = useReducedMotion();
   return (
     <section className="bg-[var(--color-surface)] py-16 sm:py-24">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
@@ -43,7 +44,7 @@ export function UseCases() {
           {cases.map((c, i) => (
             <motion.div
               key={c.sector}
-              initial={{ opacity: 0, y: 20 }}
+              initial={reduce ? false : { opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
               transition={{ delay: i * 0.1, duration: 0.4, ease: "easeOut" }}
