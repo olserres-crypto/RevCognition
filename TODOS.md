@@ -1,21 +1,17 @@
 # TODOS
 
-Design system y a11y pendientes. Ordenados por prioridad. Estimaciones son para un dev que conoce el stack.
+Design system y a11y. Ordenados por prioridad. Estimaciones son para un dev que conoce el stack.
 
 ## A11y
 
-- [ ] **Respetar `prefers-reduced-motion` en framer-motion.** Envolver todos los `motion.div` con `useReducedMotion()` y desactivar `initial`/`whileInView` cuando devuelve `true`. Archivos: `src/components/sections/Problem.tsx:43-50`, `src/components/sections/HowItWorks.tsx:42-48`. Est: 30 min.
+- [x] **Respetar `prefers-reduced-motion` en framer-motion.** `MotionProvider` aplica `MotionConfig reducedMotion="user"` (global) y, además, cada sección animada usa `useReducedMotion()` para desactivar `initial`/entrada cuando el usuario lo prefiere (Hero, Problem, HowItWorks, UseCases, FeaturesGrid, Producto). `scroll-behavior: smooth` se desactiva bajo reduced-motion en `globals.css`. (B-585)
 
-- [ ] **Skip-to-content link** en `src/app/layout.tsx`. Link oculto con `sr-only`, visible al foco teclado, salta a `<main id="main">`. Requiere añadir `id="main"` en `src/app/page.tsx:16`. Est: 15 min.
+- [x] **Skip-to-content link** en `src/app/layout.tsx` → `<main id="main">`. Presente en la home y en `/producto`.
 
-- [ ] **Verificar contraste de `slate-light` sobre `paper`.** Ratio actual ~4.1:1, falla WCAG AA (4.5:1) para body text. Auditar usos: `Nav.tsx:12`, `Pricing.tsx:99,138`, `CtaFinal.tsx:20`, `Founder.tsx`, `Footer.tsx:6`, `Hero.tsx:35`. Cambiar a `slate` donde el texto sea body (≥14px normal weight). Dejar `slate-light` solo para metadatos pequeños (text-xs) o texto grande (≥18px). Est: 45 min.
+- [x] **Contraste de `slate-light` sobre `paper`.** Auditado (B-585): el texto de tamaño body (`text-sm`+ peso normal) usa ahora `slate` (Hero subtexto, Footer, notas de Pricing). `slate-light` queda solo en metadatos pequeños (`text-xs`/`text-[10px]`) y en `decoration-*` de subrayados, usos que cumplen AA.
 
-## Design system
+## UX
 
-- [ ] **Extender `<Button>` con variantes `warm-solid` e `ink-solid`.** Hoy `Pricing.tsx:106-114` usa `<button>` plano con clases inline porque el componente no cubre el caso de "CTA principal dentro de card". Añadir las dos variantes al componente y refactorizar Pricing para usarlas. Est: 45 min.
+- [x] **Hamburger + drawer en nav móvil.** Implementado en `Nav.tsx` según DESIGN.md §Responsive: drawer slide-in desde la derecha, links Fraunces `text-2xl`, cierre con tap-outside + X + Escape, scroll-lock, cierre al navegar y gestión de foco (entra al drawer al abrir, vuelve al disparador al cerrar). (B-585)
 
-## UX pendiente
-
-- [ ] **Hamburger + drawer en nav móvil.** Actualmente `Nav.tsx:12` esconde los links de sección en `< 640px` sin alternativa. Patrón documentado en DESIGN.md §Responsive (drawer slide-in desde la derecha, fondo paper, links Fraunces text-2xl, cierre con tap outside + X + Escape). Est: 2h.
-
-- [ ] **Error UI para checkout de Stripe.** Reemplazar los dos `alert()` en `Pricing.tsx:47,50` por el patrón de error inline documentado en DESIGN.md §Estados. Añadir estado local `error: string | null` al componente y renderizarlo debajo del botón de checkout que falló. Est: 1h.
+- [ ] **Error UI inline (formularios futuros).** Si se reintroduce cualquier formulario en esta web (hoy no hay ninguno: la conversión enlaza a la app), aplicar el patrón de error inline documentado en DESIGN.md §Estados — nunca `alert()`/`confirm()`/`prompt()`.

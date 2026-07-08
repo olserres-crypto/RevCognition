@@ -54,6 +54,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Cloudflare Web Analytics: solo se inyecta si el token existe. Sin token
+  // (dev, o antes de crear el site en CF) no se renderiza nada, cero riesgo.
+  const cfAnalyticsToken = process.env.NEXT_PUBLIC_CF_ANALYTICS_TOKEN;
   return (
     <html lang="es">
       <body className={`${fraunces.variable} ${instrumentSans.variable} antialiased`}>
@@ -64,6 +67,13 @@ export default function RootLayout({
           Saltar al contenido
         </a>
         <MotionProvider>{children}</MotionProvider>
+        {cfAnalyticsToken ? (
+          <script
+            defer
+            src="https://static.cloudflareinsights.com/beacon.min.js"
+            data-cf-beacon={JSON.stringify({ token: cfAnalyticsToken })}
+          />
+        ) : null}
       </body>
     </html>
   );
