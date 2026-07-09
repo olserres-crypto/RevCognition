@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/Button";
 
 const APP_URL = "https://app.revcognition.com";
-const CAL_URL = "https://cal.com/revcognition/demo";
+const CAL_URL = "https://cal.com/olivier-serres-js5hdw/30min";
 
 export function CtaFinal() {
   return (

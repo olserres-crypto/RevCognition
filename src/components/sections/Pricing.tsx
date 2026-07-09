@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/Button";
 
 const APP_URL = "https://app.revcognition.com";
-const CAL_15MIN_URL = "https://cal.com/olivier-serres-js5hdw/15min";
+const CAL_30MIN_URL = "https://cal.com/olivier-serres-js5hdw/30min";
 
 const packs = [
   {
@@ -88,7 +88,7 @@ export function Pricing() {
                   Solicitar acceso con este pack
                 </Button>
                 <a
-                  href={CAL_15MIN_URL}
+                  href={CAL_30MIN_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full py-2.5 px-4 text-sm text-center rounded-md text-[var(--color-slate)] hover:text-[var(--color-ink)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2"
