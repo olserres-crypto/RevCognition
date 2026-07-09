@@ -28,7 +28,7 @@ const cases = [
 export function UseCases() {
   const reduce = useReducedMotion();
   return (
-    <section className="bg-[var(--color-surface)] py-16 sm:py-24">
+    <section className="py-16 sm:py-24">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-warm)] mb-4">
           Casos que resolvemos
@@ -48,7 +48,7 @@ export function UseCases() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
               transition={{ delay: i * 0.1, duration: 0.4, ease: "easeOut" }}
-              className="bg-[var(--color-paper)] border border-[var(--color-border)] rounded-xl p-6 sm:p-7 flex flex-col gap-5"
+              className="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-xl p-6 sm:p-7 flex flex-col gap-5"
             >
               <div>
                 <span aria-hidden="true" className="text-3xl">{c.icon}</span>

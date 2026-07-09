@@ -72,7 +72,7 @@ Tamaños: `nav` (17px), `md` (24px), `lg` (36px). Componente: `src/components/ui
 
 - **Contenedor**: `max-w-5xl mx-auto px-4 sm:px-6`. El sitio es long-form, no dashboard.
 - **Ritmo vertical**: `py-16 sm:py-24` por sección. Uniforme.
-- **Bandas**: secciones `paper` y `surface` se alternan. Actualmente: Hero (paper) → Problem (surface) → HowItWorks (paper) → ValidationBadge (surface) → Pricing (paper) → Founder (surface) → CtaFinal (paper) → Footer (border-top sobre paper).
+- **Bandas**: secciones `paper` y `surface` se alternan (dos bandas consecutivas del mismo color apilan sus `py-24` y se leen como un bloque desaparecido — bug corregido 2026-07-09). Actualmente (home): Hero (paper) → Problem (surface) → HowItWorks (paper) → FeaturesGrid (surface) → UseCases (paper, cards `surface`) → Pricing (warm/25) → Founder (surface) → CtaFinal (paper) → Footer (border-top sobre paper). Al insertar una sección nueva, re-verificar la alternancia completa aguas abajo.
 - **Radios**: `rounded-lg` para botones, `rounded-xl` para cards, `rounded-full` para píldoras y números de paso.
 - **Breakpoints**: `sm` (640px) es el quiebre principal; `lg` (1024px) reserva layouts dos-columnas (Hero).
 
