@@ -30,10 +30,10 @@ const packs = [
 const setupIncludes = [
   "Compra y renovación automática del dominio de envío",
   "Auto-configuración de SPF, DKIM y DMARC",
-  "Categorización automática de respuestas (interesado, no interesado, listo para reunión, fuera de oficina)",
-  "Calentamiento ilimitado de cuentas de email",
-  "Configuración de 6 cuentas de email",
-  "Programación con tu calendario",
+  "Clasificación automática de respuestas (interesado, no interesado, hostil, fuera de oficina)",
+  "Calentamiento automático del dominio: el volumen sube poco a poco hasta alcanzar el volumen pleno en la cuarta semana",
+  "Seis remitentes con nombre y firma propios",
+  "Agenda directa con tu calendario (Cal.com)",
 ];
 
 export function Pricing() {
@@ -85,7 +85,7 @@ export function Pricing() {
                   rel="noopener noreferrer"
                   className="w-full text-sm py-3"
                 >
-                  Empezar con este pack
+                  Solicitar acceso con este pack
                 </Button>
                 <a
                   href={CAL_15MIN_URL}
@@ -119,9 +119,10 @@ export function Pricing() {
           El sistema la enriquece y genera los mensajes sobre ella.
         </p>
 
-        <p className="mt-3 text-xs text-[var(--color-slate-light)] max-w-2xl">
-          Sign-up gratis. Pruebas tu ICP y company brain sin coste. El pago
-          solo entra cuando eliges dominio de envío.
+        <p className="mt-3 text-sm text-[var(--color-slate)] max-w-2xl">
+          Beta cerrada, plazas limitadas. Solicita acceso y, si hay hueco,
+          entras esta semana; si no, quedas en la lista de espera y te
+          avisamos en cuanto se libere una plaza.
         </p>
       </div>
     </section>

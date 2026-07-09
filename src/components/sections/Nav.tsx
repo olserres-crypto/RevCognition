@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
 import { Logo } from "@/components/ui/Logo";
@@ -8,23 +8,30 @@ import { Logo } from "@/components/ui/Logo";
 const APP_URL = "https://app.revcognition.com";
 
 const navLinks = [
-  { href: "#como-funciona", label: "Cómo funciona" },
-  { href: "#precios", label: "Precios" },
+  { href: "/#como-funciona", label: "Cómo funciona" },
+  { href: "/producto", label: "Producto" },
+  { href: "/#precios", label: "Precios" },
 ];
 
 export function Nav() {
   const [open, setOpen] = useState(false);
+  const triggerRef = useRef<HTMLButtonElement>(null);
+  const closeBtnRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     if (!open) return;
+    const trigger = triggerRef.current;
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") setOpen(false);
     };
     document.addEventListener("keydown", onKey);
     document.body.style.overflow = "hidden";
+    // Mover el foco al drawer al abrir; devolverlo al disparador al cerrar.
+    closeBtnRef.current?.focus();
     return () => {
       document.removeEventListener("keydown", onKey);
       document.body.style.overflow = "";
+      trigger?.focus();
     };
   }, [open]);
 
@@ -57,6 +64,7 @@ export function Nav() {
             </Button>
 
             <button
+              ref={triggerRef}
               type="button"
               aria-label={open ? "Cerrar menú" : "Abrir menú"}
               aria-expanded={open}
@@ -120,6 +128,7 @@ export function Nav() {
               <div className="flex items-center justify-between h-14 px-4 border-b border-[var(--color-border)]">
                 <Logo size="nav" />
                 <button
+                  ref={closeBtnRef}
                   type="button"
                   aria-label="Cerrar menú"
                   onClick={() => setOpen(false)}

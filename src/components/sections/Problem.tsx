@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 
 const problems = [
   {
@@ -24,6 +24,7 @@ const problems = [
 ];
 
 export function Problem() {
+  const reduce = useReducedMotion();
   return (
     <section className="bg-[var(--color-surface)] py-16 sm:py-24">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
@@ -42,7 +43,7 @@ export function Problem() {
           {problems.map((p, i) => (
             <motion.div
               key={p.label}
-              initial={{ opacity: 0, y: 16 }}
+              initial={reduce ? false : { opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
               transition={{ delay: i * 0.08, duration: 0.35 }}
@@ -65,7 +66,7 @@ export function Problem() {
 
         {/* Contraste RevCognition: eyebrow pattern, sin side-stripe */}
         <motion.div
-          initial={{ opacity: 0, y: 16 }}
+          initial={reduce ? false : { opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-40px" }}
           transition={{ delay: 0.28, duration: 0.35 }}

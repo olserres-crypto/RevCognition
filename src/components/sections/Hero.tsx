@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, type Variants } from "framer-motion";
+import { motion, useReducedMotion, type Variants } from "framer-motion";
 import { Button } from "@/components/ui/Button";
 import { EmailPreviewCard } from "@/components/ui/EmailPreviewCard";
 
@@ -34,6 +34,7 @@ function SignalCard() {
 }
 
 export function Hero() {
+  const reduce = useReducedMotion();
   return (
     <section className="max-w-5xl mx-auto px-4 sm:px-6 pt-16 pb-20 sm:pt-24 sm:pb-28">
       <div className="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
@@ -41,7 +42,7 @@ export function Hero() {
         <div>
           <motion.h1
             variants={fadeUp}
-            initial="hidden"
+            initial={reduce ? false : "hidden"}
             animate="show"
             custom={0}
             className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[var(--color-ink)] leading-tight"
@@ -53,7 +54,7 @@ export function Hero() {
 
           <motion.p
             variants={fadeUp}
-            initial="hidden"
+            initial={reduce ? false : "hidden"}
             animate="show"
             custom={0.1}
             className="mt-6 text-lg sm:text-xl text-[var(--color-slate)] leading-relaxed"
@@ -65,7 +66,7 @@ export function Hero() {
 
           <motion.div
             variants={fadeUp}
-            initial="hidden"
+            initial={reduce ? false : "hidden"}
             animate="show"
             custom={0.2}
             className="mt-8 flex flex-col sm:flex-row gap-3"
@@ -76,7 +77,7 @@ export function Hero() {
               rel="noopener noreferrer"
               className="text-base px-7 py-3.5"
             >
-              Prueba gratuitamente una estrategia de prospección
+              Solicita acceso a la beta
             </Button>
             <Button
               variant="secondary"
@@ -89,13 +90,13 @@ export function Hero() {
 
           <motion.p
             variants={fadeUp}
-            initial="hidden"
+            initial={reduce ? false : "hidden"}
             animate="show"
             custom={0.28}
-            className="mt-4 text-sm text-[var(--color-slate-light)] leading-relaxed max-w-sm"
+            className="mt-4 text-sm text-[var(--color-slate)] leading-relaxed max-w-sm"
           >
-            Analizamos tu web y te preparamos una propuesta de ICP y estrategia
-            de captación personalizada. Sin coste. Sin compromiso.
+            Beta cerrada, plazas limitadas. Analizamos tu web y te preparamos
+            una propuesta de perfil de cliente ideal antes de que decidas nada.
           </motion.p>
         </div>
 
