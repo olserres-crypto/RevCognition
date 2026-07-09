@@ -31,7 +31,7 @@ const setupIncludes = [
   "Compra y renovación automática del dominio de envío",
   "Auto-configuración de SPF, DKIM y DMARC",
   "Clasificación automática de respuestas (interesado, no interesado, hostil, fuera de oficina)",
-  "Calentamiento automático del dominio: el volumen sube poco a poco durante las primeras 2–3 semanas",
+  "Calentamiento automático del dominio: el volumen sube poco a poco hasta alcanzar el volumen pleno en la cuarta semana",
   "Seis remitentes con nombre y firma propios",
   "Agenda directa con tu calendario (Cal.com)",
 ];

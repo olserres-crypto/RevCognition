@@ -27,7 +27,7 @@ const features = [
   },
   {
     title: "De una respuesta a una reunión",
-    body: "Cuando alguien contesta con interés, recibe tu enlace de Cal.com al instante y agenda solo, sin ida y vuelta de correos.",
+    body: "Cuando alguien contesta con interés, la secuencia se pausa y te avisamos al instante por correo y Telegram. El enlace de tu Cal.com viaja en cada correo, así que también puede reservar directamente desde ahí.",
   },
   {
     title: "Trae tus propios contactos",

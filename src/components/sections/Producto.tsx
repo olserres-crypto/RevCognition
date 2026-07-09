@@ -219,7 +219,7 @@ function ThemeBlock({
 const faqs: Feature[] = [
   {
     title: "¿Acabaré en spam?",
-    body: "Es lo primero que cuidamos. Envías desde un dominio propio y dedicado, no compartido, y su reputación se calienta poco a poco durante las primeras 2–3 semanas. Además, cada dirección de correo se verifica antes de escribir, para que el rebote se mantenga bajo y tus mensajes lleguen a la bandeja de entrada.",
+    body: "Es lo primero que cuidamos. Envías desde un dominio propio y dedicado, no compartido, y su reputación se calienta poco a poco a lo largo de las primeras cuatro semanas, hasta alcanzar el volumen de envío pleno. Además, cada dirección de correo se verifica antes de escribir, para que el rebote se mantenga bajo y tus mensajes lleguen a la bandeja de entrada.",
   },
   {
     title: "¿Cuánto control tengo?",
@@ -231,7 +231,7 @@ const faqs: Feature[] = [
   },
   {
     title: "¿Qué pasa cuando alguien responde?",
-    body: "Cada respuesta se lee y se clasifica sola: interesado, no interesado, hostil o fuera de oficina. Si hay interés, la secuencia se pausa al instante, te avisamos por correo y Telegram, y el prospecto recibe tu enlace de Cal.com para agendar. Si no hay interés o la respuesta es hostil, el hilo se cierra con cuidado y no se vuelve a contactar.",
+    body: "Cada respuesta se lee y se clasifica sola: interesado, no interesado, hostil o fuera de oficina. Si hay interés, la secuencia se pausa al instante y recibes la respuesta por correo y Telegram para retomarla tú mismo; el enlace de tu Cal.com viaja en cada correo enviado, así que el prospecto también puede reservar directamente desde ahí. Si no hay interés o la respuesta es hostil, el hilo se cierra con cuidado y no se vuelve a contactar.",
   },
   {
     title: "¿Qué cuesta?",
@@ -428,13 +428,13 @@ export function Producto() {
           },
           {
             title: "Cada respuesta, leída y clasificada",
-            body: "Interesado, no interesado, hostil o fuera de oficina: la intención se detecta sola. Si hay interés, la secuencia se pausa, te avisamos y el prospecto recibe tu enlace para agendar. Una ausencia temporal pausa y reanuda a los pocos días; una respuesta hostil cierra el hilo para siempre.",
+            body: "Interesado, no interesado, hostil o fuera de oficina: la intención se detecta sola. Si hay interés, la secuencia se pausa y recibes la respuesta al instante por correo y Telegram para retomar tú la conversación; el enlace de tu Cal.com viaja en cada correo, así que el prospecto también puede reservar directamente desde ahí. Una ausencia temporal pausa y reanuda a los pocos días; una respuesta hostil cierra el hilo para siempre.",
           },
         ]}
         oneLiners={[
           {
             title: "De la respuesta a la reunión",
-            body: "Cuando alguien responde con interés, recibe tu enlace de Cal.com al instante y agenda solo, sin ida y vuelta de correos.",
+            body: "Cuando alguien responde con interés, la secuencia se pausa y te avisamos al instante por correo y Telegram; el enlace de tu Cal.com viaja en cada correo, así que también puede reservar directamente desde ahí.",
           },
           {
             title: "Bajas y cumplimiento por defecto",
