@@ -10,8 +10,14 @@ const cases = [
       "Una DB de señales perfectas, emails que nadie contesta",
     problemDetail:
       "Cada depósito de marca rechazado es una empresa con una urgencia legal real. Tienen la DB. Pero los emails que manda su agencia son genéricos, sin mencionar el rechazo específico ni el riesgo concreto. Resultado: casi cero respuestas, pese a tener la señal de intención más clara que existe.",
+    // Corregido en auditoría UseCases (B-591 wave, Task 8): la versión anterior
+    // implicaba una fuente de señal automática (registro de marcas) y una
+    // identificación de contacto sin intervención del abogado, ninguna de las
+    // dos verificable contra FEATURE_INVENTORY.md. Reescrito sobre "Trae tus
+    // propios contactos" (CSV + contexto) + generación de mensajes + revisión
+    // diaria — las tres, features reales del inventario.
     solution:
-      "RevCognition toma cada rechazo como señal de entrada, identifica al responsable legal de la empresa, y le escribe un mensaje que menciona su caso específico, sin que el abogado tenga que hacer nada.",
+      "RevCognition toma esa base de casos como contexto, escribe un mensaje que menciona el rechazo específico de cada empresa, y lo deja listo para tu revisión diaria de cinco minutos.",
   },
   {
     icon: "📡",
@@ -74,6 +80,16 @@ export function UseCases() {
               </div>
             </motion.div>
           ))}
+        </div>
+
+        <div className="mt-10">
+          <a
+            href="/soluciones/servicios-b2b"
+            className="inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--color-warm)] hover:text-[var(--color-warm-hover)] transition-colors rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2"
+          >
+            Cómo trabajamos con servicios B2B
+            <span aria-hidden="true">→</span>
+          </a>
         </div>
       </div>
     </section>

@@ -39,6 +39,33 @@ const features = [
   },
 ];
 
+// Sub-bloque "Cómo encuentra a tus clientes" — deriva de la entrada ampliada
+// "Company sourcing matching your ICP" del inventario (docs/content/FEATURE_INVENTORY.md).
+// Único número permitido: piso de cobertura por-perfil (>400k), nunca como total
+// de proveedor. Sin nombres de proveedor, sin cifras de volumen mensual.
+const howEncuentraSteps = [
+  {
+    number: "1",
+    title: "Lee tu web",
+    body: "Entiende qué problema resuelves y a qué tipo de cliente sirves, a partir de tu propia web.",
+  },
+  {
+    number: "2",
+    title: "Construye tu perfil de cliente ideal",
+    body: "Traduce eso en un perfil de cliente ideal: sector, ubicación y tamaño de empresa.",
+  },
+  {
+    number: "3",
+    title: "Busca en continuo sobre bases de datos partner",
+    body: "Cruza ese perfil sin parar contra varias bases de datos de empresas y puntúa cada una por lo bien que encaja.",
+  },
+  {
+    number: "4",
+    title: "Verifica correos y detecta señales de compra",
+    body: "Localiza al contacto adecuado en cada empresa, verifica su correo antes de escribir y revisa si hay señales recientes, como una contratación.",
+  },
+];
+
 export function FeaturesGrid() {
   const reduce = useReducedMotion();
   return (
@@ -54,6 +81,45 @@ export function FeaturesGrid() {
           Tú mantienes el criterio; el sistema pone las horas. Esto es lo que
           se ocupa de hacer, un día tras otro.
         </p>
+
+        <div
+          id="como-encuentra"
+          className="scroll-mt-20 mb-14 sm:mb-16 pb-12 sm:pb-14 border-b border-[var(--color-border)]"
+        >
+          <p className="text-xs font-semibold uppercase tracking-widest text-[var(--color-slate)] mb-3">
+            Cómo encuentra a tus clientes
+          </p>
+          <p className="text-[var(--color-ink)] text-base leading-relaxed mb-8 max-w-2xl">
+            ¿Y si tu sector es poco común, o tu zona geográfica es pequeña? La
+            búsqueda no se apoya en una sola lista: para un solo perfil de
+            cliente puede haber más de 400.000 empresas candidatas repartidas
+            entre varias bases de datos, y el sistema las revisa sin parar
+            para quedarse solo con las que encajan.
+          </p>
+
+          <ol className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-6">
+            {howEncuentraSteps.map((step, i) => (
+              <motion.li
+                key={step.number}
+                initial={reduce ? false : { opacity: 0, y: 12 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-40px" }}
+                transition={{ delay: i * 0.08, duration: 0.35, ease: "easeOut" }}
+                className="list-none"
+              >
+                <div className="w-7 h-7 rounded-full border-2 border-[var(--color-warm)] text-[var(--color-warm)] text-xs font-semibold flex items-center justify-center mb-3">
+                  {step.number}
+                </div>
+                <h3 className="font-serif text-base text-[var(--color-ink)] mb-1.5">
+                  {step.title}
+                </h3>
+                <p className="text-[var(--color-slate)] text-sm leading-relaxed">
+                  {step.body}
+                </p>
+              </motion.li>
+            ))}
+          </ol>
+        </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-0">
           {features.map((f, i) => (
