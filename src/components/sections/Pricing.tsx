@@ -80,7 +80,7 @@ export function Pricing() {
                     {pack.price}
                   </p>
                   <span className="text-sm text-[var(--color-slate)]">
-                    + IVA
+                    sin IVA
                   </span>
                 </div>
                 <p className="text-[var(--color-slate)] text-sm mt-1">
@@ -129,7 +129,7 @@ export function Pricing() {
         {/* Setup box: lead + bullet list */}
         <div className="mt-10 p-5 sm:p-6 bg-[var(--color-paper)] border border-[var(--color-border)] rounded-xl max-w-2xl">
           <p className="text-sm text-[var(--color-slate)] mb-3">
-            <span className="font-semibold text-[var(--color-ink)]">Setup: 50€ + IVA.</span>
+            <span className="font-semibold text-[var(--color-ink)]">Setup: 50€ (sin IVA).</span>
             {" "}Configuración inicial del sistema, análisis de tu web y
             definición de estrategia.
           </p>
@@ -141,7 +141,8 @@ export function Pricing() {
         </div>
 
         <p className="mt-4 text-sm text-[var(--color-slate)] max-w-2xl">
-          Todos los precios se muestran sin IVA.
+          Precios sin impuestos: el IVA u otros impuestos aplicables se añaden
+          en factura según el país de tu empresa.
         </p>
 
         <p className="mt-6 text-sm text-[var(--color-slate)] max-w-2xl">
