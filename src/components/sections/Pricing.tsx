@@ -7,23 +7,29 @@ const packs = [
   {
     prospects: 100,
     price: "100€",
+    perUnit: "1,00€",
+    discount: null,
     label: "Para empezar",
     description: "Prueba el sistema con tu primer segmento de mercado.",
     plan: "pack_100",
   },
   {
-    prospects: 500,
+    prospects: 600,
     price: "500€",
+    perUnit: "0,83€",
+    discount: "-17% por envío",
     label: "Para crecer",
     description: "Cubre varios segmentos o mercados en paralelo.",
-    plan: "pack_500",
+    plan: "pack_600",
   },
   {
-    prospects: 1000,
+    prospects: 1300,
     price: "1.000€",
+    perUnit: "0,77€",
+    discount: "-23% por envío",
     label: "Para escalar",
     description: "Prospección continua sin tener que recargar constantemente.",
-    plan: "pack_1000",
+    plan: "pack_1300",
   },
 ];
 
@@ -44,17 +50,22 @@ export function Pricing() {
           Precios
         </p>
         <h2 className="font-serif text-3xl sm:text-4xl text-[var(--color-ink)] mb-4">
-          1€ por prospecto. Tres packs para ir a tu propio ritmo.
+          Desde 1€ por prospecto. Cuanto mayor el pack, más barato por envío.
         </h2>
         <p className="text-[var(--color-slate)] text-lg mb-4 max-w-2xl">
-          No pagas por emails. Pagas por un prospecto cualificado que recibe
-          hasta 4 mensajes escritos para él. Si contesta antes, el sistema
-          se para. Si no, cierra con elegancia.
+          No pagas por asientos ni por herramientas. Pagas por prospecto
+          trabajado: 1 crédito se consume en el primer envío a un prospecto
+          nuevo, y los seguimientos de esa misma secuencia no gastan crédito
+          adicional. Si contesta antes, el sistema se para. Si no, cierra con
+          elegancia.
         </p>
-        <p className="text-[var(--color-slate)] text-sm mb-12 max-w-2xl">
+        <p className="text-[var(--color-slate)] text-sm mb-4 max-w-2xl">
           Cada prospecto incluye: identificación, enriquecimiento con señales
           reales y secuencia completa (apertura, seguimiento, nuevo ángulo,
           cierre).
+        </p>
+        <p className="text-[var(--color-slate)] text-sm mb-12 max-w-2xl">
+          Sin permanencia y sin suscripción. Los créditos no caducan.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
@@ -64,12 +75,27 @@ export function Pricing() {
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-paper)] p-7 sm:p-8 flex flex-col gap-4"
             >
               <div>
-                <p className="text-4xl font-semibold text-[var(--color-ink)] tabular-nums">
-                  {pack.price}
-                </p>
+                <div className="flex items-baseline gap-2">
+                  <p className="text-4xl font-semibold text-[var(--color-ink)] tabular-nums">
+                    {pack.price}
+                  </p>
+                  <span className="text-sm text-[var(--color-slate)]">
+                    + IVA
+                  </span>
+                </div>
                 <p className="text-[var(--color-slate)] text-sm mt-1">
                   {pack.prospects} prospectos cualificados
                 </p>
+                <div className="flex items-center gap-2 mt-2">
+                  <span className="text-xs text-[var(--color-slate)] tabular-nums">
+                    {pack.perUnit} / envío
+                  </span>
+                  {pack.discount && (
+                    <span className="text-xs font-semibold text-[var(--color-warm)] bg-[var(--color-warm)]/10 rounded px-1.5 py-0.5">
+                      {pack.discount}
+                    </span>
+                  )}
+                </div>
               </div>
               <p className="text-xs font-semibold uppercase tracking-widest text-[var(--color-slate)]">
                 {pack.label}
@@ -103,7 +129,7 @@ export function Pricing() {
         {/* Setup box: lead + bullet list */}
         <div className="mt-10 p-5 sm:p-6 bg-[var(--color-paper)] border border-[var(--color-border)] rounded-xl max-w-2xl">
           <p className="text-sm text-[var(--color-slate)] mb-3">
-            <span className="font-semibold text-[var(--color-ink)]">Setup: 50€.</span>
+            <span className="font-semibold text-[var(--color-ink)]">Setup: 50€ + IVA.</span>
             {" "}Configuración inicial del sistema, análisis de tu web y
             definición de estrategia.
           </p>
