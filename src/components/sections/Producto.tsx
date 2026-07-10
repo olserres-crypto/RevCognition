@@ -101,6 +101,21 @@ function MockupSecuencia() {
   );
 }
 
+function MockupSenal() {
+  return (
+    <MockupShell icon="✦" title="Generación" meta={{ text: "Contexto detectado", tone: "success" }}>
+      <div className="p-4 flex flex-col gap-3">
+        <MockupRow label="Señal detectada" value="Empresa Ejemplo amplía su equipo comercial" />
+        <div className="text-[11px] text-[var(--color-slate)] leading-relaxed border-t border-[var(--color-border)] pt-2.5">
+          Hola, Laura. He visto que Empresa Ejemplo está ampliando el equipo
+          comercial — imagino que la prospección forma parte de esa
+          expansión...
+        </div>
+      </div>
+    </MockupShell>
+  );
+}
+
 function MockupRamp() {
   const semanas = [
     { s: "Semana 1", v: "4 – 16 / día" },
@@ -236,6 +251,14 @@ const faqs: Feature[] = [
   {
     title: "¿Qué cuesta?",
     body: "Un setup único de 50€ para dejar la cuenta lista, y luego pagas por prospecto trabajado: 1€ por cada prospecto nuevo al que se escribe. Un crédito se consume con el primer correo a un prospecto; los seguimientos de esa misma secuencia no gastan crédito extra, y un prospecto que descartas en la revisión nunca gasta crédito.",
+  },
+  {
+    title: "¿Funciona en mi sector o en mi país?",
+    body: "El sistema busca en continuo sobre bases de datos partner especializadas: para un solo perfil de cliente ideal —sector, ubicación y tamaño— puede haber más de 400.000 empresas candidatas. Y cada correo llega en el idioma que corresponde al país de quien lo recibe, así que la cobertura no depende del idioma que hables tú.",
+  },
+  {
+    title: "¿De dónde salen los datos de los contactos?",
+    body: "Los contactos salen de bases de datos partner especializadas en información profesional. Antes de escribir, cada dirección de correo se verifica para mantener el rebote bajo, y cada correo incluye una opción de baja: quien se da de baja no vuelve a recibir nada, en cumplimiento con la normativa.",
   },
 ];
 
@@ -400,6 +423,10 @@ export function Producto() {
             title: "Un mensaje escrito desde cero, no una plantilla",
             body: "Con tu perfil comercial y el contexto real de cada empresa, el sistema redacta una secuencia completa por contacto —apertura, seguimiento, nuevo ángulo y cierre—. Cada correo se genera en el idioma que corresponde a la ubicación de la empresa, para que suene como algo escrito a mano y no como una plantilla rellenada.",
           },
+          {
+            title: "Cuando hay una señal, el mensaje la aprovecha",
+            body: "El sistema también vigila señales de actividad reciente en la empresa objetivo, como una contratación. Cuando aparece una, el mensaje puede apoyarse en ella —por ejemplo, si la empresa está ampliando su equipo— para llegar en el momento en que tiene más sentido.",
+          },
         ]}
         oneLiners={[
           {
@@ -411,7 +438,12 @@ export function Producto() {
             body: "Las personas adecuadas en cada empresa, con la dirección de correo verificada antes de escribir.",
           },
         ]}
-        mockup={<MockupSecuencia />}
+        mockup={
+          <div className="flex flex-col gap-4">
+            <MockupSecuencia />
+            <MockupSenal />
+          </div>
+        }
       />
 
       <ThemeBlock
