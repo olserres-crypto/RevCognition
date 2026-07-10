@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
 import { Logo } from "@/components/ui/Logo";
@@ -39,7 +40,13 @@ export function Nav() {
     <>
       <nav className="sticky top-0 z-50 bg-[var(--color-paper)]/95 border-b border-[var(--color-border)]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 flex items-center justify-between h-14">
-          <Logo size="nav" />
+          <Link
+            href="/"
+            aria-label="RevCognition — inicio"
+            className="rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2"
+          >
+            <Logo size="nav" />
+          </Link>
 
           <div className="hidden sm:flex items-center gap-2 text-sm text-[var(--color-slate)]">
             {navLinks.map((l) => (
@@ -126,7 +133,14 @@ export function Nav() {
               className="fixed top-0 right-0 bottom-0 z-50 w-[80%] max-w-sm bg-[var(--color-paper)] border-l border-[var(--color-border)] flex flex-col sm:hidden"
             >
               <div className="flex items-center justify-between h-14 px-4 border-b border-[var(--color-border)]">
-                <Logo size="nav" />
+                <Link
+                  href="/"
+                  aria-label="RevCognition — inicio"
+                  onClick={() => setOpen(false)}
+                  className="rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2"
+                >
+                  <Logo size="nav" />
+                </Link>
                 <button
                   ref={closeBtnRef}
                   type="button"
