@@ -97,16 +97,9 @@ function MockupSecuencia() {
           </div>
         ))}
       </div>
-    </MockupShell>
-  );
-}
-
-function MockupSenal() {
-  return (
-    <MockupShell icon="✦" title="Generación" meta={{ text: "Contexto detectado", tone: "success" }}>
-      <div className="p-4 flex flex-col gap-3">
+      <div className="px-4 pb-4 flex flex-col gap-3 border-t border-[var(--color-border)] pt-3">
         <MockupRow label="Señal detectada" value="Empresa Ejemplo amplía su equipo comercial" />
-        <div className="text-[11px] text-[var(--color-slate)] leading-relaxed border-t border-[var(--color-border)] pt-2.5">
+        <div className="text-[11px] text-[var(--color-slate)] leading-relaxed">
           Hola, Laura. He visto que Empresa Ejemplo está ampliando el equipo
           comercial — imagino que la prospección forma parte de esa
           expansión...
@@ -438,12 +431,7 @@ export function Producto() {
             body: "Las personas adecuadas en cada empresa, con la dirección de correo verificada antes de escribir.",
           },
         ]}
-        mockup={
-          <div className="flex flex-col gap-4">
-            <MockupSecuencia />
-            <MockupSenal />
-          </div>
-        }
+        mockup={<MockupSecuencia />}
       />
 
       <ThemeBlock
