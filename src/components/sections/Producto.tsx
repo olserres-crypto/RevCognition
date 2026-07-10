@@ -243,7 +243,7 @@ const faqs: Feature[] = [
   },
   {
     title: "¿Qué cuesta?",
-    body: "Un setup único de 50€ para dejar la cuenta lista, y luego pagas por prospecto trabajado: 1€ por cada prospecto nuevo al que se escribe. Un crédito se consume con el primer correo a un prospecto; los seguimientos de esa misma secuencia no gastan crédito extra, y un prospecto que descartas en la revisión nunca gasta crédito.",
+    body: "Un setup inicial de 50€ + IVA para dejar la cuenta lista, y luego packs de envíos desde 100€ + IVA (100 envíos), con descuento por volumen: 600 envíos por 500€ + IVA y 1.300 por 1.000€ + IVA. Un crédito se consume con el primer envío a un prospecto nuevo; los seguimientos de esa misma secuencia no gastan crédito extra. Sin permanencia y los créditos no caducan.",
   },
   {
     title: "¿Funciona en mi sector o en mi país?",

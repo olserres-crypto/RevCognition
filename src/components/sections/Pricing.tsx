@@ -17,7 +17,7 @@ const packs = [
     prospects: 600,
     price: "500€",
     perUnit: "0,83€",
-    discount: "-17% por envío",
+    discount: "17% más barato por envío",
     label: "Para crecer",
     description: "Cubre varios segmentos o mercados en paralelo.",
     plan: "pack_600",
@@ -26,7 +26,7 @@ const packs = [
     prospects: 1300,
     price: "1.000€",
     perUnit: "0,77€",
-    discount: "-23% por envío",
+    discount: "23% más barato por envío",
     label: "Para escalar",
     description: "Prospección continua sin tener que recargar constantemente.",
     plan: "pack_1300",
@@ -139,6 +139,10 @@ export function Pricing() {
             ))}
           </ul>
         </div>
+
+        <p className="mt-4 text-sm text-[var(--color-slate)] max-w-2xl">
+          Todos los precios se muestran sin IVA.
+        </p>
 
         <p className="mt-6 text-sm text-[var(--color-slate)] max-w-2xl">
           ¿Tienes una base de prospectos propia? Puedes usarla directamente.
