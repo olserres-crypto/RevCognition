@@ -84,7 +84,7 @@ export function FeaturesGrid() {
 
         <div
           id="como-encuentra"
-          className="mb-14 sm:mb-16 pb-12 sm:pb-14 border-b border-[var(--color-border)]"
+          className="scroll-mt-20 mb-14 sm:mb-16 pb-12 sm:pb-14 border-b border-[var(--color-border)]"
         >
           <p className="text-xs font-semibold uppercase tracking-widest text-[var(--color-slate)] mb-3">
             Cómo encuentra a tus clientes

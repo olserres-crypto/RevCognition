@@ -151,9 +151,10 @@ export function ServiciosB2B() {
           </h2>
           <p className="text-[var(--color-slate)] text-lg leading-relaxed max-w-2xl">
             Usamos RevCognition para nuestra propia prospección: las
-            campañas que nos consiguen clientes corren sobre este mismo
-            producto —el mismo dominio dedicado, el mismo motor de mensajes
-            y la misma revisión diaria de cinco minutos que verías tú—.
+            campañas con las que salimos a buscar clientes nuevos corren
+            sobre este mismo producto —el mismo dominio dedicado, el mismo
+            motor de mensajes y la misma revisión diaria de cinco minutos
+            que verías tú—.
           </p>
 
           {/* CASE-STUDY SLOT: swap con BR Latina cuando haya cifras (B-591 wave 2) */}
