@@ -6,5 +6,21 @@
   },
   "a11y": {
     "skipToContent": "Saltar al contenido"
+  },
+  "nav": {
+    "comoFunciona": "Cómo funciona",
+    "producto": "Producto",
+    "precios": "Precios",
+    "accederApp": "Acceder a la App",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "mainMenu": "Menú principal",
+    "home": "RevCognition — inicio"
+  },
+  "footer": {
+    "solutions": "Soluciones: servicios B2B",
+    "privacy": "Política de privacidad",
+    "unsubscribe": "Unsubscribe",
+    "copyright": "© 2026"
   }
 }

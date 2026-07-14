@@ -1,20 +1,23 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
 import { Logo } from "@/components/ui/Logo";
+import { LanguageSwitcher } from "@/components/ui/LanguageSwitcher";
 
 const APP_URL = "https://app.revcognition.com";
 
 const navLinks = [
-  { href: "/#como-funciona", label: "Cómo funciona" },
-  { href: "/producto", label: "Producto" },
-  { href: "/#precios", label: "Precios" },
-];
+  { href: "/#como-funciona", key: "comoFunciona" },
+  { href: "/producto", key: "producto" },
+  { href: "/#precios", key: "precios" },
+] as const;
 
 export function Nav() {
+  const t = useTranslations("nav");
   const [open, setOpen] = useState(false);
   const triggerRef = useRef<HTMLButtonElement>(null);
   const closeBtnRef = useRef<HTMLButtonElement>(null);
@@ -42,7 +45,7 @@ export function Nav() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 flex items-center justify-between h-14">
           <Link
             href="/"
-            aria-label="RevCognition — inicio"
+            aria-label={t("home")}
             className="rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2"
           >
             <Logo size="nav" />
@@ -50,14 +53,15 @@ export function Nav() {
 
           <div className="hidden sm:flex items-center gap-2 text-sm text-[var(--color-slate)]">
             {navLinks.map((l) => (
-              <a
+              <Link
                 key={l.href}
                 href={l.href}
                 className="px-3 py-2 rounded-md hover:text-[var(--color-ink)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2"
               >
-                {l.label}
-              </a>
+                {t(l.key)}
+              </Link>
             ))}
+            <LanguageSwitcher />
           </div>
 
           <div className="flex items-center gap-1">
@@ -67,13 +71,13 @@ export function Nav() {
               rel="noopener noreferrer"
               className="text-sm px-4 py-2.5"
             >
-              Acceder a la App
+              {t("accederApp")}
             </Button>
 
             <button
               ref={triggerRef}
               type="button"
-              aria-label={open ? "Cerrar menú" : "Abrir menú"}
+              aria-label={open ? t("closeMenu") : t("openMenu")}
               aria-expanded={open}
               aria-controls="mobile-nav-drawer"
               onClick={() => setOpen((v) => !v)}
@@ -125,7 +129,7 @@ export function Nav() {
               key="drawer"
               role="dialog"
               aria-modal="true"
-              aria-label="Menú principal"
+              aria-label={t("mainMenu")}
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
@@ -135,7 +139,7 @@ export function Nav() {
               <div className="flex items-center justify-between h-14 px-4 border-b border-[var(--color-border)]">
                 <Link
                   href="/"
-                  aria-label="RevCognition — inicio"
+                  aria-label={t("home")}
                   onClick={() => setOpen(false)}
                   className="rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2"
                 >
@@ -144,7 +148,7 @@ export function Nav() {
                 <button
                   ref={closeBtnRef}
                   type="button"
-                  aria-label="Cerrar menú"
+                  aria-label={t("closeMenu")}
                   onClick={() => setOpen(false)}
                   className="inline-flex items-center justify-center w-11 h-11 rounded-md text-[var(--color-ink)] hover:bg-[var(--color-surface)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2"
                 >
@@ -168,26 +172,27 @@ export function Nav() {
                 <ul className="flex flex-col gap-1">
                   {navLinks.map((l) => (
                     <li key={l.href}>
-                      <a
+                      <Link
                         href={l.href}
                         onClick={() => setOpen(false)}
                         className="block font-serif text-2xl text-[var(--color-ink)] py-3 hover:text-[var(--color-warm)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2 rounded-md"
                       >
-                        {l.label}
-                      </a>
+                        {t(l.key)}
+                      </Link>
                     </li>
                   ))}
                 </ul>
               </nav>
 
-              <div className="p-4 border-t border-[var(--color-border)]">
+              <div className="p-4 border-t border-[var(--color-border)] flex flex-col gap-4">
+                <LanguageSwitcher />
                 <Button
                   href={APP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full"
                 >
-                  Acceder a la App
+                  {t("accederApp")}
                 </Button>
               </div>
             </motion.div>
