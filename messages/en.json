@@ -63,5 +63,53 @@
       "description": "The system finds prospects that match your profile, writes a unique message for each one, and sends it. You see every message before it goes out. No technical setup, no middlemen.",
       "cost": "0€ in agency fees"
     }
+  },
+  "howItWorks": {
+    "eyebrow": "How it works",
+    "heading": "Three steps. Then the system works on its own.",
+    "steps": [
+      {
+        "title": "Tell us who you are",
+        "description": "We analyze your website and automatically generate positioning proposals: what problem you solve, your tone, your services, and your ideal customer profile. You pick the strategy that fits you best.",
+        "time": "Setup: 10–15 minutes"
+      },
+      {
+        "title": "The system identifies your prospects",
+        "description": "RevCognition finds companies that match your profile, enriches them with real signals (sector, size, activity, intent signals), and builds a qualified list.",
+        "time": "No effort from you"
+      },
+      {
+        "title": "Every prospect gets a message written for them",
+        "description": "An LLM combines your profile, our bank of high-performing sales messages, and the prospect's data to write a unique message. You approve the daily sends or let them go out on their own.",
+        "time": "Optional review: 10 min/day"
+      }
+    ],
+    "mockups": {
+      "diagnostico": {
+        "metaText": "Analysis generated",
+        "profileLabel": "Ideal customer profile",
+        "profileValue": "Law firms · 20+ people",
+        "problemLabel": "Key problem",
+        "problemValue": "100% dependent on referrals",
+        "sectorsLabel": "Sectors detected"
+      },
+      "prospectos": {
+        "title": "Prospects",
+        "metaText": "3 new today",
+        "colEmpresa": "Company",
+        "colSector": "Sector",
+        "colSenal": "Signal",
+        "nivelAlto": "High",
+        "nivelMedio": "Medium"
+      },
+      "mensaje": {
+        "title": "Message",
+        "signalNote": "Public tender ENISA · 2d ago",
+        "greeting": "Good morning, Marcos,",
+        "body": "I saw that Bufete Serrano is taking part in the ENISA call. At similar firms we've helped structure the proposal and...",
+        "readyToSend": "Ready to send",
+        "viewFull": "View full"
+      }
+    }
   }
 }

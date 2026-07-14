@@ -63,5 +63,53 @@
       "description": "El sistema localiza prospectos que encajan con tu perfil, escribe un mensaje único para cada uno y los envía. Ves cada mensaje antes de salir. Sin configuración técnica, sin intermediarios.",
       "cost": "0€ en agencias"
     }
+  },
+  "howItWorks": {
+    "eyebrow": "Cómo funciona",
+    "heading": "Tres pasos. Luego el sistema trabaja solo.",
+    "steps": [
+      {
+        "title": "Cuéntanos quién eres",
+        "description": "Analizamos tu web y generamos automáticamente propuestas de posicionamiento: qué problema resuelves, tu tono, tus servicios, y tu perfil de cliente ideal. Tú eliges la estrategia que más te representa.",
+        "time": "Setup: 10–15 minutos"
+      },
+      {
+        "title": "El sistema identifica a tus prospectos",
+        "description": "RevCognition busca empresas que encajan con tu perfil, las enriquece con señales reales (sector, tamaño, actividad, señales de intención) y construye una lista cualificada.",
+        "time": "Sin intervención tuya"
+      },
+      {
+        "title": "Cada prospecto recibe un mensaje escrito para él",
+        "description": "Un LLM combina tu perfil, nuestro banco de mensajes comerciales de alto nivel, y los datos del prospecto para escribir un mensaje único. Tú apruebas los envíos diarios o los dejas ir solos.",
+        "time": "Validación opcional: 10 min/día"
+      }
+    ],
+    "mockups": {
+      "diagnostico": {
+        "metaText": "Análisis generado",
+        "profileLabel": "Perfil de cliente ideal",
+        "profileValue": "Despachos de abogados · +20 personas",
+        "problemLabel": "Problema clave",
+        "problemValue": "Dependen 100% de referencias",
+        "sectorsLabel": "Sectores detectados"
+      },
+      "prospectos": {
+        "title": "Prospectos",
+        "metaText": "3 nuevos hoy",
+        "colEmpresa": "Empresa",
+        "colSector": "Sector",
+        "colSenal": "Señal",
+        "nivelAlto": "Alto",
+        "nivelMedio": "Medio"
+      },
+      "mensaje": {
+        "title": "Mensaje",
+        "signalNote": "Licitación pública ENISA · hace 2d",
+        "greeting": "Buenos días, Marcos,",
+        "body": "He visto que Bufete Serrano participa en la convocatoria ENISA. En despachos similares hemos ayudado a estructurar la propuesta y...",
+        "readyToSend": "Listo para enviar",
+        "viewFull": "Ver completo"
+      }
+    }
   }
 }

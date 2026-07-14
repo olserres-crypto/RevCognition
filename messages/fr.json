@@ -63,5 +63,53 @@
       "description": "Le système repère les prospects qui correspondent à votre profil, rédige un message unique pour chacun et l'envoie. Vous voyez chaque message avant son départ. Sans configuration technique, sans intermédiaires.",
       "cost": "0€ de frais d'agence"
     }
+  },
+  "howItWorks": {
+    "eyebrow": "Comment ça marche",
+    "heading": "Trois étapes. Ensuite, le système travaille seul.",
+    "steps": [
+      {
+        "title": "Dites-nous qui vous êtes",
+        "description": "Nous analysons votre site et générons automatiquement des propositions de positionnement : quel problème vous résolvez, votre ton, vos services, et votre profil de client idéal. Vous choisissez la stratégie qui vous représente le mieux.",
+        "time": "Mise en place : 10–15 minutes"
+      },
+      {
+        "title": "Le système identifie vos prospects",
+        "description": "RevCognition recherche les entreprises qui correspondent à votre profil, les enrichit avec des signaux réels (secteur, taille, activité, signaux d'intention) et construit une liste qualifiée.",
+        "time": "Sans intervention de votre part"
+      },
+      {
+        "title": "Chaque prospect reçoit un message écrit pour lui",
+        "description": "Un LLM combine votre profil, notre banque de messages commerciaux à haute performance, et les données du prospect pour rédiger un message unique. Vous validez les envois quotidiens ou les laissez partir seuls.",
+        "time": "Validation optionnelle : 10 min/jour"
+      }
+    ],
+    "mockups": {
+      "diagnostico": {
+        "metaText": "Analyse générée",
+        "profileLabel": "Profil de client idéal",
+        "profileValue": "Cabinets d'avocats · +20 personnes",
+        "problemLabel": "Problème clé",
+        "problemValue": "Dépendent à 100% des recommandations",
+        "sectorsLabel": "Secteurs détectés"
+      },
+      "prospectos": {
+        "title": "Prospects",
+        "metaText": "3 nouveaux aujourd'hui",
+        "colEmpresa": "Entreprise",
+        "colSector": "Secteur",
+        "colSenal": "Signal",
+        "nivelAlto": "Élevé",
+        "nivelMedio": "Moyen"
+      },
+      "mensaje": {
+        "title": "Message",
+        "signalNote": "Appel d'offres public ENISA · il y a 2j",
+        "greeting": "Bonjour Marcos,",
+        "body": "J'ai vu que Bufete Serrano participe à l'appel d'offres ENISA. Dans des cabinets similaires, nous avons aidé à structurer la proposition et...",
+        "readyToSend": "Prêt à envoyer",
+        "viewFull": "Voir tout"
+      }
+    }
   }
 }
