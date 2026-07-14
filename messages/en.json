@@ -35,6 +35,21 @@
       "detected": "Signal detected · 3 hours ago",
       "example": "Laboratorios Roca · OEPM filing rejected · class 5 · 04287391",
       "live": "Live"
+    },
+    "emailPreview": {
+      "badge": "Email generated · ready to send",
+      "fromLabel": "From:",
+      "fromValue": "Alex <alex@martinez-asoc.com>",
+      "toLabel": "To:",
+      "toValue": "Ana Martínez <a.martinez@gab-marcas.es>",
+      "subjectLabel": "Subject:",
+      "subjectValue": "Laboratorios Roca, filing rejected Apr 11",
+      "greeting": "Hi Ana,",
+      "body1": "Laboratorios Roca's trademark filing (class 5, application 04287391) was rejected on April 11. The appeal deadline is running, and in our experience, 62% of trademark holders still haven't assigned an IP lawyer at this stage.",
+      "body2": "It's exactly the kind of signal that firms like Martínez & Asoc. turn into a client before the holder even searches Google.",
+      "cta": "Let's talk for 10 minutes this week →",
+      "signoffLine": "Best,",
+      "signoffName": "Alex"
     }
   },
   "problem": {
@@ -257,6 +272,9 @@
     "legalCalLink": "Book a meeting"
   },
   "producto": {
+    "metaTitle": "Product — RevCognition | Cold outreach, start to finish",
+    "metaDescription": "Everything RevCognition does: set up in one session, a five-minute daily review, messages written for each prospect, your own domain warmed up patiently, and replies sorted automatically.",
+    "ogAlt": "RevCognition — the product in detail.",
     "hero": {
       "eyebrow": "Product",
       "heading1": "Everything the system does,",
@@ -500,6 +518,9 @@
     }
   },
   "serviciosB2B": {
+    "metaTitle": "B2B Services — RevCognition | Cold outreach for law firms and agencies",
+    "metaDescription": "For law firms, agencies, and consultancies that live on referrals: RevCognition finds new clients that match your profile and writes them a message of their own. Your only task: five minutes a day approving emails.",
+    "ogAlt": "RevCognition for B2B services.",
     "hero": {
       "eyebrow": "B2B Services",
       "heading1": "You live off referrals.",

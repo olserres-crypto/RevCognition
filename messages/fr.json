@@ -35,6 +35,21 @@
       "detected": "Signal détecté · il y a 3 heures",
       "example": "Laboratorios Roca · Dépôt OEPM rejeté · classe 5 · 04287391",
       "live": "En direct"
+    },
+    "emailPreview": {
+      "badge": "Email généré · prêt à envoyer",
+      "fromLabel": "De :",
+      "fromValue": "Alex <alex@martinez-asoc.com>",
+      "toLabel": "À :",
+      "toValue": "Ana Martínez <a.martinez@gab-marcas.es>",
+      "subjectLabel": "Objet :",
+      "subjectValue": "Laboratorios Roca, dépôt rejeté le 11/04",
+      "greeting": "Bonjour Ana,",
+      "body1": "Le dépôt de marque de Laboratorios Roca (classe 5, demande n° 04287391) a été rejeté le 11 avril dernier. Le délai de recours court et, d'après notre expérience, 62 % des titulaires n'ont encore assigné aucun avocat en PI à ce stade.",
+      "body2": "C'est exactement le type de signal que des cabinets comme Martínez & Asoc. transforment en client avant même que le titulaire ne cherche sur Google.",
+      "cta": "Parlons-en 10 minutes cette semaine →",
+      "signoffLine": "Cordialement,",
+      "signoffName": "Alex"
     }
   },
   "problem": {
@@ -257,6 +272,9 @@
     "legalCalLink": "Réserver un rendez-vous"
   },
   "producto": {
+    "metaTitle": "Produit — RevCognition | Prospection à froid, de bout en bout",
+    "metaDescription": "Tout ce que fait RevCognition : mise en route en une session, révision quotidienne de cinq minutes, messages rédigés pour chaque prospect, domaine propre chauffé avec patience et réponses triées automatiquement.",
+    "ogAlt": "RevCognition — le produit en détail.",
     "hero": {
       "eyebrow": "Produit",
       "heading1": "Tout ce que fait le système,",
@@ -500,6 +518,9 @@
     }
   },
   "serviciosB2B": {
+    "metaTitle": "Services B2B — RevCognition | Prospection à froid pour cabinets et agences",
+    "metaDescription": "Pour les cabinets, agences et cabinets de conseil qui vivent de recommandations : RevCognition trouve de nouveaux clients qui correspondent à votre profil et leur écrit un message qui leur est propre. Votre seule tâche : cinq minutes par jour à valider des emails.",
+    "ogAlt": "RevCognition pour les services B2B.",
     "hero": {
       "eyebrow": "Services B2B",
       "heading1": "Vous vivez de vos recommandations.",

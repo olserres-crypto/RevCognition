@@ -35,6 +35,21 @@
       "detected": "Señal detectada · hace 3 horas",
       "example": "Laboratorios Roca · Depósito OEPM rechazado · clase 5 · 04287391",
       "live": "En vivo"
+    },
+    "emailPreview": {
+      "badge": "Email generado · listo para enviar",
+      "fromLabel": "De:",
+      "fromValue": "Alex <alex@martinez-asoc.com>",
+      "toLabel": "Para:",
+      "toValue": "Ana Martínez <a.martinez@gab-marcas.es>",
+      "subjectLabel": "Asunto:",
+      "subjectValue": "Laboratorios Roca, depósito rechazado el 11/04",
+      "greeting": "Hola Ana,",
+      "body1": "El depósito de marca de Laboratorios Roca (clase 5, solicitud 04287391) fue rechazado el pasado 11 de abril. El plazo de recurso corre y, en nuestra experiencia, el 62 % de los titulares aún no tiene abogado de PI asignado a estas alturas.",
+      "body2": "Es exactamente el tipo de señal que gabinetes como Martínez & Asoc. convierten en cliente antes de que el titular busque en Google.",
+      "cta": "Hablemos 10 minutos esta semana →",
+      "signoffLine": "Un saludo,",
+      "signoffName": "Alex"
     }
   },
   "problem": {
@@ -257,6 +272,9 @@
     "legalCalLink": "Reservar reunión"
   },
   "producto": {
+    "metaTitle": "Producto — RevCognition | Prospección en frío, de principio a fin",
+    "metaDescription": "Todo lo que hace RevCognition: puesta en marcha en una sesión, revisión diaria de cinco minutos, mensajes escritos para cada prospecto, dominio propio calentado con paciencia y respuestas clasificadas solas.",
+    "ogAlt": "RevCognition — el producto en detalle.",
     "hero": {
       "eyebrow": "Producto",
       "heading1": "Todo lo que hace el sistema,",
@@ -500,6 +518,9 @@
     }
   },
   "serviciosB2B": {
+    "metaTitle": "Servicios B2B — RevCognition | Prospección en frío para despachos y agencias",
+    "metaDescription": "Para despachos, agencias y consultoras que viven de referencias: RevCognition busca clientes nuevos que encajan con tu perfil y les escribe un mensaje propio. Tu única tarea, cinco minutos al día aprobando correos.",
+    "ogAlt": "RevCognition para servicios B2B.",
     "hero": {
       "eyebrow": "Servicios B2B",
       "heading1": "Vives de tus referencias.",
