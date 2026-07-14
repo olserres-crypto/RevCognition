@@ -98,7 +98,9 @@ export function Pricing() {
                     </span>
                   </div>
                   <p className="text-[var(--color-slate)] text-sm mt-1">
-                    {t("qualifiedProspects", { count: pack.prospects })}
+                    {t("qualifiedProspects", {
+                      count: new Intl.NumberFormat(bcp47, { useGrouping: "always" }).format(pack.prospects),
+                    })}
                   </p>
                   <div className="flex items-center gap-2 mt-2">
                     <span className="text-xs text-[var(--color-slate)] tabular-nums">
