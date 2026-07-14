@@ -194,5 +194,49 @@
         "solution": "RevCognition identifie les entreprises du secteur qui correspondent au profil client idéal, les enrichit, et leur écrit des messages contextualisés. Le système continue de fonctionner même quand le fondateur est avec un client."
       }
     ]
+  },
+  "pricing": {
+    "eyebrow": "Tarifs",
+    "heading": "À partir de 1 € par prospect. Plus le pack est grand, moins cher par envoi.",
+    "intro": "Vous ne payez ni sièges ni outils. Vous payez par prospect travaillé : 1 crédit est consommé au premier envoi à un nouveau prospect, et les relances de cette même séquence ne consomment pas de crédit supplémentaire. S'il répond avant, le système s'arrête. Sinon, il se termine avec élégance.",
+    "perProspectIncludes": "Chaque prospect inclut : identification, enrichissement avec des signaux réels et séquence complète (ouverture, relance, nouvel angle, clôture).",
+    "noCommitment": "Sans engagement et sans abonnement. Les crédits n'expirent pas.",
+    "noVat": "HT",
+    "qualifiedProspects": "{count} prospects qualifiés",
+    "perSend": "{value} / envoi",
+    "requestAccess": "Demander l'accès avec ce pack",
+    "talkToFounder": "Parler au fondateur →",
+    "plans": [
+      {
+        "name": "Pour démarrer",
+        "tagline": "Testez le système avec votre premier segment de marché.",
+        "discount": null
+      },
+      {
+        "name": "Pour grandir",
+        "tagline": "Couvrez plusieurs segments ou marchés en parallèle.",
+        "discount": "moins cher par envoi"
+      },
+      {
+        "name": "Pour passer à l'échelle",
+        "tagline": "Prospection continue sans avoir à recharger sans cesse.",
+        "discount": "moins cher par envoi"
+      }
+    ],
+    "setup": {
+      "title": "Setup : 50 € (HT).",
+      "description": "Configuration initiale du système, analyse de votre site et définition de la stratégie.",
+      "includes": [
+        "Achat et renouvellement automatiques du domaine d'envoi",
+        "Configuration automatique de SPF, DKIM et DMARC",
+        "Classification automatique des réponses (intéressé, pas intéressé, hostile, absence du bureau)",
+        "Montée en puissance automatique du domaine : le volume augmente progressivement jusqu'au volume plein en quatrième semaine",
+        "Six expéditeurs avec nom et signature propres",
+        "Agenda direct avec votre calendrier (Cal.com)"
+      ]
+    },
+    "fiscalNote": "Prix hors taxes : la TVA ou toute autre taxe applicable est ajoutée sur la facture selon le pays de votre entreprise.",
+    "ownList": "Vous avez déjà votre propre base de prospects ? Vous pouvez l'utiliser directement. Le système l'enrichit et génère les messages à partir de celle-ci.",
+    "betaNote": "Bêta fermée, places limitées. Demandez l'accès et, s'il reste de la place, vous démarrez cette semaine ; sinon, vous rejoignez la liste d'attente et nous vous préviendrons dès qu'une place se libère."
   }
 }

@@ -194,5 +194,49 @@
         "solution": "RevCognition identifica marcas del sector que encajan con el perfil de cliente ideal, las enriquece, y les escribe mensajes contextualizados. El sistema funciona aunque el fundador esté con un cliente."
       }
     ]
+  },
+  "pricing": {
+    "eyebrow": "Precios",
+    "heading": "Desde 1€ por prospecto. Cuanto mayor el pack, más barato por envío.",
+    "intro": "No pagas por asientos ni por herramientas. Pagas por prospecto trabajado: 1 crédito se consume en el primer envío a un prospecto nuevo, y los seguimientos de esa misma secuencia no gastan crédito adicional. Si contesta antes, el sistema se para. Si no, cierra con elegancia.",
+    "perProspectIncludes": "Cada prospecto incluye: identificación, enriquecimiento con señales reales y secuencia completa (apertura, seguimiento, nuevo ángulo, cierre).",
+    "noCommitment": "Sin permanencia y sin suscripción. Los créditos no caducan.",
+    "noVat": "sin IVA",
+    "qualifiedProspects": "{count} prospectos cualificados",
+    "perSend": "{value} / envío",
+    "requestAccess": "Solicitar acceso con este pack",
+    "talkToFounder": "Hablar con el fundador →",
+    "plans": [
+      {
+        "name": "Para empezar",
+        "tagline": "Prueba el sistema con tu primer segmento de mercado.",
+        "discount": null
+      },
+      {
+        "name": "Para crecer",
+        "tagline": "Cubre varios segmentos o mercados en paralelo.",
+        "discount": "más barato por envío"
+      },
+      {
+        "name": "Para escalar",
+        "tagline": "Prospección continua sin tener que recargar constantemente.",
+        "discount": "más barato por envío"
+      }
+    ],
+    "setup": {
+      "title": "Setup: 50€ (sin IVA).",
+      "description": "Configuración inicial del sistema, análisis de tu web y definición de estrategia.",
+      "includes": [
+        "Compra y renovación automática del dominio de envío",
+        "Auto-configuración de SPF, DKIM y DMARC",
+        "Clasificación automática de respuestas (interesado, no interesado, hostil, fuera de oficina)",
+        "Calentamiento automático del dominio: el volumen sube poco a poco hasta alcanzar el volumen pleno en la cuarta semana",
+        "Seis remitentes con nombre y firma propios",
+        "Agenda directa con tu calendario (Cal.com)"
+      ]
+    },
+    "fiscalNote": "Precios sin impuestos: el IVA u otros impuestos aplicables se añaden en factura según el país de tu empresa.",
+    "ownList": "¿Tienes una base de prospectos propia? Puedes usarla directamente. El sistema la enriquece y genera los mensajes sobre ella.",
+    "betaNote": "Beta cerrada, plazas limitadas. Solicita acceso y, si hay hueco, entras esta semana; si no, quedas en la lista de espera y te avisamos en cuanto se libere una plaza."
   }
 }
