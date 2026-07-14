@@ -238,5 +238,22 @@
     "fiscalNote": "Precios sin impuestos: el IVA u otros impuestos aplicables se añaden en factura según el país de tu empresa.",
     "ownList": "¿Tienes una base de prospectos propia? Puedes usarla directamente. El sistema la enriquece y genera los mensajes sobre ella.",
     "betaNote": "Beta cerrada, plazas limitadas. Solicita acceso y, si hay hueco, entras esta semana; si no, quedas en la lista de espera y te avisamos en cuanto se libere una plaza."
+  },
+  "founder": {
+    "eyebrow": "Por qué existe esto",
+    "heading": "Veinte años en marketing automation. Ninguna herramienta para el fundador solo.",
+    "paragraph1": "Llevo veinte años trabajando en marketing automation, viendo de cerca cómo las grandes empresas gestionan su captación. Y también las herramientas que existían para los demás.",
+    "paragraph2": "La mayoría te piden que seas técnico, que escribas los mensajes, que gestiones las secuencias a mano, o que confíes ciegamente en una agencia que no entiende tu negocio. Ninguna de las dos opciones era aceptable para un fundador con poco tiempo y mucho que demostrar.",
+    "closingPre": "RevCognition es lo que",
+    "closingItalic": "yo",
+    "closingPost": "habría querido tener."
+  },
+  "ctaFinal": {
+    "heading": "Entra en la beta cerrada.",
+    "subtitle": "Estamos abriendo plazas poco a poco para cuidar cada cuenta. Solicita acceso y empezamos por analizar tu web y tu mercado.",
+    "ctaButton": "Solicita acceso a la beta",
+    "legalPre": "¿Prefieres verlo antes con el fundador?",
+    "legalMailtoLink": "Escríbeme directamente.",
+    "legalCalLink": "Reservar reunión"
   }
 }
