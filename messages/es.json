@@ -498,5 +498,80 @@
         "statusLabel": "Respuesta clasificada · Interesado"
       }
     }
+  },
+  "serviciosB2B": {
+    "hero": {
+      "eyebrow": "Servicios B2B",
+      "heading1": "Vives de tus referencias.",
+      "heading2": "Y no te queda tiempo para prospectar.",
+      "subtitle": "Despachos, agencias y consultoras suelen depender de a quién les recomiendan. RevCognition busca clientes nuevos que encajan con tu perfil y les escribe un mensaje propio a cada uno, mientras tú sigues con los clientes que ya tienes. Tu única tarea: revisar los correos preparados, cinco minutos al día."
+    },
+    "steps": {
+      "eyebrow": "Cómo funciona",
+      "heading": "Cómo encuentra a tus próximos clientes.",
+      "intro": "¿Y si tu especialidad es poco frecuente, o tu zona es pequeña? La búsqueda no se apoya en una sola lista: para un solo perfil de cliente puede haber más de 400.000 empresas candidatas, y el sistema las revisa sin parar para quedarse solo con las que encajan.",
+      "items": [
+        {
+          "title": "Lee tu web",
+          "body": "Entiende a qué te dedicas y a qué tipo de cliente sirves, a partir de tu propia web."
+        },
+        {
+          "title": "Construye tu perfil de cliente ideal",
+          "body": "Lo traduce en un perfil de cliente ideal: sector, ubicación y tamaño de empresa."
+        },
+        {
+          "title": "Busca en continuo sobre bases de datos partner",
+          "body": "Cruza ese perfil sin parar contra varias bases de datos de empresas y puntúa cada una por lo bien que encaja."
+        },
+        {
+          "title": "Verifica correos y detecta señales de compra",
+          "body": "Localiza al contacto adecuado en cada empresa, verifica su correo antes de escribir y revisa si hay señales recientes, como una contratación."
+        }
+      ],
+      "linkText": "Ver el detalle completo"
+    },
+    "stats": {
+      "eyebrow": "Resultados",
+      "heading": "Lo probamos con nuestras propias campañas.",
+      "intro": "Usamos RevCognition para nuestra propia prospección: las campañas con las que salimos a buscar clientes nuevos corren sobre este mismo producto —el mismo dominio dedicado, el mismo motor de mensajes y la misma revisión diaria de cinco minutos que verías tú—.",
+      "caseStudy": {
+        "label": "Próximo caso de cliente",
+        "title": "El primer caso de cliente, en curso.",
+        "body": "Primer caso de cliente en curso: publicaremos aquí los resultados de la primera campaña completa, con cifras reales."
+      },
+      "metrics": [
+        {
+          "label": "Correos enviados"
+        },
+        {
+          "label": "Respuestas de interés"
+        },
+        {
+          "label": "Reuniones agendadas"
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "Preguntas",
+      "heading": "Lo que suelen preguntarnos antes de entrar.",
+      "items": [
+        {
+          "q": "¿Funciona en mi sector o en mi país?",
+          "a": "El sistema busca en continuo sobre bases de datos partner especializadas: para un despacho o agencia con un perfil de cliente definido —sector, ubicación y tamaño— puede haber más de 400.000 empresas candidatas. No hace falta que tu especialidad sea común ni que tu zona sea grande: la búsqueda no depende de una sola lista."
+        },
+        {
+          "q": "¿De dónde salen los datos de los contactos?",
+          "a": "Los contactos salen de bases de datos partner especializadas en información profesional. Antes de escribir, cada dirección de correo se verifica para mantener el rebote bajo, y cada correo incluye una opción de baja: quien se da de baja no vuelve a recibir nada, en cumplimiento con la normativa."
+        },
+        {
+          "q": "¿Acabaré en spam?",
+          "a": "Es la primera duda razonable, sobre todo si nunca has hecho prospección en frío. Por eso nunca se envía desde tu correo del despacho o de la agencia: usas un dominio de envío dedicado y separado, que se autentica automáticamente y sube su volumen poco a poco a lo largo de las primeras semanas, hasta alcanzar el volumen pleno. Tu buzón principal no se toca en ningún momento, y tu reputación con tus clientes actuales queda al margen."
+        },
+        {
+          "q": "¿Qué pasa cuando alguien responde?",
+          "a": "Cada respuesta se lee y se clasifica sola: interesado, no interesado, agresivo o ausente. Si hay interés, la secuencia se pausa al instante, te avisamos por correo y Telegram, y el prospecto recibe tu enlace de Cal.com para reservar directamente, sin ida y vuelta de correos. Si no hay interés o la respuesta es hostil, el hilo se cierra con cuidado y no se vuelve a contactar. Como en cualquier correo, cada mensaje lleva una opción de baja; quien se da de baja no vuelve a recibir nada."
+        }
+      ]
+    }
   }
 }
