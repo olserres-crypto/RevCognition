@@ -111,5 +111,67 @@
         "viewFull": "Ver completo"
       }
     }
+  },
+  "featuresGrid": {
+    "eyebrow": "Qué hace por ti",
+    "heading": "Todo el trabajo mecánico de la prospección, hecho.",
+    "intro": "Tú mantienes el criterio; el sistema pone las horas. Esto es lo que se ocupa de hacer, un día tras otro.",
+    "howEncuentra": {
+      "eyebrow": "Cómo encuentra a tus clientes",
+      "intro": "¿Y si tu sector es poco común, o tu zona geográfica es pequeña? La búsqueda no se apoya en una sola lista: para un solo perfil de cliente puede haber más de 400.000 empresas candidatas repartidas entre varias bases de datos, y el sistema las revisa sin parar para quedarse solo con las que encajan.",
+      "steps": [
+        {
+          "title": "Lee tu web",
+          "description": "Entiende qué problema resuelves y a qué tipo de cliente sirves, a partir de tu propia web."
+        },
+        {
+          "title": "Construye tu perfil de cliente ideal",
+          "description": "Traduce eso en un perfil de cliente ideal: sector, ubicación y tamaño de empresa."
+        },
+        {
+          "title": "Busca en continuo sobre bases de datos partner",
+          "description": "Cruza ese perfil sin parar contra varias bases de datos de empresas y puntúa cada una por lo bien que encaja."
+        },
+        {
+          "title": "Verifica correos y detecta señales de compra",
+          "description": "Localiza al contacto adecuado en cada empresa, verifica su correo antes de escribir y revisa si hay señales recientes, como una contratación."
+        }
+      ]
+    },
+    "features": [
+      {
+        "title": "Tú apruebas lo que sale",
+        "description": "Cinco minutos al día para revisar los correos preparados. Nada se envía sin tu visto bueno, y puedes desactivar la aprobación cuando confíes en el sistema."
+      },
+      {
+        "title": "Dominio propio, calentado con paciencia",
+        "description": "Un dominio de envío dedicado que sube su volumen poco a poco durante las primeras semanas, para llegar a la bandeja de entrada y no al spam."
+      },
+      {
+        "title": "Un mensaje escrito para cada prospecto",
+        "description": "Cada correo se redacta desde cero con el contexto real de tu negocio y del destinatario. Una secuencia de hasta cuatro mensajes, no una plantilla rellenada."
+      },
+      {
+        "title": "Las respuestas se clasifican solas",
+        "description": "Interesado, no interesado, hostil o fuera de oficina: cada respuesta se lee y se ordena sola. Los interesados se priorizan y te avisamos por correo y Telegram."
+      },
+      {
+        "title": "Seis remitentes con firma propia",
+        "description": "Tus correos salen repartidos entre seis buzones, cada uno con su nombre y su cargo reales, para cuidar la reputación del dominio."
+      },
+      {
+        "title": "De una respuesta a una reunión",
+        "description": "Cuando alguien contesta con interés, la secuencia se pausa y te avisamos al instante por correo y Telegram. El enlace de tu Cal.com viaja en cada correo, así que también puede reservar directamente desde ahí."
+      },
+      {
+        "title": "Trae tus propios contactos",
+        "description": "¿Ya tienes una lista? Súbela en CSV y entra en la misma maquinaria de personalización y envío que la búsqueda automática."
+      },
+      {
+        "title": "Pagas por prospecto trabajado",
+        "description": "No por asientos ni suscripciones. Un crédito por cada prospecto nuevo al que se escribe; los seguimientos de esa secuencia no gastan crédito extra."
+      }
+    ],
+    "moreLink": "Ver todo lo que hace, en detalle"
   }
 }

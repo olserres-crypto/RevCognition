@@ -111,5 +111,67 @@
         "viewFull": "View full"
       }
     }
+  },
+  "featuresGrid": {
+    "eyebrow": "What it does for you",
+    "heading": "All the mechanical work of prospecting, done.",
+    "intro": "You keep the judgment calls; the system puts in the hours. Here's what it takes care of, day after day.",
+    "howEncuentra": {
+      "eyebrow": "How it finds your customers",
+      "intro": "What if your industry is niche, or your target area is small? The search doesn't rely on a single list: for just one customer profile there can be more than 400,000 candidate companies spread across several databases, and the system keeps checking them non-stop to keep only the ones that fit.",
+      "steps": [
+        {
+          "title": "Reads your website",
+          "description": "Understands what problem you solve and what type of customer you serve, from your own website."
+        },
+        {
+          "title": "Builds your ideal customer profile",
+          "description": "Turns that into an ideal customer profile: industry, location, and company size."
+        },
+        {
+          "title": "Searches continuously across partner databases",
+          "description": "Matches that profile non-stop against several company databases and scores each one on how well it fits."
+        },
+        {
+          "title": "Verifies emails and detects buying signals",
+          "description": "Finds the right contact at each company, verifies their email before writing, and checks for recent signals, like a new hire."
+        }
+      ]
+    },
+    "features": [
+      {
+        "title": "You approve what goes out",
+        "description": "Five minutes a day to review the prepared emails. Nothing goes out without your sign-off, and you can turn off approval once you trust the system."
+      },
+      {
+        "title": "Your own domain, warmed up patiently",
+        "description": "A dedicated sending domain that ramps up its volume gradually over the first few weeks, to land in the inbox instead of spam."
+      },
+      {
+        "title": "A message written for each prospect",
+        "description": "Every email is written from scratch with the real context of your business and the recipient. A sequence of up to four messages, not a filled-in template."
+      },
+      {
+        "title": "Replies sort themselves",
+        "description": "Interested, not interested, hostile, or out of office: every reply is read and sorted on its own. Interested ones are prioritized, and we notify you by email and Telegram."
+      },
+      {
+        "title": "Six senders with their own signature",
+        "description": "Your emails go out spread across six mailboxes, each with its real name and title, to protect the domain's reputation."
+      },
+      {
+        "title": "From a reply to a meeting",
+        "description": "When someone replies with interest, the sequence pauses and we notify you instantly by email and Telegram. Your Cal.com link travels in every email, so they can also book directly from there."
+      },
+      {
+        "title": "Bring your own contacts",
+        "description": "Already have a list? Upload it as CSV and it enters the same personalization and sending machinery as automatic search."
+      },
+      {
+        "title": "You pay per prospect worked",
+        "description": "Not per seat or subscription. One credit for each new prospect written to; follow-ups in that sequence don't cost extra credit."
+      }
+    ],
+    "moreLink": "See everything it does, in detail"
   }
 }

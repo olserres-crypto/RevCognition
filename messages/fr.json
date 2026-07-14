@@ -111,5 +111,67 @@
         "viewFull": "Voir tout"
       }
     }
+  },
+  "featuresGrid": {
+    "eyebrow": "Ce qu'il fait pour vous",
+    "heading": "Tout le travail mécanique de la prospection, fait.",
+    "intro": "Vous gardez le jugement ; le système met les heures. Voici ce dont il s'occupe, jour après jour.",
+    "howEncuentra": {
+      "eyebrow": "Comment il trouve vos clients",
+      "intro": "Et si votre secteur est peu courant, ou votre zone géographique restreinte ? La recherche ne repose pas sur une seule liste : pour un seul profil client, il peut y avoir plus de 400 000 entreprises candidates réparties dans plusieurs bases de données, et le système les passe en revue sans arrêt pour ne garder que celles qui correspondent.",
+      "steps": [
+        {
+          "title": "Lit votre site web",
+          "description": "Comprend le problème que vous résolvez et le type de client que vous servez, à partir de votre propre site web."
+        },
+        {
+          "title": "Construit votre profil client idéal",
+          "description": "Traduit cela en un profil client idéal : secteur, localisation et taille d'entreprise."
+        },
+        {
+          "title": "Effectue une recherche continue sur des bases de données partenaires",
+          "description": "Croise ce profil en continu avec plusieurs bases de données d'entreprises et note chacune selon sa pertinence."
+        },
+        {
+          "title": "Vérifie les e-mails et détecte les signaux d'achat",
+          "description": "Repère le bon contact dans chaque entreprise, vérifie son e-mail avant d'écrire, et surveille les signaux récents, comme une embauche."
+        }
+      ]
+    },
+    "features": [
+      {
+        "title": "Vous approuvez ce qui part",
+        "description": "Cinq minutes par jour pour relire les e-mails préparés. Rien ne part sans votre feu vert, et vous pouvez désactiver l'approbation quand vous ferez confiance au système."
+      },
+      {
+        "title": "Domaine propre, chauffé avec patience",
+        "description": "Un domaine d'envoi dédié qui augmente son volume progressivement pendant les premières semaines, pour arriver dans la boîte de réception et non dans les spams."
+      },
+      {
+        "title": "Un message écrit pour chaque prospect",
+        "description": "Chaque e-mail est rédigé de zéro avec le contexte réel de votre entreprise et du destinataire. Une séquence de jusqu'à quatre messages, pas un modèle rempli."
+      },
+      {
+        "title": "Les réponses se classent toutes seules",
+        "description": "Intéressé, pas intéressé, hostile ou absent du bureau : chaque réponse est lue et classée automatiquement. Les réponses intéressées sont prioritaires, et nous vous prévenons par e-mail et Telegram."
+      },
+      {
+        "title": "Six expéditeurs avec leur propre signature",
+        "description": "Vos e-mails partent répartis entre six boîtes mail, chacune avec son nom et son poste réels, pour préserver la réputation du domaine."
+      },
+      {
+        "title": "D'une réponse à un rendez-vous",
+        "description": "Quand quelqu'un répond avec intérêt, la séquence se met en pause et nous vous prévenons instantanément par e-mail et Telegram. Le lien de votre Cal.com voyage dans chaque e-mail, il peut donc aussi réserver directement depuis là."
+      },
+      {
+        "title": "Apportez vos propres contacts",
+        "description": "Vous avez déjà une liste ? Importez-la en CSV et elle entre dans la même mécanique de personnalisation et d'envoi que la recherche automatique."
+      },
+      {
+        "title": "Vous payez par prospect travaillé",
+        "description": "Pas par poste ni par abonnement. Un crédit pour chaque nouveau prospect à qui l'on écrit ; les relances de cette séquence ne consomment pas de crédit supplémentaire."
+      }
+    ],
+    "moreLink": "Voir tout ce qu'il fait, en détail"
   }
 }
