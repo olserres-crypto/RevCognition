@@ -4,6 +4,7 @@ import {notFound} from "next/navigation";
 import {NextIntlClientProvider, hasLocale} from "next-intl";
 import {setRequestLocale, getTranslations} from "next-intl/server";
 import {routing} from "@/i18n/routing";
+import {buildAlternates} from "@/i18n/metadata";
 import {MotionProvider} from "@/components/providers/MotionProvider";
 import "../globals.css";
 
@@ -41,15 +42,7 @@ export async function generateMetadata({
     title: t("title"),
     description: t("description"),
     metadataBase: new URL(base),
-    alternates: {
-      canonical: `${base}${path}`,
-      languages: {
-        es: base,
-        en: `${base}/en`,
-        fr: `${base}/fr`,
-        "x-default": base,
-      },
-    },
+    alternates: buildAlternates(locale, ""),
     openGraph: {
       title: t("title"),
       description: t("description"),

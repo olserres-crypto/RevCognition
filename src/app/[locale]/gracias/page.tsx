@@ -1,11 +1,17 @@
 import Link from "next/link";
 import { Nav } from "@/components/sections/Nav";
 import {setRequestLocale} from "next-intl/server";
+import {buildAlternates} from "@/i18n/metadata";
 
-export const metadata = {
-  title: "¡Gracias! — RevCognition",
-  description: "Tu compra se ha procesado correctamente.",
-};
+export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
+  const {locale} = await params;
+  return {
+    title: "¡Gracias! — RevCognition",
+    description: "Tu compra se ha procesado correctamente.",
+    robots: {index: false, follow: false},
+    alternates: buildAlternates(locale, "/gracias"),
+  };
+}
 
 export default async function GraciasPage({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;

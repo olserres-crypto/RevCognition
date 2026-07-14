@@ -2,12 +2,17 @@ import Link from "next/link";
 import { Nav } from "@/components/sections/Nav";
 import { Footer } from "@/components/sections/Footer";
 import {setRequestLocale} from "next-intl/server";
+import {buildAlternates} from "@/i18n/metadata";
 
-export const metadata = {
-  title: "Política de privacidad — RevCognition",
-  description:
-    "Cómo tratamos tus datos en RevCognition: qué recogemos, para qué, cuánto tiempo y cómo ejercer tus derechos.",
-};
+export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
+  const {locale} = await params;
+  return {
+    title: "Política de privacidad — RevCognition",
+    description:
+      "Cómo tratamos tus datos en RevCognition: qué recogemos, para qué, cuánto tiempo y cómo ejercer tus derechos.",
+    alternates: buildAlternates(locale, "/privacy"),
+  };
+}
 
 export default async function PrivacyPage({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
