@@ -22,5 +22,19 @@
     "privacy": "Privacy policy",
     "unsubscribe": "Unsubscribe",
     "copyright": "© 2026"
+  },
+  "hero": {
+    "line1": "New clients, every week.",
+    "line2": "No agencies.",
+    "line3": "No wasted time.",
+    "subtitle": "RevCognition identifies your ideal clients and writes each one a unique message. You write nothing. You pay no agency. And you don't have to find the time.",
+    "ctaPrimary": "Request beta access",
+    "ctaSecondary": "See how it works",
+    "note": "Closed beta, limited seats. We analyze your website and prepare an ideal-customer-profile proposal before you decide anything.",
+    "signalCard": {
+      "detected": "Signal detected · 3 hours ago",
+      "example": "Laboratorios Roca · OEPM filing rejected · class 5 · 04287391",
+      "live": "Live"
+    }
   }
 }

@@ -22,5 +22,19 @@
     "privacy": "Política de privacidad",
     "unsubscribe": "Unsubscribe",
     "copyright": "© 2026"
+  },
+  "hero": {
+    "line1": "Nuevos clientes, cada semana.",
+    "line2": "Sin agencias.",
+    "line3": "Sin perder el tiempo.",
+    "subtitle": "RevCognition identifica a tus clientes ideales y les escribe un mensaje único a cada uno. Tú no escribes nada. No pagas a ninguna agencia. Y no tienes que encontrar el tiempo.",
+    "ctaPrimary": "Solicita acceso a la beta",
+    "ctaSecondary": "Ver cómo funciona",
+    "note": "Beta cerrada, plazas limitadas. Analizamos tu web y te preparamos una propuesta de perfil de cliente ideal antes de que decidas nada.",
+    "signalCard": {
+      "detected": "Señal detectada · hace 3 horas",
+      "example": "Laboratorios Roca · Depósito OEPM rechazado · clase 5 · 04287391",
+      "live": "En vivo"
+    }
   }
 }
