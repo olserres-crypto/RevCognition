@@ -3,6 +3,7 @@ import { Nav } from "@/components/sections/Nav";
 import { Producto } from "@/components/sections/Producto";
 import { CtaFinal } from "@/components/sections/CtaFinal";
 import { Footer } from "@/components/sections/Footer";
+import {setRequestLocale} from "next-intl/server";
 
 const TITLE = "Producto — RevCognition | Prospección en frío, de principio a fin";
 const DESCRIPTION =
@@ -36,7 +37,9 @@ export const metadata: Metadata = {
   },
 };
 
-export default function ProductoPage() {
+export default async function ProductoPage({params}: {params: Promise<{locale: string}>}) {
+  const {locale} = await params;
+  setRequestLocale(locale);
   return (
     <>
       <Nav />

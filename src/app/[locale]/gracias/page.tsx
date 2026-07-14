@@ -1,12 +1,15 @@
 import Link from "next/link";
 import { Nav } from "@/components/sections/Nav";
+import {setRequestLocale} from "next-intl/server";
 
 export const metadata = {
   title: "¡Gracias! — RevCognition",
   description: "Tu compra se ha procesado correctamente.",
 };
 
-export default function GraciasPage() {
+export default async function GraciasPage({params}: {params: Promise<{locale: string}>}) {
+  const {locale} = await params;
+  setRequestLocale(locale);
   return (
     <>
       <Nav />

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Nav } from "@/components/sections/Nav";
 import { Footer } from "@/components/sections/Footer";
+import {setRequestLocale} from "next-intl/server";
 
 export const metadata = {
   title: "Política de privacidad — RevCognition",
@@ -8,7 +9,9 @@ export const metadata = {
     "Cómo tratamos tus datos en RevCognition: qué recogemos, para qué, cuánto tiempo y cómo ejercer tus derechos.",
 };
 
-export default function PrivacyPage() {
+export default async function PrivacyPage({params}: {params: Promise<{locale: string}>}) {
+  const {locale} = await params;
+  setRequestLocale(locale);
   return (
     <>
       <Nav />

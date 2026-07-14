@@ -3,6 +3,7 @@ import { Nav } from "@/components/sections/Nav";
 import { ServiciosB2B } from "@/components/sections/ServiciosB2B";
 import { CtaFinal } from "@/components/sections/CtaFinal";
 import { Footer } from "@/components/sections/Footer";
+import {setRequestLocale} from "next-intl/server";
 
 const TITLE =
   "Servicios B2B — RevCognition | Prospección en frío para despachos y agencias";
@@ -37,7 +38,9 @@ export const metadata: Metadata = {
   },
 };
 
-export default function ServiciosB2BPage() {
+export default async function ServiciosB2BPage({params}: {params: Promise<{locale: string}>}) {
+  const {locale} = await params;
+  setRequestLocale(locale);
   return (
     <>
       <Nav />
