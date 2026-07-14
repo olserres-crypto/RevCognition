@@ -1,42 +1,27 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { motion, useReducedMotion } from "framer-motion";
 
-const problems = [
-  {
-    label: "Tu red de contactos",
-    cost: "Oportunidades perdidas",
-    description:
-      "Prospectas cuando tienes tiempo, que es casi nunca. El sistema se para cuando tú te paras.",
-  },
-  {
-    label: "Una agencia de captación",
-    cost: "500–2.000€/mes, resultados nulos",
-    description:
-      "Recibes informes, no reuniones. Los mensajes son genéricos aunque te digan que son personalizados. No ves qué se envía en tu nombre.",
-  },
-  {
-    label: "Una herramienta genérica",
-    cost: "Horas de configuración, spam",
-    description:
-      "Necesitas ser técnico para usarla, o aceptar que los mensajes no tienen ningún contexto sobre tu negocio ni el del prospecto.",
-  },
-];
-
 export function Problem() {
+  const t = useTranslations("problem");
   const reduce = useReducedMotion();
+  const problems = t.raw("items") as {
+    label: string;
+    cost: string;
+    description: string;
+  }[];
   return (
     <section className="bg-[var(--color-surface)] py-16 sm:py-24">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-warm)] mb-4">
-          El problema
+          {t("eyebrow")}
         </p>
         <h2 className="font-serif text-3xl sm:text-4xl text-[var(--color-ink)] mb-4">
-          ¿Qué estás haciendo ahora?
+          {t("heading")}
         </h2>
         <p className="text-[var(--color-slate)] text-lg mb-12 max-w-xl">
-          Todas las opciones tienen un coste real. Solo que en una de ellas ese
-          coste aparece en la factura.
+          {t("intro")}
         </p>
 
         <div className="divide-y divide-[var(--color-border)]">
@@ -74,15 +59,15 @@ export function Problem() {
         >
           <div className="sm:flex-1">
             <p className="text-xs font-semibold uppercase tracking-widest text-[var(--color-warm)] mb-2">
-              RevCognition
+              {t("contrast.eyebrow")}
             </p>
             <p className="text-[var(--color-slate)] text-sm leading-relaxed">
-              El sistema localiza prospectos que encajan con tu perfil, escribe un mensaje único para cada uno y los envía. Ves cada mensaje antes de salir. Sin configuración técnica, sin intermediarios.
+              {t("contrast.description")}
             </p>
           </div>
           <div className="mt-2 sm:mt-0 sm:text-right sm:shrink-0">
             <p className="text-sm font-semibold text-[var(--color-warm)]">
-              0€ en agencias
+              {t("contrast.cost")}
             </p>
           </div>
         </motion.div>

@@ -1,0 +1,657 @@
+{
+  "metadata": {
+    "title": "RevCognition — New clients, every week. No agencies.",
+    "description": "RevCognition finds your ideal clients and writes each one a unique message. You write nothing. You pay no agency. And you don't have to find the time.",
+    "ogAlt": "RevCognition — New clients, every week."
+  },
+  "a11y": {
+    "skipToContent": "Skip to content"
+  },
+  "nav": {
+    "comoFunciona": "How it works",
+    "producto": "Product",
+    "precios": "Pricing",
+    "accederApp": "Access the App",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "mainMenu": "Main menu",
+    "home": "RevCognition — home"
+  },
+  "footer": {
+    "solutions": "Solutions: B2B services",
+    "privacy": "Privacy policy",
+    "unsubscribe": "Unsubscribe",
+    "copyright": "© 2026"
+  },
+  "hero": {
+    "line1": "New clients, every week.",
+    "line2": "No agencies.",
+    "line3": "No wasted time.",
+    "subtitle": "RevCognition identifies your ideal clients and writes each one a unique message. You write nothing. You pay no agency. And you don't have to find the time.",
+    "ctaPrimary": "Request beta access",
+    "ctaSecondary": "See how it works",
+    "note": "Closed beta, limited seats. We analyze your website and prepare an ideal-customer-profile proposal before you decide anything.",
+    "signalCard": {
+      "detected": "Signal detected · 3 hours ago",
+      "example": "Laboratorios Roca · OEPM filing rejected · class 5 · 04287391",
+      "live": "Live"
+    },
+    "emailPreview": {
+      "badge": "Email generated · ready to send",
+      "fromLabel": "From:",
+      "fromValue": "Alex <alex@martinez-asoc.com>",
+      "toLabel": "To:",
+      "toValue": "Ana Martínez <a.martinez@gab-marcas.es>",
+      "subjectLabel": "Subject:",
+      "subjectValue": "Laboratorios Roca, filing rejected Apr 11",
+      "greeting": "Hi Ana,",
+      "body1": "Laboratorios Roca's trademark filing (class 5, application 04287391) was rejected on April 11. The appeal deadline is running, and in our experience, 62% of trademark holders still haven't assigned an IP lawyer at this stage.",
+      "body2": "It's exactly the kind of signal that firms like Martínez & Asoc. turn into a client before the holder even searches Google.",
+      "cta": "Let's talk for 10 minutes this week →",
+      "signoffLine": "Best,",
+      "signoffName": "Alex"
+    }
+  },
+  "problem": {
+    "eyebrow": "The problem",
+    "heading": "What are you doing right now?",
+    "intro": "Every option has a real cost. It's just that with one of them, that cost shows up on the invoice.",
+    "items": [
+      {
+        "label": "Your contact network",
+        "cost": "Missed opportunities",
+        "description": "You prospect when you have time, which is almost never. The system stops the moment you do."
+      },
+      {
+        "label": "A lead-gen agency",
+        "cost": "€500–2,000/month, no results",
+        "description": "You get reports, not meetings. The messages are generic even when you're told they're personalized. You never see what's sent in your name."
+      },
+      {
+        "label": "A generic tool",
+        "cost": "Hours of setup, spam",
+        "description": "You need to be technical to use it, or accept that the messages carry no context about your business or your prospect's."
+      }
+    ],
+    "contrast": {
+      "eyebrow": "RevCognition",
+      "description": "The system finds prospects that match your profile, writes a unique message for each one, and sends it. You see every message before it goes out. No technical setup, no middlemen.",
+      "cost": "0€ in agency fees"
+    }
+  },
+  "howItWorks": {
+    "eyebrow": "How it works",
+    "heading": "Three steps. Then the system works on its own.",
+    "steps": [
+      {
+        "title": "Tell us who you are",
+        "description": "We analyze your website and automatically generate positioning proposals: what problem you solve, your tone, your services, and your ideal customer profile. You pick the strategy that fits you best.",
+        "time": "Setup: 10–15 minutes"
+      },
+      {
+        "title": "The system identifies your prospects",
+        "description": "RevCognition finds companies that match your profile, enriches them with real signals (sector, size, activity, intent signals), and builds a qualified list.",
+        "time": "No effort from you"
+      },
+      {
+        "title": "Every prospect gets a message written for them",
+        "description": "An LLM combines your profile, our bank of high-performing sales messages, and the prospect's data to write a unique message. You approve the daily sends or let them go out on their own.",
+        "time": "Optional review: 10 min/day"
+      }
+    ],
+    "mockups": {
+      "diagnostico": {
+        "metaText": "Analysis generated",
+        "profileLabel": "Ideal customer profile",
+        "profileValue": "Law firms · 20+ people",
+        "problemLabel": "Key problem",
+        "problemValue": "100% dependent on referrals",
+        "sectorsLabel": "Sectors detected"
+      },
+      "prospectos": {
+        "title": "Prospects",
+        "metaText": "3 new today",
+        "colEmpresa": "Company",
+        "colSector": "Sector",
+        "colSenal": "Signal",
+        "nivelAlto": "High",
+        "nivelMedio": "Medium"
+      },
+      "mensaje": {
+        "title": "Message",
+        "signalNote": "Public tender ENISA · 2d ago",
+        "greeting": "Good morning, Marcos,",
+        "body": "I saw that Bufete Serrano is taking part in the ENISA call. At similar firms we've helped structure the proposal and...",
+        "readyToSend": "Ready to send",
+        "viewFull": "View full"
+      }
+    }
+  },
+  "featuresGrid": {
+    "eyebrow": "What it does for you",
+    "heading": "All the mechanical work of prospecting, done.",
+    "intro": "You keep the judgment calls; the system puts in the hours. Here's what it takes care of, day after day.",
+    "howEncuentra": {
+      "eyebrow": "How it finds your customers",
+      "intro": "What if your industry is niche, or your target area is small? The search doesn't rely on a single list: for just one customer profile there can be more than 400,000 candidate companies spread across several databases, and the system keeps checking them non-stop to keep only the ones that fit.",
+      "steps": [
+        {
+          "title": "Reads your website",
+          "description": "Understands what problem you solve and what type of customer you serve, from your own website."
+        },
+        {
+          "title": "Builds your ideal customer profile",
+          "description": "Turns that into an ideal customer profile: industry, location, and company size."
+        },
+        {
+          "title": "Searches continuously across partner databases",
+          "description": "Matches that profile non-stop against several company databases and scores each one on how well it fits."
+        },
+        {
+          "title": "Verifies emails and detects buying signals",
+          "description": "Finds the right contact at each company, verifies their email before writing, and checks for recent signals, like a new hire."
+        }
+      ]
+    },
+    "features": [
+      {
+        "title": "You approve what goes out",
+        "description": "Five minutes a day to review the prepared emails. Nothing goes out without your sign-off, and you can turn off approval once you trust the system."
+      },
+      {
+        "title": "Your own domain, warmed up patiently",
+        "description": "A dedicated sending domain that ramps up its volume gradually over the first few weeks, to land in the inbox instead of spam."
+      },
+      {
+        "title": "A message written for each prospect",
+        "description": "Every email is written from scratch with the real context of your business and the recipient. A sequence of up to four messages, not a filled-in template."
+      },
+      {
+        "title": "Replies sort themselves",
+        "description": "Interested, not interested, hostile, or out of office: every reply is read and sorted on its own. Interested ones are prioritized, and we notify you by email and Telegram."
+      },
+      {
+        "title": "Six senders with their own signature",
+        "description": "Your emails go out spread across six mailboxes, each with its real name and title, to protect the domain's reputation."
+      },
+      {
+        "title": "From a reply to a meeting",
+        "description": "When someone replies with interest, the sequence pauses and we notify you instantly by email and Telegram. Your Cal.com link travels in every email, so they can also book directly from there."
+      },
+      {
+        "title": "Bring your own contacts",
+        "description": "Already have a list? Upload it as CSV and it enters the same personalization and sending machinery as automatic search."
+      },
+      {
+        "title": "You pay per prospect worked",
+        "description": "Not per seat or subscription. One credit for each new prospect written to; follow-ups in that sequence don't cost extra credit."
+      }
+    ],
+    "moreLink": "See everything it does, in detail"
+  },
+  "useCases": {
+    "eyebrow": "Use cases we solve",
+    "heading": "The system understands your specific context.",
+    "intro": "It doesn't send generic emails. Any agency can do that.",
+    "solutionLabel": "How RevCognition solves it",
+    "moreLink": "How we work with B2B services",
+    "cases": [
+      {
+        "sector": "Trademark law firm",
+        "problem": "A database of perfect signals, emails nobody answers",
+        "problemDetail": "Every rejected trademark filing is a company with a real legal urgency. They have the database. But the emails their agency sends are generic, without mentioning the specific rejection or the concrete risk. Result: almost zero replies, despite having the clearest intent signal there is.",
+        "solution": "RevCognition takes that case base as context, writes a message that mentions each company's specific rejection, and leaves it ready for your five-minute daily review."
+      },
+      {
+        "sector": "Advertising space sales agency",
+        "problem": "You prospect through your personal network. When you're busy, everything stops",
+        "problemDetail": "One person handles everything. They know there's a market, they know they should prospect more. But prospecting always gets pushed to whenever there's time, which never comes. There's no system, just sporadic calls to contacts they already know.",
+        "solution": "RevCognition identifies companies in the sector that match the ideal customer profile, enriches them, and writes them contextualized messages. The system keeps running even while the founder is with a client."
+      }
+    ]
+  },
+  "pricing": {
+    "eyebrow": "Pricing",
+    "heading": "From €1 per prospect. The bigger the pack, the cheaper per email.",
+    "intro": "You don't pay for seats or tools. You pay per prospect worked: 1 credit is spent on the first email to a new prospect, and the follow-ups in that same sequence don't cost extra. If they reply first, the system stops. If not, it closes gracefully.",
+    "perProspectIncludes": "Every prospect includes: identification, enrichment with real signals, and a full sequence (opener, follow-up, new angle, close).",
+    "noCommitment": "No commitment, no subscription. Credits never expire.",
+    "noVat": "VAT excl.",
+    "qualifiedProspects": "{count} qualified prospects",
+    "perSend": "{value} / email",
+    "requestAccess": "Request access with this pack",
+    "talkToFounder": "Talk to the founder →",
+    "plans": [
+      {
+        "name": "To get started",
+        "tagline": "Try the system with your first market segment.",
+        "discount": null
+      },
+      {
+        "name": "To grow",
+        "tagline": "Cover several segments or markets in parallel.",
+        "discount": "cheaper per email"
+      },
+      {
+        "name": "To scale",
+        "tagline": "Continuous prospecting without constantly topping up.",
+        "discount": "cheaper per email"
+      }
+    ],
+    "setup": {
+      "title": "Setup: €50 (VAT excl.).",
+      "description": "Initial system setup, analysis of your website, and strategy definition.",
+      "includes": [
+        "Automatic purchase and renewal of the sending domain",
+        "Automatic SPF, DKIM, and DMARC configuration",
+        "Automatic reply classification (interested, not interested, hostile, out of office)",
+        "Automatic domain warm-up: volume ramps up gradually to reach full volume by the fourth week",
+        "Six senders with their own name and signature",
+        "Direct booking on your calendar (Cal.com)"
+      ]
+    },
+    "fiscalNote": "Prices exclude tax: VAT or other applicable taxes are added to the invoice based on your company's country.",
+    "ownList": "Already have your own prospect list? You can use it directly. The system enriches it and writes the messages on top of it.",
+    "betaNote": "Closed beta, limited spots. Request access and, if there's room, you're in this week; if not, you join the waitlist and we'll notify you as soon as a spot opens up."
+  },
+  "founder": {
+    "eyebrow": "Why this exists",
+    "heading": "Twenty years in marketing automation. No tool built for the solo founder.",
+    "paragraph1": "I've spent twenty years working in marketing automation, watching up close how large companies handle their outbound. And also the tools that existed for everyone else.",
+    "paragraph2": "Most of them ask you to be technical, to write the messages yourself, to manage sequences by hand, or to blindly trust an agency that doesn't understand your business. Neither option was acceptable for a founder with little time and a lot to prove.",
+    "closingPre": "RevCognition is what",
+    "closingItalic": "I",
+    "closingPost": "would have wanted to have."
+  },
+  "ctaFinal": {
+    "heading": "Join the closed beta.",
+    "subtitle": "We're opening spots gradually to take care of every account. Request access and we'll start by analyzing your website and your market.",
+    "ctaButton": "Request access to the beta",
+    "legalPre": "Prefer to see it with the founder first?",
+    "legalMailtoLink": "Email me directly.",
+    "legalCalLink": "Book a meeting"
+  },
+  "producto": {
+    "metaTitle": "Product — RevCognition | Cold outreach, start to finish",
+    "metaDescription": "Everything RevCognition does: set up in one session, a five-minute daily review, messages written for each prospect, your own domain warmed up patiently, and replies sorted automatically.",
+    "ogAlt": "RevCognition — the product in detail.",
+    "hero": {
+      "eyebrow": "Product",
+      "heading1": "Everything the system does,",
+      "heading2": "from the first session to the first yes.",
+      "subtitle": "RevCognition sets up your cold outreach end to end and keeps it running, day after day. Here's what happens under the hood, no jargon."
+    },
+    "nav": {
+      "ariaLabel": "Page sections",
+      "sections": {
+        "setup": "Getting started",
+        "diaADia": "Day to day",
+        "motor": "The engine",
+        "entregabilidad": "Deliverability",
+        "faq": "FAQ"
+      }
+    },
+    "setup": {
+      "eyebrow": "Getting started",
+      "title": "From your website to an active campaign, in one session.",
+      "intro": "Setting up cold outreach from scratch — domain, mailboxes, sequence, messages — usually takes weeks and several tools. Here it's a single guided session, start to finish.",
+      "depth": [
+        {
+          "title": "An assistant that gets your account ready to send",
+          "body": "You paste your website URL and the system drafts a first commercial profile: who you're targeting, what sets you apart, and your tone. You review it, choose a dedicated domain, set up your senders and your booking link, and once you're done the domain enters warm-up. No agencies, no weeks of setup."
+        },
+        {
+          "title": "Your own, authenticated email domain",
+          "body": "You choose a dedicated domain for your outreach. The system authenticates it (SPF, DKIM, DMARC) and builds its reputation from zero, so it never touches your main inbox or depends on a shared IP."
+        }
+      ],
+      "oneLiners": [
+        {
+          "title": "Editable commercial profile",
+          "body": "Correct what the AI understood about your business. Your judgment guides every email, and changes apply to the next batch of contacts."
+        },
+        {
+          "title": "Senders with a real identity",
+          "body": "Your senders, with real names and titles, protected so they don't damage the domain's reputation."
+        }
+      ]
+    },
+    "diaADia": {
+      "eyebrow": "Day to day",
+      "title": "Five minutes a day. The rest happens on its own.",
+      "intro": "Human judgment stays at the center: nothing goes out without your approval, but the review is a short daily session, not constant configuration.",
+      "depth": [
+        {
+          "title": "You approve what goes out, and only that",
+          "body": "In the Approval Center you see every email already drafted — subject and body, with name, company, and address — before it's sent. Edit the text if you want, expand the full follow-up sequence, mark the ones you approve, and discard the rest. Once you trust the system, you can turn off approval and let sends go out on their own."
+        }
+      ],
+      "oneLiners": [
+        {
+          "title": "An honest dashboard",
+          "body": "Real numbers, not decorative charts: emails sent, replies, and reply rate for your last 30 days."
+        },
+        {
+          "title": "Your lists, with a clear status",
+          "body": "Contact lists, grouped by file and date, showing what's been processed and what's left."
+        },
+        {
+          "title": "Bring your own contacts",
+          "body": "A CSV and your contacts enter the same personalization and sending flow as automatic sourcing."
+        },
+        {
+          "title": "You control the settings",
+          "body": "When you send, how we notify you (email and Telegram), and how your campaign behaves — no ticket needed for every change."
+        },
+        {
+          "title": "You pay per prospect worked",
+          "body": "Not per seat, not a subscription. Top up credits whenever you want, securely with Stripe."
+        }
+      ]
+    },
+    "motor": {
+      "eyebrow": "The engine",
+      "title": "Finds, verifies, and writes. For every prospect.",
+      "intro": "Finding good target companies is the slowest part of prospecting. The system does it continuously, and for every contact it writes a message built for them.",
+      "depth": [
+        {
+          "title": "A message written from scratch, not a template",
+          "body": "Using your commercial profile and the real context of each company, the system drafts a full sequence per contact — opener, follow-up, new angle, and closer. Every email is generated in the language that matches the company's location, so it reads like something handwritten, not a filled-in template."
+        },
+        {
+          "title": "When there's a signal, the message uses it",
+          "body": "The system also watches for recent activity signals at the target company, like a new hire. When one appears, the message can build on it — for example, if the company is expanding its sales team — to land at the moment it matters most."
+        }
+      ],
+      "oneLiners": [
+        {
+          "title": "Companies that match your ICP",
+          "body": "Finds the companies that match your ideal customer — sector, location, and size — and rules out the ones that don't."
+        },
+        {
+          "title": "Contacts with a verified email",
+          "body": "The right people at each company, with the email address verified before writing."
+        }
+      ]
+    },
+    "entregabilidad": {
+      "eyebrow": "Deliverability and replies",
+      "title": "Reaching the inbox, and knowing what to do next.",
+      "intro": "Cold sending from a new or shared domain ends up in spam. A dedicated domain, warmed up carefully, protects your reputation — and when replies come in, each one gets handled the way it deserves.",
+      "depth": [
+        {
+          "title": "Real warm-up, not a switch",
+          "body": "The domain starts with a few emails a day and ramps up the volume gradually — from a range of 4 to 16 a day in the first week to a full volume of 50 by the fourth. The dashboard always shows the warm-up day and the current volume."
+        },
+        {
+          "title": "Every reply, read and classified",
+          "body": "Interested, not interested, hostile, or out of office: the intent is detected automatically. If there's interest, the sequence pauses and you get the reply instantly by email and Telegram to pick up the conversation yourself; your Cal.com link travels in every email, so the prospect can also book directly from there. A temporary absence pauses and resumes after a few days; a hostile reply closes the thread for good."
+        }
+      ],
+      "oneLiners": [
+        {
+          "title": "From reply to meeting",
+          "body": "When someone replies with interest, the sequence pauses and we notify you instantly by email and Telegram; your Cal.com link travels in every email, so they can also book directly from there."
+        },
+        {
+          "title": "Opt-outs and compliance by default",
+          "body": "Every email includes an unsubscribe option, and whoever uses it never receives anything again, across any of your campaigns."
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "heading": "What people usually ask before signing up.",
+      "items": [
+        {
+          "q": "Will I end up in spam?",
+          "a": "It's the first thing we take care of. You send from your own, dedicated domain — not a shared one — and its reputation warms up gradually over the first four weeks, until it reaches full sending volume. On top of that, every email address is verified before writing, so bounces stay low and your messages land in the inbox."
+        },
+        {
+          "q": "How much control do I have?",
+          "a": "As much as you want. Every email is prepared but doesn't go out until you approve it — a review of about five minutes a day — and you can edit the text before sending. If you'd rather delegate, you turn off approval and sends go out on their own. The commercial profile that guides every message is yours to adjust whenever you want."
+        },
+        {
+          "q": "What language does it write in?",
+          "a": "The language that matches each prospect's location, with English as the default. It's not necessarily your own language: if you write to a company in France, the message goes out in French; to one in Germany, in German. The goal is for every recipient to read the email in their own language."
+        },
+        {
+          "q": "What happens when someone replies?",
+          "a": "Every reply is read and classified automatically: interested, not interested, hostile, or out of office. If there's interest, the sequence pauses instantly and you get the reply by email and Telegram to pick it up yourself; your Cal.com link travels in every email sent, so the prospect can also book directly from there. If there's no interest or the reply is hostile, the thread is closed carefully and never contacted again."
+        },
+        {
+          "q": "What does it cost?",
+          "a": "An initial setup fee of €50 to get the account ready, then send packs starting at €100 (100 sends), with volume discounts: 600 sends for €500 and 1,300 for €1,000. Prices exclude tax: applicable VAT is added on the invoice based on your company's country. A credit is consumed on the first send to a new prospect; follow-ups in that same sequence don't cost extra credits. No commitment, and credits never expire."
+        },
+        {
+          "q": "Does it work in my industry or country?",
+          "a": "The system searches continuously across specialized partner databases: for a single ideal customer profile — sector, location, and size — there can be more than 400,000 candidate companies. And every email arrives in the language that matches the recipient's country, so coverage doesn't depend on the language you speak."
+        },
+        {
+          "q": "Where do the contact details come from?",
+          "a": "Contacts come from partner databases specialized in professional information. Before writing, every email address is verified to keep bounces low, and every email includes an opt-out option: whoever unsubscribes never receives anything again, in compliance with regulations."
+        }
+      ]
+    },
+    "mockups": {
+      "wizard": {
+        "title": "Setup",
+        "metaText": "Step 5 of 6",
+        "domainLabel": "Sending domain",
+        "domainValue": "mail-yourcompany.example",
+        "sendersHeading": "Senders · 6 mailboxes",
+        "senders": [
+          {
+            "name": "Alex Serra",
+            "role": "Founder"
+          },
+          {
+            "name": "Marina Gil",
+            "role": "Business development"
+          },
+          {
+            "name": "Pau Roig",
+            "role": "Accounts"
+          }
+        ],
+        "moreSenders": "+ 3 more senders"
+      },
+      "aprobacion": {
+        "title": "Approval",
+        "metaText": "1 of 8 pending",
+        "toLabel": "To:",
+        "toValue": "Ana Ruiz · Bufete Serrano",
+        "subjectLabel": "Subject:",
+        "subjectValue": "Your ENISA funding call",
+        "body": "Good morning, Ana. I saw that Bufete Serrano is taking part in the ENISA call. At similar firms we've helped...",
+        "approve": "Approve",
+        "discard": "Discard"
+      },
+      "secuencia": {
+        "title": "Sequence",
+        "metaText": "4 messages",
+        "steps": [
+          {
+            "day": "Day 0",
+            "name": "Opener"
+          },
+          {
+            "day": "+3 days",
+            "name": "Follow-up"
+          },
+          {
+            "day": "+5 days",
+            "name": "New angle"
+          },
+          {
+            "day": "+4 days",
+            "name": "Closer"
+          }
+        ],
+        "signalLabel": "Signal detected",
+        "signalValue": "Example Company is expanding its sales team",
+        "body": "Hi Laura. I saw that Example Company is expanding its sales team — I imagine prospecting is part of that growth..."
+      },
+      "ramp": {
+        "title": "Warm-up",
+        "metaText": "In progress",
+        "weeks": [
+          {
+            "label": "Week 1",
+            "value": "4 – 16 / day"
+          },
+          {
+            "label": "Week 2",
+            "value": "18 – 30 / day"
+          },
+          {
+            "label": "Week 3",
+            "value": "32 – 44 / day"
+          },
+          {
+            "label": "Week 4",
+            "value": "50 / day · full"
+          }
+        ],
+        "statusLabel": "Reply classified · Interested"
+      }
+    }
+  },
+  "serviciosB2B": {
+    "metaTitle": "B2B Services — RevCognition | Cold outreach for law firms and agencies",
+    "metaDescription": "For law firms, agencies, and consultancies that live on referrals: RevCognition finds new clients that match your profile and writes them a message of their own. Your only task: five minutes a day approving emails.",
+    "ogAlt": "RevCognition for B2B services.",
+    "hero": {
+      "eyebrow": "B2B Services",
+      "heading1": "You live off referrals.",
+      "heading2": "And you have no time left to prospect.",
+      "subtitle": "Law firms, agencies, and consultancies tend to depend on who refers them. RevCognition finds new clients who match your profile and writes each one a message of their own, while you keep serving the clients you already have. Your only task: review the prepared emails, five minutes a day."
+    },
+    "steps": {
+      "eyebrow": "How it works",
+      "heading": "How it finds your next clients.",
+      "intro": "What if your specialty is uncommon, or your area is small? The search doesn't rely on a single list: for a single client profile there can be more than 400,000 candidate companies, and the system reviews them continuously to keep only the ones that fit.",
+      "items": [
+        {
+          "title": "Reads your website",
+          "body": "Understands what you do and what kind of client you serve, starting from your own website."
+        },
+        {
+          "title": "Builds your ideal client profile",
+          "body": "Translates that into an ideal client profile: industry, location, and company size."
+        },
+        {
+          "title": "Searches continuously across partner databases",
+          "body": "Matches that profile nonstop against several company databases and scores each one on how well it fits."
+        },
+        {
+          "title": "Verifies emails and detects buying signals",
+          "body": "Finds the right contact at each company, verifies their email before writing, and checks for recent signals, like a new hire."
+        }
+      ],
+      "linkText": "See the full detail"
+    },
+    "stats": {
+      "eyebrow": "Results",
+      "heading": "We tested it with our own campaigns.",
+      "intro": "We use RevCognition for our own prospecting: the campaigns we run to find new clients run on this same product — the same dedicated domain, the same message engine, and the same five-minute daily review you'd have.",
+      "caseStudy": {
+        "label": "Next client case",
+        "title": "The first client case, in progress.",
+        "body": "First client case in progress: we'll publish the results of the first full campaign here, with real numbers."
+      },
+      "metrics": [
+        {
+          "label": "Emails sent"
+        },
+        {
+          "label": "Interested replies"
+        },
+        {
+          "label": "Meetings booked"
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "Questions",
+      "heading": "What people usually ask before signing up.",
+      "items": [
+        {
+          "q": "Does it work in my industry or my country?",
+          "a": "The system searches continuously across specialized partner databases: for a firm or agency with a defined client profile — industry, location, and size — there can be more than 400,000 candidate companies. Your specialty doesn't need to be common, nor your area large: the search doesn't depend on a single list."
+        },
+        {
+          "q": "Where does the contact data come from?",
+          "a": "Contacts come from partner databases specialized in professional information. Before writing, every email address is verified to keep bounces low, and every email includes an unsubscribe option: anyone who unsubscribes never receives anything again, in compliance with regulations."
+        },
+        {
+          "q": "Will I end up in spam?",
+          "a": "It's the first reasonable doubt, especially if you've never done cold outreach. That's why we never send from your firm's or agency's own inbox: you use a dedicated, separate sending domain, which authenticates automatically and ramps up its volume gradually over the first few weeks, until it reaches full volume. Your main inbox is never touched, and your reputation with your current clients stays out of it."
+        },
+        {
+          "q": "What happens when someone replies?",
+          "a": "Every reply is read and classified automatically: interested, not interested, aggressive, or out of office. If there's interest, the sequence pauses instantly, we notify you by email and Telegram, and the prospect receives your Cal.com link to book directly, with no back-and-forth emails. If there's no interest or the reply is hostile, the thread is closed carefully and never contacted again. As with any email, every message carries an unsubscribe option; anyone who unsubscribes never receives anything again."
+        }
+      ]
+    }
+  },
+  "gracias": {
+    "metaTitle": "Thank you! — RevCognition",
+    "metaDescription": "Your purchase has been processed successfully.",
+    "heading": "Purchase confirmed",
+    "bodyPre": "You'll receive an email with the next steps. If you have any questions, write to us at",
+    "backLink": "← Back to home"
+  },
+  "privacy": {
+    "metaTitle": "Privacy Policy — RevCognition",
+    "metaDescription": "How we handle your data at RevCognition: what we collect, why, for how long, and how to exercise your rights.",
+    "eyebrow": "Privacy Policy",
+    "heading": "We treat your data the way we'd want ours treated.",
+    "intro": "Plain-language summary. If you need the full legal version or want to exercise any of your rights, write to us at <email>olivier.serres@revcognition.com</email>.",
+    "backLink": "← Back to home",
+    "sections": [
+      {
+        "heading": "Who is the data controller",
+        "body": "RevCognition (Olivier Serres). Contact: <email>olivier.serres@revcognition.com</email>. Based in Barcelona, Spain."
+      },
+      {
+        "heading": "What data we collect and why",
+        "intro": "Only what you voluntarily give us, and always for a specific purpose:",
+        "items": [
+          {
+            "label": "Product sign-up and onboarding",
+            "body": "(account data, your website URL, product description, ICP configuration): to build your Company Brain and run your campaigns. This data lives on <appLink>app.revcognition.com</appLink>, not on this website."
+          },
+          {
+            "label": "Payment data",
+            "body": "(processed by Stripe, not stored by us): to process payment for packs purchased from the app."
+          },
+          {
+            "label": "Business contact data",
+            "body": "collected during prospecting: processed on the basis of legitimate interest in B2B communications, always with an immediate opt-out option on every message sent."
+          }
+        ]
+      },
+      {
+        "heading": "Who has access to your data",
+        "body": "Strictly operational data processors: Stripe (payment processing), Resend (transactional email delivery), cloud infrastructure providers (Vercel or equivalent). We do not sell data to third parties. We do not use it to train general-purpose models. We do not share it with advertisers."
+      },
+      {
+        "heading": "How long we keep it",
+        "body": "The minimum necessary. Analysis requests are archived for 12 months so we can respond to any follow-up questions. Tax data associated with payments is kept for the legally required accounting period. Business prospecting data is deleted upon the data subject's request, or after 14 days of no interaction if there is no subsequent contractual basis."
+      },
+      {
+        "heading": "Your rights",
+        "body": "Access, rectification, erasure, objection, restriction, and portability. Exercising any of them is as simple as writing to <email>olivier.serres@revcognition.com</email>. We respond within 30 days. If you believe we haven't handled it properly, you can file a complaint with the Spanish Data Protection Agency (<aepd>aepd.es</aepd>)."
+      },
+      {
+        "heading": "Cookies",
+        "body": "This website does not use tracking cookies or third-party analytics. Only cookies strictly necessary for operation (those Stripe may set during the payment process)."
+      },
+      {
+        "heading": "Changes to this policy",
+        "body": "If we make substantial updates to this policy, we will notify by email anyone with an active relationship with us. Last updated: May 2026."
+      }
+    ]
+  }
+}

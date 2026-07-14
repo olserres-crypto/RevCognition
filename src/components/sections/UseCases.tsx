@@ -1,49 +1,39 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { motion, useReducedMotion } from "framer-motion";
+import { Link } from "@/i18n/navigation";
 
-const cases = [
-  {
-    icon: "⚖️",
-    sector: "Gabinete de abogados de marcas",
-    problem:
-      "Una DB de señales perfectas, emails que nadie contesta",
-    problemDetail:
-      "Cada depósito de marca rechazado es una empresa con una urgencia legal real. Tienen la DB. Pero los emails que manda su agencia son genéricos, sin mencionar el rechazo específico ni el riesgo concreto. Resultado: casi cero respuestas, pese a tener la señal de intención más clara que existe.",
-    // Corregido en auditoría UseCases (B-591 wave, Task 8): la versión anterior
-    // implicaba una fuente de señal automática (registro de marcas) y una
-    // identificación de contacto sin intervención del abogado, ninguna de las
-    // dos verificable contra FEATURE_INVENTORY.md. Reescrito sobre "Trae tus
-    // propios contactos" (CSV + contexto) + generación de mensajes + revisión
-    // diaria — las tres, features reales del inventario.
-    solution:
-      "RevCognition toma esa base de casos como contexto, escribe un mensaje que menciona el rechazo específico de cada empresa, y lo deja listo para tu revisión diaria de cinco minutos.",
-  },
-  {
-    icon: "📡",
-    sector: "Agencia de venta de espacios publicitarios",
-    problem:
-      "Prospectas por red personal. Cuando estás ocupado, se para todo",
-    problemDetail:
-      "Una sola persona lo gestiona todo. Sabe que hay mercado, sabe que debería prospectar más. Pero la prospección siempre queda para cuando haya tiempo, que nunca llega. No hay sistema, solo llamadas esporádicas a contactos ya conocidos.",
-    solution:
-      "RevCognition identifica marcas del sector que encajan con el perfil de cliente ideal, las enriquece, y les escribe mensajes contextualizados. El sistema funciona aunque el fundador esté con un cliente.",
-  },
-];
+// Icono/estructura por índice; el texto vive en el catálogo
+// (messages/*.json, namespace useCases, campo "cases").
+// Corregido en auditoría UseCases (B-591 wave, Task 8): la versión anterior
+// implicaba una fuente de señal automática (registro de marcas) y una
+// identificación de contacto sin intervención del abogado, ninguna de las
+// dos verificable contra FEATURE_INVENTORY.md. Reescrito sobre "Trae tus
+// propios contactos" (CSV + contexto) + generación de mensajes + revisión
+// diaria — las tres, features reales del inventario.
+const caseIcons = ["⚖️", "📡"];
 
 export function UseCases() {
+  const t = useTranslations("useCases");
   const reduce = useReducedMotion();
+  const cases = t.raw("cases") as {
+    sector: string;
+    problem: string;
+    problemDetail: string;
+    solution: string;
+  }[];
   return (
     <section className="py-16 sm:py-24">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-warm)] mb-4">
-          Casos que resolvemos
+          {t("eyebrow")}
         </p>
         <h2 className="font-serif text-3xl sm:text-4xl text-[var(--color-ink)] mb-4">
-          El sistema entiende tu contexto específico.
+          {t("heading")}
         </h2>
         <p className="text-[var(--color-slate)] text-lg mb-12 max-w-xl">
-          No manda emails genéricos. Eso lo hace cualquier agencia.
+          {t("intro")}
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -57,7 +47,7 @@ export function UseCases() {
               className="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-xl p-6 sm:p-7 flex flex-col gap-5"
             >
               <div>
-                <span aria-hidden="true" className="text-3xl">{c.icon}</span>
+                <span aria-hidden="true" className="text-3xl">{caseIcons[i]}</span>
                 <p className="text-xs font-semibold uppercase tracking-widest text-[var(--color-slate)] mt-3 mb-1">
                   {c.sector}
                 </p>
@@ -72,7 +62,7 @@ export function UseCases() {
 
               <div className="border-t border-[var(--color-border)] pt-4">
                 <p className="text-xs font-semibold uppercase tracking-widest text-[var(--color-warm)] mb-2">
-                  Cómo lo resuelve RevCognition
+                  {t("solutionLabel")}
                 </p>
                 <p className="text-[var(--color-slate)] text-sm leading-relaxed">
                   {c.solution}
@@ -83,13 +73,13 @@ export function UseCases() {
         </div>
 
         <div className="mt-10">
-          <a
+          <Link
             href="/soluciones/servicios-b2b"
             className="inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--color-warm)] hover:text-[var(--color-warm-hover)] transition-colors rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2"
           >
-            Cómo trabajamos con servicios B2B
+            {t("moreLink")}
             <span aria-hidden="true">→</span>
-          </a>
+          </Link>
         </div>
       </div>
     </section>
