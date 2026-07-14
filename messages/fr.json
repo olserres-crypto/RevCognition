@@ -45,7 +45,7 @@
       "subjectLabel": "Objet :",
       "subjectValue": "Laboratorios Roca, dépôt rejeté le 11/04",
       "greeting": "Bonjour Ana,",
-      "body1": "Le dépôt de marque de Laboratorios Roca (classe 5, demande n° 04287391) a été rejeté le 11 avril dernier. Le délai de recours court et, d'après notre expérience, 62 % des titulaires n'ont encore assigné aucun avocat en PI à ce stade.",
+      "body1": "Le dépôt de marque de Laboratorios Roca (classe 5, demande n° 04287391) a été rejeté le 11 avril dernier. Le délai de recours court et, d'après notre expérience, 62 % des titulaires n'ont encore assigné aucun avocat en PI à ce stade.",
       "body2": "C'est exactement le type de signal que des cabinets comme Martínez & Asoc. transforment en client avant même que le titulaire ne cherche sur Google.",
       "cta": "Parlons-en 10 minutes cette semaine →",
       "signoffLine": "Cordialement,",
@@ -197,7 +197,7 @@
     "moreLink": "Comment nous travaillons avec les services B2B",
     "cases": [
       {
-        "sector": "Cabinet d'avocats en marques",
+        "sector": "Cabinet d'avocats spécialisé en droit des marques",
         "problem": "Une base de signaux parfaits, des e-mails auxquels personne ne répond",
         "problemDetail": "Chaque dépôt de marque rejeté est une entreprise avec une urgence juridique réelle. Ils ont la base de données. Mais les e-mails envoyés par leur agence sont génériques, sans mentionner le rejet précis ni le risque concret. Résultat : presque aucune réponse, malgré le signal d'intention le plus clair qui existe.",
         "solution": "RevCognition prend cette base de dossiers comme contexte, rédige un message qui mentionne le rejet spécifique de chaque entreprise, et le laisse prêt pour votre relecture quotidienne de cinq minutes."
@@ -206,7 +206,7 @@
         "sector": "Agence de vente d'espaces publicitaires",
         "problem": "Vous prospectez via votre réseau personnel. Quand vous êtes occupé, tout s'arrête",
         "problemDetail": "Une seule personne gère tout. Elle sait qu'il y a un marché, elle sait qu'elle devrait prospecter davantage. Mais la prospection est toujours reportée à quand il y aura du temps, ce qui n'arrive jamais. Il n'y a pas de système, juste des appels sporadiques à des contacts déjà connus.",
-        "solution": "RevCognition identifie les entreprises du secteur qui correspondent au profil client idéal, les enrichit, et leur écrit des messages contextualisés. Le système continue de fonctionner même quand le fondateur est avec un client."
+        "solution": "RevCognition identifie les marques du secteur qui correspondent au profil client idéal, les enrichit, et leur écrit des messages contextualisés. Le système continue de fonctionner même quand le fondateur est avec un client."
       }
     ]
   },
@@ -245,9 +245,9 @@
         "Achat et renouvellement automatiques du domaine d'envoi",
         "Configuration automatique de SPF, DKIM et DMARC",
         "Classification automatique des réponses (intéressé, pas intéressé, hostile, absence du bureau)",
-        "Montée en puissance automatique du domaine : le volume augmente progressivement jusqu'au volume plein en quatrième semaine",
+        "Montée en puissance automatique du domaine : le volume augmente progressivement jusqu'à son volume plein à la quatrième semaine",
         "Six expéditeurs avec nom et signature propres",
-        "Agenda direct avec votre calendrier (Cal.com)"
+        "Réservation directe sur votre calendrier (Cal.com)"
       ]
     },
     "fiscalNote": "Prix hors taxes : la TVA ou toute autre taxe applicable est ajoutée sur la facture selon le pays de votre entreprise.",

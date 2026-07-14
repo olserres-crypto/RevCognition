@@ -1,30 +1,42 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { Button } from "@/components/ui/Button";
 
 const APP_URL = "https://app.revcognition.com";
 const CAL_30MIN_URL = "https://cal.com/olivier-serres-js5hdw/30min";
 
+const BCP47_BY_LOCALE: Record<string, string> = {
+  es: "es-ES",
+  en: "en-US",
+  fr: "fr-FR",
+};
+
 const packs = [
   {
     prospects: 100,
-    price: "100€",
-    perUnit: "1,00€",
+    price: 100,
+    priceDecimals: 0,
+    perUnit: 1,
+    perUnitDecimals: 2,
     discountPercent: null,
     plan: "pack_100",
   },
   {
     prospects: 600,
-    price: "500€",
-    perUnit: "0,83€",
+    price: 500,
+    priceDecimals: 0,
+    perUnit: 0.83,
+    perUnitDecimals: 2,
     discountPercent: 17,
     plan: "pack_600",
   },
   {
     prospects: 1300,
-    price: "1.000€",
-    perUnit: "0,77€",
+    price: 1000,
+    priceDecimals: 0,
+    perUnit: 0.77,
+    perUnitDecimals: 2,
     discountPercent: 23,
     plan: "pack_1300",
   },
@@ -32,6 +44,15 @@ const packs = [
 
 export function Pricing() {
   const t = useTranslations("pricing");
+  const locale = useLocale();
+  const bcp47 = BCP47_BY_LOCALE[locale] ?? "es-ES";
+  const formatCurrency = (value: number, decimals: number) =>
+    new Intl.NumberFormat(bcp47, {
+      style: "currency",
+      currency: "EUR",
+      minimumFractionDigits: decimals,
+      maximumFractionDigits: decimals,
+    }).format(value);
   const plans = t.raw("plans") as {
     name: string;
     tagline: string;
@@ -69,7 +90,7 @@ export function Pricing() {
                 <div>
                   <div className="flex items-baseline gap-2">
                     <p className="text-4xl font-semibold text-[var(--color-ink)] tabular-nums">
-                      {pack.price}
+                      {formatCurrency(pack.price, pack.priceDecimals)}
                     </p>
                     <span className="text-sm text-[var(--color-slate)]">
                       {t("noVat")}
@@ -80,7 +101,7 @@ export function Pricing() {
                   </p>
                   <div className="flex items-center gap-2 mt-2">
                     <span className="text-xs text-[var(--color-slate)] tabular-nums">
-                      {t("perSend", { value: pack.perUnit })}
+                      {t("perSend", { value: formatCurrency(pack.perUnit, pack.perUnitDecimals) })}
                     </span>
                     {pack.discountPercent !== null && plan.discount && (
                       <span className="text-xs font-semibold text-[var(--color-warm)] bg-[var(--color-warm)]/10 rounded px-1.5 py-0.5">
