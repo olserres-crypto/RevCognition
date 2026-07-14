@@ -173,5 +173,26 @@
       }
     ],
     "moreLink": "Ver todo lo que hace, en detalle"
+  },
+  "useCases": {
+    "eyebrow": "Casos que resolvemos",
+    "heading": "El sistema entiende tu contexto específico.",
+    "intro": "No manda emails genéricos. Eso lo hace cualquier agencia.",
+    "solutionLabel": "Cómo lo resuelve RevCognition",
+    "moreLink": "Cómo trabajamos con servicios B2B",
+    "cases": [
+      {
+        "sector": "Gabinete de abogados de marcas",
+        "problem": "Una DB de señales perfectas, emails que nadie contesta",
+        "problemDetail": "Cada depósito de marca rechazado es una empresa con una urgencia legal real. Tienen la DB. Pero los emails que manda su agencia son genéricos, sin mencionar el rechazo específico ni el riesgo concreto. Resultado: casi cero respuestas, pese a tener la señal de intención más clara que existe.",
+        "solution": "RevCognition toma esa base de casos como contexto, escribe un mensaje que menciona el rechazo específico de cada empresa, y lo deja listo para tu revisión diaria de cinco minutos."
+      },
+      {
+        "sector": "Agencia de venta de espacios publicitarios",
+        "problem": "Prospectas por red personal. Cuando estás ocupado, se para todo",
+        "problemDetail": "Una sola persona lo gestiona todo. Sabe que hay mercado, sabe que debería prospectar más. Pero la prospección siempre queda para cuando haya tiempo, que nunca llega. No hay sistema, solo llamadas esporádicas a contactos ya conocidos.",
+        "solution": "RevCognition identifica marcas del sector que encajan con el perfil de cliente ideal, las enriquece, y les escribe mensajes contextualizados. El sistema funciona aunque el fundador esté con un cliente."
+      }
+    ]
   }
 }

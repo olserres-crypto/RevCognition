@@ -173,5 +173,26 @@
       }
     ],
     "moreLink": "See everything it does, in detail"
+  },
+  "useCases": {
+    "eyebrow": "Use cases we solve",
+    "heading": "The system understands your specific context.",
+    "intro": "It doesn't send generic emails. Any agency can do that.",
+    "solutionLabel": "How RevCognition solves it",
+    "moreLink": "How we work with B2B services",
+    "cases": [
+      {
+        "sector": "Trademark law firm",
+        "problem": "A database of perfect signals, emails nobody answers",
+        "problemDetail": "Every rejected trademark filing is a company with a real legal urgency. They have the database. But the emails their agency sends are generic, without mentioning the specific rejection or the concrete risk. Result: almost zero replies, despite having the clearest intent signal there is.",
+        "solution": "RevCognition takes that case base as context, writes a message that mentions each company's specific rejection, and leaves it ready for your five-minute daily review."
+      },
+      {
+        "sector": "Advertising space sales agency",
+        "problem": "You prospect through your personal network. When you're busy, everything stops",
+        "problemDetail": "One person handles everything. They know there's a market, they know they should prospect more. But prospecting always gets pushed to whenever there's time, which never comes. There's no system, just sporadic calls to contacts they already know.",
+        "solution": "RevCognition identifies companies in the sector that match the ideal customer profile, enriches them, and writes them contextualized messages. The system keeps running even while the founder is with a client."
+      }
+    ]
   }
 }
