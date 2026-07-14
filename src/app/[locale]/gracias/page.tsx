@@ -1,13 +1,16 @@
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { Nav } from "@/components/sections/Nav";
-import {setRequestLocale} from "next-intl/server";
+import {getTranslations, setRequestLocale} from "next-intl/server";
 import {buildAlternates} from "@/i18n/metadata";
+
+const CONTACT_EMAIL = "olivier.serres@revcognition.com";
 
 export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
+  const t = await getTranslations({locale, namespace: "gracias"});
   return {
-    title: "¡Gracias! — RevCognition",
-    description: "Tu compra se ha procesado correctamente.",
+    title: t("metaTitle"),
+    description: t("metaDescription"),
     robots: {index: false, follow: false},
     alternates: buildAlternates(locale, "/gracias"),
   };
@@ -16,6 +19,7 @@ export async function generateMetadata({params}: {params: Promise<{locale: strin
 export default async function GraciasPage({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
   setRequestLocale(locale);
+  const t = await getTranslations("gracias");
   return (
     <>
       <Nav />
@@ -27,16 +31,15 @@ export default async function GraciasPage({params}: {params: Promise<{locale: st
           ✓
         </p>
         <h1 className="font-serif text-3xl sm:text-4xl text-[var(--color-ink)] mb-4">
-          Compra confirmada
+          {t("heading")}
         </h1>
         <p className="text-[var(--color-slate)] text-lg max-w-md mx-auto mb-8">
-          Recibirás un email con los próximos pasos. Si tienes alguna pregunta,
-          escríbenos a{" "}
+          {t("bodyPre")}{" "}
           <a
-            href="mailto:olivier.serres@revcognition.com"
+            href={`mailto:${CONTACT_EMAIL}`}
             className="text-[var(--color-ink)] underline underline-offset-4"
           >
-            olivier.serres@revcognition.com
+            {CONTACT_EMAIL}
           </a>
           .
         </p>
@@ -44,7 +47,7 @@ export default async function GraciasPage({params}: {params: Promise<{locale: st
           href="/"
           className="text-sm text-[var(--color-slate)] underline decoration-[var(--color-slate-light)] underline-offset-4 hover:text-[var(--color-ink)] transition-colors rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2 inline-block px-1 py-1"
         >
-          ← Volver al inicio
+          {t("backLink")}
         </Link>
       </main>
     </>

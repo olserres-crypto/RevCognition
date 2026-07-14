@@ -573,5 +573,64 @@
         }
       ]
     }
+  },
+  "gracias": {
+    "metaTitle": "Thank you! — RevCognition",
+    "metaDescription": "Your purchase has been processed successfully.",
+    "heading": "Purchase confirmed",
+    "bodyPre": "You'll receive an email with the next steps. If you have any questions, write to us at",
+    "backLink": "← Back to home"
+  },
+  "privacy": {
+    "metaTitle": "Privacy Policy — RevCognition",
+    "metaDescription": "How we handle your data at RevCognition: what we collect, why, for how long, and how to exercise your rights.",
+    "eyebrow": "Privacy Policy",
+    "heading": "We treat your data the way we'd want ours treated.",
+    "intro": "Plain-language summary. If you need the full legal version or want to exercise any of your rights, write to us at <email>olivier.serres@revcognition.com</email>.",
+    "backLink": "← Back to home",
+    "sections": [
+      {
+        "heading": "Who is the data controller",
+        "body": "RevCognition (Olivier Serres). Contact: <email>olivier.serres@revcognition.com</email>. Based in Barcelona, Spain."
+      },
+      {
+        "heading": "What data we collect and why",
+        "intro": "Only what you voluntarily give us, and always for a specific purpose:",
+        "items": [
+          {
+            "label": "Product sign-up and onboarding",
+            "body": "(account data, your website URL, product description, ICP configuration): to build your Company Brain and run your campaigns. This data lives on <appLink>app.revcognition.com</appLink>, not on this website."
+          },
+          {
+            "label": "Payment data",
+            "body": "(processed by Stripe, not stored by us): to process payment for packs purchased from the app."
+          },
+          {
+            "label": "Business contact data",
+            "body": "collected during prospecting: processed on the basis of legitimate interest in B2B communications, always with an immediate opt-out option on every message sent."
+          }
+        ]
+      },
+      {
+        "heading": "Who has access to your data",
+        "body": "Strictly operational data processors: Stripe (payment processing), Resend (transactional email delivery), cloud infrastructure providers (Vercel or equivalent). We do not sell data to third parties. We do not use it to train general-purpose models. We do not share it with advertisers."
+      },
+      {
+        "heading": "How long we keep it",
+        "body": "The minimum necessary. Analysis requests are archived for 12 months so we can respond to any follow-up questions. Tax data associated with payments is kept for the legally required accounting period. Business prospecting data is deleted upon the data subject's request, or after 14 days of no interaction if there is no subsequent contractual basis."
+      },
+      {
+        "heading": "Your rights",
+        "body": "Access, rectification, erasure, objection, restriction, and portability. Exercising any of them is as simple as writing to <email>olivier.serres@revcognition.com</email>. We respond within 30 days. If you believe we haven't handled it properly, you can file a complaint with the Spanish Data Protection Agency (<aepd>aepd.es</aepd>)."
+      },
+      {
+        "heading": "Cookies",
+        "body": "This website does not use tracking cookies or third-party analytics. Only cookies strictly necessary for operation (those Stripe may set during the payment process)."
+      },
+      {
+        "heading": "Changes to this policy",
+        "body": "If we make substantial updates to this policy, we will notify by email anyone with an active relationship with us. Last updated: May 2026."
+      }
+    ]
   }
 }

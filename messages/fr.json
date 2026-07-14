@@ -573,5 +573,64 @@
         }
       ]
     }
+  },
+  "gracias": {
+    "metaTitle": "Merci ! — RevCognition",
+    "metaDescription": "Votre achat a été traité avec succès.",
+    "heading": "Achat confirmé",
+    "bodyPre": "Vous recevrez un e-mail avec les prochaines étapes. Si vous avez une question, écrivez-nous à",
+    "backLink": "← Retour à l'accueil"
+  },
+  "privacy": {
+    "metaTitle": "Politique de confidentialité — RevCognition",
+    "metaDescription": "Comment nous traitons vos données chez RevCognition : ce que nous collectons, pourquoi, pendant combien de temps et comment exercer vos droits.",
+    "eyebrow": "Politique de confidentialité",
+    "heading": "Nous traitons vos données comme nous aimerions que les nôtres soient traitées.",
+    "intro": "Texte en langage clair. Si vous avez besoin de la version légale complète ou souhaitez exercer l'un de vos droits, écrivez-nous à <email>olivier.serres@revcognition.com</email>.",
+    "backLink": "← Retour à l'accueil",
+    "sections": [
+      {
+        "heading": "Qui est responsable du traitement",
+        "body": "RevCognition (Olivier Serres). Contact : <email>olivier.serres@revcognition.com</email>. Siège à Barcelone, Espagne."
+      },
+      {
+        "heading": "Quelles données nous collectons et pourquoi",
+        "intro": "Uniquement ce que vous nous donnez volontairement, et toujours dans un but précis :",
+        "items": [
+          {
+            "label": "Inscription et onboarding du produit",
+            "body": "(données de compte, URL de votre site, description du produit, configuration de l'ICP) : pour créer votre Company Brain et exécuter vos campagnes. Ces données résident sur <appLink>app.revcognition.com</appLink>, pas sur ce site."
+          },
+          {
+            "label": "Données de paiement",
+            "body": "(traitées par Stripe, non stockées par nous) : pour exécuter le paiement des packs achetés depuis l'application."
+          },
+          {
+            "label": "Données de contact commercial",
+            "body": "collectées pendant la prospection : traitées sur la base de l'intérêt légitime pour les communications B2B, toujours avec une option de désabonnement immédiate sur chaque message envoyé."
+          }
+        ]
+      },
+      {
+        "heading": "Qui a accès à vos données",
+        "body": "Des sous-traitants strictement opérationnels : Stripe (traitement des paiements), Resend (envoi des e-mails transactionnels), des fournisseurs d'infrastructure cloud (Vercel ou équivalent). Nous ne vendons pas de données à des tiers. Nous ne les utilisons pas pour entraîner des modèles génériques. Nous ne les partageons pas avec des annonceurs."
+      },
+      {
+        "heading": "Combien de temps nous les conservons",
+        "body": "Le strict minimum nécessaire. Les demandes d'analyse sont archivées pendant 12 mois afin de pouvoir répondre à d'éventuelles questions ultérieures. Les données fiscales liées aux paiements sont conservées pendant le délai légal de conservation comptable. Les données de prospection commerciale sont supprimées à la demande de la personne concernée, ou après 14 jours sans interaction en l'absence de base contractuelle ultérieure."
+      },
+      {
+        "heading": "Vos droits",
+        "body": "Accès, rectification, effacement, opposition, limitation et portabilité. Les exercer est aussi simple qu'écrire à <email>olivier.serres@revcognition.com</email>. Nous répondons en moins de 30 jours. Si vous estimez que nous ne l'avons pas bien fait, vous pouvez déposer une réclamation auprès de l'Agence espagnole de protection des données (<aepd>aepd.es</aepd>)."
+      },
+      {
+        "heading": "Cookies",
+        "body": "Ce site n'utilise pas de cookies de suivi ni d'analyse tierce. Uniquement des cookies strictement nécessaires au fonctionnement (ceux que Stripe peut établir pendant le processus de paiement)."
+      },
+      {
+        "heading": "Modifications de cette politique",
+        "body": "Si nous mettons à jour cette politique de façon substantielle, nous le notifierons par e-mail aux personnes ayant une relation active avec nous. Dernière mise à jour : mai 2026."
+      }
+    ]
   }
 }
