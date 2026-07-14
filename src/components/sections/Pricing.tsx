@@ -52,6 +52,7 @@ export function Pricing() {
       currency: "EUR",
       minimumFractionDigits: decimals,
       maximumFractionDigits: decimals,
+      useGrouping: "always",
     }).format(value);
   const plans = t.raw("plans") as {
     name: string;
