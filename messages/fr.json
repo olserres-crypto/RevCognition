@@ -36,5 +36,32 @@
       "example": "Laboratorios Roca · Dépôt OEPM rejeté · classe 5 · 04287391",
       "live": "En direct"
     }
+  },
+  "problem": {
+    "eyebrow": "Le problème",
+    "heading": "Que faites-vous en ce moment ?",
+    "intro": "Chaque option a un coût réel. Simplement, pour l'une d'entre elles, ce coût apparaît sur la facture.",
+    "items": [
+      {
+        "label": "Votre réseau de contacts",
+        "cost": "Opportunités manquées",
+        "description": "Vous prospectez quand vous avez le temps, c'est-à-dire presque jamais. Le système s'arrête dès que vous vous arrêtez."
+      },
+      {
+        "label": "Une agence de prospection",
+        "cost": "500–2 000€/mois, aucun résultat",
+        "description": "Vous recevez des rapports, pas des rendez-vous. Les messages sont génériques même si on vous les vend comme personnalisés. Vous ne voyez pas ce qui est envoyé en votre nom."
+      },
+      {
+        "label": "Un outil générique",
+        "cost": "Des heures de configuration, du spam",
+        "description": "Il faut être technique pour l'utiliser, ou accepter que les messages n'aient aucun contexte sur votre activité ni sur celle du prospect."
+      }
+    ],
+    "contrast": {
+      "eyebrow": "RevCognition",
+      "description": "Le système repère les prospects qui correspondent à votre profil, rédige un message unique pour chacun et l'envoie. Vous voyez chaque message avant son départ. Sans configuration technique, sans intermédiaires.",
+      "cost": "0€ de frais d'agence"
+    }
   }
 }

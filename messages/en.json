@@ -36,5 +36,32 @@
       "example": "Laboratorios Roca · OEPM filing rejected · class 5 · 04287391",
       "live": "Live"
     }
+  },
+  "problem": {
+    "eyebrow": "The problem",
+    "heading": "What are you doing right now?",
+    "intro": "Every option has a real cost. It's just that with one of them, that cost shows up on the invoice.",
+    "items": [
+      {
+        "label": "Your contact network",
+        "cost": "Missed opportunities",
+        "description": "You prospect when you have time, which is almost never. The system stops the moment you do."
+      },
+      {
+        "label": "A lead-gen agency",
+        "cost": "€500–2,000/month, no results",
+        "description": "You get reports, not meetings. The messages are generic even when you're told they're personalized. You never see what's sent in your name."
+      },
+      {
+        "label": "A generic tool",
+        "cost": "Hours of setup, spam",
+        "description": "You need to be technical to use it, or accept that the messages carry no context about your business or your prospect's."
+      }
+    ],
+    "contrast": {
+      "eyebrow": "RevCognition",
+      "description": "The system finds prospects that match your profile, writes a unique message for each one, and sends it. You see every message before it goes out. No technical setup, no middlemen.",
+      "cost": "0€ in agency fees"
+    }
   }
 }

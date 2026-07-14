@@ -36,5 +36,32 @@
       "example": "Laboratorios Roca · Depósito OEPM rechazado · clase 5 · 04287391",
       "live": "En vivo"
     }
+  },
+  "problem": {
+    "eyebrow": "El problema",
+    "heading": "¿Qué estás haciendo ahora?",
+    "intro": "Todas las opciones tienen un coste real. Solo que en una de ellas ese coste aparece en la factura.",
+    "items": [
+      {
+        "label": "Tu red de contactos",
+        "cost": "Oportunidades perdidas",
+        "description": "Prospectas cuando tienes tiempo, que es casi nunca. El sistema se para cuando tú te paras."
+      },
+      {
+        "label": "Una agencia de captación",
+        "cost": "500–2.000€/mes, resultados nulos",
+        "description": "Recibes informes, no reuniones. Los mensajes son genéricos aunque te digan que son personalizados. No ves qué se envía en tu nombre."
+      },
+      {
+        "label": "Una herramienta genérica",
+        "cost": "Horas de configuración, spam",
+        "description": "Necesitas ser técnico para usarla, o aceptar que los mensajes no tienen ningún contexto sobre tu negocio ni el del prospecto."
+      }
+    ],
+    "contrast": {
+      "eyebrow": "RevCognition",
+      "description": "El sistema localiza prospectos que encajan con tu perfil, escribe un mensaje único para cada uno y los envía. Ves cada mensaje antes de salir. Sin configuración técnica, sin intermediarios.",
+      "cost": "0€ en agencias"
+    }
   }
 }
