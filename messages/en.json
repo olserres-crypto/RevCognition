@@ -255,5 +255,248 @@
     "legalPre": "Prefer to see it with the founder first?",
     "legalMailtoLink": "Email me directly.",
     "legalCalLink": "Book a meeting"
+  },
+  "producto": {
+    "hero": {
+      "eyebrow": "Product",
+      "heading1": "Everything the system does,",
+      "heading2": "from the first session to the first yes.",
+      "subtitle": "RevCognition sets up your cold outreach end to end and keeps it running, day after day. Here's what happens under the hood, no jargon."
+    },
+    "nav": {
+      "ariaLabel": "Page sections",
+      "sections": {
+        "setup": "Getting started",
+        "diaADia": "Day to day",
+        "motor": "The engine",
+        "entregabilidad": "Deliverability",
+        "faq": "FAQ"
+      }
+    },
+    "setup": {
+      "eyebrow": "Getting started",
+      "title": "From your website to an active campaign, in one session.",
+      "intro": "Setting up cold outreach from scratch — domain, mailboxes, sequence, messages — usually takes weeks and several tools. Here it's a single guided session, start to finish.",
+      "depth": [
+        {
+          "title": "An assistant that gets your account ready to send",
+          "body": "You paste your website URL and the system drafts a first commercial profile: who you're targeting, what sets you apart, and your tone. You review it, choose a dedicated domain, set up your senders and your booking link, and once you're done the domain enters warm-up. No agencies, no weeks of setup."
+        },
+        {
+          "title": "Your own, authenticated email domain",
+          "body": "You choose a dedicated domain for your outreach. The system authenticates it (SPF, DKIM, DMARC) and builds its reputation from zero, so it never touches your main inbox or depends on a shared IP."
+        }
+      ],
+      "oneLiners": [
+        {
+          "title": "Editable commercial profile",
+          "body": "Correct what the AI understood about your business. Your judgment guides every email, and changes apply to the next batch of contacts."
+        },
+        {
+          "title": "Senders with a real identity",
+          "body": "Your senders, with real names and titles, protected so they don't damage the domain's reputation."
+        }
+      ]
+    },
+    "diaADia": {
+      "eyebrow": "Day to day",
+      "title": "Five minutes a day. The rest happens on its own.",
+      "intro": "Human judgment stays at the center: nothing goes out without your approval, but the review is a short daily session, not constant configuration.",
+      "depth": [
+        {
+          "title": "You approve what goes out, and only that",
+          "body": "In the Approval Center you see every email already drafted — subject and body, with name, company, and address — before it's sent. Edit the text if you want, expand the full follow-up sequence, mark the ones you approve, and discard the rest. Once you trust the system, you can turn off approval and let sends go out on their own."
+        }
+      ],
+      "oneLiners": [
+        {
+          "title": "An honest dashboard",
+          "body": "Real numbers, not decorative charts: emails sent, replies, and reply rate for your last 30 days."
+        },
+        {
+          "title": "Your lists, with a clear status",
+          "body": "Contact lists, grouped by file and date, showing what's been processed and what's left."
+        },
+        {
+          "title": "Bring your own contacts",
+          "body": "A CSV and your contacts enter the same personalization and sending flow as automatic sourcing."
+        },
+        {
+          "title": "You control the settings",
+          "body": "When you send, how we notify you (email and Telegram), and how your campaign behaves — no ticket needed for every change."
+        },
+        {
+          "title": "You pay per prospect worked",
+          "body": "Not per seat, not a subscription. Top up credits whenever you want, securely with Stripe."
+        }
+      ]
+    },
+    "motor": {
+      "eyebrow": "The engine",
+      "title": "Finds, verifies, and writes. For every prospect.",
+      "intro": "Finding good target companies is the slowest part of prospecting. The system does it continuously, and for every contact it writes a message built for them.",
+      "depth": [
+        {
+          "title": "A message written from scratch, not a template",
+          "body": "Using your commercial profile and the real context of each company, the system drafts a full sequence per contact — opener, follow-up, new angle, and closer. Every email is generated in the language that matches the company's location, so it reads like something handwritten, not a filled-in template."
+        },
+        {
+          "title": "When there's a signal, the message uses it",
+          "body": "The system also watches for recent activity signals at the target company, like a new hire. When one appears, the message can build on it — for example, if the company is expanding its sales team — to land at the moment it matters most."
+        }
+      ],
+      "oneLiners": [
+        {
+          "title": "Companies that match your ICP",
+          "body": "Finds the companies that match your ideal customer — sector, location, and size — and rules out the ones that don't."
+        },
+        {
+          "title": "Contacts with a verified email",
+          "body": "The right people at each company, with the email address verified before writing."
+        }
+      ]
+    },
+    "entregabilidad": {
+      "eyebrow": "Deliverability and replies",
+      "title": "Reaching the inbox, and knowing what to do next.",
+      "intro": "Cold sending from a new or shared domain ends up in spam. A dedicated domain, warmed up carefully, protects your reputation — and when replies come in, each one gets handled the way it deserves.",
+      "depth": [
+        {
+          "title": "Real warm-up, not a switch",
+          "body": "The domain starts with a few emails a day and ramps up the volume gradually — from a range of 4 to 16 a day in the first week to a full volume of 50 by the fourth. The dashboard always shows the warm-up day and the current volume."
+        },
+        {
+          "title": "Every reply, read and classified",
+          "body": "Interested, not interested, hostile, or out of office: the intent is detected automatically. If there's interest, the sequence pauses and you get the reply instantly by email and Telegram to pick up the conversation yourself; your Cal.com link travels in every email, so the prospect can also book directly from there. A temporary absence pauses and resumes after a few days; a hostile reply closes the thread for good."
+        }
+      ],
+      "oneLiners": [
+        {
+          "title": "From reply to meeting",
+          "body": "When someone replies with interest, the sequence pauses and we notify you instantly by email and Telegram; your Cal.com link travels in every email, so they can also book directly from there."
+        },
+        {
+          "title": "Opt-outs and compliance by default",
+          "body": "Every email includes an unsubscribe option, and whoever uses it never receives anything again, across any of your campaigns."
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "heading": "What people usually ask before signing up.",
+      "items": [
+        {
+          "q": "Will I end up in spam?",
+          "a": "It's the first thing we take care of. You send from your own, dedicated domain — not a shared one — and its reputation warms up gradually over the first four weeks, until it reaches full sending volume. On top of that, every email address is verified before writing, so bounces stay low and your messages land in the inbox."
+        },
+        {
+          "q": "How much control do I have?",
+          "a": "As much as you want. Every email is prepared but doesn't go out until you approve it — a review of about five minutes a day — and you can edit the text before sending. If you'd rather delegate, you turn off approval and sends go out on their own. The commercial profile that guides every message is yours to adjust whenever you want."
+        },
+        {
+          "q": "What language does it write in?",
+          "a": "The language that matches each prospect's location, with English as the default. It's not necessarily your own language: if you write to a company in France, the message goes out in French; to one in Germany, in German. The goal is for every recipient to read the email in their own language."
+        },
+        {
+          "q": "What happens when someone replies?",
+          "a": "Every reply is read and classified automatically: interested, not interested, hostile, or out of office. If there's interest, the sequence pauses instantly and you get the reply by email and Telegram to pick it up yourself; your Cal.com link travels in every email sent, so the prospect can also book directly from there. If there's no interest or the reply is hostile, the thread is closed carefully and never contacted again."
+        },
+        {
+          "q": "What does it cost?",
+          "a": "An initial setup fee of €50 to get the account ready, then send packs starting at €100 (100 sends), with volume discounts: 600 sends for €500 and 1,300 for €1,000. Prices exclude tax: applicable VAT is added on the invoice based on your company's country. A credit is consumed on the first send to a new prospect; follow-ups in that same sequence don't cost extra credits. No commitment, and credits never expire."
+        },
+        {
+          "q": "Does it work in my industry or country?",
+          "a": "The system searches continuously across specialized partner databases: for a single ideal customer profile — sector, location, and size — there can be more than 400,000 candidate companies. And every email arrives in the language that matches the recipient's country, so coverage doesn't depend on the language you speak."
+        },
+        {
+          "q": "Where do the contact details come from?",
+          "a": "Contacts come from partner databases specialized in professional information. Before writing, every email address is verified to keep bounces low, and every email includes an opt-out option: whoever unsubscribes never receives anything again, in compliance with regulations."
+        }
+      ]
+    },
+    "mockups": {
+      "wizard": {
+        "title": "Setup",
+        "metaText": "Step 5 of 6",
+        "domainLabel": "Sending domain",
+        "domainValue": "mail-yourcompany.example",
+        "sendersHeading": "Senders · 6 mailboxes",
+        "senders": [
+          {
+            "name": "Alex Serra",
+            "role": "Founder"
+          },
+          {
+            "name": "Marina Gil",
+            "role": "Business development"
+          },
+          {
+            "name": "Pau Roig",
+            "role": "Accounts"
+          }
+        ],
+        "moreSenders": "+ 3 more senders"
+      },
+      "aprobacion": {
+        "title": "Approval",
+        "metaText": "1 of 8 pending",
+        "toLabel": "To:",
+        "toValue": "Ana Ruiz · Bufete Serrano",
+        "subjectLabel": "Subject:",
+        "subjectValue": "Your ENISA funding call",
+        "body": "Good morning, Ana. I saw that Bufete Serrano is taking part in the ENISA call. At similar firms we've helped...",
+        "approve": "Approve",
+        "discard": "Discard"
+      },
+      "secuencia": {
+        "title": "Sequence",
+        "metaText": "4 messages",
+        "steps": [
+          {
+            "day": "Day 0",
+            "name": "Opener"
+          },
+          {
+            "day": "+3 days",
+            "name": "Follow-up"
+          },
+          {
+            "day": "+5 days",
+            "name": "New angle"
+          },
+          {
+            "day": "+4 days",
+            "name": "Closer"
+          }
+        ],
+        "signalLabel": "Signal detected",
+        "signalValue": "Example Company is expanding its sales team",
+        "body": "Hi Laura. I saw that Example Company is expanding its sales team — I imagine prospecting is part of that growth..."
+      },
+      "ramp": {
+        "title": "Warm-up",
+        "metaText": "In progress",
+        "weeks": [
+          {
+            "label": "Week 1",
+            "value": "4 – 16 / day"
+          },
+          {
+            "label": "Week 2",
+            "value": "18 – 30 / day"
+          },
+          {
+            "label": "Week 3",
+            "value": "32 – 44 / day"
+          },
+          {
+            "label": "Week 4",
+            "value": "50 / day · full"
+          }
+        ],
+        "statusLabel": "Reply classified · Interested"
+      }
+    }
   }
 }

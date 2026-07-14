@@ -1,43 +1,33 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { motion, useReducedMotion } from "framer-motion";
 import { MockupShell, MockupRow } from "@/components/ui/MockupShell";
-
-const sections = [
-  { id: "setup", label: "Puesta en marcha" },
-  { id: "dia-a-dia", label: "El día a día" },
-  { id: "motor", label: "El motor" },
-  { id: "entregabilidad", label: "Entregabilidad" },
-  { id: "faq", label: "Preguntas" },
-];
 
 /* ---------- Mockups (datos ficticios .example) ---------- */
 
 function MockupWizard() {
-  const remitentes = [
-    { nombre: "Alex Serra", cargo: "Fundador" },
-    { nombre: "Marina Gil", cargo: "Desarrollo de negocio" },
-    { nombre: "Pau Roig", cargo: "Cuentas" },
-  ];
+  const t = useTranslations("producto.mockups.wizard");
+  const remitentes = t.raw("senders") as { name: string; role: string }[];
   return (
-    <MockupShell icon="✦" title="Configuración" meta={{ text: "Paso 5 de 6" }}>
+    <MockupShell icon="✦" title={t("title")} meta={{ text: t("metaText") }}>
       <div className="p-4 flex flex-col gap-3">
-        <MockupRow label="Dominio de envío" value="correo-tuempresa.example" />
+        <MockupRow label={t("domainLabel")} value={t("domainValue")} />
         <div>
           <div className="text-[10px] font-medium text-[var(--color-slate)] uppercase tracking-wider mb-1.5">
-            Remitentes · 6 buzones
+            {t("sendersHeading")}
           </div>
           <div className="flex flex-col gap-1.5">
             {remitentes.map((r) => (
               <div
-                key={r.nombre}
+                key={r.name}
                 className="flex items-center justify-between h-8 px-3 rounded-lg border border-[var(--color-border)]"
               >
-                <span className="text-[11px] font-medium text-[var(--color-ink)]">{r.nombre}</span>
-                <span className="text-[10px] text-[var(--color-slate)]">{r.cargo}</span>
+                <span className="text-[11px] font-medium text-[var(--color-ink)]">{r.name}</span>
+                <span className="text-[10px] text-[var(--color-slate)]">{r.role}</span>
               </div>
             ))}
-            <div className="text-[10px] text-[var(--color-slate-light)] pl-1">+ 3 remitentes más</div>
+            <div className="text-[10px] text-[var(--color-slate-light)] pl-1">{t("moreSenders")}</div>
           </div>
         </div>
       </div>
@@ -46,25 +36,25 @@ function MockupWizard() {
 }
 
 function MockupAprobacion() {
+  const t = useTranslations("producto.mockups.aprobacion");
   return (
-    <MockupShell icon="✦" title="Aprobación" meta={{ text: "1 de 8 pendientes" }}>
+    <MockupShell icon="✦" title={t("title")} meta={{ text: t("metaText") }}>
       <div className="p-4 flex flex-col gap-3">
         <div className="text-[10px] text-[var(--color-slate)]">
-          <span className="font-semibold">Para:</span> Ana Ruiz · Bufete Serrano
+          <span className="font-semibold">{t("toLabel")}</span> {t("toValue")}
         </div>
         <div className="text-[10px] text-[var(--color-slate)]">
-          <span className="font-semibold">Asunto:</span> Vuestra convocatoria ENISA
+          <span className="font-semibold">{t("subjectLabel")}</span> {t("subjectValue")}
         </div>
         <div className="text-[11px] text-[var(--color-slate)] leading-relaxed border-t border-[var(--color-border)] pt-2.5">
-          Buenos días, Ana. He visto que Bufete Serrano participa en la
-          convocatoria ENISA. En despachos similares hemos ayudado a...
+          {t("body")}
         </div>
         <div className="flex items-center gap-2 pt-1">
           <span className="flex-1 h-8 rounded-lg bg-[var(--color-warm)] text-white text-[11px] font-semibold flex items-center justify-center">
-            Aprobar
+            {t("approve")}
           </span>
           <span className="flex-1 h-8 rounded-lg border border-[var(--color-border)] text-[var(--color-slate)] text-[11px] font-semibold flex items-center justify-center">
-            Descartar
+            {t("discard")}
           </span>
         </div>
       </div>
@@ -73,17 +63,13 @@ function MockupAprobacion() {
 }
 
 function MockupSecuencia() {
-  const pasos = [
-    { dia: "Día 0", nombre: "Apertura" },
-    { dia: "+3 días", nombre: "Seguimiento" },
-    { dia: "+5 días", nombre: "Nuevo ángulo" },
-    { dia: "+4 días", nombre: "Cierre" },
-  ];
+  const t = useTranslations("producto.mockups.secuencia");
+  const pasos = t.raw("steps") as { day: string; name: string }[];
   return (
-    <MockupShell icon="✦" title="Secuencia" meta={{ text: "4 mensajes" }}>
+    <MockupShell icon="✦" title={t("title")} meta={{ text: t("metaText") }}>
       <div className="p-4 flex flex-col">
         {pasos.map((p, i) => (
-          <div key={p.dia} className="flex gap-3">
+          <div key={p.day} className="flex gap-3">
             <div className="flex flex-col items-center shrink-0">
               <span className="w-2 h-2 rounded-full bg-[var(--color-warm)] mt-1" aria-hidden="true" />
               {i < pasos.length - 1 && (
@@ -91,49 +77,41 @@ function MockupSecuencia() {
               )}
             </div>
             <div className={i < pasos.length - 1 ? "pb-3" : ""}>
-              <div className="text-[11px] font-semibold text-[var(--color-ink)]">{p.nombre}</div>
-              <div className="text-[10px] text-[var(--color-slate-light)]">{p.dia}</div>
+              <div className="text-[11px] font-semibold text-[var(--color-ink)]">{p.name}</div>
+              <div className="text-[10px] text-[var(--color-slate-light)]">{p.day}</div>
             </div>
           </div>
         ))}
       </div>
       <div className="px-4 pb-4 flex flex-col gap-3 border-t border-[var(--color-border)] pt-3">
-        <MockupRow label="Señal detectada" value="Empresa Ejemplo amplía su equipo comercial" />
-        <div className="text-[11px] text-[var(--color-slate)] leading-relaxed">
-          Hola, Laura. He visto que Empresa Ejemplo está ampliando el equipo
-          comercial — imagino que la prospección forma parte de esa
-          expansión...
-        </div>
+        <MockupRow label={t("signalLabel")} value={t("signalValue")} />
+        <div className="text-[11px] text-[var(--color-slate)] leading-relaxed">{t("body")}</div>
       </div>
     </MockupShell>
   );
 }
 
 function MockupRamp() {
-  const semanas = [
-    { s: "Semana 1", v: "4 – 16 / día" },
-    { s: "Semana 2", v: "18 – 30 / día" },
-    { s: "Semana 3", v: "32 – 44 / día" },
-    { s: "Semana 4", v: "50 / día · pleno" },
-  ];
+  const t = useTranslations("producto.mockups.ramp");
+  const semanas = t.raw("weeks") as { label: string; value: string }[];
   return (
-    <MockupShell icon="✦" title="Calentamiento" meta={{ text: "En curso", tone: "success" }}>
+    <MockupShell icon="✦" title={t("title")} meta={{ text: t("metaText"), tone: "success" }}>
       <div className="p-4 flex flex-col gap-3">
         <div className="flex flex-col">
           {semanas.map((w, i) => (
             <div
-              key={w.s}
+              key={w.label}
               className={`flex items-center justify-between py-2 ${i < semanas.length - 1 ? "border-b border-[var(--color-border)]" : ""}`}
             >
-              <span className="text-[10px] font-medium text-[var(--color-slate)] uppercase tracking-wider">{w.s}</span>
-              <span className="text-[11px] font-medium text-[var(--color-ink)] tabular-nums">{w.v}</span>
+              <span className="text-[10px] font-medium text-[var(--color-slate)] uppercase tracking-wider">{w.label}</span>
+              <span className="text-[11px] font-medium text-[var(--color-ink)] tabular-nums">{w.value}</span>
             </div>
           ))}
         </div>
         <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-[var(--color-success-tint)]">
           <span aria-hidden="true" className="w-1.5 h-1.5 rounded-full bg-[var(--color-success)]" />
           <span className="text-[10px] font-medium text-[var(--color-success)]">
-            Respuesta clasificada · Interesado
+            {t("statusLabel")}
           </span>
         </div>
       </div>
@@ -224,59 +202,30 @@ function ThemeBlock({
 
 /* ---------- FAQ ---------- */
 
-const faqs: Feature[] = [
-  {
-    title: "¿Acabaré en spam?",
-    body: "Es lo primero que cuidamos. Envías desde un dominio propio y dedicado, no compartido, y su reputación se calienta poco a poco a lo largo de las primeras cuatro semanas, hasta alcanzar el volumen de envío pleno. Además, cada dirección de correo se verifica antes de escribir, para que el rebote se mantenga bajo y tus mensajes lleguen a la bandeja de entrada.",
-  },
-  {
-    title: "¿Cuánto control tengo?",
-    body: "Todo el que quieras. Cada correo se prepara pero no sale hasta que lo apruebas —una revisión de unos cinco minutos al día— y puedes editar el texto antes de enviarlo. Si prefieres delegar, desactivas la aprobación y los envíos salen solos. El perfil comercial que guía cada mensaje lo ajustas tú cuando quieras.",
-  },
-  {
-    title: "¿En qué idioma escribe?",
-    body: "En el idioma que corresponde a la ubicación de cada prospecto, con el inglés por defecto. No es necesariamente tu idioma: si escribes a una empresa en Francia, el mensaje va en francés; a una en Alemania, en alemán. El objetivo es que cada destinatario lea el correo en su propio idioma.",
-  },
-  {
-    title: "¿Qué pasa cuando alguien responde?",
-    body: "Cada respuesta se lee y se clasifica sola: interesado, no interesado, hostil o fuera de oficina. Si hay interés, la secuencia se pausa al instante y recibes la respuesta por correo y Telegram para retomarla tú mismo; el enlace de tu Cal.com viaja en cada correo enviado, así que el prospecto también puede reservar directamente desde ahí. Si no hay interés o la respuesta es hostil, el hilo se cierra con cuidado y no se vuelve a contactar.",
-  },
-  {
-    title: "¿Qué cuesta?",
-    body: "Un setup inicial de 50€ para dejar la cuenta lista, y luego packs de envíos desde 100€ (100 envíos), con descuento por volumen: 600 envíos por 500€ y 1.300 por 1.000€. Precios sin impuestos: el IVA aplicable se añade en factura según el país de tu empresa. Un crédito se consume con el primer envío a un prospecto nuevo; los seguimientos de esa misma secuencia no gastan crédito extra. Sin permanencia y los créditos no caducan.",
-  },
-  {
-    title: "¿Funciona en mi sector o en mi país?",
-    body: "El sistema busca en continuo sobre bases de datos partner especializadas: para un solo perfil de cliente ideal —sector, ubicación y tamaño— puede haber más de 400.000 empresas candidatas. Y cada correo llega en el idioma que corresponde al país de quien lo recibe, así que la cobertura no depende del idioma que hables tú.",
-  },
-  {
-    title: "¿De dónde salen los datos de los contactos?",
-    body: "Los contactos salen de bases de datos partner especializadas en información profesional. Antes de escribir, cada dirección de correo se verifica para mantener el rebote bajo, y cada correo incluye una opción de baja: quien se da de baja no vuelve a recibir nada, en cumplimiento con la normativa.",
-  },
-];
-
 function Faq({ reduce }: { reduce: boolean | null }) {
+  const t = useTranslations("producto.faq");
+  const faqs = t.raw("items") as { q: string; a: string }[];
   return (
     <section id="faq" className="scroll-mt-20 md:scroll-mt-32 py-16 sm:py-24 bg-[var(--color-surface)]">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-warm)] mb-4">
-          Preguntas
+          {t("eyebrow")}
         </p>
         <h2 className="font-serif text-3xl sm:text-4xl text-[var(--color-ink)] mb-12">
-          Lo que suelen preguntarnos antes de entrar.
+          {t("heading")}
         </h2>
         <div className="max-w-3xl divide-y divide-[var(--color-border)]">
           {faqs.map((f, i) => (
             <motion.div
-              key={f.title}
+              key={f.q}
               initial={reduce ? false : { opacity: 0, y: 14 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
               transition={{ delay: (i % 2) * 0.05, duration: 0.35, ease: "easeOut" }}
               className="py-6"
             >
-              <h3 className="font-serif text-xl text-[var(--color-ink)] mb-2">{f.title}</h3>
-              <p className="text-[var(--color-slate)] leading-relaxed">{f.body}</p>
+              <h3 className="font-serif text-xl text-[var(--color-ink)] mb-2">{f.q}</h3>
+              <p className="text-[var(--color-slate)] leading-relaxed">{f.a}</p>
             </motion.div>
           ))}
         </div>
@@ -288,25 +237,51 @@ function Faq({ reduce }: { reduce: boolean | null }) {
 /* ---------- Página ---------- */
 
 export function Producto() {
+  const t = useTranslations("producto");
   const reduce = useReducedMotion();
+
+  const sections = [
+    { id: "setup", label: t("nav.sections.setup") },
+    { id: "dia-a-dia", label: t("nav.sections.diaADia") },
+    { id: "motor", label: t("nav.sections.motor") },
+    { id: "entregabilidad", label: t("nav.sections.entregabilidad") },
+    { id: "faq", label: t("nav.sections.faq") },
+  ];
+
+  const setup = {
+    depth: t.raw("setup.depth") as Feature[],
+    oneLiners: t.raw("setup.oneLiners") as Feature[],
+  };
+  const diaADia = {
+    depth: t.raw("diaADia.depth") as Feature[],
+    oneLiners: t.raw("diaADia.oneLiners") as Feature[],
+  };
+  const motor = {
+    depth: t.raw("motor.depth") as Feature[],
+    oneLiners: t.raw("motor.oneLiners") as Feature[],
+  };
+  const entregabilidad = {
+    depth: t.raw("entregabilidad.depth") as Feature[],
+    oneLiners: t.raw("entregabilidad.oneLiners") as Feature[],
+  };
+
   return (
     <>
       {/* Hero de página */}
       <section className="max-w-5xl mx-auto px-4 sm:px-6 pt-16 pb-10 sm:pt-24 sm:pb-12">
         <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-warm)] mb-4">
-          Producto
+          {t("hero.eyebrow")}
         </p>
         <h1 className="font-serif text-4xl sm:text-5xl text-[var(--color-ink)] leading-tight max-w-3xl">
-          Todo lo que hace el sistema,{" "}
-          <span className="font-light">de la primera sesión al primer sí.</span>
+          {t("hero.heading1")}{" "}
+          <span className="font-light">{t("hero.heading2")}</span>
         </h1>
         <p className="mt-6 text-lg sm:text-xl text-[var(--color-slate)] leading-relaxed max-w-2xl">
-          RevCognition monta tu prospección en frío de principio a fin y la
-          sostiene día tras día. Esto es lo que ocurre por dentro, sin jerga.
+          {t("hero.subtitle")}
         </p>
 
         {/* Nav in-page: plano en móvil */}
-        <nav aria-label="Secciones de la página" className="mt-8 flex flex-wrap gap-x-5 gap-y-2 md:hidden">
+        <nav aria-label={t("nav.ariaLabel")} className="mt-8 flex flex-wrap gap-x-5 gap-y-2 md:hidden">
           {sections.map((s) => (
             <a
               key={s.id}
@@ -322,7 +297,7 @@ export function Producto() {
       {/* Nav de píldoras sticky: solo desktop */}
       <div className="hidden md:block sticky top-14 z-40 bg-[var(--color-paper)]/95 backdrop-blur-sm border-y border-[var(--color-border)]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
-          <nav aria-label="Secciones de la página" className="flex items-center gap-2 h-12 overflow-x-auto">
+          <nav aria-label={t("nav.ariaLabel")} className="flex items-center gap-2 h-12 overflow-x-auto">
             {sections.map((s) => (
               <a
                 key={s.id}
@@ -339,128 +314,48 @@ export function Producto() {
       <ThemeBlock
         id="setup"
         band="surface"
-        eyebrow="Puesta en marcha"
-        title="De tu web a una campaña activa, en una sesión."
-        intro="Montar prospección en frío desde cero —dominio, buzones, secuencia, mensajes— suele llevar semanas y varias herramientas. Aquí es una sola sesión guiada de principio a fin."
+        eyebrow={t("setup.eyebrow")}
+        title={t("setup.title")}
+        intro={t("setup.intro")}
         reduce={reduce}
-        depth={[
-          {
-            title: "Un asistente que deja la cuenta lista para enviar",
-            body: "Pegas la URL de tu web y el sistema redacta un primer perfil comercial: a quién te diriges, qué te diferencia y tu tono. Lo revisas, eliges un dominio dedicado, defines tus remitentes y tu enlace para agendar, y al terminar el dominio entra en calentamiento. Sin agencias y sin semanas de configuración.",
-          },
-          {
-            title: "Un dominio de correo propio, autenticado",
-            body: "Eliges un dominio dedicado para tus envíos. El sistema lo autentica (SPF, DKIM, DMARC) y arranca su reputación desde cero, para no tocar tu buzón principal ni depender de una IP compartida.",
-          },
-        ]}
-        oneLiners={[
-          {
-            title: "Perfil comercial editable",
-            body: "Corrige lo que la IA entendió de tu negocio. Tu criterio guía cada correo, y los cambios se aplican a la siguiente tanda de contactos.",
-          },
-          {
-            title: "Remitentes con identidad real",
-            body: "Tus remitentes, con nombre y cargo reales, protegidos para no romper la reputación del dominio.",
-          },
-        ]}
+        depth={setup.depth}
+        oneLiners={setup.oneLiners}
         mockup={<MockupWizard />}
       />
 
       <ThemeBlock
         id="dia-a-dia"
         band="paper"
-        eyebrow="El día a día"
-        title="Cinco minutos al día. El resto ocurre solo."
-        intro="El criterio humano se queda en el centro: nada sale sin tu visto bueno, pero la revisión es una sesión corta al día, no una configuración constante."
+        eyebrow={t("diaADia.eyebrow")}
+        title={t("diaADia.title")}
+        intro={t("diaADia.intro")}
         reduce={reduce}
-        depth={[
-          {
-            title: "Apruebas lo que sale, y solo eso",
-            body: "En el Centro de Aprobación ves cada correo ya redactado —asunto y cuerpo, con nombre, empresa y dirección— antes de que salga. Editas el texto si quieres, despliegas la secuencia completa de seguimientos, marcas los que apruebas y descartas el resto. Cuando confíes en el sistema, puedes desactivar la aprobación y dejar que salgan solos.",
-          },
-        ]}
-        oneLiners={[
-          {
-            title: "Un panel honesto",
-            body: "Números reales, no gráficos decorativos: correos enviados, respuestas y tasa de respuesta de tus últimos 30 días.",
-          },
-          {
-            title: "Tus listas, con estado claro",
-            body: "Las listas de contactos, agrupadas por archivo y fecha, con lo que se ha procesado y lo que queda.",
-          },
-          {
-            title: "Trae tus propios contactos",
-            body: "Un CSV y tus contactos entran en la misma personalización y envío que la búsqueda automática.",
-          },
-          {
-            title: "Tú controlas los ajustes",
-            body: "Cuándo envías, cómo te avisamos (correo y Telegram) y cómo se comporta tu campaña, sin abrir un ticket para cada cambio.",
-          },
-          {
-            title: "Pagas por prospecto trabajado",
-            body: "No por asientos ni suscripciones. Recargas créditos cuando quieras, de forma segura con Stripe.",
-          },
-        ]}
+        depth={diaADia.depth}
+        oneLiners={diaADia.oneLiners}
         mockup={<MockupAprobacion />}
       />
 
       <ThemeBlock
         id="motor"
         band="surface"
-        eyebrow="El motor"
-        title="Encuentra, verifica y escribe. Por cada prospecto."
-        intro="Encontrar buenas empresas objetivo es el trabajo más lento de la prospección. El sistema lo hace en continuo, y sobre cada contacto escribe un mensaje pensado para él."
+        eyebrow={t("motor.eyebrow")}
+        title={t("motor.title")}
+        intro={t("motor.intro")}
         reduce={reduce}
-        depth={[
-          {
-            title: "Un mensaje escrito desde cero, no una plantilla",
-            body: "Con tu perfil comercial y el contexto real de cada empresa, el sistema redacta una secuencia completa por contacto —apertura, seguimiento, nuevo ángulo y cierre—. Cada correo se genera en el idioma que corresponde a la ubicación de la empresa, para que suene como algo escrito a mano y no como una plantilla rellenada.",
-          },
-          {
-            title: "Cuando hay una señal, el mensaje la aprovecha",
-            body: "El sistema también vigila señales de actividad reciente en la empresa objetivo, como una contratación. Cuando aparece una, el mensaje puede apoyarse en ella —por ejemplo, si la empresa está ampliando su equipo— para llegar en el momento en que tiene más sentido.",
-          },
-        ]}
-        oneLiners={[
-          {
-            title: "Empresas que encajan con tu ICP",
-            body: "Encuentra por ti las empresas que encajan con tu cliente ideal —sector, ubicación y tamaño— y descarta las que no.",
-          },
-          {
-            title: "Contactos con correo verificado",
-            body: "Las personas adecuadas en cada empresa, con la dirección de correo verificada antes de escribir.",
-          },
-        ]}
+        depth={motor.depth}
+        oneLiners={motor.oneLiners}
         mockup={<MockupSecuencia />}
       />
 
       <ThemeBlock
         id="entregabilidad"
         band="paper"
-        eyebrow="Entregabilidad y respuestas"
-        title="Llegar a la bandeja de entrada, y saber qué hacer después."
-        intro="Enviar en frío desde un dominio nuevo o compartido acaba en spam. Un dominio dedicado y calentado con cuidado protege tu reputación; y cuando llegan respuestas, cada una se trata como merece."
+        eyebrow={t("entregabilidad.eyebrow")}
+        title={t("entregabilidad.title")}
+        intro={t("entregabilidad.intro")}
         reduce={reduce}
-        depth={[
-          {
-            title: "Calentamiento real, no un interruptor",
-            body: "El dominio empieza con pocos correos al día y sube el volumen poco a poco —de una franja de 4 a 16 diarios en la primera semana hasta el volumen pleno de 50 en la cuarta—. En el panel ves el día de calentamiento y el volumen actual en todo momento.",
-          },
-          {
-            title: "Cada respuesta, leída y clasificada",
-            body: "Interesado, no interesado, hostil o fuera de oficina: la intención se detecta sola. Si hay interés, la secuencia se pausa y recibes la respuesta al instante por correo y Telegram para retomar tú la conversación; el enlace de tu Cal.com viaja en cada correo, así que el prospecto también puede reservar directamente desde ahí. Una ausencia temporal pausa y reanuda a los pocos días; una respuesta hostil cierra el hilo para siempre.",
-          },
-        ]}
-        oneLiners={[
-          {
-            title: "De la respuesta a la reunión",
-            body: "Cuando alguien responde con interés, la secuencia se pausa y te avisamos al instante por correo y Telegram; el enlace de tu Cal.com viaja en cada correo, así que también puede reservar directamente desde ahí.",
-          },
-          {
-            title: "Bajas y cumplimiento por defecto",
-            body: "Cada correo permite darse de baja, y quien lo hace no vuelve a recibir nada, en ninguna de tus campañas.",
-          },
-        ]}
+        depth={entregabilidad.depth}
+        oneLiners={entregabilidad.oneLiners}
         mockup={<MockupRamp />}
       />
 

@@ -255,5 +255,248 @@
     "legalPre": "¿Prefieres verlo antes con el fundador?",
     "legalMailtoLink": "Escríbeme directamente.",
     "legalCalLink": "Reservar reunión"
+  },
+  "producto": {
+    "hero": {
+      "eyebrow": "Producto",
+      "heading1": "Todo lo que hace el sistema,",
+      "heading2": "de la primera sesión al primer sí.",
+      "subtitle": "RevCognition monta tu prospección en frío de principio a fin y la sostiene día tras día. Esto es lo que ocurre por dentro, sin jerga."
+    },
+    "nav": {
+      "ariaLabel": "Secciones de la página",
+      "sections": {
+        "setup": "Puesta en marcha",
+        "diaADia": "El día a día",
+        "motor": "El motor",
+        "entregabilidad": "Entregabilidad",
+        "faq": "Preguntas"
+      }
+    },
+    "setup": {
+      "eyebrow": "Puesta en marcha",
+      "title": "De tu web a una campaña activa, en una sesión.",
+      "intro": "Montar prospección en frío desde cero —dominio, buzones, secuencia, mensajes— suele llevar semanas y varias herramientas. Aquí es una sola sesión guiada de principio a fin.",
+      "depth": [
+        {
+          "title": "Un asistente que deja la cuenta lista para enviar",
+          "body": "Pegas la URL de tu web y el sistema redacta un primer perfil comercial: a quién te diriges, qué te diferencia y tu tono. Lo revisas, eliges un dominio dedicado, defines tus remitentes y tu enlace para agendar, y al terminar el dominio entra en calentamiento. Sin agencias y sin semanas de configuración."
+        },
+        {
+          "title": "Un dominio de correo propio, autenticado",
+          "body": "Eliges un dominio dedicado para tus envíos. El sistema lo autentica (SPF, DKIM, DMARC) y arranca su reputación desde cero, para no tocar tu buzón principal ni depender de una IP compartida."
+        }
+      ],
+      "oneLiners": [
+        {
+          "title": "Perfil comercial editable",
+          "body": "Corrige lo que la IA entendió de tu negocio. Tu criterio guía cada correo, y los cambios se aplican a la siguiente tanda de contactos."
+        },
+        {
+          "title": "Remitentes con identidad real",
+          "body": "Tus remitentes, con nombre y cargo reales, protegidos para no romper la reputación del dominio."
+        }
+      ]
+    },
+    "diaADia": {
+      "eyebrow": "El día a día",
+      "title": "Cinco minutos al día. El resto ocurre solo.",
+      "intro": "El criterio humano se queda en el centro: nada sale sin tu visto bueno, pero la revisión es una sesión corta al día, no una configuración constante.",
+      "depth": [
+        {
+          "title": "Apruebas lo que sale, y solo eso",
+          "body": "En el Centro de Aprobación ves cada correo ya redactado —asunto y cuerpo, con nombre, empresa y dirección— antes de que salga. Editas el texto si quieres, despliegas la secuencia completa de seguimientos, marcas los que apruebas y descartas el resto. Cuando confíes en el sistema, puedes desactivar la aprobación y dejar que salgan solos."
+        }
+      ],
+      "oneLiners": [
+        {
+          "title": "Un panel honesto",
+          "body": "Números reales, no gráficos decorativos: correos enviados, respuestas y tasa de respuesta de tus últimos 30 días."
+        },
+        {
+          "title": "Tus listas, con estado claro",
+          "body": "Las listas de contactos, agrupadas por archivo y fecha, con lo que se ha procesado y lo que queda."
+        },
+        {
+          "title": "Trae tus propios contactos",
+          "body": "Un CSV y tus contactos entran en la misma personalización y envío que la búsqueda automática."
+        },
+        {
+          "title": "Tú controlas los ajustes",
+          "body": "Cuándo envías, cómo te avisamos (correo y Telegram) y cómo se comporta tu campaña, sin abrir un ticket para cada cambio."
+        },
+        {
+          "title": "Pagas por prospecto trabajado",
+          "body": "No por asientos ni suscripciones. Recargas créditos cuando quieras, de forma segura con Stripe."
+        }
+      ]
+    },
+    "motor": {
+      "eyebrow": "El motor",
+      "title": "Encuentra, verifica y escribe. Por cada prospecto.",
+      "intro": "Encontrar buenas empresas objetivo es el trabajo más lento de la prospección. El sistema lo hace en continuo, y sobre cada contacto escribe un mensaje pensado para él.",
+      "depth": [
+        {
+          "title": "Un mensaje escrito desde cero, no una plantilla",
+          "body": "Con tu perfil comercial y el contexto real de cada empresa, el sistema redacta una secuencia completa por contacto —apertura, seguimiento, nuevo ángulo y cierre—. Cada correo se genera en el idioma que corresponde a la ubicación de la empresa, para que suene como algo escrito a mano y no como una plantilla rellenada."
+        },
+        {
+          "title": "Cuando hay una señal, el mensaje la aprovecha",
+          "body": "El sistema también vigila señales de actividad reciente en la empresa objetivo, como una contratación. Cuando aparece una, el mensaje puede apoyarse en ella —por ejemplo, si la empresa está ampliando su equipo— para llegar en el momento en que tiene más sentido."
+        }
+      ],
+      "oneLiners": [
+        {
+          "title": "Empresas que encajan con tu ICP",
+          "body": "Encuentra por ti las empresas que encajan con tu cliente ideal —sector, ubicación y tamaño— y descarta las que no."
+        },
+        {
+          "title": "Contactos con correo verificado",
+          "body": "Las personas adecuadas en cada empresa, con la dirección de correo verificada antes de escribir."
+        }
+      ]
+    },
+    "entregabilidad": {
+      "eyebrow": "Entregabilidad y respuestas",
+      "title": "Llegar a la bandeja de entrada, y saber qué hacer después.",
+      "intro": "Enviar en frío desde un dominio nuevo o compartido acaba en spam. Un dominio dedicado y calentado con cuidado protege tu reputación; y cuando llegan respuestas, cada una se trata como merece.",
+      "depth": [
+        {
+          "title": "Calentamiento real, no un interruptor",
+          "body": "El dominio empieza con pocos correos al día y sube el volumen poco a poco —de una franja de 4 a 16 diarios en la primera semana hasta el volumen pleno de 50 en la cuarta—. En el panel ves el día de calentamiento y el volumen actual en todo momento."
+        },
+        {
+          "title": "Cada respuesta, leída y clasificada",
+          "body": "Interesado, no interesado, hostil o fuera de oficina: la intención se detecta sola. Si hay interés, la secuencia se pausa y recibes la respuesta al instante por correo y Telegram para retomar tú la conversación; el enlace de tu Cal.com viaja en cada correo, así que el prospecto también puede reservar directamente desde ahí. Una ausencia temporal pausa y reanuda a los pocos días; una respuesta hostil cierra el hilo para siempre."
+        }
+      ],
+      "oneLiners": [
+        {
+          "title": "De la respuesta a la reunión",
+          "body": "Cuando alguien responde con interés, la secuencia se pausa y te avisamos al instante por correo y Telegram; el enlace de tu Cal.com viaja en cada correo, así que también puede reservar directamente desde ahí."
+        },
+        {
+          "title": "Bajas y cumplimiento por defecto",
+          "body": "Cada correo permite darse de baja, y quien lo hace no vuelve a recibir nada, en ninguna de tus campañas."
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "Preguntas",
+      "heading": "Lo que suelen preguntarnos antes de entrar.",
+      "items": [
+        {
+          "q": "¿Acabaré en spam?",
+          "a": "Es lo primero que cuidamos. Envías desde un dominio propio y dedicado, no compartido, y su reputación se calienta poco a poco a lo largo de las primeras cuatro semanas, hasta alcanzar el volumen de envío pleno. Además, cada dirección de correo se verifica antes de escribir, para que el rebote se mantenga bajo y tus mensajes lleguen a la bandeja de entrada."
+        },
+        {
+          "q": "¿Cuánto control tengo?",
+          "a": "Todo el que quieras. Cada correo se prepara pero no sale hasta que lo apruebas —una revisión de unos cinco minutos al día— y puedes editar el texto antes de enviarlo. Si prefieres delegar, desactivas la aprobación y los envíos salen solos. El perfil comercial que guía cada mensaje lo ajustas tú cuando quieras."
+        },
+        {
+          "q": "¿En qué idioma escribe?",
+          "a": "En el idioma que corresponde a la ubicación de cada prospecto, con el inglés por defecto. No es necesariamente tu idioma: si escribes a una empresa en Francia, el mensaje va en francés; a una en Alemania, en alemán. El objetivo es que cada destinatario lea el correo en su propio idioma."
+        },
+        {
+          "q": "¿Qué pasa cuando alguien responde?",
+          "a": "Cada respuesta se lee y se clasifica sola: interesado, no interesado, hostil o fuera de oficina. Si hay interés, la secuencia se pausa al instante y recibes la respuesta por correo y Telegram para retomarla tú mismo; el enlace de tu Cal.com viaja en cada correo enviado, así que el prospecto también puede reservar directamente desde ahí. Si no hay interés o la respuesta es hostil, el hilo se cierra con cuidado y no se vuelve a contactar."
+        },
+        {
+          "q": "¿Qué cuesta?",
+          "a": "Un setup inicial de 50€ para dejar la cuenta lista, y luego packs de envíos desde 100€ (100 envíos), con descuento por volumen: 600 envíos por 500€ y 1.300 por 1.000€. Precios sin impuestos: el IVA aplicable se añade en factura según el país de tu empresa. Un crédito se consume con el primer envío a un prospecto nuevo; los seguimientos de esa misma secuencia no gastan crédito extra. Sin permanencia y los créditos no caducan."
+        },
+        {
+          "q": "¿Funciona en mi sector o en mi país?",
+          "a": "El sistema busca en continuo sobre bases de datos partner especializadas: para un solo perfil de cliente ideal —sector, ubicación y tamaño— puede haber más de 400.000 empresas candidatas. Y cada correo llega en el idioma que corresponde al país de quien lo recibe, así que la cobertura no depende del idioma que hables tú."
+        },
+        {
+          "q": "¿De dónde salen los datos de los contactos?",
+          "a": "Los contactos salen de bases de datos partner especializadas en información profesional. Antes de escribir, cada dirección de correo se verifica para mantener el rebote bajo, y cada correo incluye una opción de baja: quien se da de baja no vuelve a recibir nada, en cumplimiento con la normativa."
+        }
+      ]
+    },
+    "mockups": {
+      "wizard": {
+        "title": "Configuración",
+        "metaText": "Paso 5 de 6",
+        "domainLabel": "Dominio de envío",
+        "domainValue": "correo-tuempresa.example",
+        "sendersHeading": "Remitentes · 6 buzones",
+        "senders": [
+          {
+            "name": "Alex Serra",
+            "role": "Fundador"
+          },
+          {
+            "name": "Marina Gil",
+            "role": "Desarrollo de negocio"
+          },
+          {
+            "name": "Pau Roig",
+            "role": "Cuentas"
+          }
+        ],
+        "moreSenders": "+ 3 remitentes más"
+      },
+      "aprobacion": {
+        "title": "Aprobación",
+        "metaText": "1 de 8 pendientes",
+        "toLabel": "Para:",
+        "toValue": "Ana Ruiz · Bufete Serrano",
+        "subjectLabel": "Asunto:",
+        "subjectValue": "Vuestra convocatoria ENISA",
+        "body": "Buenos días, Ana. He visto que Bufete Serrano participa en la convocatoria ENISA. En despachos similares hemos ayudado a...",
+        "approve": "Aprobar",
+        "discard": "Descartar"
+      },
+      "secuencia": {
+        "title": "Secuencia",
+        "metaText": "4 mensajes",
+        "steps": [
+          {
+            "day": "Día 0",
+            "name": "Apertura"
+          },
+          {
+            "day": "+3 días",
+            "name": "Seguimiento"
+          },
+          {
+            "day": "+5 días",
+            "name": "Nuevo ángulo"
+          },
+          {
+            "day": "+4 días",
+            "name": "Cierre"
+          }
+        ],
+        "signalLabel": "Señal detectada",
+        "signalValue": "Empresa Ejemplo amplía su equipo comercial",
+        "body": "Hola, Laura. He visto que Empresa Ejemplo está ampliando el equipo comercial — imagino que la prospección forma parte de esa expansión..."
+      },
+      "ramp": {
+        "title": "Calentamiento",
+        "metaText": "En curso",
+        "weeks": [
+          {
+            "label": "Semana 1",
+            "value": "4 – 16 / día"
+          },
+          {
+            "label": "Semana 2",
+            "value": "18 – 30 / día"
+          },
+          {
+            "label": "Semana 3",
+            "value": "32 – 44 / día"
+          },
+          {
+            "label": "Semana 4",
+            "value": "50 / día · pleno"
+          }
+        ],
+        "statusLabel": "Respuesta clasificada · Interesado"
+      }
+    }
   }
 }
