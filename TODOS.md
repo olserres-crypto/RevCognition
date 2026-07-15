@@ -2,6 +2,17 @@
 
 Design system y a11y. Ordenados por prioridad. Estimaciones son para un dev que conoce el stack.
 
+## i18n (ES/EN/FR — LIVE desde 2026-07-15)
+
+La landing es multilingüe con `next-intl` (ES en raíz, `/en`, `/fr`, auto-detección + switcher).
+Spec/plan: `DOCS/superpowers/{specs,plans}/2026-07-14-i18n-landing-multilingual*.md`. Catálogos en `messages/`.
+Paridad de claves: `npm run i18n:check` (fail-closed). Deploy = GitHub Action (logs vía `gh run view`, no dashboard CF).
+
+- [ ] **Revisión jurídica del texto legal de `privacy` (EN/FR).** Las traducciones de `messages/{en,fr}.json` namespace `privacy` las redactó Claude (fieles al ES pero SIN revisión de abogado). Repasar retenciones de datos y terminología GDPR/RGPD antes de meter tráfico serio a `/en/privacy` `/fr/privacy`.
+- [ ] **(Opcional) Volver estáticas las 4 páginas `runtime='edge'`.** `producto`, `soluciones/servicios-b2b`, `gracias`, `privacy` llevan `export const runtime='edge'` porque su `generateMetadata` las hace dinámicas (requisito de `@cloudflare/next-on-pages`). Se pueden volver a estáticas (mejor perf/coste) llamando `setRequestLocale(locale)` DENTRO de su `generateMetadata` antes de `getTranslations` + `generateStaticParams` propio, y quitando el `runtime`. Edge en Cloudflare es válido → optimización, no urgencia. Validar SOLO en el Action (el build edge no corre en Windows).
+- [ ] **Bump Node 20 → 22 en `.github/workflows/deploy.yml`.** GitHub deprecó Node 20 en runners. El workflow usa `npm install` (no `npm ci`) por drift de versión de lockfile — revisitar si se alinea el npm local con el del CI.
+- [ ] **(Opcional) Localizar `footer` "Unsubscribe" en ES.** El footer español dice "Unsubscribe" (heredado del código original). El fundador lo dejó así en la revisión; cambiar a "Darse de baja" si se quiere.
+
 ## A11y
 
 - [x] **Respetar `prefers-reduced-motion` en framer-motion.** `MotionProvider` aplica `MotionConfig reducedMotion="user"` (global) y, además, cada sección animada usa `useReducedMotion()` para desactivar `initial`/entrada cuando el usuario lo prefiere (Hero, Problem, HowItWorks, UseCases, FeaturesGrid, Producto). `scroll-behavior: smooth` se desactiva bajo reduced-motion en `globals.css`. (B-585)
