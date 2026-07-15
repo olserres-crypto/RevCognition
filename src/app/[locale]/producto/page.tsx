@@ -5,6 +5,11 @@ import { Footer } from "@/components/sections/Footer";
 import {getTranslations, setRequestLocale} from "next-intl/server";
 import {buildAlternates} from "@/i18n/metadata";
 
+// This route has a page-level generateMetadata (getTranslations) so Next renders
+// it dynamically; @cloudflare/next-on-pages requires non-static routes to run on
+// the Edge runtime.
+export const runtime = "edge";
+
 const OG_LOCALE: Record<string, string> = {es: "es_ES", en: "en_US", fr: "fr_FR"};
 
 export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {

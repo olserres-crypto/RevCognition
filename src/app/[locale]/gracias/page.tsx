@@ -3,6 +3,11 @@ import { Nav } from "@/components/sections/Nav";
 import {getTranslations, setRequestLocale} from "next-intl/server";
 import {buildAlternates} from "@/i18n/metadata";
 
+// This route has a page-level generateMetadata (getTranslations) so Next renders
+// it dynamically; @cloudflare/next-on-pages requires non-static routes to run on
+// the Edge runtime.
+export const runtime = "edge";
+
 const CONTACT_EMAIL = "olivier.serres@revcognition.com";
 
 export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {

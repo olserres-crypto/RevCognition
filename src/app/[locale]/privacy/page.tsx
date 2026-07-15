@@ -5,6 +5,11 @@ import { Footer } from "@/components/sections/Footer";
 import {getTranslations, setRequestLocale} from "next-intl/server";
 import {buildAlternates} from "@/i18n/metadata";
 
+// This route has a page-level generateMetadata (getTranslations) so Next renders
+// it dynamically; @cloudflare/next-on-pages requires non-static routes to run on
+// the Edge runtime.
+export const runtime = "edge";
+
 const CONTACT_EMAIL = "olivier.serres@revcognition.com";
 const APP_URL = "https://app.revcognition.com";
 const AEPD_URL = "https://www.aepd.es";
