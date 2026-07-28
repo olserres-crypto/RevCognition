@@ -69,9 +69,14 @@ export default async function LocaleLayout({
   const t = await getTranslations({locale, namespace: "a11y"});
   const cfAnalyticsToken = process.env.NEXT_PUBLIC_CF_ANALYTICS_TOKEN;
 
+  // La variable de next/font va en <html>, NO en <body>: el @theme de Tailwind v4
+  // emite `--font-sans: var(--font-instrument-sans), …` dentro de :root, y si la
+  // variable solo existe en <body> la sustitución falla ahí arriba, --font-sans
+  // queda inválida, el body la hereda inválida y todo cae al ui-sans-serif del
+  // preflight. Instrument Sans no llegaba a aplicarse en ninguna parte.
   return (
-    <html lang={locale}>
-      <body className={`${instrumentSans.variable} antialiased`}>
+    <html lang={locale} className={instrumentSans.variable}>
+      <body className="antialiased">
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-[100] focus:bg-[var(--color-ink)] focus:text-[var(--color-paper)] focus:px-4 focus:py-2 focus:rounded-md focus:text-sm focus:font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2"
