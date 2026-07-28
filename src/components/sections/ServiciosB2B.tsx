@@ -23,7 +23,7 @@ export function ServiciosB2B() {
         <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-warm)] mb-4">
           {t("hero.eyebrow")}
         </p>
-        <h1 className="font-serif text-4xl sm:text-5xl text-[var(--color-ink)] leading-tight max-w-3xl">
+        <h1 className="text-4xl sm:text-5xl text-[var(--color-ink)] leading-tight max-w-3xl">
           {t("hero.heading1")}{" "}
           <span className="font-light">{t("hero.heading2")}</span>
         </h1>
@@ -41,7 +41,7 @@ export function ServiciosB2B() {
           <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-warm)] mb-4">
             {t("steps.eyebrow")}
           </p>
-          <h2 className="font-serif text-3xl sm:text-4xl text-[var(--color-ink)] mb-4">
+          <h2 className="text-3xl sm:text-4xl text-[var(--color-ink)] mb-4">
             {t("steps.heading")}
           </h2>
           <p className="text-[var(--color-slate)] text-lg mb-12 max-w-xl">
@@ -61,7 +61,7 @@ export function ServiciosB2B() {
                 <div className="w-7 h-7 rounded-full border-2 border-[var(--color-warm)] text-[var(--color-warm)] text-xs font-semibold flex items-center justify-center mb-3">
                   {i + 1}
                 </div>
-                <h3 className="font-serif text-base text-[var(--color-ink)] mb-1.5">
+                <h3 className="text-base text-[var(--color-ink)] mb-1.5">
                   {paso.title}
                 </h3>
                 <p className="text-[var(--color-slate)] text-sm leading-relaxed">
@@ -87,7 +87,7 @@ export function ServiciosB2B() {
           <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-warm)] mb-4">
             {t("stats.eyebrow")}
           </p>
-          <h2 className="font-serif text-3xl sm:text-4xl text-[var(--color-ink)] mb-6 max-w-2xl">
+          <h2 className="text-3xl sm:text-4xl text-[var(--color-ink)] mb-6 max-w-2xl">
             {t("stats.heading")}
           </h2>
           <p className="text-[var(--color-slate)] text-lg leading-relaxed max-w-2xl">
@@ -99,7 +99,7 @@ export function ServiciosB2B() {
             <p className="text-xs font-semibold uppercase tracking-widest text-[var(--color-slate)] mb-2">
               {t("stats.caseStudy.label")}
             </p>
-            <h3 className="font-serif text-xl text-[var(--color-ink)] mb-3">
+            <h3 className="text-xl text-[var(--color-ink)] mb-3">
               {t("stats.caseStudy.title")}
             </h3>
             <p className="text-[var(--color-slate)] text-sm leading-relaxed mb-6">
@@ -127,7 +127,7 @@ export function ServiciosB2B() {
           <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-warm)] mb-4">
             {t("faq.eyebrow")}
           </p>
-          <h2 className="font-serif text-3xl sm:text-4xl text-[var(--color-ink)] mb-12">
+          <h2 className="text-3xl sm:text-4xl text-[var(--color-ink)] mb-12">
             {t("faq.heading")}
           </h2>
           <div className="max-w-3xl divide-y divide-[var(--color-border)]">
@@ -140,7 +140,7 @@ export function ServiciosB2B() {
                 transition={{ delay: (i % 2) * 0.05, duration: 0.35, ease: "easeOut" }}
                 className="py-6"
               >
-                <h3 className="font-serif text-xl text-[var(--color-ink)] mb-2">
+                <h3 className="text-xl text-[var(--color-ink)] mb-2">
                   {f.q}
                 </h3>
                 <p className="text-[var(--color-slate)] leading-relaxed">{f.a}</p>

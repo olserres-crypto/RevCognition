@@ -117,7 +117,7 @@ export function HowItWorks() {
         <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-warm)] mb-4">
           {t("eyebrow")}
         </p>
-        <h2 className="font-serif text-3xl sm:text-4xl text-[var(--color-ink)] mb-12">
+        <h2 className="text-3xl sm:text-4xl text-[var(--color-ink)] mb-12">
           {t("heading")}
         </h2>
 
@@ -144,7 +144,7 @@ export function HowItWorks() {
 
                 <div className="flex-1 min-w-0 pt-1.5 flex flex-col lg:flex-row lg:items-start lg:gap-10">
                   <div className="pb-4 lg:pb-2 flex-1 min-w-0">
-                    <h3 className="font-serif text-xl text-[var(--color-ink)] mb-2">
+                    <h3 className="text-xl text-[var(--color-ink)] mb-2">
                       {step.title}
                     </h3>
                     <p className="text-[var(--color-slate)] leading-relaxed mb-3">

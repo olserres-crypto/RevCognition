@@ -39,7 +39,7 @@ export function Hero() {
         <div>
           <motion.h1
             variants={fadeUp} initial={reduce ? false : "hidden"} animate="show" custom={0}
-            className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[var(--color-ink)] leading-tight"
+            className="text-4xl sm:text-5xl lg:text-6xl text-[var(--color-ink)] leading-tight"
           >
             {t("line1")}{" "}
             <span className="text-[var(--color-warm)]">{t("line2")}</span>{" "}

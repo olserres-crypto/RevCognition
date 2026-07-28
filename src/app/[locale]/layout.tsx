@@ -1,5 +1,5 @@
 import type {Metadata} from "next";
-import {Fraunces, Instrument_Sans} from "next/font/google";
+import {Instrument_Sans} from "next/font/google";
 import {notFound} from "next/navigation";
 import {NextIntlClientProvider, hasLocale} from "next-intl";
 import {setRequestLocale, getTranslations} from "next-intl/server";
@@ -7,13 +7,6 @@ import {routing} from "@/i18n/routing";
 import {buildAlternates} from "@/i18n/metadata";
 import {MotionProvider} from "@/components/providers/MotionProvider";
 import "../globals.css";
-
-const fraunces = Fraunces({
-  weight: ["300", "400", "500"],
-  subsets: ["latin"],
-  variable: "--font-fraunces",
-  display: "swap",
-});
 
 const instrumentSans = Instrument_Sans({
   weight: ["400", "500", "600"],
@@ -78,7 +71,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body className={`${fraunces.variable} ${instrumentSans.variable} antialiased`}>
+      <body className={`${instrumentSans.variable} antialiased`}>
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-[100] focus:bg-[var(--color-ink)] focus:text-[var(--color-paper)] focus:px-4 focus:py-2 focus:rounded-md focus:text-sm focus:font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2"

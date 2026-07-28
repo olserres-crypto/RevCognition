@@ -29,7 +29,7 @@ export function UseCases() {
         <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-warm)] mb-4">
           {t("eyebrow")}
         </p>
-        <h2 className="font-serif text-3xl sm:text-4xl text-[var(--color-ink)] mb-4">
+        <h2 className="text-3xl sm:text-4xl text-[var(--color-ink)] mb-4">
           {t("heading")}
         </h2>
         <p className="text-[var(--color-slate)] text-lg mb-12 max-w-xl">
@@ -51,7 +51,7 @@ export function UseCases() {
                 <p className="text-xs font-semibold uppercase tracking-widest text-[var(--color-slate)] mt-3 mb-1">
                   {c.sector}
                 </p>
-                <h3 className="font-serif text-xl text-[var(--color-ink)]">
+                <h3 className="text-xl text-[var(--color-ink)]">
                   {c.problem}
                 </h3>
               </div>

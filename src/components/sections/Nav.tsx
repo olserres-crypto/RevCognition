@@ -175,7 +175,7 @@ export function Nav() {
                       <Link
                         href={l.href}
                         onClick={() => setOpen(false)}
-                        className="block font-serif text-2xl text-[var(--color-ink)] py-3 hover:text-[var(--color-warm)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2 rounded-md"
+                        className="block text-2xl text-[var(--color-ink)] py-3 hover:text-[var(--color-warm)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2 rounded-md"
                       >
                         {t(l.key)}
                       </Link>

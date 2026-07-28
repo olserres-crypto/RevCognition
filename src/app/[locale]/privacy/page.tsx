@@ -81,7 +81,7 @@ export default async function PrivacyPage({params}: {params: Promise<{locale: st
           <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-warm)] mb-4">
             {t("eyebrow")}
           </p>
-          <h1 className="font-serif text-3xl sm:text-4xl text-[var(--color-ink)] mb-6">
+          <h1 className="text-3xl sm:text-4xl text-[var(--color-ink)] mb-6">
             {t("heading")}
           </h1>
           <p className="text-[var(--color-slate)] text-lg leading-relaxed mb-12">
@@ -91,7 +91,7 @@ export default async function PrivacyPage({params}: {params: Promise<{locale: st
           <div className="space-y-10 text-[var(--color-slate)] leading-relaxed">
             {sections.map((section, i) => (
               <section key={section.heading}>
-                <h2 className="font-serif text-xl text-[var(--color-ink)] mb-2">
+                <h2 className="text-xl text-[var(--color-ink)] mb-2">
                   {section.heading}
                 </h2>
                 {section.items ? (
