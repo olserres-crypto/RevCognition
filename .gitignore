@@ -49,3 +49,6 @@ next-env.d.ts
 graphify-out/
 .graphify_python
 design-preview.html
+
+# Diffs generados para revision de copy (no forman parte del sitio)
+_review/
