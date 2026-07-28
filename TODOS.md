@@ -2,6 +2,25 @@
 
 Design system y a11y. Ordenados por prioridad. Estimaciones son para un dev que conoce el stack.
 
+## Tipografía (una sola sans — LIVE desde 2026-07-28)
+
+**Instrument Sans en todo**: display, body y wordmark. La jerarquía la hacen el peso, el
+tamaño y el color, nunca el cambio de familia. Detalle en `DESIGN.md` §Tipografía.
+
+⚠ **La variable de `next/font` va en `<html>`, no en `<body>`.** El `@theme` de Tailwind v4
+emite `--font-sans: var(--font-instrument-sans), …` dentro de `:root`; si la variable solo
+existe en `<body>` la sustitución falla ahí arriba y **todo el sitio cae al `ui-sans-serif`
+del preflight sin avisar**. Fue el estado de producción hasta el 28-jul-2026: ni Fraunces ni
+Instrument Sans llegaban a aplicarse. Si algún día el sitio "se ve raro pero sin errores",
+comprobar primero `getComputedStyle(document.body).fontFamily`.
+
+- [ ] **`public/design-preview.html` lleva el titular retirado.** Se sirve en
+  `/design-preview.html` con "Nuevos clientes, cada semana" ×3. Es un artefacto de diseño,
+  pero es público. Regenerarlo o dejar de publicarlo.
+- [ ] **`font-light` en el wordmark no rinde 300.** `Logo.tsx` pide `font-light` pero
+  `layout.tsx` solo carga 400/500/600, así que el contraste real de "RevCognition" es 400 vs
+  500. Decidir si se añade el 300 a los `weight` o se cambia la clase por `font-normal`.
+
 ## i18n (ES/EN/FR — LIVE desde 2026-07-15)
 
 La landing es multilingüe con `next-intl` (ES en raíz, `/en`, `/fr`, auto-detección + switcher).
@@ -23,6 +42,6 @@ Paridad de claves: `npm run i18n:check` (fail-closed). Deploy = GitHub Action (l
 
 ## UX
 
-- [x] **Hamburger + drawer en nav móvil.** Implementado en `Nav.tsx` según DESIGN.md §Responsive: drawer slide-in desde la derecha, links Fraunces `text-2xl`, cierre con tap-outside + X + Escape, scroll-lock, cierre al navegar y gestión de foco (entra al drawer al abrir, vuelve al disparador al cerrar). (B-585)
+- [x] **Hamburger + drawer en nav móvil.** Implementado en `Nav.tsx` según DESIGN.md §Responsive: drawer slide-in desde la derecha, links `text-2xl`, cierre con tap-outside + X + Escape, scroll-lock, cierre al navegar y gestión de foco (entra al drawer al abrir, vuelve al disparador al cerrar). (B-585)
 
 - [ ] **Error UI inline (formularios futuros).** Si se reintroduce cualquier formulario en esta web (hoy no hay ninguno: la conversión enlaza a la app), aplicar el patrón de error inline documentado en DESIGN.md §Estados — nunca `alert()`/`confirm()`/`prompt()`.
