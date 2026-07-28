@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "RevCognition — Prospection à froid pour ceux qui vivent du bouche-à-oreille",
+    "title": "Prospection à froid pour ceux qui vivent du bouche-à-oreille | RevCognition",
     "description": "RevCognition identifie vos clients idéaux et écrit à chacun un message unique. Vous n'écrivez rien, vous ne payez aucune agence, et vous validez cinq minutes par jour.",
     "ogAlt": "RevCognition — De nouveaux clients, chaque semaine."
   },
@@ -24,7 +24,8 @@
     "copyright": "© 2026"
   },
   "hero": {
-    "line1": "Vous vivez du bouche-à-oreille.",
+    "line1": "Vous vivez",
+    "line1Accent": "du bouche-à-oreille.",
     "line2": "Et il ne vous reste pas de temps pour prospecter.",
     "subtitle": "RevCognition identifie vos clients idéaux et écrit à chacun un message unique. Vous n'écrivez rien, vous ne payez aucune agence, et vous validez cinq minutes par jour.",
     "ctaPrimary": "Demander l'accès à la bêta",

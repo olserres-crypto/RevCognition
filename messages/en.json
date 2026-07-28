@@ -24,7 +24,8 @@
     "copyright": "© 2026"
   },
   "hero": {
-    "line1": "Your clients come from referrals.",
+    "line1": "Your clients come",
+    "line1Accent": "from referrals.",
     "line2": "And there's no time left to go find more.",
     "subtitle": "RevCognition identifies your ideal clients and writes each one a unique message. You write nothing, you pay no agency, and you review for five minutes a day.",
     "ctaPrimary": "Request beta access",

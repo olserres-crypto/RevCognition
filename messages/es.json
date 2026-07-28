@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "RevCognition — Prospección en frío para quien vive de la recomendación",
+    "title": "Prospección en frío para quien vive de la recomendación | RevCognition",
     "description": "RevCognition identifica a tus clientes ideales y les escribe un mensaje único a cada uno. Tú no escribes nada, no pagas a ninguna agencia, y revisas cinco minutos al día.",
     "ogAlt": "RevCognition — Nuevos clientes, cada semana."
   },
@@ -24,7 +24,8 @@
     "copyright": "© 2026"
   },
   "hero": {
-    "line1": "Tus clientes llegan por recomendación.",
+    "line1": "Tus clientes llegan",
+    "line1Accent": "por recomendación.",
     "line2": "Y no te queda tiempo para prospectar.",
     "subtitle": "RevCognition identifica a tus clientes ideales y les escribe un mensaje único a cada uno. Tú no escribes nada, no pagas a ninguna agencia, y revisas cinco minutos al día.",
     "ctaPrimary": "Solicita acceso a la beta",
