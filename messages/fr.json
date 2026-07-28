@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "RevCognition — De nouveaux clients, chaque semaine. Sans agence.",
-    "description": "RevCognition identifie vos clients idéaux et écrit à chacun un message unique. Vous n'écrivez rien. Vous ne payez aucune agence. Et vous n'avez pas à trouver le temps.",
-    "ogAlt": "RevCognition — De nouveaux clients, chaque semaine."
+    "title": "Prospection à froid pour ceux qui vivent du bouche-à-oreille | RevCognition",
+    "description": "RevCognition identifie vos clients idéaux et écrit à chacun un message unique. Vous n'écrivez rien, vous ne payez aucune agence, et vous validez cinq minutes par jour.",
+    "ogAlt": "RevCognition — Vous vivez du bouche-à-oreille."
   },
   "a11y": {
     "skipToContent": "Aller au contenu"
@@ -24,10 +24,10 @@
     "copyright": "© 2026"
   },
   "hero": {
-    "line1": "De nouveaux clients, chaque semaine.",
-    "line2": "Sans agence.",
-    "line3": "Sans perdre de temps.",
-    "subtitle": "RevCognition identifie vos clients idéaux et écrit à chacun un message unique. Vous n'écrivez rien. Vous ne payez aucune agence. Et vous n'avez pas à trouver le temps.",
+    "line1": "Vous vivez",
+    "line1Accent": "du bouche-à-oreille.",
+    "line2": "Et il ne vous reste pas de temps pour prospecter.",
+    "subtitle": "RevCognition identifie vos clients idéaux et écrit à chacun un message unique. Vous n'écrivez rien, vous ne payez aucune agence, et vous validez cinq minutes par jour.",
     "ctaPrimary": "Demander l'accès à la bêta",
     "ctaSecondary": "Voir comment ça marche",
     "note": "Bêta fermée, places limitées. Nous analysons votre site et préparons une proposition de profil de client idéal avant que vous ne décidiez quoi que ce soit.",
