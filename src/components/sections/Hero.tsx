@@ -42,7 +42,7 @@ export function Hero() {
             className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[var(--color-ink)] leading-tight"
           >
             {t("line1")}{" "}
-            <span className="font-light">{t("line2")}</span>
+            <span className="block font-light">{t("line2")}</span>
           </motion.h1>
 
           <motion.p
