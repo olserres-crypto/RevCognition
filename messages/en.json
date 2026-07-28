@@ -215,7 +215,7 @@
     "heading": "From €1 per prospect. The bigger the pack, the cheaper each one gets.",
     "intro": "You don't pay for seats or tools. You pay per prospect worked: 1 credit is spent on the first email to a new prospect, and the follow-ups in that same sequence don't cost extra. If they reply first, the system stops. If not, it closes gracefully.",
     "perProspectIncludes": "Every prospect includes: identification, enrichment with real signals, and a full sequence (opener, follow-up, new angle, close).",
-    "noCommitment": "No commitment, no subscription. Credits never expire. The only recurring item is your sending domain: €20 a year from year two. If you stop, it lapses and nothing else is charged.",
+    "noCommitment": "No commitment, no subscription. Credits never expire. The only recurring cost is your sending domain: €20 a year from year two. If you stop, it lapses and nothing else is charged.",
     "noVat": "VAT excl.",
     "qualifiedProspects": "{count} qualified prospects",
     "perSend": "{value} / prospect",
@@ -239,10 +239,10 @@
       }
     ],
     "setup": {
-      "title": "Setup: €50 (VAT excl.), one-time.",
+      "title": "Setup: €50 (VAT excl.) — one-time.",
       "description": "Initial system setup, analysis of your website, and strategy definition.",
       "includes": [
-        "Automatic purchase and renewal of the sending domain",
+        "Purchase and setup of the sending domain",
         "Automatic SPF, DKIM, and DMARC configuration",
         "Automatic reply classification (interested, not interested, hostile, out of office)",
         "Automatic domain warm-up: volume ramps up gradually to reach full volume by the fourth week",
@@ -252,7 +252,7 @@
     },
     "domainRenewal": {
       "title": "Domain renewal: €20 a year (VAT excl.), from the second year.",
-      "description": "That's what it costs to keep your sending domain alive."
+      "description": "It renews on its own. It covers the domain and its management."
     },
     "fiscalNote": "Prices exclude tax: VAT or other applicable taxes are added to the invoice based on your company's country.",
     "ownList": "Already have your own prospect list? You can use it directly. The system enriches it and writes the messages on top of it.",
@@ -425,7 +425,7 @@
         },
         {
           "q": "What does it cost?",
-          "a": "An initial setup fee of €50 to get the account ready, then send packs starting at €100 (100 sends), with volume discounts: 600 sends for €500 and 1,300 for €1,000. Prices exclude tax: applicable VAT is added on the invoice based on your company's country. A credit is consumed on the first send to a new prospect; follow-ups in that same sequence don't cost extra credits. No commitment, and credits never expire."
+          "a": "A one-time setup fee of €50 to get the account ready, then prospect packs starting at €100 (100 prospects), with volume discounts: 600 prospects for €500 and 1,300 for €1,000. Prices exclude tax: applicable VAT is added on the invoice based on your company's country. A credit is consumed on the first email to a new prospect; follow-ups in that same sequence don't cost extra credits. No commitment, and credits never expire. The only recurring cost is your sending domain: €20 a year from year two."
         },
         {
           "q": "Does it work in my industry or country?",

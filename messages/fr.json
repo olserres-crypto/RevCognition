@@ -212,10 +212,10 @@
   },
   "pricing": {
     "eyebrow": "Tarifs",
-    "heading": "À partir de 1 € par prospect. Plus le pack est grand, moins chaque prospect coûte.",
+    "heading": "À partir de 1 € par prospect. Plus le pack est grand, moins chacun revient cher.",
     "intro": "Vous ne payez ni sièges ni outils. Vous payez par prospect travaillé : 1 crédit est consommé au premier envoi à un nouveau prospect, et les relances de cette même séquence ne consomment pas de crédit supplémentaire. S'il répond avant, le système s'arrête. Sinon, il se termine avec élégance.",
     "perProspectIncludes": "Chaque prospect inclut : identification, enrichissement avec des signaux réels et séquence complète (ouverture, relance, nouvel angle, clôture).",
-    "noCommitment": "Sans engagement et sans abonnement. Les crédits n'expirent pas. Le seul élément récurrent est votre domaine d'envoi : 20 € par an à partir de la deuxième année. Si vous arrêtez, il expire et rien d'autre n'est facturé.",
+    "noCommitment": "Sans engagement et sans abonnement. Les crédits n'expirent pas. Le seul coût récurrent est votre domaine d'envoi : 20 € par an à partir de la deuxième année. Si vous arrêtez, il expire et rien d'autre n'est facturé.",
     "noVat": "HT",
     "qualifiedProspects": "{count} prospects qualifiés",
     "perSend": "{value} / prospect",
@@ -242,7 +242,7 @@
       "title": "Setup : 50 € (HT), paiement unique.",
       "description": "Configuration initiale du système, analyse de votre site et définition de la stratégie.",
       "includes": [
-        "Achat et renouvellement automatiques du domaine d'envoi",
+        "Achat et configuration du domaine d'envoi",
         "Configuration automatique de SPF, DKIM et DMARC",
         "Classification automatique des réponses (intéressé, pas intéressé, hostile, absence du bureau)",
         "Montée en puissance automatique du domaine : le volume augmente progressivement jusqu'à son volume plein à la quatrième semaine",
@@ -252,7 +252,7 @@
     },
     "domainRenewal": {
       "title": "Renouvellement du domaine : 20 € par an (HT), à partir de la deuxième année.",
-      "description": "C'est le coût pour maintenir votre domaine d'envoi actif."
+      "description": "Il se renouvelle tout seul. Il couvre le domaine et sa gestion."
     },
     "fiscalNote": "Prix hors taxes : la TVA ou toute autre taxe applicable est ajoutée sur la facture selon le pays de votre entreprise.",
     "ownList": "Vous avez déjà votre propre base de prospects ? Vous pouvez l'utiliser directement. Le système l'enrichit et génère les messages à partir de celle-ci.",
@@ -425,7 +425,7 @@
         },
         {
           "q": "Combien ça coûte ?",
-          "a": "Des frais de mise en route initiaux de 50 € pour préparer le compte, puis des packs d'envois à partir de 100 € (100 envois), avec une remise sur volume : 600 envois pour 500 € et 1 300 pour 1 000 €. Prix hors taxes : la TVA applicable est ajoutée sur la facture selon le pays de votre entreprise. Un crédit est consommé au premier envoi à un nouveau prospect ; les relances de cette même séquence ne consomment pas de crédit supplémentaire. Sans engagement, et les crédits n'expirent pas."
+          "a": "Des frais de mise en route initiaux de 50 €, paiement unique, pour préparer le compte, puis des packs de prospects à partir de 100 € (100 prospects), avec une remise sur volume : 600 prospects pour 500 € et 1 300 pour 1 000 €. Prix hors taxes : la TVA applicable est ajoutée sur la facture selon le pays de votre entreprise. Un crédit est consommé au premier envoi à un nouveau prospect ; les relances de cette même séquence ne consomment pas de crédit supplémentaire. Sans engagement, et les crédits n'expirent pas. Le seul coût récurrent est votre domaine d'envoi : 20 € par an à partir de la deuxième année."
         },
         {
           "q": "Est-ce que ça marche dans mon secteur ou mon pays ?",
