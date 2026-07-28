@@ -12,7 +12,7 @@ export function CtaFinal() {
     <section className="py-16 sm:py-24">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <div className="max-w-xl">
-          <h2 className="font-serif text-3xl sm:text-4xl text-[var(--color-ink)] mb-4">
+          <h2 className="text-3xl sm:text-4xl text-[var(--color-ink)] mb-4">
             {t("heading")}
           </h2>
           <p className="text-[var(--color-slate)] text-lg mb-8">

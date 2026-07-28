@@ -153,7 +153,7 @@ function ThemeBlock({
         <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-warm)] mb-4">
           {eyebrow}
         </p>
-        <h2 className="font-serif text-3xl sm:text-4xl text-[var(--color-ink)] mb-4">{title}</h2>
+        <h2 className="text-3xl sm:text-4xl text-[var(--color-ink)] mb-4">{title}</h2>
         <p className="text-[var(--color-slate)] text-lg mb-12 max-w-xl">{intro}</p>
 
         <div className="flex flex-col lg:flex-row lg:items-start lg:gap-12">
@@ -167,7 +167,7 @@ function ThemeBlock({
                   viewport={{ once: true, margin: "-40px" }}
                   transition={{ duration: 0.35, ease: "easeOut" }}
                 >
-                  <h3 className="font-serif text-xl text-[var(--color-ink)] mb-2">{f.title}</h3>
+                  <h3 className="text-xl text-[var(--color-ink)] mb-2">{f.title}</h3>
                   <p className="text-[var(--color-slate)] leading-relaxed max-w-xl">{f.body}</p>
                 </motion.div>
               ))}
@@ -211,7 +211,7 @@ function Faq({ reduce }: { reduce: boolean | null }) {
         <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-warm)] mb-4">
           {t("eyebrow")}
         </p>
-        <h2 className="font-serif text-3xl sm:text-4xl text-[var(--color-ink)] mb-12">
+        <h2 className="text-3xl sm:text-4xl text-[var(--color-ink)] mb-12">
           {t("heading")}
         </h2>
         <div className="max-w-3xl divide-y divide-[var(--color-border)]">
@@ -224,7 +224,7 @@ function Faq({ reduce }: { reduce: boolean | null }) {
               transition={{ delay: (i % 2) * 0.05, duration: 0.35, ease: "easeOut" }}
               className="py-6"
             >
-              <h3 className="font-serif text-xl text-[var(--color-ink)] mb-2">{f.q}</h3>
+              <h3 className="text-xl text-[var(--color-ink)] mb-2">{f.q}</h3>
               <p className="text-[var(--color-slate)] leading-relaxed">{f.a}</p>
             </motion.div>
           ))}
@@ -272,7 +272,7 @@ export function Producto() {
         <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-warm)] mb-4">
           {t("hero.eyebrow")}
         </p>
-        <h1 className="font-serif text-4xl sm:text-5xl text-[var(--color-ink)] leading-tight max-w-3xl">
+        <h1 className="text-4xl sm:text-5xl text-[var(--color-ink)] leading-tight max-w-3xl">
           {t("hero.heading1")}{" "}
           <span className="font-light">{t("hero.heading2")}</span>
         </h1>

@@ -6,32 +6,33 @@ Sistema de diseño para productos B2B serios que quieren verse como artículos d
 
 Cuatro decisiones fundacionales:
 
-1. **Serif display, sans body.** Fraunces en H1/H2/H3 y wordmark; Instrument Sans en todo lo demás. Serif en display comunica craft y permanencia; sans en body comunica utilidad y legibilidad en pantalla.
+1. **Una sola sans.** Instrument Sans en todo: display, body y wordmark. La jerarquía la hacen el peso, el tamaño y el color — nunca el cambio de familia. Una segunda familia añade peso de descarga y una decisión más que mantener, a cambio de un contraste que el tamaño ya da.
 2. **Paleta monocroma con un acento cromático.** Seis tonos neutros + un solo indigo warm. Todo lo que quiere atención usa warm; todo lo demás se apaga.
 3. **Ritmo editorial, no de dashboard.** Bandas alternadas paper/surface, contenedor `max-w-5xl`, eyebrow UPPERCASE sobre cada sección. Lee como un long-form post.
 4. **Voz directa, negación honesta.** "Sin agencias. Sin perder el tiempo." No hay "AI-powered", no hay hype. Precios son precios, tiempos son tiempos.
 
 ## Tipografía
 
-**Fuentes**
-- `--font-serif`: **Fraunces** (Google Fonts), pesos 300/400/500. `letter-spacing: -0.02em` en headings.
-- `--font-sans`: **Instrument Sans** (Google Fonts), pesos 400/500/600.
-- Cargadas en `src/app/layout.tsx` vía `next/font/google` con `display: swap`.
+**Fuente**
+- `--font-sans`: **Instrument Sans** (Google Fonts), pesos 400/500/600. Única familia.
+- Cargada en `src/app/[locale]/layout.tsx` vía `next/font/google` con `display: swap`.
+- `letter-spacing: -0.02em` en h1/h2/h3 (`globals.css`). Es lo único que los distingue a nivel de regla: la familia la heredan del `body`.
+- ⚠ **La variable de `next/font` va en `<html>`, no en `<body>`.** El `@theme` de Tailwind v4 emite `--font-sans: var(--font-instrument-sans), …` dentro de `:root`; si la variable solo existe en `<body>`, la sustitución falla ahí arriba, `--font-sans` queda inválida y **todo el sitio cae al `ui-sans-serif` del preflight sin avisar**. Fue el estado de producción hasta el 28-jul-2026.
 
 **Escala**
 
 | Nivel | Clases | Familia | Peso | Uso |
 |-------|--------|---------|------|-----|
-| Display XL | `text-4xl sm:text-5xl lg:text-6xl leading-tight` | serif | 400 | H1 hero (único por página) |
-| H2 | `text-3xl sm:text-4xl` | serif | 400 | Título de sección |
-| H3 | `text-xl` | serif | 400 | Subtítulo en card o paso |
+| Display XL | `text-4xl sm:text-5xl lg:text-6xl leading-tight` | sans | 400 | H1 hero (único por página) |
+| H2 | `text-3xl sm:text-4xl` | sans | 400 | Título de sección |
+| H3 | `text-xl` | sans | 400 | Subtítulo en card o paso |
 | Lead | `text-lg sm:text-xl` | sans | 400 | Subtítulo del hero |
 | Body | default (`text-base`) | sans | 400 | Texto corrido |
 | Meta | `text-sm` | sans | 400 | Descripciones de card |
 | Micro | `text-xs` | sans | 400 | Metadatos, email chrome |
 | Eyebrow | `text-sm font-semibold uppercase tracking-widest` | sans | 600 | Sobre cada H2, color `warm` |
 
-**Peso 300** solo en Fraunces, para tensión dentro del H1 y el wordmark "Rev". No usar en body.
+**Pesos disponibles: 400/500/600.** No hay 300 cargado: una clase `font-light` no rinde 300, el navegador cae al 400 más cercano. Si algún día se quiere un 300 de verdad, hay que añadirlo a los `weight` de `Instrument_Sans` en `layout.tsx` y comprobar que la familia lo ofrece — no basta con poner la clase.
 
 ## Color
 
@@ -56,8 +57,9 @@ Tokens en `src/app/globals.css` bajo `@theme`.
 
 ## Wordmark — "RevCognition"
 
-- "Rev" — Fraunces, peso **300**, color `warm`.
-- "Cognition" — Fraunces, peso **500**, color `ink`.
+- "Rev" — Instrument Sans, `font-light`, color `warm`.
+- "Cognition" — Instrument Sans, `font-medium` (500), color `ink`.
+- ⚠ El contraste REAL es **400 vs 500**, no 300 vs 500: `font-light` pide 300 y no hay 300 cargado (ver §Tipografía). El documento describe lo que hace `Logo.tsx`, que es quien manda.
 - Sin espacio entre las dos palabras (se leen como una).
 - `letter-spacing: -0.03em`, `leading-none`.
 
@@ -65,7 +67,8 @@ Tamaños: `nav` (17px), `md` (24px), `lg` (36px). Componente: `src/components/ui
 
 **No hacer:**
 - No usar el wordmark sobre fondos cromáticos que compitan con `warm`.
-- No romper el contraste de pesos (300 vs 500). Si no hay Fraunces disponible, ocultar el wordmark y usar texto plano — no sustituir por Georgia.
+- No romper el contraste de pesos entre "Rev" y "Cognition".
+- No reintroducir una familia serif para el wordmark ni para los encabezados (decisión del arquitecto, 28-jul-2026).
 - No aplicar uppercase al wordmark.
 
 ## Layout y ritmo
@@ -193,7 +196,7 @@ La prueba social se hace vía `ValidationBadge` (estado beta honesto: "En uso ac
 
 - Botón hamburger visible < `sm`, alineado al lado del CTA "Acceder a la App".
 - Drawer slide-in desde la derecha, fondo `paper`, 80% ancho de viewport.
-- Links en Fraunces `text-2xl`, uno por línea, padding vertical ≥ 48px por link.
+- Links en `text-2xl`, uno por línea, padding vertical ≥ 48px por link.
 - Cierre con tap outside + botón X + tecla Escape.
 
 ## Do's & Don'ts

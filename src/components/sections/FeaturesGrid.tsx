@@ -23,7 +23,7 @@ export function FeaturesGrid() {
         <p className="text-sm font-semibold uppercase tracking-widest text-[var(--color-warm)] mb-4">
           {t("eyebrow")}
         </p>
-        <h2 className="font-serif text-3xl sm:text-4xl text-[var(--color-ink)] mb-4">
+        <h2 className="text-3xl sm:text-4xl text-[var(--color-ink)] mb-4">
           {t("heading")}
         </h2>
         <p className="text-[var(--color-slate)] text-lg mb-12 max-w-xl">
@@ -54,7 +54,7 @@ export function FeaturesGrid() {
                 <div className="w-7 h-7 rounded-full border-2 border-[var(--color-warm)] text-[var(--color-warm)] text-xs font-semibold flex items-center justify-center mb-3">
                   {i + 1}
                 </div>
-                <h3 className="font-serif text-base text-[var(--color-ink)] mb-1.5">
+                <h3 className="text-base text-[var(--color-ink)] mb-1.5">
                   {step.title}
                 </h3>
                 <p className="text-[var(--color-slate)] text-sm leading-relaxed">
@@ -75,7 +75,7 @@ export function FeaturesGrid() {
               transition={{ delay: (i % 2) * 0.06, duration: 0.35, ease: "easeOut" }}
               className="border-t border-[var(--color-border)] py-5"
             >
-              <h3 className="font-serif text-xl text-[var(--color-ink)] mb-1.5">
+              <h3 className="text-xl text-[var(--color-ink)] mb-1.5">
                 {f.title}
               </h3>
               <p className="text-[var(--color-slate)] text-sm leading-relaxed">

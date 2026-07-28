@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --font-serif: var(--font-fraunces), Georgia, serif;
+  /* Una sola familia. La jerarquía la hacen el peso, el tamaño y el color,
+     nunca el cambio de familia. Ver DESIGN.md §Tipografía. */
   --font-sans: var(--font-instrument-sans), ui-sans-serif, system-ui, sans-serif;
 
   --color-paper: #f4f4f2;
@@ -45,7 +46,8 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Los encabezados heredan la sans del body a propósito: no hay familia de
+   display. Solo se conserva el apretado óptico. */
 h1, h2, h3 {
-  font-family: var(--font-serif);
   letter-spacing: -0.02em;
 }

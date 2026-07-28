@@ -31,11 +31,11 @@ export default async function GraciasPage({params}: {params: Promise<{locale: st
       <main id="main" className="max-w-5xl mx-auto px-4 sm:px-6 pt-24 pb-32 text-center">
         <p
           aria-hidden="true"
-          className="font-serif text-3xl text-[var(--color-warm)] mb-6"
+          className="text-3xl text-[var(--color-warm)] mb-6"
         >
           ✓
         </p>
-        <h1 className="font-serif text-3xl sm:text-4xl text-[var(--color-ink)] mb-4">
+        <h1 className="text-3xl sm:text-4xl text-[var(--color-ink)] mb-4">
           {t("heading")}
         </h1>
         <p className="text-[var(--color-slate)] text-lg max-w-md mx-auto mb-8">
