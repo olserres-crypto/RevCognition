@@ -24,6 +24,16 @@ const instrumentSans = Instrument_Sans({
 
 const OG_LOCALE: Record<string, string> = {es: "es_ES", en: "en_US", fr: "fr_FR"};
 
+// Una imagen por idioma: hasta ahora se servía la española a los tres, así que
+// un lector inglés o francés veía el titular en castellano al compartir el
+// enlace. /og.png se conserva como copia de la española por si alguna
+// referencia externa antigua la sigue pidiendo.
+const OG_IMAGE: Record<string, string> = {
+  es: "/og-es.png",
+  en: "/og-en.png",
+  fr: "/og-fr.png",
+};
+
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({locale}));
 }
@@ -37,6 +47,7 @@ export async function generateMetadata({
   const t = await getTranslations({locale, namespace: "metadata"});
   const base = "https://revcognition.com";
   const path = locale === routing.defaultLocale ? "" : `/${locale}`;
+  const ogImage = OG_IMAGE[locale] ?? "/og.png";
 
   return {
     title: t("title"),
@@ -51,13 +62,13 @@ export async function generateMetadata({
       locale: OG_LOCALE[locale],
       alternateLocale: Object.values(OG_LOCALE).filter((l) => l !== OG_LOCALE[locale]),
       type: "website",
-      images: [{url: "/og.png", width: 1200, height: 630, alt: t("ogAlt")}],
+      images: [{url: ogImage, width: 1200, height: 630, alt: t("ogAlt")}],
     },
     twitter: {
       card: "summary_large_image",
       title: t("title"),
       description: t("description"),
-      images: ["/og.png"],
+      images: [ogImage],
     },
   };
 }
