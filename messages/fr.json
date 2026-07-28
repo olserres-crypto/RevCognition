@@ -212,13 +212,13 @@
   },
   "pricing": {
     "eyebrow": "Tarifs",
-    "heading": "À partir de 1 € par prospect. Plus le pack est grand, moins cher par envoi.",
+    "heading": "À partir de 1 € par prospect. Plus le pack est grand, moins chaque prospect coûte.",
     "intro": "Vous ne payez ni sièges ni outils. Vous payez par prospect travaillé : 1 crédit est consommé au premier envoi à un nouveau prospect, et les relances de cette même séquence ne consomment pas de crédit supplémentaire. S'il répond avant, le système s'arrête. Sinon, il se termine avec élégance.",
     "perProspectIncludes": "Chaque prospect inclut : identification, enrichissement avec des signaux réels et séquence complète (ouverture, relance, nouvel angle, clôture).",
-    "noCommitment": "Sans engagement et sans abonnement. Les crédits n'expirent pas.",
+    "noCommitment": "Sans engagement et sans abonnement. Les crédits n'expirent pas. Le seul élément récurrent est votre domaine d'envoi : 20 € par an à partir de la deuxième année. Si vous arrêtez, il expire et rien d'autre n'est facturé.",
     "noVat": "HT",
     "qualifiedProspects": "{count} prospects qualifiés",
-    "perSend": "{value} / envoi",
+    "perSend": "{value} / prospect",
     "requestAccess": "Demander l'accès avec ce pack",
     "talkToFounder": "Parler au fondateur →",
     "plans": [
@@ -230,16 +230,16 @@
       {
         "name": "Pour grandir",
         "tagline": "Couvrez plusieurs segments ou marchés en parallèle.",
-        "discount": "moins cher par envoi"
+        "discount": "moins cher par prospect"
       },
       {
         "name": "Pour passer à l'échelle",
         "tagline": "Prospection continue sans avoir à recharger sans cesse.",
-        "discount": "moins cher par envoi"
+        "discount": "moins cher par prospect"
       }
     ],
     "setup": {
-      "title": "Setup : 50 € (HT).",
+      "title": "Setup : 50 € (HT), paiement unique.",
       "description": "Configuration initiale du système, analyse de votre site et définition de la stratégie.",
       "includes": [
         "Achat et renouvellement automatiques du domaine d'envoi",
@@ -249,6 +249,10 @@
         "Six expéditeurs avec nom et signature propres",
         "Réservation directe sur votre calendrier (Cal.com)"
       ]
+    },
+    "domainRenewal": {
+      "title": "Renouvellement du domaine : 20 € par an (HT), à partir de la deuxième année.",
+      "description": "C'est le coût pour maintenir votre domaine d'envoi actif."
     },
     "fiscalNote": "Prix hors taxes : la TVA ou toute autre taxe applicable est ajoutée sur la facture selon le pays de votre entreprise.",
     "ownList": "Vous avez déjà votre propre base de prospects ? Vous pouvez l'utiliser directement. Le système l'enrichit et génère les messages à partir de celle-ci.",

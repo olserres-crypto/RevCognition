@@ -212,13 +212,13 @@
   },
   "pricing": {
     "eyebrow": "Pricing",
-    "heading": "From €1 per prospect. The bigger the pack, the cheaper per email.",
+    "heading": "From €1 per prospect. The bigger the pack, the cheaper each one gets.",
     "intro": "You don't pay for seats or tools. You pay per prospect worked: 1 credit is spent on the first email to a new prospect, and the follow-ups in that same sequence don't cost extra. If they reply first, the system stops. If not, it closes gracefully.",
     "perProspectIncludes": "Every prospect includes: identification, enrichment with real signals, and a full sequence (opener, follow-up, new angle, close).",
-    "noCommitment": "No commitment, no subscription. Credits never expire.",
+    "noCommitment": "No commitment, no subscription. Credits never expire. The only recurring item is your sending domain: €20 a year from year two. If you stop, it lapses and nothing else is charged.",
     "noVat": "VAT excl.",
     "qualifiedProspects": "{count} qualified prospects",
-    "perSend": "{value} / email",
+    "perSend": "{value} / prospect",
     "requestAccess": "Request access with this pack",
     "talkToFounder": "Talk to the founder →",
     "plans": [
@@ -230,16 +230,16 @@
       {
         "name": "To grow",
         "tagline": "Cover several segments or markets in parallel.",
-        "discount": "cheaper per email"
+        "discount": "cheaper per prospect"
       },
       {
         "name": "To scale",
         "tagline": "Continuous prospecting without constantly topping up.",
-        "discount": "cheaper per email"
+        "discount": "cheaper per prospect"
       }
     ],
     "setup": {
-      "title": "Setup: €50 (VAT excl.).",
+      "title": "Setup: €50 (VAT excl.), one-time.",
       "description": "Initial system setup, analysis of your website, and strategy definition.",
       "includes": [
         "Automatic purchase and renewal of the sending domain",
@@ -249,6 +249,10 @@
         "Six senders with their own name and signature",
         "Direct booking on your calendar (Cal.com)"
       ]
+    },
+    "domainRenewal": {
+      "title": "Domain renewal: €20 a year (VAT excl.), from the second year.",
+      "description": "That's what it costs to keep your sending domain alive."
     },
     "fiscalNote": "Prices exclude tax: VAT or other applicable taxes are added to the invoice based on your company's country.",
     "ownList": "Already have your own prospect list? You can use it directly. The system enriches it and writes the messages on top of it.",
