@@ -154,6 +154,10 @@ export function Pricing() {
               <li key={item}>{item}</li>
             ))}
           </ul>
+          <p className="text-sm text-[var(--color-slate)] mt-4">
+            <span className="font-semibold text-[var(--color-ink)]">{t("domainRenewal.title")}</span>
+            {" "}{t("domainRenewal.description")}
+          </p>
         </div>
 
         <p className="mt-4 text-sm text-[var(--color-slate)] max-w-2xl">
