@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "RevCognition — New clients, every week. No agencies.",
-    "description": "RevCognition finds your ideal clients and writes each one a unique message. You write nothing. You pay no agency. And you don't have to find the time.",
+    "title": "RevCognition — Cold outreach for firms that live on referrals",
+    "description": "RevCognition identifies your ideal clients and writes each one a unique message. You write nothing, you pay no agency, and you review for five minutes a day.",
     "ogAlt": "RevCognition — New clients, every week."
   },
   "a11y": {
@@ -24,10 +24,9 @@
     "copyright": "© 2026"
   },
   "hero": {
-    "line1": "New clients, every week.",
-    "line2": "No agencies.",
-    "line3": "No wasted time.",
-    "subtitle": "RevCognition identifies your ideal clients and writes each one a unique message. You write nothing. You pay no agency. And you don't have to find the time.",
+    "line1": "Your clients come from referrals.",
+    "line2": "And there's no time left to go find more.",
+    "subtitle": "RevCognition identifies your ideal clients and writes each one a unique message. You write nothing, you pay no agency, and you review for five minutes a day.",
     "ctaPrimary": "Request beta access",
     "ctaSecondary": "See how it works",
     "note": "Closed beta, limited seats. We analyze your website and prepare an ideal-customer-profile proposal before you decide anything.",

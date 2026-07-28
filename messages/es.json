@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "RevCognition — Nuevos clientes, cada semana. Sin agencias.",
-    "description": "RevCognition identifica a tus clientes ideales y les escribe un mensaje único a cada uno. Tú no escribes nada. No pagas a ninguna agencia. Y no tienes que encontrar el tiempo.",
+    "title": "RevCognition — Prospección en frío para quien vive de la recomendación",
+    "description": "RevCognition identifica a tus clientes ideales y les escribe un mensaje único a cada uno. Tú no escribes nada, no pagas a ninguna agencia, y revisas cinco minutos al día.",
     "ogAlt": "RevCognition — Nuevos clientes, cada semana."
   },
   "a11y": {
@@ -24,10 +24,9 @@
     "copyright": "© 2026"
   },
   "hero": {
-    "line1": "Nuevos clientes, cada semana.",
-    "line2": "Sin agencias.",
-    "line3": "Sin perder el tiempo.",
-    "subtitle": "RevCognition identifica a tus clientes ideales y les escribe un mensaje único a cada uno. Tú no escribes nada. No pagas a ninguna agencia. Y no tienes que encontrar el tiempo.",
+    "line1": "Tus clientes llegan por recomendación.",
+    "line2": "Y no te queda tiempo para prospectar.",
+    "subtitle": "RevCognition identifica a tus clientes ideales y les escribe un mensaje único a cada uno. Tú no escribes nada, no pagas a ninguna agencia, y revisas cinco minutos al día.",
     "ctaPrimary": "Solicita acceso a la beta",
     "ctaSecondary": "Ver cómo funciona",
     "note": "Beta cerrada, plazas limitadas. Analizamos tu web y te preparamos una propuesta de perfil de cliente ideal antes de que decidas nada.",
