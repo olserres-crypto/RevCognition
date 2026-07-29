@@ -23,7 +23,7 @@ Cuatro decisiones fundacionales:
 
 | Nivel | Clases | Familia | Peso | Uso |
 |-------|--------|---------|------|-----|
-| Display XL | `text-4xl sm:text-5xl lg:text-6xl leading-tight` | sans | 400 | H1 hero (único por página) |
+| Display XL | `text-4xl sm:text-5xl lg:text-5xl leading-tight` | sans | 400 | H1 hero (único por página). **Excepción deliberada: en `lg` baja un escalón (48px), no sube a `text-6xl`.** El hero vive en `lg:grid-cols-2`, así que su medida útil son ~456px (`max-w-5xl` − `px-6` − `gap-16`, partido en dos), no los ~976px del resto de la página. A 60px entran ~15 caracteres por línea y el titular parte en seis; a 48px entran ~19 y parte en cuatro, y las dos columnas se equilibran. Es **medida, no estética**: donde un H1 ocupa el ancho completo, `text-6xl` es correcto (p. ej. la cita de `Founder.tsx`, `max-w-3xl` a ancho completo). No "corregir" de vuelta. |
 | H2 | `text-3xl sm:text-4xl` | sans | 400 | Título de sección |
 | H3 | `text-xl` | sans | 400 | Subtítulo en card o paso |
 | Lead | `text-lg sm:text-xl` | sans | 400 | Subtítulo del hero |

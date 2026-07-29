@@ -37,9 +37,15 @@ export function Hero() {
     <section className="max-w-5xl mx-auto px-4 sm:px-6 pt-16 pb-20 sm:pt-24 sm:pb-28">
       <div className="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
         <div>
+          {/* lg:text-5xl, no 6xl: este h1 vive en media columna (lg:grid-cols-2),
+              así que su medida útil son ~456px (max-w-5xl − px-6 − gap-16, partido
+              en dos), no los ~976px del resto de la página. A 60px caben ~15
+              caracteres por línea y el titular parte en SEIS; a 48px caben ~19 y
+              parte en cuatro. Es medida, no estética: donde el h1 ocupa el ancho
+              completo, text-6xl sigue siendo lo correcto. Ver DESIGN.md §Tipografía. */}
           <motion.h1
             variants={fadeUp} initial={reduce ? false : "hidden"} animate="show" custom={0}
-            className="text-4xl sm:text-5xl lg:text-6xl text-[var(--color-ink)] leading-tight"
+            className="text-4xl sm:text-5xl lg:text-5xl text-[var(--color-ink)] leading-tight"
           >
             {t("line1")}{" "}
             <span className="text-[var(--color-warm)]">{t("line1Accent")}</span>{" "}
