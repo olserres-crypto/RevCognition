@@ -22,8 +22,6 @@
     "privacy": "Política de privacidad",
     "unsubscribe": "Unsubscribe",
     "copyright": "© 2026",
-    "legal": "Aviso legal",
-    "terms": "Condiciones",
     "cookies": "Cookies"
   },
   "hero": {
@@ -620,7 +618,7 @@
     "sections": [
       {
         "heading": "Quién es el responsable",
-        "body": "RevCognition (Olivier Serres). Contacto: <email>olivier.serres@revcognition.com</email>. Sede en Barcelona, España. Los datos identificativos completos están en el <legalLink>aviso legal</legalLink>."
+        "body": "RevCognition (Olivier Serres). Contacto: <email>olivier.serres@revcognition.com</email>. Sede en Barcelona, España."
       },
       {
         "heading": "Qué datos recogemos y para qué",
@@ -700,7 +698,7 @@
             "body": "— reservas de reuniones y avisos al cliente cuando un prospecto responde."
           }
         ],
-        "outro": "Cuando un proveedor está fuera del Espacio Económico Europeo, la transferencia se ampara en [PENDIENTE: mecanismo de transferencia de cada proveedor de fuera del EEE (Marco de Privacidad de Datos UE-EE. UU. o cláusulas contractuales tipo)]. No vendemos datos a terceros, no los usamos para entrenar modelos generales y no los compartimos con anunciantes."
+        "outro": "No vendemos datos a terceros, no los usamos para entrenar modelos generales y no los compartimos con anunciantes."
       },
       {
         "heading": "Contenido generado por IA",
@@ -748,131 +746,6 @@
     ],
     "footnote": "Plazos de conservación, encargados de tratamiento y cómo ejercer tus derechos: <privacyLink>política de privacidad</privacyLink>."
   },
-  "legal": {
-    "metaTitle": "Aviso legal — RevCognition",
-    "metaDescription": "Datos identificativos del titular de revcognition.com, condiciones de uso de la web y ley aplicable.",
-    "eyebrow": "Aviso legal",
-    "heading": "Quién está detrás de esta web.",
-    "intro": "Información que exige el artículo 10 de la Ley 34/2002, de servicios de la sociedad de la información y de comercio electrónico (LSSI).",
-    "version": "Versión 1.0 · 3 de octubre de 2026",
-    "backLink": "← Volver al inicio",
-    "sections": [
-      {
-        "heading": "Titular",
-        "items": [
-          {
-            "label": "Titular:",
-            "body": "[PENDIENTE: nombre completo o razón social del titular]"
-          },
-          {
-            "label": "NIF:",
-            "body": "[PENDIENTE: NIF o CIF]"
-          },
-          {
-            "label": "Domicilio:",
-            "body": "[PENDIENTE: domicilio postal completo]"
-          },
-          {
-            "label": "Correo electrónico:",
-            "body": "<email>olivier.serres@revcognition.com</email>"
-          },
-          {
-            "label": "Registro:",
-            "body": "[PENDIENTE: inscripción en el Registro Mercantil, o borrar esta línea si el titular es persona física]"
-          }
-        ]
-      },
-      {
-        "heading": "Objeto",
-        "body": "Esta web presenta RevCognition, un servicio de prospección comercial para empresas. El servicio se contrata y se usa en <appLink>app.revcognition.com</appLink>, y se rige por las <termsLink>condiciones de contratación</termsLink>."
-      },
-      {
-        "heading": "Propiedad intelectual e industrial",
-        "body": "Los textos, el diseño, la marca, el logotipo y el código de esta web pertenecen a su titular o se usan con licencia. No pueden reproducirse ni reutilizarse con fines comerciales sin autorización escrita."
-      },
-      {
-        "heading": "Responsabilidad",
-        "body": "Procuramos que la información de esta web sea exacta y esté al día, pero puede contener errores o quedar desactualizada. Lo que vincula es lo que dicen las condiciones de contratación vigentes en el momento de la compra. Los enlaces a sitios de terceros se ofrecen como referencia; no controlamos su contenido."
-      },
-      {
-        "heading": "Privacidad y cookies",
-        "body": "Cómo tratamos los datos personales: <privacyLink>política de privacidad</privacyLink>. Qué cookies usa esta web: <cookiesLink>política de cookies</cookiesLink>."
-      },
-      {
-        "heading": "Ley aplicable y jurisdicción",
-        "body": "[PENDIENTE: ley aplicable y fuero/jurisdicción]"
-      }
-    ]
-  },
-  "terms": {
-    "metaTitle": "Condiciones de contratación — RevCognition",
-    "metaDescription": "Qué compras en RevCognition, cuánto cuesta, qué no incluye y cómo se presta el servicio.",
-    "eyebrow": "Condiciones de contratación",
-    "heading": "Qué compras, cuánto cuesta y qué no incluye.",
-    "intro": "Estas condiciones regulan la contratación de RevCognition en <appLink>app.revcognition.com</appLink>. Los datos del prestador están en el <legalLink>aviso legal</legalLink>.",
-    "version": "Versión 1.0 · 3 de octubre de 2026",
-    "backLink": "← Volver al inicio",
-    "sections": [
-      {
-        "heading": "A quién va dirigido",
-        "body": "RevCognition se contrata solo por empresas y profesionales, para su actividad empresarial o profesional. No se ofrece a consumidores. Por eso no se aplica el derecho de desistimiento previsto en la normativa de consumo."
-      },
-      {
-        "heading": "Qué se contrata",
-        "intro": "El servicio se compone de tres conceptos, todos sin IVA:",
-        "items": [
-          {
-            "label": "Setup, 50 € en un pago único:",
-            "body": "configuración inicial, análisis de tu web y definición de estrategia. Incluye la compra y configuración de un dominio de envío, la configuración de SPF, DKIM y DMARC, la clasificación automática de respuestas, el calentamiento progresivo del dominio, seis remitentes con nombre y firma propios y la conexión con tu calendario de Cal.com."
-          },
-          {
-            "label": "Packs de prospectos:",
-            "body": "100 prospectos por 100 €, 600 por 500 € o 1.300 por 1.000 €. Cada prospecto incluye su identificación, el enriquecimiento con señales y la secuencia completa de correos."
-          },
-          {
-            "label": "Renovación del dominio de envío, 20 € al año:",
-            "body": "a partir del segundo año. Se renueva sola; si no la quieres, el dominio caduca y no se cobra nada más."
-          }
-        ]
-      },
-      {
-        "heading": "Cómo se consumen los créditos",
-        "body": "Un crédito se consume con el primer envío a un prospecto nuevo. Los seguimientos de esa misma secuencia no consumen más créditos, y la secuencia se detiene si el prospecto responde. Los créditos no caducan."
-      },
-      {
-        "heading": "Qué no incluye",
-        "body": "No garantizamos un número de respuestas, de reuniones ni de ventas: dependen de tu oferta, de tu mercado y de cada destinatario. No incluye la redacción de contenidos fuera de las secuencias, ni la gestión de las conversaciones una vez el prospecto responde, ni dominios o remitentes adicionales a los descritos."
-      },
-      {
-        "heading": "Puesta en marcha y prestación",
-        "body": "El setup empieza cuando se confirma el pago. El dominio de envío se calienta poco a poco: el volumen sube hasta alcanzar el pleno en la cuarta semana. Los mensajes solo salen después de que los apruebes en la plataforma. Durante la beta cerrada, el acceso depende de que haya plazas libres."
-      },
-      {
-        "heading": "Precio, impuestos y pago",
-        "body": "Los precios se muestran sin impuestos; el IVA u otros impuestos aplicables se añaden en la factura según el país de tu empresa. El pago se hace por adelantado con tarjeta a través de Stripe, desde la plataforma. No hay permanencia ni suscripción."
-      },
-      {
-        "heading": "Reembolsos",
-        "body": "[PENDIENTE: política de reembolso de créditos no consumidos y del setup]"
-      },
-      {
-        "heading": "Tus responsabilidades",
-        "body": "Eres responsable de la oferta que presentas, de aprobar cada mensaje antes de su envío y, si cargas una base de prospectos propia, de tener base jurídica para usarla. Te comprometes a no usar el servicio para enviar comunicaciones ilícitas, engañosas o a destinatarios que se hayan opuesto."
-      },
-      {
-        "heading": "Datos personales",
-        "body": "El tratamiento de datos personales se rige por la <privacyLink>política de privacidad</privacyLink>."
-      },
-      {
-        "heading": "Cambios en estas condiciones",
-        "body": "Si cambiamos estas condiciones, la nueva versión se aplica a las compras posteriores a su publicación; las compras ya hechas siguen las condiciones vigentes en su momento."
-      },
-      {
-        "heading": "Ley aplicable y jurisdicción",
-        "body": "[PENDIENTE: ley aplicable y fuero/jurisdicción]"
-      }
-    ]
-  },
   "cookies": {
     "metaTitle": "Política de cookies — RevCognition",
     "metaDescription": "Qué cookies usa revcognition.com, para qué y cómo eliminarlas.",
@@ -905,7 +778,7 @@
       },
       {
         "heading": "Más información",
-        "body": "Cómo tratamos los datos personales: <privacyLink>política de privacidad</privacyLink>. Quién es el titular de la web: <legalLink>aviso legal</legalLink>."
+        "body": "Cómo tratamos los datos personales: <privacyLink>política de privacidad</privacyLink>."
       }
     ]
   }

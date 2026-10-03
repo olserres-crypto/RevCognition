@@ -29,18 +29,6 @@ export function Footer() {
             {t("privacy")}
           </Link>
           <Link
-            href="/legal"
-            className="px-2 py-2 rounded-md hover:text-[var(--color-ink)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2"
-          >
-            {t("legal")}
-          </Link>
-          <Link
-            href="/terms"
-            className="px-2 py-2 rounded-md hover:text-[var(--color-ink)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2"
-          >
-            {t("terms")}
-          </Link>
-          <Link
             href="/cookies"
             className="px-2 py-2 rounded-md hover:text-[var(--color-ink)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2"
           >

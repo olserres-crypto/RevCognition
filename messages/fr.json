@@ -22,8 +22,6 @@
     "privacy": "Politique de confidentialité",
     "unsubscribe": "Se désabonner",
     "copyright": "© 2026",
-    "legal": "Mentions légales",
-    "terms": "Conditions",
     "cookies": "Cookies"
   },
   "hero": {
@@ -620,7 +618,7 @@
     "sections": [
       {
         "heading": "Qui est le responsable du traitement",
-        "body": "RevCognition (Olivier Serres). Contact : <email>olivier.serres@revcognition.com</email>. Siège à Barcelone, Espagne. Les informations d'identification complètes figurent dans les <legalLink>mentions légales</legalLink>."
+        "body": "RevCognition (Olivier Serres). Contact : <email>olivier.serres@revcognition.com</email>. Siège à Barcelone, Espagne."
       },
       {
         "heading": "Quelles données nous collectons et pourquoi",
@@ -700,7 +698,7 @@
             "body": "— réservations de rendez-vous et alertes au client lorsqu'un prospect répond."
           }
         ],
-        "outro": "Lorsqu'un prestataire se trouve hors de l'Espace économique européen, le transfert repose sur [PENDIENTE: mecanismo de transferencia de cada proveedor de fuera del EEE (Marco de Privacidad de Datos UE-EE. UU. o cláusulas contractuales tipo)]. Nous ne vendons pas de données à des tiers, nous ne les utilisons pas pour entraîner des modèles généralistes et nous ne les partageons pas avec des annonceurs."
+        "outro": "Nous ne vendons pas de données à des tiers, nous ne les utilisons pas pour entraîner des modèles généralistes et nous ne les partageons pas avec des annonceurs."
       },
       {
         "heading": "Contenu généré par IA",
@@ -748,131 +746,6 @@
     ],
     "footnote": "Durées de conservation, sous-traitants et exercice de vos droits : <privacyLink>politique de confidentialité</privacyLink>."
   },
-  "legal": {
-    "metaTitle": "Mentions légales — RevCognition",
-    "metaDescription": "Identification du titulaire de revcognition.com, conditions d'utilisation du site et droit applicable.",
-    "eyebrow": "Mentions légales",
-    "heading": "Qui est derrière ce site.",
-    "intro": "Informations exigées par l'article 10 de la loi espagnole 34/2002 sur les services de la société de l'information et le commerce électronique (LSSI).",
-    "version": "Version 1.0 · 3 octobre 2026",
-    "backLink": "← Retour à l'accueil",
-    "sections": [
-      {
-        "heading": "Titulaire",
-        "items": [
-          {
-            "label": "Titulaire :",
-            "body": "[PENDIENTE: nombre completo o razón social del titular]"
-          },
-          {
-            "label": "NIF :",
-            "body": "[PENDIENTE: NIF o CIF]"
-          },
-          {
-            "label": "Adresse :",
-            "body": "[PENDIENTE: domicilio postal completo]"
-          },
-          {
-            "label": "E-mail :",
-            "body": "<email>olivier.serres@revcognition.com</email>"
-          },
-          {
-            "label": "Registre :",
-            "body": "[PENDIENTE: inscripción en el Registro Mercantil, o borrar esta línea si el titular es persona física]"
-          }
-        ]
-      },
-      {
-        "heading": "Objet",
-        "body": "Ce site présente RevCognition, un service de prospection commerciale pour les entreprises. Le service se souscrit et s'utilise sur <appLink>app.revcognition.com</appLink> et il est régi par les <termsLink>conditions de vente</termsLink>."
-      },
-      {
-        "heading": "Propriété intellectuelle et industrielle",
-        "body": "Les textes, le design, la marque, le logo et le code de ce site appartiennent à son titulaire ou sont utilisés sous licence. Ils ne peuvent être reproduits ni réutilisés à des fins commerciales sans autorisation écrite."
-      },
-      {
-        "heading": "Responsabilité",
-        "body": "Nous veillons à ce que les informations de ce site soient exactes et à jour, mais elles peuvent contenir des erreurs ou devenir obsolètes. Ce qui engage, ce sont les conditions de vente en vigueur au moment de l'achat. Les liens vers des sites tiers sont fournis à titre de référence ; nous ne contrôlons pas leur contenu."
-      },
-      {
-        "heading": "Confidentialité et cookies",
-        "body": "Comment nous traitons les données personnelles : <privacyLink>politique de confidentialité</privacyLink>. Quels cookies utilise ce site : <cookiesLink>politique de cookies</cookiesLink>."
-      },
-      {
-        "heading": "Droit applicable et juridiction",
-        "body": "[PENDIENTE: ley aplicable y fuero/jurisdicción]"
-      }
-    ]
-  },
-  "terms": {
-    "metaTitle": "Conditions de vente — RevCognition",
-    "metaDescription": "Ce que vous achetez chez RevCognition, ce que cela coûte, ce qui n'est pas inclus et comment le service est fourni.",
-    "eyebrow": "Conditions de vente",
-    "heading": "Ce que vous achetez, ce que cela coûte et ce qui n'est pas inclus.",
-    "intro": "Ces conditions régissent la souscription à RevCognition sur <appLink>app.revcognition.com</appLink>. Les informations sur le prestataire figurent dans les <legalLink>mentions légales</legalLink>.",
-    "version": "Version 1.0 · 3 octobre 2026",
-    "backLink": "← Retour à l'accueil",
-    "sections": [
-      {
-        "heading": "À qui il s'adresse",
-        "body": "RevCognition est vendu uniquement aux entreprises et aux professionnels, pour leur activité professionnelle. Il n'est pas proposé aux consommateurs. Le droit de rétractation prévu par le droit de la consommation ne s'applique donc pas."
-      },
-      {
-        "heading": "Ce que vous achetez",
-        "intro": "Le service comprend trois éléments, tous hors TVA :",
-        "items": [
-          {
-            "label": "Setup, 50 € en paiement unique :",
-            "body": "configuration initiale, analyse de votre site et définition de la stratégie. Il comprend l'achat et la configuration d'un domaine d'envoi, la configuration SPF, DKIM et DMARC, la classification automatique des réponses, le préchauffage progressif du domaine, six expéditeurs avec leur propre nom et signature, et la connexion à votre agenda Cal.com."
-          },
-          {
-            "label": "Packs de prospects :",
-            "body": "100 prospects pour 100 €, 600 pour 500 € ou 1 300 pour 1 000 €. Chaque prospect comprend son identification, l'enrichissement par des signaux et la séquence complète d'e-mails."
-          },
-          {
-            "label": "Renouvellement du domaine d'envoi, 20 € par an :",
-            "body": "à partir de la deuxième année. Il se renouvelle automatiquement ; si vous n'en voulez plus, le domaine expire et rien d'autre n'est facturé."
-          }
-        ]
-      },
-      {
-        "heading": "Comment les crédits sont consommés",
-        "body": "Un crédit est consommé lors du premier envoi à un nouveau prospect. Les relances de la même séquence ne consomment pas de crédit supplémentaire, et la séquence s'arrête si le prospect répond. Les crédits n'expirent pas."
-      },
-      {
-        "heading": "Ce qui n'est pas inclus",
-        "body": "Nous ne garantissons pas un nombre de réponses, de rendez-vous ni de ventes : ils dépendent de votre offre, de votre marché et de chaque destinataire. Ne sont pas inclus : la rédaction de contenus hors des séquences, la gestion des conversations une fois que le prospect a répondu, ni domaines ou expéditeurs au-delà de ceux décrits."
-      },
-      {
-        "heading": "Mise en route et prestation",
-        "body": "Le setup commence dès la confirmation du paiement. Le domaine d'envoi est préchauffé progressivement : le volume augmente jusqu'à atteindre le plein volume la quatrième semaine. Les messages ne partent qu'après votre approbation dans la plateforme. Pendant la bêta fermée, l'accès dépend des places disponibles."
-      },
-      {
-        "heading": "Prix, taxes et paiement",
-        "body": "Les prix sont affichés hors taxes ; la TVA ou les autres taxes applicables sont ajoutées sur la facture selon le pays de votre entreprise. Le paiement se fait d'avance par carte via Stripe, depuis la plateforme. Il n'y a ni engagement ni abonnement."
-      },
-      {
-        "heading": "Remboursements",
-        "body": "[PENDIENTE: política de reembolso de créditos no consumidos y del setup]"
-      },
-      {
-        "heading": "Vos responsabilités",
-        "body": "Vous êtes responsable de l'offre que vous présentez, de l'approbation de chaque message avant son envoi et, si vous importez votre propre base de prospects, de disposer d'une base juridique pour l'utiliser. Vous vous engagez à ne pas utiliser le service pour envoyer des communications illicites ou trompeuses, ni à des destinataires qui s'y sont opposés."
-      },
-      {
-        "heading": "Données personnelles",
-        "body": "Le traitement des données personnelles est régi par la <privacyLink>politique de confidentialité</privacyLink>."
-      },
-      {
-        "heading": "Modifications de ces conditions",
-        "body": "Si nous modifions ces conditions, la nouvelle version s'applique aux achats postérieurs à sa publication ; les achats déjà effectués restent soumis aux conditions en vigueur à leur date."
-      },
-      {
-        "heading": "Droit applicable et juridiction",
-        "body": "[PENDIENTE: ley aplicable y fuero/jurisdicción]"
-      }
-    ]
-  },
   "cookies": {
     "metaTitle": "Politique de cookies — RevCognition",
     "metaDescription": "Quels cookies utilise revcognition.com, à quoi ils servent et comment les supprimer.",
@@ -905,7 +778,7 @@
       },
       {
         "heading": "Plus d'informations",
-        "body": "Comment nous traitons les données personnelles : <privacyLink>politique de confidentialité</privacyLink>. Qui est le titulaire du site : <legalLink>mentions légales</legalLink>."
+        "body": "Comment nous traitons les données personnelles : <privacyLink>politique de confidentialité</privacyLink>."
       }
     ]
   }

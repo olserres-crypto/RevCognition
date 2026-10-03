@@ -7,8 +7,6 @@ const PATHS = [
   "/producto",
   "/soluciones/servicios-b2b",
   "/privacy",
-  "/legal",
-  "/terms",
   "/cookies",
 ];
 
