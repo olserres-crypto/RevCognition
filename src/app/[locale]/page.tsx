@@ -5,6 +5,7 @@ import { HowItWorks } from "@/components/sections/HowItWorks";
 import { FeaturesGrid } from "@/components/sections/FeaturesGrid";
 import { UseCases } from "@/components/sections/UseCases";
 import { Pricing } from "@/components/sections/Pricing";
+import { Trust } from "@/components/sections/Trust";
 import { Founder } from "@/components/sections/Founder";
 import { CtaFinal } from "@/components/sections/CtaFinal";
 import { Footer } from "@/components/sections/Footer";
@@ -28,6 +29,7 @@ export default async function Home({params}: {params: Promise<{locale: string}>}
         <FeaturesGrid />
         <UseCases />
         <Pricing />
+        <Trust />
         <Founder />
         <CtaFinal />
       </main>

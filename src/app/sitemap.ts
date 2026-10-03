@@ -2,7 +2,15 @@ import type {MetadataRoute} from "next";
 
 const BASE = "https://revcognition.com";
 // Rutas sin prefijo de locale (la raíz canónica ES). El resto se derivan.
-const PATHS = ["", "/producto", "/soluciones/servicios-b2b", "/privacy"];
+const PATHS = [
+  "",
+  "/producto",
+  "/soluciones/servicios-b2b",
+  "/privacy",
+  "/legal",
+  "/terms",
+  "/cookies",
+];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return PATHS.map((path) => ({

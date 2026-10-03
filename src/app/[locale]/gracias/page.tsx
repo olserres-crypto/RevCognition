@@ -1,5 +1,6 @@
 import { Link } from "@/i18n/navigation";
 import { Nav } from "@/components/sections/Nav";
+import { Footer } from "@/components/sections/Footer";
 import {getTranslations, setRequestLocale} from "next-intl/server";
 import {buildAlternates} from "@/i18n/metadata";
 
@@ -55,6 +56,7 @@ export default async function GraciasPage({params}: {params: Promise<{locale: st
           {t("backLink")}
         </Link>
       </main>
+      <Footer />
     </>
   );
 }

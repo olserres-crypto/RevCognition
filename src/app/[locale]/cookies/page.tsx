@@ -9,16 +9,16 @@ export const runtime = "edge";
 
 export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
-  const t = await getTranslations({locale, namespace: "privacy"});
+  const t = await getTranslations({locale, namespace: "cookies"});
   return {
     title: t("metaTitle"),
     description: t("metaDescription"),
-    alternates: buildAlternates(locale, "/privacy"),
+    alternates: buildAlternates(locale, "/cookies"),
   };
 }
 
-export default async function PrivacyPage({params}: {params: Promise<{locale: string}>}) {
+export default async function CookiesPage({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
   setRequestLocale(locale);
-  return <LegalDoc namespace="privacy" />;
+  return <LegalDoc namespace="cookies" />;
 }

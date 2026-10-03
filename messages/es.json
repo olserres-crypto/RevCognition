@@ -21,7 +21,10 @@
     "solutions": "Soluciones: servicios B2B",
     "privacy": "Política de privacidad",
     "unsubscribe": "Unsubscribe",
-    "copyright": "© 2026"
+    "copyright": "© 2026",
+    "legal": "Aviso legal",
+    "terms": "Condiciones",
+    "cookies": "Cookies"
   },
   "hero": {
     "line1": "Tus clientes llegan",
@@ -608,15 +611,16 @@
   },
   "privacy": {
     "metaTitle": "Política de privacidad — RevCognition",
-    "metaDescription": "Cómo tratamos tus datos en RevCognition: qué recogemos, para qué, cuánto tiempo y cómo ejercer tus derechos.",
+    "metaDescription": "Cómo tratamos tus datos en RevCognition: qué recogemos, para qué, dónde están, cuánto tiempo y cómo ejercer tus derechos.",
     "eyebrow": "Política de privacidad",
     "heading": "Tratamos tus datos como nos gustaría que trataran los nuestros.",
     "intro": "Texto en lenguaje claro. Si necesitas la versión legal completa o quieres ejercer cualquiera de tus derechos, escríbenos a <email>olivier.serres@revcognition.com</email>.",
+    "version": "Versión 2.0 · 3 de octubre de 2026",
     "backLink": "← Volver al inicio",
     "sections": [
       {
         "heading": "Quién es el responsable",
-        "body": "RevCognition (Olivier Serres). Contacto: <email>olivier.serres@revcognition.com</email>. Sede en Barcelona, España."
+        "body": "RevCognition (Olivier Serres). Contacto: <email>olivier.serres@revcognition.com</email>. Sede en Barcelona, España. Los datos identificativos completos están en el <legalLink>aviso legal</legalLink>."
       },
       {
         "heading": "Qué datos recogemos y para qué",
@@ -633,12 +637,74 @@
           {
             "label": "Datos de contacto comercial",
             "body": "recogidos durante la prospección: tratados conforme al interés legítimo en comunicaciones B2B y siempre con opción inmediata de baja en cada mensaje enviado."
+          },
+          {
+            "label": "Visitas a esta web",
+            "body": "medidas con Cloudflare Web Analytics, que cuenta páginas vistas sin cookies y sin identificar a quien visita."
           }
         ]
       },
       {
-        "heading": "Quién accede a tus datos",
-        "body": "Encargados de tratamiento estrictamente operativos: Stripe (procesamiento de pagos), Resend (entrega de emails transaccionales), proveedores de infraestructura cloud (Vercel u equivalente). No vendemos datos a terceros. No los usamos para entrenar modelos generales. No los compartimos con anunciantes."
+        "heading": "Base jurídica",
+        "paragraphs": [
+          "Para tu cuenta y tus pagos, la ejecución del contrato (artículo 6.1.b del RGPD) y el cumplimiento de obligaciones fiscales y contables (artículo 6.1.c).",
+          "Para la prospección comercial, el interés legítimo (artículo 6.1.f del RGPD): escribimos solo a profesionales, a su dirección de trabajo y por asuntos relacionados con su empresa. Cada mensaje permite oponerse con un clic, y quien se opone no vuelve a recibir nada."
+        ]
+      },
+      {
+        "heading": "Dónde están tus datos y quién accede a ellos",
+        "paragraphs": [
+          "<strong>Esta web</strong> (revcognition.com) se sirve desde Cloudflare Pages, la red global de Cloudflare: no tiene una región exclusivamente europea. La web no tiene formularios; Cloudflare solo trata los datos técnicos de cada visita (como la dirección IP) para servir la página y protegerla.",
+          "<strong>La plataforma</strong> (<appLink>app.revcognition.com</appLink>) y su base de datos se alojan en un servidor de Hetzner en Núremberg (Alemania)."
+        ],
+        "intro": "Proveedores que tratan datos para prestar el servicio, con su ubicación:",
+        "items": [
+          {
+            "label": "Hetzner",
+            "body": "— alojamiento de la plataforma y de la base de datos. Alemania (UE)."
+          },
+          {
+            "label": "Resend",
+            "body": "— envío de los correos de la cuenta (avisos, confirmaciones). Región europea, Irlanda (UE)."
+          },
+          {
+            "label": "Cloudflare",
+            "body": "— alojamiento de esta web y medición de visitas sin cookies. Red global."
+          },
+          {
+            "label": "Stripe",
+            "body": "— cobro de los packs. Stripe trata los datos de pago en su propia infraestructura, que incluye EE. UU."
+          },
+          {
+            "label": "Clerk",
+            "body": "— inicio de sesión en la plataforma. EE. UU."
+          },
+          {
+            "label": "OpenRouter y OpenAI",
+            "body": "— modelos de IA que redactan los mensajes. EE. UU."
+          },
+          {
+            "label": "Apollo, Prospeo, Findymail, Hunter, Dropcontact, The Companies API y MillionVerifier",
+            "body": "— búsqueda de empresas y de contactos profesionales, y verificación de direcciones de correo. Apollo, en EE. UU.; el resto, según el proveedor."
+          },
+          {
+            "label": "Serper, Tavily, Jina, Firecrawl y Apify",
+            "body": "— búsqueda y lectura de páginas web públicas de las empresas."
+          },
+          {
+            "label": "Smartlead",
+            "body": "— envío de las secuencias de prospección."
+          },
+          {
+            "label": "Cal.com y Telegram",
+            "body": "— reservas de reuniones y avisos al cliente cuando un prospecto responde."
+          }
+        ],
+        "outro": "Cuando un proveedor está fuera del Espacio Económico Europeo, la transferencia se ampara en [PENDIENTE: mecanismo de transferencia de cada proveedor de fuera del EEE (Marco de Privacidad de Datos UE-EE. UU. o cláusulas contractuales tipo)]. No vendemos datos a terceros, no los usamos para entrenar modelos generales y no los compartimos con anunciantes."
+      },
+      {
+        "heading": "Contenido generado por IA",
+        "body": "Los mensajes de prospección los redacta un modelo de IA a partir de la web del cliente y de señales públicas de la empresa destinataria. El cliente los revisa y los aprueba antes de que se envíen."
       },
       {
         "heading": "Cuánto tiempo los conservamos",
@@ -646,15 +712,200 @@
       },
       {
         "heading": "Tus derechos",
-        "body": "Acceso, rectificación, supresión, oposición, limitación y portabilidad. Ejercer cualquiera de ellos es tan sencillo como escribir a <email>olivier.serres@revcognition.com</email>. Respondemos en menos de 30 días. Si crees que no lo hemos hecho bien, puedes presentar reclamación ante la Agencia Española de Protección de Datos (<aepd>aepd.es</aepd>)."
+        "body": "Acceso, rectificación, supresión, oposición, limitación y portabilidad. Ejercer cualquiera de ellos es tan sencillo como escribir a <rightsEmail>olivier.serres@revcognition.com</rightsEmail>. Respondemos en menos de 30 días. Si crees que no lo hemos hecho bien, puedes presentar reclamación ante la Agencia Española de Protección de Datos (<aepd>aepd.es</aepd>)."
       },
       {
         "heading": "Cookies",
-        "body": "Esta web no utiliza cookies de seguimiento ni analítica de terceros. Solo cookies estrictamente necesarias para el funcionamiento (las que pueda establecer Stripe durante el proceso de pago)."
+        "body": "Esta web no usa cookies de seguimiento, de publicidad ni de analítica. La única que puede instalar guarda el idioma que eliges. Todo el detalle, en la <cookiesLink>política de cookies</cookiesLink>."
       },
       {
         "heading": "Cambios en esta política",
-        "body": "Si actualizamos esta política de forma sustancial, lo notificaremos por email a quienes tengan una relación activa con nosotros. Última actualización: mayo de 2026."
+        "body": "Si actualizamos esta política de forma sustancial, lo notificaremos por email a quienes tengan una relación activa con nosotros. La fecha de la versión vigente figura al principio de esta página."
+      }
+    ]
+  },
+  "trust": {
+    "eyebrow": "Confianza y cumplimiento",
+    "heading": "Lo que tu equipo legal va a preguntar, contestado en corto.",
+    "intro": "Cuatro afirmaciones que puedes comprobar. El detalle, proveedor por proveedor, está en la política de privacidad.",
+    "items": [
+      {
+        "title": "Plataforma alojada en la Unión Europea",
+        "body": "La plataforma y su base de datos están en un servidor de Hetzner en Núremberg (Alemania), y los correos de tu cuenta salen de la región europea de Resend (Irlanda). Algunos proveedores, como los de IA o el de inicio de sesión, están en EE. UU.: los nombramos en la <privacyLink>política de privacidad</privacyLink>."
+      },
+      {
+        "title": "Base jurídica: interés legítimo, solo entre empresas",
+        "body": "Escribimos solo a profesionales y por asuntos de su empresa. La base jurídica es el interés legítimo del artículo 6.1.f del RGPD, y está documentada en la <privacyLink>política de privacidad</privacyLink>."
+      },
+      {
+        "title": "Baja en cada correo",
+        "body": "Cada correo permite darse de baja, y quien lo hace no vuelve a recibir nada, en ninguna de tus campañas."
+      },
+      {
+        "title": "Contenido generado por IA, y dicho",
+        "body": "Los correos los redacta una IA a partir de tu web y de señales públicas de cada empresa. Tú los revisas y los apruebas antes de que salgan."
+      }
+    ],
+    "footnote": "Plazos de conservación, encargados de tratamiento y cómo ejercer tus derechos: <privacyLink>política de privacidad</privacyLink>."
+  },
+  "legal": {
+    "metaTitle": "Aviso legal — RevCognition",
+    "metaDescription": "Datos identificativos del titular de revcognition.com, condiciones de uso de la web y ley aplicable.",
+    "eyebrow": "Aviso legal",
+    "heading": "Quién está detrás de esta web.",
+    "intro": "Información que exige el artículo 10 de la Ley 34/2002, de servicios de la sociedad de la información y de comercio electrónico (LSSI).",
+    "version": "Versión 1.0 · 3 de octubre de 2026",
+    "backLink": "← Volver al inicio",
+    "sections": [
+      {
+        "heading": "Titular",
+        "items": [
+          {
+            "label": "Titular:",
+            "body": "[PENDIENTE: nombre completo o razón social del titular]"
+          },
+          {
+            "label": "NIF:",
+            "body": "[PENDIENTE: NIF o CIF]"
+          },
+          {
+            "label": "Domicilio:",
+            "body": "[PENDIENTE: domicilio postal completo]"
+          },
+          {
+            "label": "Correo electrónico:",
+            "body": "<email>olivier.serres@revcognition.com</email>"
+          },
+          {
+            "label": "Registro:",
+            "body": "[PENDIENTE: inscripción en el Registro Mercantil, o borrar esta línea si el titular es persona física]"
+          }
+        ]
+      },
+      {
+        "heading": "Objeto",
+        "body": "Esta web presenta RevCognition, un servicio de prospección comercial para empresas. El servicio se contrata y se usa en <appLink>app.revcognition.com</appLink>, y se rige por las <termsLink>condiciones de contratación</termsLink>."
+      },
+      {
+        "heading": "Propiedad intelectual e industrial",
+        "body": "Los textos, el diseño, la marca, el logotipo y el código de esta web pertenecen a su titular o se usan con licencia. No pueden reproducirse ni reutilizarse con fines comerciales sin autorización escrita."
+      },
+      {
+        "heading": "Responsabilidad",
+        "body": "Procuramos que la información de esta web sea exacta y esté al día, pero puede contener errores o quedar desactualizada. Lo que vincula es lo que dicen las condiciones de contratación vigentes en el momento de la compra. Los enlaces a sitios de terceros se ofrecen como referencia; no controlamos su contenido."
+      },
+      {
+        "heading": "Privacidad y cookies",
+        "body": "Cómo tratamos los datos personales: <privacyLink>política de privacidad</privacyLink>. Qué cookies usa esta web: <cookiesLink>política de cookies</cookiesLink>."
+      },
+      {
+        "heading": "Ley aplicable y jurisdicción",
+        "body": "[PENDIENTE: ley aplicable y fuero/jurisdicción]"
+      }
+    ]
+  },
+  "terms": {
+    "metaTitle": "Condiciones de contratación — RevCognition",
+    "metaDescription": "Qué compras en RevCognition, cuánto cuesta, qué no incluye y cómo se presta el servicio.",
+    "eyebrow": "Condiciones de contratación",
+    "heading": "Qué compras, cuánto cuesta y qué no incluye.",
+    "intro": "Estas condiciones regulan la contratación de RevCognition en <appLink>app.revcognition.com</appLink>. Los datos del prestador están en el <legalLink>aviso legal</legalLink>.",
+    "version": "Versión 1.0 · 3 de octubre de 2026",
+    "backLink": "← Volver al inicio",
+    "sections": [
+      {
+        "heading": "A quién va dirigido",
+        "body": "RevCognition se contrata solo por empresas y profesionales, para su actividad empresarial o profesional. No se ofrece a consumidores. Por eso no se aplica el derecho de desistimiento previsto en la normativa de consumo."
+      },
+      {
+        "heading": "Qué se contrata",
+        "intro": "El servicio se compone de tres conceptos, todos sin IVA:",
+        "items": [
+          {
+            "label": "Setup, 50 € en un pago único:",
+            "body": "configuración inicial, análisis de tu web y definición de estrategia. Incluye la compra y configuración de un dominio de envío, la configuración de SPF, DKIM y DMARC, la clasificación automática de respuestas, el calentamiento progresivo del dominio, seis remitentes con nombre y firma propios y la conexión con tu calendario de Cal.com."
+          },
+          {
+            "label": "Packs de prospectos:",
+            "body": "100 prospectos por 100 €, 600 por 500 € o 1.300 por 1.000 €. Cada prospecto incluye su identificación, el enriquecimiento con señales y la secuencia completa de correos."
+          },
+          {
+            "label": "Renovación del dominio de envío, 20 € al año:",
+            "body": "a partir del segundo año. Se renueva sola; si no la quieres, el dominio caduca y no se cobra nada más."
+          }
+        ]
+      },
+      {
+        "heading": "Cómo se consumen los créditos",
+        "body": "Un crédito se consume con el primer envío a un prospecto nuevo. Los seguimientos de esa misma secuencia no consumen más créditos, y la secuencia se detiene si el prospecto responde. Los créditos no caducan."
+      },
+      {
+        "heading": "Qué no incluye",
+        "body": "No garantizamos un número de respuestas, de reuniones ni de ventas: dependen de tu oferta, de tu mercado y de cada destinatario. No incluye la redacción de contenidos fuera de las secuencias, ni la gestión de las conversaciones una vez el prospecto responde, ni dominios o remitentes adicionales a los descritos."
+      },
+      {
+        "heading": "Puesta en marcha y prestación",
+        "body": "El setup empieza cuando se confirma el pago. El dominio de envío se calienta poco a poco: el volumen sube hasta alcanzar el pleno en la cuarta semana. Los mensajes solo salen después de que los apruebes en la plataforma. Durante la beta cerrada, el acceso depende de que haya plazas libres."
+      },
+      {
+        "heading": "Precio, impuestos y pago",
+        "body": "Los precios se muestran sin impuestos; el IVA u otros impuestos aplicables se añaden en la factura según el país de tu empresa. El pago se hace por adelantado con tarjeta a través de Stripe, desde la plataforma. No hay permanencia ni suscripción."
+      },
+      {
+        "heading": "Reembolsos",
+        "body": "[PENDIENTE: política de reembolso de créditos no consumidos y del setup]"
+      },
+      {
+        "heading": "Tus responsabilidades",
+        "body": "Eres responsable de la oferta que presentas, de aprobar cada mensaje antes de su envío y, si cargas una base de prospectos propia, de tener base jurídica para usarla. Te comprometes a no usar el servicio para enviar comunicaciones ilícitas, engañosas o a destinatarios que se hayan opuesto."
+      },
+      {
+        "heading": "Datos personales",
+        "body": "El tratamiento de datos personales se rige por la <privacyLink>política de privacidad</privacyLink>."
+      },
+      {
+        "heading": "Cambios en estas condiciones",
+        "body": "Si cambiamos estas condiciones, la nueva versión se aplica a las compras posteriores a su publicación; las compras ya hechas siguen las condiciones vigentes en su momento."
+      },
+      {
+        "heading": "Ley aplicable y jurisdicción",
+        "body": "[PENDIENTE: ley aplicable y fuero/jurisdicción]"
+      }
+    ]
+  },
+  "cookies": {
+    "metaTitle": "Política de cookies — RevCognition",
+    "metaDescription": "Qué cookies usa revcognition.com, para qué y cómo eliminarlas.",
+    "eyebrow": "Política de cookies",
+    "heading": "Una sola cookie propia, y no sirve para seguirte.",
+    "intro": "Qué cookies puede instalar revcognition.com, para qué y cómo eliminarlas. Esta política cubre solo esta web, no la plataforma (<appLink>app.revcognition.com</appLink>).",
+    "version": "Versión 1.0 · 3 de octubre de 2026",
+    "backLink": "← Volver al inicio",
+    "sections": [
+      {
+        "heading": "La cookie que usamos",
+        "items": [
+          {
+            "label": "NEXT_LOCALE",
+            "body": "— propia y técnica. Guarda el idioma de la web (el que eliges o el que detectamos en tu navegador) para no volver a cambiártelo. Dura hasta que cierras el navegador y no contiene datos personales. Al ser una cookie de personalización que pides tú, está exenta de consentimiento según el artículo 22.2 de la LSSI."
+          }
+        ]
+      },
+      {
+        "heading": "Cookies de seguridad de Cloudflare",
+        "body": "Cloudflare, que sirve esta web, puede instalar una cookie técnica de seguridad (como __cf_bm o cf_clearance) solo si detecta tráfico sospechoso y necesita comprobar que eres una persona. No se usa para medirte ni para publicidad."
+      },
+      {
+        "heading": "Lo que no usamos",
+        "body": "Ni cookies de analítica, ni de publicidad, ni de redes sociales. Medimos las visitas con Cloudflare Web Analytics, que no usa cookies ni identifica a quien visita. Por eso no ves un aviso de consentimiento: no hay nada que consentir."
+      },
+      {
+        "heading": "Cómo eliminarlas",
+        "body": "Puedes borrar o bloquear las cookies desde la configuración de tu navegador. Si borras NEXT_LOCALE, la web volverá a mostrarse en el idioma de tu navegador."
+      },
+      {
+        "heading": "Más información",
+        "body": "Cómo tratamos los datos personales: <privacyLink>política de privacidad</privacyLink>. Quién es el titular de la web: <legalLink>aviso legal</legalLink>."
       }
     ]
   }

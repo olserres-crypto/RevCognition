@@ -21,7 +21,10 @@
     "solutions": "Solutions : services B2B",
     "privacy": "Politique de confidentialité",
     "unsubscribe": "Se désabonner",
-    "copyright": "© 2026"
+    "copyright": "© 2026",
+    "legal": "Mentions légales",
+    "terms": "Conditions",
+    "cookies": "Cookies"
   },
   "hero": {
     "line1": "Vous vivez",
@@ -608,53 +611,301 @@
   },
   "privacy": {
     "metaTitle": "Politique de confidentialité — RevCognition",
-    "metaDescription": "Comment nous traitons vos données chez RevCognition : ce que nous collectons, pourquoi, pendant combien de temps et comment exercer vos droits.",
+    "metaDescription": "Comment nous traitons vos données chez RevCognition : ce que nous collectons, pourquoi, où elles sont, combien de temps et comment exercer vos droits.",
     "eyebrow": "Politique de confidentialité",
-    "heading": "Nous traitons vos données comme nous aimerions que les nôtres soient traitées.",
-    "intro": "Texte en langage clair. Si vous avez besoin de la version légale complète ou souhaitez exercer l'un de vos droits, écrivez-nous à <email>olivier.serres@revcognition.com</email>.",
+    "heading": "Nous traitons vos données comme nous aimerions que l'on traite les nôtres.",
+    "intro": "Un texte en langage clair. Si vous avez besoin de la version juridique complète ou souhaitez exercer l'un de vos droits, écrivez-nous à <email>olivier.serres@revcognition.com</email>.",
+    "version": "Version 2.0 · 3 octobre 2026",
     "backLink": "← Retour à l'accueil",
     "sections": [
       {
-        "heading": "Qui est responsable du traitement",
-        "body": "RevCognition (Olivier Serres). Contact : <email>olivier.serres@revcognition.com</email>. Siège à Barcelone, Espagne."
+        "heading": "Qui est le responsable du traitement",
+        "body": "RevCognition (Olivier Serres). Contact : <email>olivier.serres@revcognition.com</email>. Siège à Barcelone, Espagne. Les informations d'identification complètes figurent dans les <legalLink>mentions légales</legalLink>."
       },
       {
         "heading": "Quelles données nous collectons et pourquoi",
-        "intro": "Uniquement ce que vous nous donnez volontairement, et toujours dans un but précis :",
+        "intro": "Uniquement ce que vous nous transmettez volontairement, et toujours dans un but précis :",
         "items": [
           {
             "label": "Inscription et onboarding du produit",
-            "body": "(données de compte, URL de votre site, description du produit, configuration de l'ICP) : pour créer votre Company Brain et exécuter vos campagnes. Ces données résident sur <appLink>app.revcognition.com</appLink>, pas sur ce site."
+            "body": "(données de compte, URL de votre site, description du produit, configuration de l'ICP) : pour créer votre Company Brain et exécuter les campagnes. Ces données vivent sur <appLink>app.revcognition.com</appLink>, pas sur ce site."
           },
           {
             "label": "Données de paiement",
-            "body": "(traitées par Stripe, non stockées par nous) : pour exécuter le paiement des packs achetés depuis l'application."
+            "body": "(traitées par Stripe, non stockées par nous) : pour exécuter le paiement des packs souscrits depuis l'application."
           },
           {
             "label": "Données de contact commercial",
-            "body": "collectées pendant la prospection : traitées sur la base de l'intérêt légitime pour les communications B2B, toujours avec une option de désabonnement immédiate sur chaque message envoyé."
+            "body": "collectées lors de la prospection : traitées sur la base de l'intérêt légitime dans les communications B2B, toujours avec une option de désinscription immédiate dans chaque message envoyé."
+          },
+          {
+            "label": "Visites de ce site",
+            "body": "mesurées avec Cloudflare Web Analytics, qui compte les pages vues sans cookies et sans identifier les visiteurs."
           }
         ]
       },
       {
-        "heading": "Qui a accès à vos données",
-        "body": "Des sous-traitants strictement opérationnels : Stripe (traitement des paiements), Resend (envoi des e-mails transactionnels), des fournisseurs d'infrastructure cloud (Vercel ou équivalent). Nous ne vendons pas de données à des tiers. Nous ne les utilisons pas pour entraîner des modèles génériques. Nous ne les partageons pas avec des annonceurs."
+        "heading": "Base juridique",
+        "paragraphs": [
+          "Pour votre compte et vos paiements : l'exécution du contrat (article 6.1.b du RGPD) et le respect des obligations fiscales et comptables (article 6.1.c).",
+          "Pour la prospection commerciale : l'intérêt légitime (article 6.1.f du RGPD). Nous n'écrivons qu'à des professionnels, à leur adresse professionnelle et pour des sujets liés à leur entreprise. Chaque message permet de s'opposer en un clic, et la personne qui s'oppose ne reçoit plus rien."
+        ]
+      },
+      {
+        "heading": "Où sont vos données et qui y accède",
+        "paragraphs": [
+          "<strong>Ce site</strong> (revcognition.com) est servi depuis Cloudflare Pages, le réseau mondial de Cloudflare : il n'a pas de région exclusivement européenne. Le site n'a pas de formulaire ; Cloudflare ne traite que les données techniques de chaque visite (comme l'adresse IP) pour servir la page et la protéger.",
+          "<strong>La plateforme</strong> (<appLink>app.revcognition.com</appLink>) et sa base de données sont hébergées sur un serveur Hetzner à Nuremberg (Allemagne)."
+        ],
+        "intro": "Prestataires qui traitent des données pour fournir le service, avec leur localisation :",
+        "items": [
+          {
+            "label": "Hetzner",
+            "body": "— hébergement de la plateforme et de la base de données. Allemagne (UE)."
+          },
+          {
+            "label": "Resend",
+            "body": "— e-mails du compte (notifications, confirmations). Région européenne, Irlande (UE)."
+          },
+          {
+            "label": "Cloudflare",
+            "body": "— hébergement de ce site et mesure d'audience sans cookies. Réseau mondial."
+          },
+          {
+            "label": "Stripe",
+            "body": "— paiement des packs. Stripe traite les données de paiement sur sa propre infrastructure, qui inclut les États-Unis."
+          },
+          {
+            "label": "Clerk",
+            "body": "— connexion à la plateforme. États-Unis."
+          },
+          {
+            "label": "OpenRouter et OpenAI",
+            "body": "— modèles d'IA qui rédigent les messages. États-Unis."
+          },
+          {
+            "label": "Apollo, Prospeo, Findymail, Hunter, Dropcontact, The Companies API et MillionVerifier",
+            "body": "— recherche d'entreprises et de contacts professionnels, et vérification des adresses e-mail. Apollo, États-Unis ; les autres, selon le fournisseur."
+          },
+          {
+            "label": "Serper, Tavily, Jina, Firecrawl et Apify",
+            "body": "— recherche et lecture des pages web publiques des entreprises."
+          },
+          {
+            "label": "Smartlead",
+            "body": "— envoi des séquences de prospection."
+          },
+          {
+            "label": "Cal.com et Telegram",
+            "body": "— réservations de rendez-vous et alertes au client lorsqu'un prospect répond."
+          }
+        ],
+        "outro": "Lorsqu'un prestataire se trouve hors de l'Espace économique européen, le transfert repose sur [PENDIENTE: mecanismo de transferencia de cada proveedor de fuera del EEE (Marco de Privacidad de Datos UE-EE. UU. o cláusulas contractuales tipo)]. Nous ne vendons pas de données à des tiers, nous ne les utilisons pas pour entraîner des modèles généralistes et nous ne les partageons pas avec des annonceurs."
+      },
+      {
+        "heading": "Contenu généré par IA",
+        "body": "Les messages de prospection sont rédigés par un modèle d'IA à partir du site du client et de signaux publics sur l'entreprise destinataire. Le client les relit et les approuve avant leur envoi."
       },
       {
         "heading": "Combien de temps nous les conservons",
-        "body": "Le strict minimum nécessaire. Les demandes d'analyse sont archivées pendant 12 mois afin de pouvoir répondre à d'éventuelles questions ultérieures. Les données fiscales liées aux paiements sont conservées pendant le délai légal de conservation comptable. Les données de prospection commerciale sont supprimées à la demande de la personne concernée, ou après 14 jours sans interaction en l'absence de base contractuelle ultérieure."
+        "body": "Le minimum nécessaire. Les demandes d'analyse sont archivées pendant 12 mois afin de pouvoir répondre à d'éventuelles questions ultérieures. Les données fiscales liées aux paiements sont conservées pendant la durée légale comptable. Les données de prospection commerciale sont supprimées à la demande de la personne concernée ou après 14 jours sans interaction en l'absence de base contractuelle ultérieure."
       },
       {
         "heading": "Vos droits",
-        "body": "Accès, rectification, effacement, opposition, limitation et portabilité. Les exercer est aussi simple qu'écrire à <email>olivier.serres@revcognition.com</email>. Nous répondons en moins de 30 jours. Si vous estimez que nous ne l'avons pas bien fait, vous pouvez déposer une réclamation auprès de l'Agence espagnole de protection des données (<aepd>aepd.es</aepd>)."
+        "body": "Accès, rectification, effacement, opposition, limitation et portabilité. Pour exercer l'un d'eux, il suffit d'écrire à <rightsEmail>olivier.serres@revcognition.com</rightsEmail>. Nous répondons en moins de 30 jours. Si vous estimez que nous n'avons pas agi correctement, vous pouvez déposer une réclamation auprès de l'Agence espagnole de protection des données (<aepd>aepd.es</aepd>)."
       },
       {
         "heading": "Cookies",
-        "body": "Ce site n'utilise pas de cookies de suivi ni d'analyse tierce. Uniquement des cookies strictement nécessaires au fonctionnement (ceux que Stripe peut établir pendant le processus de paiement)."
+        "body": "Ce site n'utilise aucun cookie de suivi, de publicité ni de mesure d'audience. Le seul qu'il peut déposer enregistre la langue que vous choisissez. Tout le détail dans la <cookiesLink>politique de cookies</cookiesLink>."
       },
       {
         "heading": "Modifications de cette politique",
-        "body": "Si nous mettons à jour cette politique de façon substantielle, nous le notifierons par e-mail aux personnes ayant une relation active avec nous. Dernière mise à jour : mai 2026."
+        "body": "Si nous modifions substantiellement cette politique, nous le notifierons par e-mail aux personnes ayant une relation active avec nous. La date de la version en vigueur figure en haut de cette page."
+      }
+    ]
+  },
+  "trust": {
+    "eyebrow": "Confiance et conformité",
+    "heading": "Ce que votre service juridique va demander, en bref.",
+    "intro": "Quatre affirmations que vous pouvez vérifier. Le détail, prestataire par prestataire, figure dans la politique de confidentialité.",
+    "items": [
+      {
+        "title": "Plateforme hébergée dans l'Union européenne",
+        "body": "La plateforme et sa base de données sont sur un serveur Hetzner à Nuremberg (Allemagne), et les e-mails de votre compte partent de la région européenne de Resend (Irlande). Certains prestataires, comme ceux d'IA ou de connexion, sont aux États-Unis : nous les citons dans la <privacyLink>politique de confidentialité</privacyLink>."
+      },
+      {
+        "title": "Base juridique : intérêt légitime, entre entreprises uniquement",
+        "body": "Nous n'écrivons qu'à des professionnels, au sujet de leur entreprise. La base juridique est l'intérêt légitime de l'article 6.1.f du RGPD, documentée dans la <privacyLink>politique de confidentialité</privacyLink>."
+      },
+      {
+        "title": "Désinscription dans chaque e-mail",
+        "body": "Chaque e-mail permet de se désinscrire, et la personne qui le fait ne reçoit plus rien d'aucune de vos campagnes."
+      },
+      {
+        "title": "Contenu généré par IA, et nous le disons",
+        "body": "Les e-mails sont rédigés par une IA à partir de votre site et des signaux publics de chaque entreprise. Vous les relisez et les approuvez avant leur envoi."
+      }
+    ],
+    "footnote": "Durées de conservation, sous-traitants et exercice de vos droits : <privacyLink>politique de confidentialité</privacyLink>."
+  },
+  "legal": {
+    "metaTitle": "Mentions légales — RevCognition",
+    "metaDescription": "Identification du titulaire de revcognition.com, conditions d'utilisation du site et droit applicable.",
+    "eyebrow": "Mentions légales",
+    "heading": "Qui est derrière ce site.",
+    "intro": "Informations exigées par l'article 10 de la loi espagnole 34/2002 sur les services de la société de l'information et le commerce électronique (LSSI).",
+    "version": "Version 1.0 · 3 octobre 2026",
+    "backLink": "← Retour à l'accueil",
+    "sections": [
+      {
+        "heading": "Titulaire",
+        "items": [
+          {
+            "label": "Titulaire :",
+            "body": "[PENDIENTE: nombre completo o razón social del titular]"
+          },
+          {
+            "label": "NIF :",
+            "body": "[PENDIENTE: NIF o CIF]"
+          },
+          {
+            "label": "Adresse :",
+            "body": "[PENDIENTE: domicilio postal completo]"
+          },
+          {
+            "label": "E-mail :",
+            "body": "<email>olivier.serres@revcognition.com</email>"
+          },
+          {
+            "label": "Registre :",
+            "body": "[PENDIENTE: inscripción en el Registro Mercantil, o borrar esta línea si el titular es persona física]"
+          }
+        ]
+      },
+      {
+        "heading": "Objet",
+        "body": "Ce site présente RevCognition, un service de prospection commerciale pour les entreprises. Le service se souscrit et s'utilise sur <appLink>app.revcognition.com</appLink> et il est régi par les <termsLink>conditions de vente</termsLink>."
+      },
+      {
+        "heading": "Propriété intellectuelle et industrielle",
+        "body": "Les textes, le design, la marque, le logo et le code de ce site appartiennent à son titulaire ou sont utilisés sous licence. Ils ne peuvent être reproduits ni réutilisés à des fins commerciales sans autorisation écrite."
+      },
+      {
+        "heading": "Responsabilité",
+        "body": "Nous veillons à ce que les informations de ce site soient exactes et à jour, mais elles peuvent contenir des erreurs ou devenir obsolètes. Ce qui engage, ce sont les conditions de vente en vigueur au moment de l'achat. Les liens vers des sites tiers sont fournis à titre de référence ; nous ne contrôlons pas leur contenu."
+      },
+      {
+        "heading": "Confidentialité et cookies",
+        "body": "Comment nous traitons les données personnelles : <privacyLink>politique de confidentialité</privacyLink>. Quels cookies utilise ce site : <cookiesLink>politique de cookies</cookiesLink>."
+      },
+      {
+        "heading": "Droit applicable et juridiction",
+        "body": "[PENDIENTE: ley aplicable y fuero/jurisdicción]"
+      }
+    ]
+  },
+  "terms": {
+    "metaTitle": "Conditions de vente — RevCognition",
+    "metaDescription": "Ce que vous achetez chez RevCognition, ce que cela coûte, ce qui n'est pas inclus et comment le service est fourni.",
+    "eyebrow": "Conditions de vente",
+    "heading": "Ce que vous achetez, ce que cela coûte et ce qui n'est pas inclus.",
+    "intro": "Ces conditions régissent la souscription à RevCognition sur <appLink>app.revcognition.com</appLink>. Les informations sur le prestataire figurent dans les <legalLink>mentions légales</legalLink>.",
+    "version": "Version 1.0 · 3 octobre 2026",
+    "backLink": "← Retour à l'accueil",
+    "sections": [
+      {
+        "heading": "À qui il s'adresse",
+        "body": "RevCognition est vendu uniquement aux entreprises et aux professionnels, pour leur activité professionnelle. Il n'est pas proposé aux consommateurs. Le droit de rétractation prévu par le droit de la consommation ne s'applique donc pas."
+      },
+      {
+        "heading": "Ce que vous achetez",
+        "intro": "Le service comprend trois éléments, tous hors TVA :",
+        "items": [
+          {
+            "label": "Setup, 50 € en paiement unique :",
+            "body": "configuration initiale, analyse de votre site et définition de la stratégie. Il comprend l'achat et la configuration d'un domaine d'envoi, la configuration SPF, DKIM et DMARC, la classification automatique des réponses, le préchauffage progressif du domaine, six expéditeurs avec leur propre nom et signature, et la connexion à votre agenda Cal.com."
+          },
+          {
+            "label": "Packs de prospects :",
+            "body": "100 prospects pour 100 €, 600 pour 500 € ou 1 300 pour 1 000 €. Chaque prospect comprend son identification, l'enrichissement par des signaux et la séquence complète d'e-mails."
+          },
+          {
+            "label": "Renouvellement du domaine d'envoi, 20 € par an :",
+            "body": "à partir de la deuxième année. Il se renouvelle automatiquement ; si vous n'en voulez plus, le domaine expire et rien d'autre n'est facturé."
+          }
+        ]
+      },
+      {
+        "heading": "Comment les crédits sont consommés",
+        "body": "Un crédit est consommé lors du premier envoi à un nouveau prospect. Les relances de la même séquence ne consomment pas de crédit supplémentaire, et la séquence s'arrête si le prospect répond. Les crédits n'expirent pas."
+      },
+      {
+        "heading": "Ce qui n'est pas inclus",
+        "body": "Nous ne garantissons pas un nombre de réponses, de rendez-vous ni de ventes : ils dépendent de votre offre, de votre marché et de chaque destinataire. Ne sont pas inclus : la rédaction de contenus hors des séquences, la gestion des conversations une fois que le prospect répond, ni des domaines ou expéditeurs supplémentaires à ceux décrits."
+      },
+      {
+        "heading": "Mise en route et prestation",
+        "body": "Le setup commence dès la confirmation du paiement. Le domaine d'envoi est préchauffé progressivement : le volume augmente jusqu'à atteindre le plein volume la quatrième semaine. Les messages ne partent qu'après votre approbation dans la plateforme. Pendant la bêta fermée, l'accès dépend des places disponibles."
+      },
+      {
+        "heading": "Prix, taxes et paiement",
+        "body": "Les prix sont affichés hors taxes ; la TVA ou les autres taxes applicables sont ajoutées sur la facture selon le pays de votre entreprise. Le paiement se fait d'avance par carte via Stripe, depuis la plateforme. Il n'y a ni engagement ni abonnement."
+      },
+      {
+        "heading": "Remboursements",
+        "body": "[PENDIENTE: política de reembolso de créditos no consumidos y del setup]"
+      },
+      {
+        "heading": "Vos responsabilités",
+        "body": "Vous êtes responsable de l'offre que vous présentez, de l'approbation de chaque message avant son envoi et, si vous importez votre propre base de prospects, de disposer d'une base juridique pour l'utiliser. Vous vous engagez à ne pas utiliser le service pour envoyer des communications illicites ou trompeuses, ni à des destinataires qui s'y sont opposés."
+      },
+      {
+        "heading": "Données personnelles",
+        "body": "Le traitement des données personnelles est régi par la <privacyLink>politique de confidentialité</privacyLink>."
+      },
+      {
+        "heading": "Modifications de ces conditions",
+        "body": "Si nous modifions ces conditions, la nouvelle version s'applique aux achats postérieurs à sa publication ; les achats déjà effectués restent soumis aux conditions en vigueur à leur date."
+      },
+      {
+        "heading": "Droit applicable et juridiction",
+        "body": "[PENDIENTE: ley aplicable y fuero/jurisdicción]"
+      }
+    ]
+  },
+  "cookies": {
+    "metaTitle": "Politique de cookies — RevCognition",
+    "metaDescription": "Quels cookies utilise revcognition.com, à quoi ils servent et comment les supprimer.",
+    "eyebrow": "Politique de cookies",
+    "heading": "Un seul cookie propre, et il ne vous suit pas.",
+    "intro": "Quels cookies revcognition.com peut déposer, à quoi ils servent et comment les supprimer. Cette politique ne couvre que ce site, pas la plateforme (<appLink>app.revcognition.com</appLink>).",
+    "version": "Version 1.0 · 3 octobre 2026",
+    "backLink": "← Retour à l'accueil",
+    "sections": [
+      {
+        "heading": "Le cookie que nous utilisons",
+        "items": [
+          {
+            "label": "NEXT_LOCALE",
+            "body": "— propre et technique. Il enregistre la langue du site (celle que vous choisissez ou celle que nous détectons dans votre navigateur) pour ne pas la changer à nouveau. Il dure jusqu'à la fermeture du navigateur et ne contient aucune donnée personnelle. S'agissant d'un cookie de personnalisation que vous demandez, il est exempté de consentement en vertu de l'article 22.2 de la LSSI espagnole."
+          }
+        ]
+      },
+      {
+        "heading": "Cookies de sécurité de Cloudflare",
+        "body": "Cloudflare, qui sert ce site, peut déposer un cookie technique de sécurité (comme __cf_bm ou cf_clearance) uniquement s'il détecte un trafic suspect et doit vérifier que vous êtes une personne. Il ne sert ni à vous mesurer ni à la publicité."
+      },
+      {
+        "heading": "Ce que nous n'utilisons pas",
+        "body": "Aucun cookie de mesure d'audience, de publicité ni de réseaux sociaux. Nous mesurons les visites avec Cloudflare Web Analytics, qui n'utilise pas de cookies et n'identifie pas les visiteurs. C'est pourquoi vous ne voyez pas de bandeau de consentement : il n'y a rien à consentir."
+      },
+      {
+        "heading": "Comment les supprimer",
+        "body": "Vous pouvez supprimer ou bloquer les cookies dans les paramètres de votre navigateur. Si vous supprimez NEXT_LOCALE, le site s'affichera de nouveau dans la langue de votre navigateur."
+      },
+      {
+        "heading": "Plus d'informations",
+        "body": "Comment nous traitons les données personnelles : <privacyLink>politique de confidentialité</privacyLink>. Qui est le titulaire du site : <legalLink>mentions légales</legalLink>."
       }
     ]
   }

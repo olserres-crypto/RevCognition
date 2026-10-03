@@ -15,7 +15,7 @@ export function Footer() {
           <Logo size="nav" className="opacity-70" />
           <span>{t("copyright")}</span>
         </span>
-        <div className="flex items-center gap-2">
+        <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
           <Link
             href="/soluciones/servicios-b2b"
             className="px-2 py-2 rounded-md hover:text-[var(--color-ink)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2"
@@ -27,6 +27,24 @@ export function Footer() {
             className="px-2 py-2 rounded-md hover:text-[var(--color-ink)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2"
           >
             {t("privacy")}
+          </Link>
+          <Link
+            href="/legal"
+            className="px-2 py-2 rounded-md hover:text-[var(--color-ink)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2"
+          >
+            {t("legal")}
+          </Link>
+          <Link
+            href="/terms"
+            className="px-2 py-2 rounded-md hover:text-[var(--color-ink)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2"
+          >
+            {t("terms")}
+          </Link>
+          <Link
+            href="/cookies"
+            className="px-2 py-2 rounded-md hover:text-[var(--color-ink)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2"
+          >
+            {t("cookies")}
           </Link>
           <a
             href="mailto:olivier.serres@revcognition.com?subject=Baja%20de%20comunicaciones"
