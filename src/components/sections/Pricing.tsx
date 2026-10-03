@@ -76,8 +76,11 @@ export function Pricing() {
         <p className="text-[var(--color-slate)] text-sm mb-4 max-w-2xl">
           {t("perProspectIncludes")}
         </p>
-        <p className="text-[var(--color-slate)] text-sm mb-12 max-w-2xl">
+        <p className="text-[var(--color-slate)] text-sm mb-4 max-w-2xl">
           {t("noCommitment")}
+        </p>
+        <p className="text-[var(--color-ink)] text-base font-semibold mb-12 max-w-2xl">
+          {t("startPrice")}
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">

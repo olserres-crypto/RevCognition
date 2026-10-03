@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Prospección en frío para quien vive de la recomendación | RevCognition",
-    "description": "RevCognition identifica a tus clientes ideales y les escribe un mensaje único a cada uno. Tú no escribes nada, no pagas a ninguna agencia, y revisas cinco minutos al día.",
+    "description": "RevCognition identifica a tus clientes ideales y les escribe un mensaje único a cada uno. No escribes nada ni pagas a ninguna agencia: tú solo revisas y apruebas en unos minutos al día.",
     "ogAlt": "RevCognition — Tus clientes llegan por recomendación."
   },
   "a11y": {
@@ -28,10 +28,10 @@
     "line1": "Tus clientes llegan",
     "line1Accent": "por recomendación.",
     "line2": "Y no te queda tiempo para prospectar.",
-    "subtitle": "RevCognition identifica a tus clientes ideales y les escribe un mensaje único a cada uno. Tú no escribes nada, no pagas a ninguna agencia, y revisas cinco minutos al día.",
+    "subtitle": "RevCognition identifica a tus clientes ideales y les escribe un mensaje único a cada uno. No escribes nada ni pagas a ninguna agencia: tú solo revisas y apruebas en unos minutos al día.",
     "ctaPrimary": "Solicita acceso a la beta",
     "ctaSecondary": "Ver cómo funciona",
-    "note": "Beta cerrada, plazas limitadas. Analizamos tu web y te preparamos una propuesta de perfil de cliente ideal antes de que decidas nada.",
+    "note": "Beta cerrada: revisamos cada solicitud y entras si tu caso encaja. Empiezas con 150€ (sin IVA) en pago único y, antes de que decidas nada, analizamos tu web y te proponemos un perfil de cliente ideal.",
     "signalCard": {
       "detected": "Señal detectada · hace 3 horas",
       "example": "Laboratorios Roca · Depósito OEPM rechazado · clase 5 · 04287391",
@@ -48,7 +48,7 @@
       "greeting": "Hola Ana,",
       "body1": "El depósito de marca de Laboratorios Roca (clase 5, solicitud 04287391) fue rechazado el pasado 11 de abril. El plazo de recurso corre y, en nuestra experiencia, el 62 % de los titulares aún no tiene abogado de PI asignado a estas alturas.",
       "body2": "Es exactamente el tipo de señal que gabinetes como Martínez & Asoc. convierten en cliente antes de que el titular busque en Google.",
-      "cta": "Hablemos 10 minutos esta semana →",
+      "cta": "¿Hablamos esta semana? →",
       "signoffLine": "Un saludo,",
       "signoffName": "Alex"
     }
@@ -87,7 +87,7 @@
       {
         "title": "Cuéntanos quién eres",
         "description": "Analizamos tu web y generamos automáticamente propuestas de posicionamiento: qué problema resuelves, tu tono, tus servicios, y tu perfil de cliente ideal. Tú eliges la estrategia que más te representa.",
-        "time": "Setup: 10–15 minutos"
+        "time": "Setup: una sesión guiada"
       },
       {
         "title": "El sistema identifica a tus prospectos",
@@ -97,7 +97,7 @@
       {
         "title": "Cada prospecto recibe un mensaje escrito para él",
         "description": "Un LLM combina tu perfil, nuestro banco de mensajes comerciales de alto nivel, y los datos del prospecto para escribir un mensaje único. Tú apruebas los envíos diarios o los dejas ir solos.",
-        "time": "Validación opcional: 10 min/día"
+        "time": "Validación opcional: unos minutos al día"
       }
     ],
     "mockups": {
@@ -134,7 +134,7 @@
     "intro": "Tú mantienes el criterio; el sistema pone las horas. Esto es lo que se ocupa de hacer, un día tras otro.",
     "howEncuentra": {
       "eyebrow": "Cómo encuentra a tus clientes",
-      "intro": "¿Y si tu sector es poco común, o tu zona geográfica es pequeña? La búsqueda no se apoya en una sola lista: para un solo perfil de cliente puede haber más de 400.000 empresas candidatas repartidas entre varias bases de datos, y el sistema las revisa sin parar para quedarse solo con las que encajan.",
+      "intro": "¿Y si tu sector es poco común, o tu zona geográfica es pequeña? La búsqueda no se apoya en una sola lista: trabajamos con varios proveedores de datos que, entre todos, cubren varios millones de perfiles de empresa, y el sistema los revisa sin parar para quedarse solo con los que encajan.",
       "steps": [
         {
           "title": "Lee tu web",
@@ -157,7 +157,7 @@
     "features": [
       {
         "title": "Tú apruebas lo que sale",
-        "description": "Cinco minutos al día para revisar los correos preparados. Nada se envía sin tu visto bueno, y puedes desactivar la aprobación cuando confíes en el sistema."
+        "description": "Unos minutos al día para revisar los correos preparados. Nada se envía sin tu visto bueno, y puedes desactivar la aprobación cuando confíes en el sistema."
       },
       {
         "title": "Dominio propio, calentado con paciencia",
@@ -201,7 +201,7 @@
         "sector": "Gabinete de abogados de marcas",
         "problem": "Una DB de señales perfectas, emails que nadie contesta",
         "problemDetail": "Cada depósito de marca rechazado es una empresa con una urgencia legal real. Tienen la DB. Pero los emails que manda su agencia son genéricos, sin mencionar el rechazo específico ni el riesgo concreto. Resultado: casi cero respuestas, pese a tener la señal de intención más clara que existe.",
-        "solution": "RevCognition toma esa base de casos como contexto, escribe un mensaje que menciona el rechazo específico de cada empresa, y lo deja listo para tu revisión diaria de cinco minutos."
+        "solution": "RevCognition toma esa base de casos como contexto, escribe un mensaje que menciona el rechazo específico de cada empresa, y lo deja listo para tu revisión diaria."
       },
       {
         "sector": "Agencia de venta de espacios publicitarios",
@@ -217,6 +217,7 @@
     "intro": "No pagas por asientos ni por herramientas. Pagas por prospecto trabajado: 1 crédito se consume en el primer envío a un prospecto nuevo, y los seguimientos de esa misma secuencia no gastan crédito adicional. Si contesta antes, el sistema se para. Si no, cierra con elegancia.",
     "perProspectIncludes": "Cada prospecto incluye: identificación, enriquecimiento con señales reales y secuencia completa (apertura, seguimiento, nuevo ángulo, cierre).",
     "noCommitment": "Sin permanencia y sin suscripción. Los créditos no caducan. Lo único recurrente es tu dominio de envío: 20€ al año a partir del segundo. Si lo dejas, caduca y no se cobra nada más.",
+    "startPrice": "Para empezar: 150€ (sin IVA) en pago único, el setup (50€) más el primer pack de 100 prospectos (100€). Una agencia de captación se paga cada mes y contratar a alguien para prospectar cuesta un sueldo; aquí pagas una vez y sigues solo si te funciona.",
     "noVat": "sin IVA",
     "qualifiedProspects": "{count} prospectos cualificados",
     "perSend": "{value} / prospecto",
@@ -257,7 +258,7 @@
     },
     "fiscalNote": "Precios sin impuestos: el IVA u otros impuestos aplicables se añaden en factura según el país de tu empresa.",
     "ownList": "¿Tienes una base de prospectos propia? Puedes usarla directamente. El sistema la enriquece y genera los mensajes sobre ella.",
-    "betaNote": "Beta cerrada, plazas limitadas. Solicita acceso y, si hay hueco, entras esta semana; si no, quedas en la lista de espera y te avisamos en cuanto se libere una plaza."
+    "betaNote": "Beta cerrada: revisamos cada solicitud una a una y, si tu caso encaja, te damos acceso."
   },
   "founder": {
     "eyebrow": "Por qué existe esto",
@@ -270,7 +271,7 @@
   },
   "ctaFinal": {
     "heading": "Entra en la beta cerrada.",
-    "subtitle": "Estamos abriendo plazas poco a poco para cuidar cada cuenta. Solicita acceso y empezamos por analizar tu web y tu mercado.",
+    "subtitle": "Revisamos cada solicitud una a una para cuidar cada cuenta. Solicita acceso y empezamos por analizar tu web y tu mercado.",
     "ctaButton": "Solicita acceso a la beta",
     "legalPre": "¿Prefieres verlo antes con el fundador?",
     "legalMailtoLink": "Escríbeme directamente.",
@@ -278,7 +279,7 @@
   },
   "producto": {
     "metaTitle": "Producto — RevCognition | Prospección en frío, de principio a fin",
-    "metaDescription": "Todo lo que hace RevCognition: puesta en marcha en una sesión, revisión diaria de cinco minutos, mensajes escritos para cada prospecto, dominio propio calentado con paciencia y respuestas clasificadas solas.",
+    "metaDescription": "Todo lo que hace RevCognition: puesta en marcha en una sesión, unos minutos al día de revisión, mensajes escritos para cada prospecto, dominio propio calentado con paciencia y respuestas clasificadas solas.",
     "ogAlt": "RevCognition — el producto en detalle.",
     "hero": {
       "eyebrow": "Producto",
@@ -323,7 +324,7 @@
     },
     "diaADia": {
       "eyebrow": "El día a día",
-      "title": "Cinco minutos al día. El resto ocurre solo.",
+      "title": "Unos minutos al día. El resto ocurre solo.",
       "intro": "El criterio humano se queda en el centro: nada sale sin tu visto bueno, pero la revisión es una sesión corta al día, no una configuración constante.",
       "depth": [
         {
@@ -414,7 +415,7 @@
         },
         {
           "q": "¿Cuánto control tengo?",
-          "a": "Todo el que quieras. Cada correo se prepara pero no sale hasta que lo apruebas —una revisión de unos cinco minutos al día— y puedes editar el texto antes de enviarlo. Si prefieres delegar, desactivas la aprobación y los envíos salen solos. El perfil comercial que guía cada mensaje lo ajustas tú cuando quieras."
+          "a": "Todo el que quieras. Cada correo se prepara pero no sale hasta que lo apruebas —una revisión de unos minutos al día— y puedes editar el texto antes de enviarlo. Si prefieres delegar, desactivas la aprobación y los envíos salen solos. El perfil comercial que guía cada mensaje lo ajustas tú cuando quieras."
         },
         {
           "q": "¿En qué idioma escribe?",
@@ -430,7 +431,7 @@
         },
         {
           "q": "¿Funciona en mi sector o en mi país?",
-          "a": "El sistema busca en continuo sobre bases de datos partner especializadas: para un solo perfil de cliente ideal —sector, ubicación y tamaño— puede haber más de 400.000 empresas candidatas. Y cada correo llega en el idioma que corresponde al país de quien lo recibe, así que la cobertura no depende del idioma que hables tú."
+          "a": "El sistema busca en continuo sobre bases de datos partner especializadas: trabajamos con varios proveedores que, entre todos, cubren varios millones de perfiles de empresa, y filtra por sector, ubicación y tamaño según tu perfil de cliente ideal. Y cada correo llega en el idioma que corresponde al país de quien lo recibe, así que la cobertura no depende del idioma que hables tú."
         },
         {
           "q": "¿De dónde salen los datos de los contactos?",
@@ -524,18 +525,18 @@
   },
   "serviciosB2B": {
     "metaTitle": "Servicios B2B — RevCognition | Prospección en frío para despachos y agencias",
-    "metaDescription": "Para despachos, agencias y consultoras que viven de referencias: RevCognition busca clientes nuevos que encajan con tu perfil y les escribe un mensaje propio. Tu única tarea, cinco minutos al día aprobando correos.",
+    "metaDescription": "Para despachos, agencias y consultoras que viven de referencias: RevCognition busca clientes nuevos que encajan con tu perfil y les escribe un mensaje propio. Tú solo revisas y apruebas en unos minutos al día.",
     "ogAlt": "RevCognition para servicios B2B.",
     "hero": {
       "eyebrow": "Servicios B2B",
       "heading1": "Vives de tus referencias.",
       "heading2": "Y no te queda tiempo para prospectar.",
-      "subtitle": "Despachos, agencias y consultoras suelen depender de a quién les recomiendan. RevCognition busca clientes nuevos que encajan con tu perfil y les escribe un mensaje propio a cada uno, mientras tú sigues con los clientes que ya tienes. Tu única tarea: revisar los correos preparados, cinco minutos al día."
+      "subtitle": "Despachos, agencias y consultoras suelen depender de a quién les recomiendan. RevCognition busca clientes nuevos que encajan con tu perfil y les escribe un mensaje propio a cada uno, mientras tú sigues con los clientes que ya tienes. Tu única tarea: revisar y aprobar los correos preparados, en unos minutos al día."
     },
     "steps": {
       "eyebrow": "Cómo funciona",
       "heading": "Cómo encuentra a tus próximos clientes.",
-      "intro": "¿Y si tu especialidad es poco frecuente, o tu zona es pequeña? La búsqueda no se apoya en una sola lista: para un solo perfil de cliente puede haber más de 400.000 empresas candidatas, y el sistema las revisa sin parar para quedarse solo con las que encajan.",
+      "intro": "¿Y si tu especialidad es poco frecuente, o tu zona es pequeña? La búsqueda no se apoya en una sola lista: trabajamos con varios proveedores de datos que, entre todos, cubren varios millones de perfiles de empresa, y el sistema los revisa sin parar para quedarse solo con los que encajan.",
       "items": [
         {
           "title": "Lee tu web",
@@ -559,7 +560,7 @@
     "stats": {
       "eyebrow": "Resultados",
       "heading": "Lo probamos con nuestras propias campañas.",
-      "intro": "Usamos RevCognition para nuestra propia prospección: las campañas con las que salimos a buscar clientes nuevos corren sobre este mismo producto —el mismo dominio dedicado, el mismo motor de mensajes y la misma revisión diaria de cinco minutos que verías tú—.",
+      "intro": "Usamos RevCognition para nuestra propia prospección: las campañas con las que salimos a buscar clientes nuevos corren sobre este mismo producto —el mismo dominio dedicado, el mismo motor de mensajes y la misma revisión diaria que harías tú—.",
       "caseStudy": {
         "label": "Próximo caso de cliente",
         "title": "El primer caso de cliente, en curso.",
@@ -583,7 +584,7 @@
       "items": [
         {
           "q": "¿Funciona en mi sector o en mi país?",
-          "a": "El sistema busca en continuo sobre bases de datos partner especializadas: para un despacho o agencia con un perfil de cliente definido —sector, ubicación y tamaño— puede haber más de 400.000 empresas candidatas. No hace falta que tu especialidad sea común ni que tu zona sea grande: la búsqueda no depende de una sola lista."
+          "a": "El sistema busca en continuo sobre bases de datos partner especializadas: trabajamos con varios proveedores que, entre todos, cubren varios millones de perfiles de empresa, y filtra según el perfil de cliente de tu despacho o agencia —sector, ubicación y tamaño—. No hace falta que tu especialidad sea común ni que tu zona sea grande: la búsqueda no depende de una sola lista."
         },
         {
           "q": "¿De dónde salen los datos de los contactos?",
@@ -613,7 +614,7 @@
     "eyebrow": "Política de privacidad",
     "heading": "Tratamos tus datos como nos gustaría que trataran los nuestros.",
     "intro": "Texto en lenguaje claro. Si necesitas la versión legal completa o quieres ejercer cualquiera de tus derechos, escríbenos a <email>olivier.serres@revcognition.com</email>.",
-    "version": "Versión 2.0 · 3 de octubre de 2026",
+    "version": "Versión 2.1 · 4 de octubre de 2026",
     "backLink": "← Volver al inicio",
     "sections": [
       {
@@ -655,50 +656,46 @@
           "<strong>Esta web</strong> (revcognition.com) se sirve desde Cloudflare Pages, la red global de Cloudflare: no tiene una región exclusivamente europea. La web no tiene formularios; Cloudflare solo trata los datos técnicos de cada visita (como la dirección IP) para servir la página y protegerla.",
           "<strong>La plataforma</strong> (<appLink>app.revcognition.com</appLink>) y su base de datos se alojan en un servidor de Hetzner en Núremberg (Alemania)."
         ],
-        "intro": "Proveedores que tratan datos para prestar el servicio, con su ubicación:",
+        "intro": "Destinatarios de los datos, por categorías (artículo 13.1.e del RGPD), y dónde están:",
         "items": [
           {
-            "label": "Hetzner",
-            "body": "— alojamiento de la plataforma y de la base de datos. Alemania (UE)."
+            "label": "Alojamiento de la plataforma y de la base de datos",
+            "body": "— Hetzner, en Núremberg (Alemania, UE)."
           },
           {
-            "label": "Resend",
-            "body": "— envío de los correos de la cuenta (avisos, confirmaciones). Región europea, Irlanda (UE)."
+            "label": "Alojamiento de esta web y medición de visitas sin cookies",
+            "body": "— Cloudflare. Red global."
           },
           {
-            "label": "Cloudflare",
-            "body": "— alojamiento de esta web y medición de visitas sin cookies. Red global."
+            "label": "Cobro de los packs",
+            "body": "— Stripe, que trata los datos de pago en su propia infraestructura, que incluye EE. UU."
           },
           {
-            "label": "Stripe",
-            "body": "— cobro de los packs. Stripe trata los datos de pago en su propia infraestructura, que incluye EE. UU."
+            "label": "Inicio de sesión y correos de la cuenta",
+            "body": "— un proveedor de autenticación, en EE. UU., y un proveedor de correo transaccional, en su región europea (Irlanda, UE)."
           },
           {
-            "label": "Clerk",
-            "body": "— inicio de sesión en la plataforma. EE. UU."
+            "label": "Modelos de inteligencia artificial",
+            "body": "— redactan los mensajes de prospección. EE. UU."
           },
           {
-            "label": "OpenRouter y OpenAI",
-            "body": "— modelos de IA que redactan los mensajes. EE. UU."
+            "label": "Bases de datos comerciales de empresas y de contactos profesionales, y verificación de direcciones de correo",
+            "body": "— dentro y fuera de la UE (entre ellos, EE. UU.), según el proveedor."
           },
           {
-            "label": "Apollo, Prospeo, Findymail, Hunter, Dropcontact, The Companies API y MillionVerifier",
-            "body": "— búsqueda de empresas y de contactos profesionales, y verificación de direcciones de correo. Apollo, en EE. UU.; el resto, según el proveedor."
+            "label": "Búsqueda y lectura de páginas web públicas de las empresas",
+            "body": "— según el proveedor."
           },
           {
-            "label": "Serper, Tavily, Jina, Firecrawl y Apify",
-            "body": "— búsqueda y lectura de páginas web públicas de las empresas."
+            "label": "Envío de las secuencias de prospección",
+            "body": "— plataforma de envío de correo."
           },
           {
-            "label": "Smartlead",
-            "body": "— envío de las secuencias de prospección."
-          },
-          {
-            "label": "Cal.com y Telegram",
-            "body": "— reservas de reuniones y avisos al cliente cuando un prospecto responde."
+            "label": "Agenda de reuniones y avisos al cliente",
+            "body": "— herramientas de reserva de reuniones y de mensajería, para avisarte cuando un prospecto responde."
           }
         ],
-        "outro": "No vendemos datos a terceros, no los usamos para entrenar modelos generales y no los compartimos con anunciantes."
+        "outro": "Si quieres saber qué proveedor concreto hay detrás de una categoría, escríbenos a <email>olivier.serres@revcognition.com</email> y te lo decimos. No vendemos datos a terceros, no los usamos para entrenar modelos generales y no los compartimos con anunciantes."
       },
       {
         "heading": "Contenido generado por IA",
@@ -725,11 +722,11 @@
   "trust": {
     "eyebrow": "Confianza y cumplimiento",
     "heading": "Lo que tu equipo legal va a preguntar, contestado en corto.",
-    "intro": "Cuatro afirmaciones que puedes comprobar. El detalle, proveedor por proveedor, está en la política de privacidad.",
+    "intro": "Cuatro afirmaciones que puedes comprobar. El detalle, por categorías de destinatarios, está en la política de privacidad.",
     "items": [
       {
         "title": "Plataforma alojada en la Unión Europea",
-        "body": "La plataforma y su base de datos están en un servidor de Hetzner en Núremberg (Alemania), y los correos de tu cuenta salen de la región europea de Resend (Irlanda). Algunos proveedores, como los de IA o el de inicio de sesión, están en EE. UU.: los nombramos en la <privacyLink>política de privacidad</privacyLink>."
+        "body": "La plataforma y su base de datos están en un servidor de Hetzner en Núremberg (Alemania), y los correos de tu cuenta salen de la región europea de nuestro proveedor de correo (Irlanda). Algunos proveedores, como los de IA o el de inicio de sesión, están en EE. UU.: lo detallamos por categorías en la <privacyLink>política de privacidad</privacyLink>."
       },
       {
         "title": "Base jurídica: interés legítimo, solo entre empresas",
