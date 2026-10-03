@@ -648,7 +648,7 @@
         "heading": "Base jurídica",
         "paragraphs": [
           "Para tu cuenta y tus pagos, la ejecución del contrato (artículo 6.1.b del RGPD) y el cumplimiento de obligaciones fiscales y contables (artículo 6.1.c).",
-          "Para la prospección comercial, el interés legítimo (artículo 6.1.f del RGPD): escribimos solo a profesionales, a su dirección de trabajo y por asuntos relacionados con su empresa. Cada mensaje permite oponerse con un clic, y quien se opone no vuelve a recibir nada."
+          "Para la prospección comercial, el interés legítimo (artículo 6.1.f del RGPD): escribimos solo a profesionales, a su dirección de trabajo y por asuntos relacionados con su empresa. Cada mensaje incluye la forma de oponerse a recibir más."
         ]
       },
       {
@@ -716,7 +716,7 @@
       },
       {
         "heading": "Cookies",
-        "body": "Esta web no usa cookies de seguimiento, de publicidad ni de analítica. La única que puede instalar guarda el idioma que eliges. Todo el detalle, en la <cookiesLink>política de cookies</cookiesLink>."
+        "body": "Esta web no usa cookies de seguimiento, de publicidad ni de analítica. Instala una sola cookie propia, la que guarda el idioma, y Cloudflare puede añadir una de seguridad si detecta tráfico sospechoso. Todo el detalle, en la <cookiesLink>política de cookies</cookiesLink>."
       },
       {
         "heading": "Cambios en esta política",
@@ -739,7 +739,7 @@
       },
       {
         "title": "Baja en cada correo",
-        "body": "Cada correo permite darse de baja, y quien lo hace no vuelve a recibir nada, en ninguna de tus campañas."
+        "body": "Cada correo que sale de RevCognition incluye la forma de darse de baja."
       },
       {
         "title": "Contenido generado por IA, y dicho",

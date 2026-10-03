@@ -21,6 +21,16 @@ jobs:
         # reject the version drift. npm install reconciles it deterministically.
         run: npm install --no-audit --no-fund
 
+      - name: Guard - no legal placeholders
+        # Los textos legales llevan marcadores [PENDIENTE: ...] donde falta un dato
+        # que no se ha medido (NIF, domicilio, ley aplicable...). Publicarlos seria
+        # publicar un texto legal con huecos: el deploy se para aqui.
+        run: |
+          if grep -n "\[PENDIENTE" messages/*.json; then
+            echo "::error::Quedan marcadores [PENDIENTE] en messages/*.json"
+            exit 1
+          fi
+
       - name: Build
         run: npx @cloudflare/next-on-pages@1
         env:

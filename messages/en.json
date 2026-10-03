@@ -648,7 +648,7 @@
         "heading": "Legal basis",
         "paragraphs": [
           "For your account and payments: performance of the contract (Article 6(1)(b) GDPR) and compliance with tax and accounting obligations (Article 6(1)(c)).",
-          "For business prospecting: legitimate interest (Article 6(1)(f) GDPR). We only write to professionals, at their work address, about matters related to their company. Every message lets the recipient object with one click, and anyone who objects never hears from us again."
+          "For business prospecting: legitimate interest (Article 6(1)(f) GDPR). We only write to professionals, at their work address, about matters related to their company. Every message includes a way to object to receiving more."
         ]
       },
       {
@@ -716,7 +716,7 @@
       },
       {
         "heading": "Cookies",
-        "body": "This website does not use tracking, advertising or analytics cookies. The only one it may set stores the language you choose. Full details in the <cookiesLink>cookie policy</cookiesLink>."
+        "body": "This website does not use tracking, advertising or analytics cookies. It sets a single first-party cookie, which stores the language, and Cloudflare may add a security cookie if it detects suspicious traffic. Full details in the <cookiesLink>cookie policy</cookiesLink>."
       },
       {
         "heading": "Changes to this policy",
@@ -739,7 +739,7 @@
       },
       {
         "title": "Unsubscribe in every email",
-        "body": "Every email lets the recipient unsubscribe, and anyone who does never hears from any of your campaigns again."
+        "body": "Every email sent from RevCognition includes a way to unsubscribe."
       },
       {
         "title": "AI-generated content, and we say so",

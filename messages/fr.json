@@ -648,7 +648,7 @@
         "heading": "Base juridique",
         "paragraphs": [
           "Pour votre compte et vos paiements : l'exécution du contrat (article 6.1.b du RGPD) et le respect des obligations fiscales et comptables (article 6.1.c).",
-          "Pour la prospection commerciale : l'intérêt légitime (article 6.1.f du RGPD). Nous n'écrivons qu'à des professionnels, à leur adresse professionnelle et pour des sujets liés à leur entreprise. Chaque message permet de s'opposer en un clic, et la personne qui s'oppose ne reçoit plus rien."
+          "Pour la prospection commerciale : l'intérêt légitime (article 6.1.f du RGPD). Nous n'écrivons qu'à des professionnels, à leur adresse professionnelle et pour des sujets liés à leur entreprise. Chaque message comprend un moyen de s'opposer à en recevoir d'autres."
         ]
       },
       {
@@ -716,7 +716,7 @@
       },
       {
         "heading": "Cookies",
-        "body": "Ce site n'utilise aucun cookie de suivi, de publicité ni de mesure d'audience. Le seul qu'il peut déposer enregistre la langue que vous choisissez. Tout le détail dans la <cookiesLink>politique de cookies</cookiesLink>."
+        "body": "Ce site n'utilise aucun cookie de suivi, de publicité ni de mesure d'audience. Il dépose un seul cookie propre, qui enregistre la langue, et Cloudflare peut ajouter un cookie de sécurité s'il détecte un trafic suspect. Tout le détail dans la <cookiesLink>politique de cookies</cookiesLink>."
       },
       {
         "heading": "Modifications de cette politique",
@@ -739,7 +739,7 @@
       },
       {
         "title": "Désinscription dans chaque e-mail",
-        "body": "Chaque e-mail permet de se désinscrire, et la personne qui le fait ne reçoit plus rien d'aucune de vos campagnes."
+        "body": "Chaque e-mail envoyé depuis RevCognition comprend un moyen de se désinscrire."
       },
       {
         "title": "Contenu généré par IA, et nous le disons",
@@ -841,7 +841,7 @@
       },
       {
         "heading": "Ce qui n'est pas inclus",
-        "body": "Nous ne garantissons pas un nombre de réponses, de rendez-vous ni de ventes : ils dépendent de votre offre, de votre marché et de chaque destinataire. Ne sont pas inclus : la rédaction de contenus hors des séquences, la gestion des conversations une fois que le prospect répond, ni des domaines ou expéditeurs supplémentaires à ceux décrits."
+        "body": "Nous ne garantissons pas un nombre de réponses, de rendez-vous ni de ventes : ils dépendent de votre offre, de votre marché et de chaque destinataire. Ne sont pas inclus : la rédaction de contenus hors des séquences, la gestion des conversations une fois que le prospect a répondu, ni domaines ou expéditeurs au-delà de ceux décrits."
       },
       {
         "heading": "Mise en route et prestation",
