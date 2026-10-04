@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Cold outreach for firms that live on referrals | RevCognition",
-    "description": "RevCognition identifies your ideal clients and writes each one a unique message. You write nothing, you pay no agency, and you review for five minutes a day.",
+    "description": "RevCognition identifies your ideal clients and writes each one a unique message. You write nothing and pay no agency: you just review and approve, a few minutes a day.",
     "ogAlt": "RevCognition — Your clients come from referrals."
   },
   "a11y": {
@@ -28,10 +28,10 @@
     "line1": "Your clients come",
     "line1Accent": "from referrals.",
     "line2": "And there's no time left to go find more.",
-    "subtitle": "RevCognition identifies your ideal clients and writes each one a unique message. You write nothing, you pay no agency, and you review for five minutes a day.",
+    "subtitle": "RevCognition identifies your ideal clients and writes each one a unique message. You write nothing and pay no agency: you just review and approve, a few minutes a day.",
     "ctaPrimary": "Request beta access",
     "ctaSecondary": "See how it works",
-    "note": "Closed beta, limited seats. We analyze your website and prepare an ideal-customer-profile proposal before you decide anything.",
+    "note": "Closed beta: we review every request and you're in if your case fits. You start with €150 (VAT excl.), paid once, and before you decide anything we analyze your website and propose an ideal customer profile.",
     "signalCard": {
       "detected": "Signal detected · 3 hours ago",
       "example": "Laboratorios Roca · OEPM filing rejected · class 5 · 04287391",
@@ -48,7 +48,7 @@
       "greeting": "Hi Ana,",
       "body1": "Laboratorios Roca's trademark filing (class 5, application 04287391) was rejected on April 11. The appeal deadline is running, and in our experience, 62% of trademark holders still haven't assigned an IP lawyer at this stage.",
       "body2": "It's exactly the kind of signal that firms like Martínez & Asoc. turn into a client before the holder even searches Google.",
-      "cta": "Let's talk for 10 minutes this week →",
+      "cta": "Can we talk this week? →",
       "signoffLine": "Best,",
       "signoffName": "Alex"
     }
@@ -87,7 +87,7 @@
       {
         "title": "Tell us who you are",
         "description": "We analyze your website and automatically generate positioning proposals: what problem you solve, your tone, your services, and your ideal customer profile. You pick the strategy that fits you best.",
-        "time": "Setup: 10–15 minutes"
+        "time": "Setup: one guided session"
       },
       {
         "title": "The system identifies your prospects",
@@ -97,7 +97,7 @@
       {
         "title": "Every prospect gets a message written for them",
         "description": "An LLM combines your profile, our bank of high-performing sales messages, and the prospect's data to write a unique message. You approve the daily sends or let them go out on their own.",
-        "time": "Optional review: 10 min/day"
+        "time": "Optional review: a few minutes a day"
       }
     ],
     "mockups": {
@@ -134,7 +134,7 @@
     "intro": "You keep the judgment calls; the system puts in the hours. Here's what it takes care of, day after day.",
     "howEncuentra": {
       "eyebrow": "How it finds your customers",
-      "intro": "What if your industry is niche, or your target area is small? The search doesn't rely on a single list: for just one customer profile there can be more than 400,000 candidate companies spread across several databases, and the system keeps checking them non-stop to keep only the ones that fit.",
+      "intro": "What if your industry is niche, or your target area is small? The search doesn't rely on a single list: we work with several data providers that, between them, cover several million company profiles, and the system keeps checking them non-stop to keep only the ones that fit.",
       "steps": [
         {
           "title": "Reads your website",
@@ -157,7 +157,7 @@
     "features": [
       {
         "title": "You approve what goes out",
-        "description": "Five minutes a day to review the prepared emails. Nothing goes out without your sign-off, and you can turn off approval once you trust the system."
+        "description": "A few minutes a day to review the prepared emails. Nothing goes out without your sign-off, and you can turn off approval once you trust the system."
       },
       {
         "title": "Your own domain, warmed up patiently",
@@ -201,7 +201,7 @@
         "sector": "Trademark law firm",
         "problem": "A database of perfect signals, emails nobody answers",
         "problemDetail": "Every rejected trademark filing is a company with a real legal urgency. They have the database. But the emails their agency sends are generic, without mentioning the specific rejection or the concrete risk. Result: almost zero replies, despite having the clearest intent signal there is.",
-        "solution": "RevCognition takes that case base as context, writes a message that mentions each company's specific rejection, and leaves it ready for your five-minute daily review."
+        "solution": "RevCognition takes that case base as context, writes a message that mentions each company's specific rejection, and leaves it ready for your daily review."
       },
       {
         "sector": "Advertising space sales agency",
@@ -217,6 +217,7 @@
     "intro": "You don't pay for seats or tools. You pay per prospect worked: 1 credit is spent on the first email to a new prospect, and the follow-ups in that same sequence don't cost extra. If they reply first, the system stops. If not, it closes gracefully.",
     "perProspectIncludes": "Every prospect includes: identification, enrichment with real signals, and a full sequence (opener, follow-up, new angle, close).",
     "noCommitment": "No commitment, no subscription. Credits never expire. The only recurring cost is your sending domain: €20 a year from year two. If you stop, it lapses and nothing else is charged.",
+    "startPrice": "To get started: €150 (VAT excl.), paid once: the setup (€50) plus the first pack of 100 prospects (€100). A lead-gen agency bills you every month and hiring someone to prospect costs a salary; here you pay once and only carry on if it works for you.",
     "noVat": "VAT excl.",
     "qualifiedProspects": "{count} qualified prospects",
     "perSend": "{value} / prospect",
@@ -257,7 +258,7 @@
     },
     "fiscalNote": "Prices exclude tax: VAT or other applicable taxes are added to the invoice based on your company's country.",
     "ownList": "Already have your own prospect list? You can use it directly. The system enriches it and writes the messages on top of it.",
-    "betaNote": "Closed beta, limited spots. Request access and, if there's room, you're in this week; if not, you join the waitlist and we'll notify you as soon as a spot opens up."
+    "betaNote": "Closed beta: we review every request one by one and, if your case fits, we give you access."
   },
   "founder": {
     "eyebrow": "Why this exists",
@@ -270,7 +271,7 @@
   },
   "ctaFinal": {
     "heading": "Join the closed beta.",
-    "subtitle": "We're opening spots gradually to take care of every account. Request access and we'll start by analyzing your website and your market.",
+    "subtitle": "We review every request one by one to take care of every account. Request access and we'll start by analyzing your website and your market.",
     "ctaButton": "Request access to the beta",
     "legalPre": "Prefer to see it with the founder first?",
     "legalMailtoLink": "Email me directly.",
@@ -278,7 +279,7 @@
   },
   "producto": {
     "metaTitle": "Product — RevCognition | Cold outreach, start to finish",
-    "metaDescription": "Everything RevCognition does: set up in one session, a five-minute daily review, messages written for each prospect, your own domain warmed up patiently, and replies sorted automatically.",
+    "metaDescription": "Everything RevCognition does: set up in one session, a few minutes of review a day, messages written for each prospect, your own domain warmed up patiently, and replies sorted automatically.",
     "ogAlt": "RevCognition — the product in detail.",
     "hero": {
       "eyebrow": "Product",
@@ -323,7 +324,7 @@
     },
     "diaADia": {
       "eyebrow": "Day to day",
-      "title": "Five minutes a day. The rest happens on its own.",
+      "title": "A few minutes a day. The rest happens on its own.",
       "intro": "Human judgment stays at the center: nothing goes out without your approval, but the review is a short daily session, not constant configuration.",
       "depth": [
         {
@@ -414,7 +415,7 @@
         },
         {
           "q": "How much control do I have?",
-          "a": "As much as you want. Every email is prepared but doesn't go out until you approve it — a review of about five minutes a day — and you can edit the text before sending. If you'd rather delegate, you turn off approval and sends go out on their own. The commercial profile that guides every message is yours to adjust whenever you want."
+          "a": "As much as you want. Every email is prepared but doesn't go out until you approve it — a review of a few minutes a day — and you can edit the text before sending. If you'd rather delegate, you turn off approval and sends go out on their own. The commercial profile that guides every message is yours to adjust whenever you want."
         },
         {
           "q": "What language does it write in?",
@@ -430,7 +431,7 @@
         },
         {
           "q": "Does it work in my industry or country?",
-          "a": "The system searches continuously across specialized partner databases: for a single ideal customer profile — sector, location, and size — there can be more than 400,000 candidate companies. And every email arrives in the language that matches the recipient's country, so coverage doesn't depend on the language you speak."
+          "a": "The system searches continuously across specialized partner databases: we work with several providers that, between them, cover several million company profiles, and it filters by sector, location, and size according to your ideal customer profile. And every email arrives in the language that matches the recipient's country, so coverage doesn't depend on the language you speak."
         },
         {
           "q": "Where do the contact details come from?",
@@ -524,18 +525,18 @@
   },
   "serviciosB2B": {
     "metaTitle": "B2B Services — RevCognition | Cold outreach for law firms and agencies",
-    "metaDescription": "For law firms, agencies, and consultancies that live on referrals: RevCognition finds new clients that match your profile and writes them a message of their own. Your only task: five minutes a day approving emails.",
+    "metaDescription": "For law firms, agencies, and consultancies that live on referrals: RevCognition finds new clients that match your profile and writes them a message of their own. You just review and approve, a few minutes a day.",
     "ogAlt": "RevCognition for B2B services.",
     "hero": {
       "eyebrow": "B2B Services",
       "heading1": "You live off referrals.",
       "heading2": "And you have no time left to prospect.",
-      "subtitle": "Law firms, agencies, and consultancies tend to depend on who refers them. RevCognition finds new clients who match your profile and writes each one a message of their own, while you keep serving the clients you already have. Your only task: review the prepared emails, five minutes a day."
+      "subtitle": "Law firms, agencies, and consultancies tend to depend on who refers them. RevCognition finds new clients who match your profile and writes each one a message of their own, while you keep serving the clients you already have. Your only task: review and approve the prepared emails, a few minutes a day."
     },
     "steps": {
       "eyebrow": "How it works",
       "heading": "How it finds your next clients.",
-      "intro": "What if your specialty is uncommon, or your area is small? The search doesn't rely on a single list: for a single client profile there can be more than 400,000 candidate companies, and the system reviews them continuously to keep only the ones that fit.",
+      "intro": "What if your specialty is uncommon, or your area is small? The search doesn't rely on a single list: we work with several data providers that, between them, cover several million company profiles, and the system reviews them continuously to keep only the ones that fit.",
       "items": [
         {
           "title": "Reads your website",
@@ -559,7 +560,7 @@
     "stats": {
       "eyebrow": "Results",
       "heading": "We tested it with our own campaigns.",
-      "intro": "We use RevCognition for our own prospecting: the campaigns we run to find new clients run on this same product — the same dedicated domain, the same message engine, and the same five-minute daily review you'd have.",
+      "intro": "We use RevCognition for our own prospecting: the campaigns we run to find new clients run on this same product — the same dedicated domain, the same message engine, and the same daily review you'd do.",
       "caseStudy": {
         "label": "Next client case",
         "title": "The first client case, in progress.",
@@ -583,7 +584,7 @@
       "items": [
         {
           "q": "Does it work in my industry or my country?",
-          "a": "The system searches continuously across specialized partner databases: for a firm or agency with a defined client profile — industry, location, and size — there can be more than 400,000 candidate companies. Your specialty doesn't need to be common, nor your area large: the search doesn't depend on a single list."
+          "a": "The system searches continuously across specialized partner databases: we work with several providers that, between them, cover several million company profiles, and it filters by your firm's or agency's client profile — industry, location, and size. Your specialty doesn't need to be common, nor your area large: the search doesn't depend on a single list."
         },
         {
           "q": "Where does the contact data come from?",
@@ -613,7 +614,7 @@
     "eyebrow": "Privacy policy",
     "heading": "We treat your data the way we'd want ours treated.",
     "intro": "Written in plain language. If you need the full legal version or want to exercise any of your rights, write to us at <email>olivier.serres@revcognition.com</email>.",
-    "version": "Version 2.0 · 3 October 2026",
+    "version": "Version 2.1 · 4 October 2026",
     "backLink": "← Back to home",
     "sections": [
       {
@@ -655,50 +656,46 @@
           "<strong>This website</strong> (revcognition.com) is served from Cloudflare Pages, Cloudflare's global network: it has no EU-only region. The website has no forms; Cloudflare only processes the technical data of each visit (such as the IP address) to serve and protect the page.",
           "<strong>The platform</strong> (<appLink>app.revcognition.com</appLink>) and its database are hosted on a Hetzner server in Nuremberg (Germany)."
         ],
-        "intro": "Providers that process data to deliver the service, with their location:",
+        "intro": "Recipients of the data, by category (Article 13(1)(e) GDPR), and where they are:",
         "items": [
           {
-            "label": "Hetzner",
-            "body": "— hosting of the platform and database. Germany (EU)."
+            "label": "Hosting of the platform and database",
+            "body": "— Hetzner, in Nuremberg (Germany, EU)."
           },
           {
-            "label": "Resend",
-            "body": "— account emails (notifications, confirmations). European region, Ireland (EU)."
+            "label": "Hosting of this website and cookieless visit measurement",
+            "body": "— Cloudflare. Global network."
           },
           {
-            "label": "Cloudflare",
-            "body": "— hosting of this website and cookieless visit measurement. Global network."
+            "label": "Payment for the packs",
+            "body": "— Stripe, which processes payment data on its own infrastructure, which includes the US."
           },
           {
-            "label": "Stripe",
-            "body": "— payment for the packs. Stripe processes payment data on its own infrastructure, which includes the US."
+            "label": "Sign-in and account emails",
+            "body": "— an authentication provider, in the US, and a transactional email provider, in its European region (Ireland, EU)."
           },
           {
-            "label": "Clerk",
-            "body": "— sign-in to the platform. US."
+            "label": "Artificial intelligence models",
+            "body": "— draft the prospecting messages. US."
           },
           {
-            "label": "OpenRouter and OpenAI",
-            "body": "— AI models that draft the messages. US."
+            "label": "Commercial databases of companies and professional contacts, and email address verification",
+            "body": "— inside and outside the EU (including the US), depending on the provider."
           },
           {
-            "label": "Apollo, Prospeo, Findymail, Hunter, Dropcontact, The Companies API and MillionVerifier",
-            "body": "— search for companies and business contacts, and email address verification. Apollo, US; the rest, depending on the provider."
+            "label": "Search and reading of companies' public web pages",
+            "body": "— depending on the provider."
           },
           {
-            "label": "Serper, Tavily, Jina, Firecrawl and Apify",
-            "body": "— search and reading of companies' public web pages."
+            "label": "Sending of prospecting sequences",
+            "body": "— email sending platform."
           },
           {
-            "label": "Smartlead",
-            "body": "— sending of the prospecting sequences."
-          },
-          {
-            "label": "Cal.com and Telegram",
-            "body": "— meeting bookings and alerts to the client when a prospect replies."
+            "label": "Meeting scheduling and client alerts",
+            "body": "— meeting booking and messaging tools, to let you know when a prospect replies."
           }
         ],
-        "outro": "We do not sell data to third parties, we do not use it to train general-purpose models, and we do not share it with advertisers."
+        "outro": "If you want to know which specific provider is behind a category, write to us at <email>olivier.serres@revcognition.com</email> and we will tell you. We do not sell data to third parties, we do not use it to train general-purpose models, and we do not share it with advertisers."
       },
       {
         "heading": "AI-generated content",
@@ -725,11 +722,11 @@
   "trust": {
     "eyebrow": "Trust and compliance",
     "heading": "What your legal team will ask, answered briefly.",
-    "intro": "Four statements you can check. The detail, provider by provider, is in the privacy policy.",
+    "intro": "Four statements you can check. The detail, by category of recipient, is in the privacy policy.",
     "items": [
       {
         "title": "Platform hosted in the European Union",
-        "body": "The platform and its database run on a Hetzner server in Nuremberg (Germany), and your account emails are sent from Resend's European region (Ireland). Some providers, such as the AI and sign-in providers, are in the US: we name them in the <privacyLink>privacy policy</privacyLink>."
+        "body": "The platform and its database run on a Hetzner server in Nuremberg (Germany), and your account emails are sent from our email provider's European region (Ireland). Some providers, such as the AI and sign-in providers, are in the US: we set this out by category in the <privacyLink>privacy policy</privacyLink>."
       },
       {
         "title": "Legal basis: legitimate interest, business to business only",

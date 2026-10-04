@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Prospection à froid pour ceux qui vivent du bouche-à-oreille | RevCognition",
-    "description": "RevCognition identifie vos clients idéaux et écrit à chacun un message unique. Vous n'écrivez rien, vous ne payez aucune agence, et vous validez cinq minutes par jour.",
+    "description": "RevCognition identifie vos clients idéaux et écrit à chacun un message unique. Vous n'écrivez rien et ne payez aucune agence : vous ne faites que relire et valider, quelques minutes par jour.",
     "ogAlt": "RevCognition — Vous vivez du bouche-à-oreille."
   },
   "a11y": {
@@ -28,10 +28,10 @@
     "line1": "Vous vivez",
     "line1Accent": "du bouche-à-oreille.",
     "line2": "Et il ne vous reste pas de temps pour prospecter.",
-    "subtitle": "RevCognition identifie vos clients idéaux et écrit à chacun un message unique. Vous n'écrivez rien, vous ne payez aucune agence, et vous validez cinq minutes par jour.",
+    "subtitle": "RevCognition identifie vos clients idéaux et écrit à chacun un message unique. Vous n'écrivez rien et ne payez aucune agence : vous ne faites que relire et valider, quelques minutes par jour.",
     "ctaPrimary": "Demander l'accès à la bêta",
     "ctaSecondary": "Voir comment ça marche",
-    "note": "Bêta fermée, places limitées. Nous analysons votre site et préparons une proposition de profil de client idéal avant que vous ne décidiez quoi que ce soit.",
+    "note": "Bêta fermée : nous examinons chaque demande et vous entrez si votre cas correspond. Vous démarrez avec 150 € (HT) en paiement unique et, avant que vous ne décidiez quoi que ce soit, nous analysons votre site et vous proposons un profil de client idéal.",
     "signalCard": {
       "detected": "Signal détecté · il y a 3 heures",
       "example": "Laboratorios Roca · Dépôt OEPM rejeté · classe 5 · 04287391",
@@ -48,7 +48,7 @@
       "greeting": "Bonjour Ana,",
       "body1": "Le dépôt de marque de Laboratorios Roca (classe 5, demande n° 04287391) a été rejeté le 11 avril dernier. Le délai de recours court et, d'après notre expérience, 62 % des titulaires n'ont encore assigné aucun avocat en PI à ce stade.",
       "body2": "C'est exactement le type de signal que des cabinets comme Martínez & Asoc. transforment en client avant même que le titulaire ne cherche sur Google.",
-      "cta": "Parlons-en 10 minutes cette semaine →",
+      "cta": "On en parle cette semaine ? →",
       "signoffLine": "Cordialement,",
       "signoffName": "Alex"
     }
@@ -87,7 +87,7 @@
       {
         "title": "Dites-nous qui vous êtes",
         "description": "Nous analysons votre site et générons automatiquement des propositions de positionnement : quel problème vous résolvez, votre ton, vos services, et votre profil de client idéal. Vous choisissez la stratégie qui vous représente le mieux.",
-        "time": "Mise en place : 10–15 minutes"
+        "time": "Mise en place : une session guidée"
       },
       {
         "title": "Le système identifie vos prospects",
@@ -97,7 +97,7 @@
       {
         "title": "Chaque prospect reçoit un message écrit pour lui",
         "description": "Un LLM combine votre profil, notre banque de messages commerciaux à haute performance, et les données du prospect pour rédiger un message unique. Vous validez les envois quotidiens ou les laissez partir seuls.",
-        "time": "Validation optionnelle : 10 min/jour"
+        "time": "Validation optionnelle : quelques minutes par jour"
       }
     ],
     "mockups": {
@@ -134,7 +134,7 @@
     "intro": "Vous gardez le jugement ; le système met les heures. Voici ce dont il s'occupe, jour après jour.",
     "howEncuentra": {
       "eyebrow": "Comment il trouve vos clients",
-      "intro": "Et si votre secteur est peu courant, ou votre zone géographique restreinte ? La recherche ne repose pas sur une seule liste : pour un seul profil client, il peut y avoir plus de 400 000 entreprises candidates réparties dans plusieurs bases de données, et le système les passe en revue sans arrêt pour ne garder que celles qui correspondent.",
+      "intro": "Et si votre secteur est peu courant, ou votre zone géographique restreinte ? La recherche ne repose pas sur une seule liste : nous travaillons avec plusieurs fournisseurs de données qui, à eux tous, couvrent plusieurs millions de profils d'entreprise, et le système les passe en revue sans arrêt pour ne garder que ceux qui correspondent.",
       "steps": [
         {
           "title": "Lit votre site web",
@@ -157,7 +157,7 @@
     "features": [
       {
         "title": "Vous approuvez ce qui part",
-        "description": "Cinq minutes par jour pour relire les e-mails préparés. Rien ne part sans votre feu vert, et vous pouvez désactiver l'approbation quand vous ferez confiance au système."
+        "description": "Quelques minutes par jour pour relire les e-mails préparés. Rien ne part sans votre feu vert, et vous pouvez désactiver l'approbation quand vous ferez confiance au système."
       },
       {
         "title": "Domaine propre, chauffé avec patience",
@@ -201,7 +201,7 @@
         "sector": "Cabinet d'avocats spécialisé en droit des marques",
         "problem": "Une base de signaux parfaits, des e-mails auxquels personne ne répond",
         "problemDetail": "Chaque dépôt de marque rejeté est une entreprise avec une urgence juridique réelle. Ils ont la base de données. Mais les e-mails envoyés par leur agence sont génériques, sans mentionner le rejet précis ni le risque concret. Résultat : presque aucune réponse, malgré le signal d'intention le plus clair qui existe.",
-        "solution": "RevCognition prend cette base de dossiers comme contexte, rédige un message qui mentionne le rejet spécifique de chaque entreprise, et le laisse prêt pour votre relecture quotidienne de cinq minutes."
+        "solution": "RevCognition prend cette base de dossiers comme contexte, rédige un message qui mentionne le rejet spécifique de chaque entreprise, et le laisse prêt pour votre relecture quotidienne."
       },
       {
         "sector": "Agence de vente d'espaces publicitaires",
@@ -217,6 +217,7 @@
     "intro": "Vous ne payez ni sièges ni outils. Vous payez par prospect travaillé : 1 crédit est consommé au premier envoi à un nouveau prospect, et les relances de cette même séquence ne consomment pas de crédit supplémentaire. S'il répond avant, le système s'arrête. Sinon, il se termine avec élégance.",
     "perProspectIncludes": "Chaque prospect inclut : identification, enrichissement avec des signaux réels et séquence complète (ouverture, relance, nouvel angle, clôture).",
     "noCommitment": "Sans engagement et sans abonnement. Les crédits n'expirent pas. Le seul coût récurrent est votre domaine d'envoi : 20 € par an à partir de la deuxième année. Si vous arrêtez, il expire et rien d'autre n'est facturé.",
+    "startPrice": "Pour démarrer : 150 € (HT) en paiement unique, la mise en place (50 €) plus le premier pack de 100 prospects (100 €). Une agence de prospection se paie chaque mois et embaucher quelqu'un pour prospecter coûte un salaire ; ici, vous payez une fois et ne continuez que si cela fonctionne pour vous.",
     "noVat": "HT",
     "qualifiedProspects": "{count} prospects qualifiés",
     "perSend": "{value} / prospect",
@@ -257,7 +258,7 @@
     },
     "fiscalNote": "Prix hors taxes : la TVA ou toute autre taxe applicable est ajoutée sur la facture selon le pays de votre entreprise.",
     "ownList": "Vous avez déjà votre propre base de prospects ? Vous pouvez l'utiliser directement. Le système l'enrichit et génère les messages à partir de celle-ci.",
-    "betaNote": "Bêta fermée, places limitées. Demandez l'accès et, s'il reste de la place, vous démarrez cette semaine ; sinon, vous rejoignez la liste d'attente et nous vous préviendrons dès qu'une place se libère."
+    "betaNote": "Bêta fermée : nous examinons chaque demande une par une et, si votre cas correspond, nous vous donnons accès."
   },
   "founder": {
     "eyebrow": "Pourquoi ça existe",
@@ -270,7 +271,7 @@
   },
   "ctaFinal": {
     "heading": "Rejoignez la bêta fermée.",
-    "subtitle": "Nous ouvrons les places progressivement pour soigner chaque compte. Demandez l'accès et nous commençons par analyser votre site et votre marché.",
+    "subtitle": "Nous examinons chaque demande une par une pour soigner chaque compte. Demandez l'accès et nous commençons par analyser votre site et votre marché.",
     "ctaButton": "Demander l'accès à la bêta",
     "legalPre": "Vous préférez d'abord en discuter avec le fondateur ?",
     "legalMailtoLink": "Écrivez-moi directement.",
@@ -278,7 +279,7 @@
   },
   "producto": {
     "metaTitle": "Produit — RevCognition | Prospection à froid, de bout en bout",
-    "metaDescription": "Tout ce que fait RevCognition : mise en route en une session, révision quotidienne de cinq minutes, messages rédigés pour chaque prospect, domaine propre chauffé avec patience et réponses triées automatiquement.",
+    "metaDescription": "Tout ce que fait RevCognition : mise en route en une session, quelques minutes de révision par jour, messages rédigés pour chaque prospect, domaine propre chauffé avec patience et réponses triées automatiquement.",
     "ogAlt": "RevCognition — le produit en détail.",
     "hero": {
       "eyebrow": "Produit",
@@ -323,7 +324,7 @@
     },
     "diaADia": {
       "eyebrow": "Le quotidien",
-      "title": "Cinq minutes par jour. Le reste se fait tout seul.",
+      "title": "Quelques minutes par jour. Le reste se fait tout seul.",
       "intro": "Le jugement humain reste au centre : rien ne part sans votre validation, mais la revue est une courte session quotidienne, pas une configuration permanente.",
       "depth": [
         {
@@ -414,7 +415,7 @@
         },
         {
           "q": "Quel contrôle ai-je ?",
-          "a": "Tout celui que vous voulez. Chaque email est préparé mais ne part pas tant que vous ne l'avez pas validé — une revue d'environ cinq minutes par jour — et vous pouvez modifier le texte avant l'envoi. Si vous préférez déléguer, vous désactivez la validation et les envois partent seuls. Le profil commercial qui guide chaque message, c'est vous qui l'ajustez quand vous voulez."
+          "a": "Tout celui que vous voulez. Chaque email est préparé mais ne part pas tant que vous ne l'avez pas validé — une revue de quelques minutes par jour — et vous pouvez modifier le texte avant l'envoi. Si vous préférez déléguer, vous désactivez la validation et les envois partent seuls. Le profil commercial qui guide chaque message, c'est vous qui l'ajustez quand vous voulez."
         },
         {
           "q": "Dans quelle langue écrit-il ?",
@@ -430,7 +431,7 @@
         },
         {
           "q": "Est-ce que ça marche dans mon secteur ou mon pays ?",
-          "a": "Le système effectue une recherche en continu dans des bases de données partenaires spécialisées : pour un seul profil de client idéal — secteur, localisation et taille — il peut y avoir plus de 400 000 entreprises candidates. Et chaque email arrive dans la langue correspondant au pays du destinataire, si bien que la couverture ne dépend pas de la langue que vous parlez."
+          "a": "Le système effectue une recherche en continu dans des bases de données partenaires spécialisées : nous travaillons avec plusieurs fournisseurs qui, à eux tous, couvrent plusieurs millions de profils d'entreprise, et il filtre par secteur, localisation et taille selon votre profil de client idéal. Et chaque email arrive dans la langue correspondant au pays du destinataire, si bien que la couverture ne dépend pas de la langue que vous parlez."
         },
         {
           "q": "D'où viennent les données des contacts ?",
@@ -524,18 +525,18 @@
   },
   "serviciosB2B": {
     "metaTitle": "Services B2B — RevCognition | Prospection à froid pour cabinets et agences",
-    "metaDescription": "Pour les cabinets, agences et cabinets de conseil qui vivent de recommandations : RevCognition trouve de nouveaux clients qui correspondent à votre profil et leur écrit un message qui leur est propre. Votre seule tâche : cinq minutes par jour à valider des emails.",
+    "metaDescription": "Pour les cabinets, agences et cabinets de conseil qui vivent de recommandations : RevCognition trouve de nouveaux clients qui correspondent à votre profil et leur écrit un message qui leur est propre. Vous ne faites que relire et valider, quelques minutes par jour.",
     "ogAlt": "RevCognition pour les services B2B.",
     "hero": {
       "eyebrow": "Services B2B",
       "heading1": "Vous vivez de vos recommandations.",
       "heading2": "Et il ne vous reste plus de temps pour prospecter.",
-      "subtitle": "Cabinets, agences et sociétés de conseil dépendent souvent de qui les recommande. RevCognition trouve de nouveaux clients qui correspondent à votre profil et rédige un message propre à chacun, pendant que vous continuez à vous occuper de vos clients actuels. Votre seule tâche : relire les e-mails préparés, cinq minutes par jour."
+      "subtitle": "Cabinets, agences et sociétés de conseil dépendent souvent de qui les recommande. RevCognition trouve de nouveaux clients qui correspondent à votre profil et rédige un message propre à chacun, pendant que vous continuez à vous occuper de vos clients actuels. Votre seule tâche : relire et valider les e-mails préparés, quelques minutes par jour."
     },
     "steps": {
       "eyebrow": "Comment ça marche",
       "heading": "Comment il trouve vos prochains clients.",
-      "intro": "Et si votre spécialité est peu courante, ou votre zone réduite ? La recherche ne repose pas sur une seule liste : pour un seul profil client, il peut y avoir plus de 400 000 entreprises candidates, et le système les passe en revue en continu pour ne garder que celles qui correspondent.",
+      "intro": "Et si votre spécialité est peu courante, ou votre zone réduite ? La recherche ne repose pas sur une seule liste : nous travaillons avec plusieurs fournisseurs de données qui, à eux tous, couvrent plusieurs millions de profils d'entreprise, et le système les passe en revue en continu pour ne garder que ceux qui correspondent.",
       "items": [
         {
           "title": "Lit votre site web",
@@ -559,7 +560,7 @@
     "stats": {
       "eyebrow": "Résultats",
       "heading": "Nous l'avons testé avec nos propres campagnes.",
-      "intro": "Nous utilisons RevCognition pour notre propre prospection : les campagnes avec lesquelles nous partons chercher de nouveaux clients tournent sur ce même produit — le même domaine dédié, le même moteur de messages et la même relecture quotidienne de cinq minutes que vous auriez.",
+      "intro": "Nous utilisons RevCognition pour notre propre prospection : les campagnes avec lesquelles nous partons chercher de nouveaux clients tournent sur ce même produit — le même domaine dédié, le même moteur de messages et la même relecture quotidienne que vous feriez.",
       "caseStudy": {
         "label": "Prochain cas client",
         "title": "Le premier cas client, en cours.",
@@ -583,7 +584,7 @@
       "items": [
         {
           "q": "Est-ce que ça marche dans mon secteur ou mon pays ?",
-          "a": "Le système recherche en continu dans des bases de données partenaires spécialisées : pour un cabinet ou une agence avec un profil client défini — secteur, localisation et taille — il peut y avoir plus de 400 000 entreprises candidates. Votre spécialité n'a pas besoin d'être courante, ni votre zone d'être grande : la recherche ne dépend pas d'une seule liste."
+          "a": "Le système recherche en continu dans des bases de données partenaires spécialisées : nous travaillons avec plusieurs fournisseurs qui, à eux tous, couvrent plusieurs millions de profils d'entreprise, et il filtre selon le profil client de votre cabinet ou agence — secteur, localisation et taille. Votre spécialité n'a pas besoin d'être courante, ni votre zone d'être grande : la recherche ne dépend pas d'une seule liste."
         },
         {
           "q": "D'où viennent les données des contacts ?",
@@ -613,7 +614,7 @@
     "eyebrow": "Politique de confidentialité",
     "heading": "Nous traitons vos données comme nous aimerions que l'on traite les nôtres.",
     "intro": "Un texte en langage clair. Si vous avez besoin de la version juridique complète ou souhaitez exercer l'un de vos droits, écrivez-nous à <email>olivier.serres@revcognition.com</email>.",
-    "version": "Version 2.0 · 3 octobre 2026",
+    "version": "Version 2.1 · 4 octobre 2026",
     "backLink": "← Retour à l'accueil",
     "sections": [
       {
@@ -655,50 +656,46 @@
           "<strong>Ce site</strong> (revcognition.com) est servi depuis Cloudflare Pages, le réseau mondial de Cloudflare : il n'a pas de région exclusivement européenne. Le site n'a pas de formulaire ; Cloudflare ne traite que les données techniques de chaque visite (comme l'adresse IP) pour servir la page et la protéger.",
           "<strong>La plateforme</strong> (<appLink>app.revcognition.com</appLink>) et sa base de données sont hébergées sur un serveur Hetzner à Nuremberg (Allemagne)."
         ],
-        "intro": "Prestataires qui traitent des données pour fournir le service, avec leur localisation :",
+        "intro": "Destinataires des données, par catégories (article 13.1.e du RGPD), et leur localisation :",
         "items": [
           {
-            "label": "Hetzner",
-            "body": "— hébergement de la plateforme et de la base de données. Allemagne (UE)."
+            "label": "Hébergement de la plateforme et de la base de données",
+            "body": "— Hetzner, à Nuremberg (Allemagne, UE)."
           },
           {
-            "label": "Resend",
-            "body": "— e-mails du compte (notifications, confirmations). Région européenne, Irlande (UE)."
+            "label": "Hébergement de ce site et mesure d'audience sans cookies",
+            "body": "— Cloudflare. Réseau mondial."
           },
           {
-            "label": "Cloudflare",
-            "body": "— hébergement de ce site et mesure d'audience sans cookies. Réseau mondial."
+            "label": "Paiement des packs",
+            "body": "— Stripe, qui traite les données de paiement sur sa propre infrastructure, qui inclut les États-Unis."
           },
           {
-            "label": "Stripe",
-            "body": "— paiement des packs. Stripe traite les données de paiement sur sa propre infrastructure, qui inclut les États-Unis."
+            "label": "Connexion et e-mails du compte",
+            "body": "— un prestataire d'authentification, aux États-Unis, et un prestataire d'e-mails transactionnels, dans sa région européenne (Irlande, UE)."
           },
           {
-            "label": "Clerk",
-            "body": "— connexion à la plateforme. États-Unis."
+            "label": "Modèles d'intelligence artificielle",
+            "body": "— rédigent les messages de prospection. États-Unis."
           },
           {
-            "label": "OpenRouter et OpenAI",
-            "body": "— modèles d'IA qui rédigent les messages. États-Unis."
+            "label": "Bases de données commerciales d'entreprises et de contacts professionnels, et vérification des adresses e-mail",
+            "body": "— dans et hors de l'UE (dont les États-Unis), selon le prestataire."
           },
           {
-            "label": "Apollo, Prospeo, Findymail, Hunter, Dropcontact, The Companies API et MillionVerifier",
-            "body": "— recherche d'entreprises et de contacts professionnels, et vérification des adresses e-mail. Apollo, États-Unis ; les autres, selon le fournisseur."
+            "label": "Recherche et lecture des pages web publiques des entreprises",
+            "body": "— selon le prestataire."
           },
           {
-            "label": "Serper, Tavily, Jina, Firecrawl et Apify",
-            "body": "— recherche et lecture des pages web publiques des entreprises."
+            "label": "Envoi des séquences de prospection",
+            "body": "— plateforme d'envoi d'e-mails."
           },
           {
-            "label": "Smartlead",
-            "body": "— envoi des séquences de prospection."
-          },
-          {
-            "label": "Cal.com et Telegram",
-            "body": "— réservations de rendez-vous et alertes au client lorsqu'un prospect répond."
+            "label": "Prise de rendez-vous et alertes au client",
+            "body": "— outils de réservation de rendez-vous et de messagerie, pour vous prévenir quand un prospect répond."
           }
         ],
-        "outro": "Nous ne vendons pas de données à des tiers, nous ne les utilisons pas pour entraîner des modèles généralistes et nous ne les partageons pas avec des annonceurs."
+        "outro": "Si vous voulez savoir quel prestataire précis se trouve derrière une catégorie, écrivez-nous à <email>olivier.serres@revcognition.com</email> et nous vous le dirons. Nous ne vendons pas de données à des tiers, nous ne les utilisons pas pour entraîner des modèles généralistes et nous ne les partageons pas avec des annonceurs."
       },
       {
         "heading": "Contenu généré par IA",
@@ -725,11 +722,11 @@
   "trust": {
     "eyebrow": "Confiance et conformité",
     "heading": "Ce que votre service juridique va demander, en bref.",
-    "intro": "Quatre affirmations que vous pouvez vérifier. Le détail, prestataire par prestataire, figure dans la politique de confidentialité.",
+    "intro": "Quatre affirmations que vous pouvez vérifier. Le détail, par catégories de destinataires, figure dans la politique de confidentialité.",
     "items": [
       {
         "title": "Plateforme hébergée dans l'Union européenne",
-        "body": "La plateforme et sa base de données sont sur un serveur Hetzner à Nuremberg (Allemagne), et les e-mails de votre compte partent de la région européenne de Resend (Irlande). Certains prestataires, comme ceux d'IA ou de connexion, sont aux États-Unis : nous les citons dans la <privacyLink>politique de confidentialité</privacyLink>."
+        "body": "La plateforme et sa base de données sont sur un serveur Hetzner à Nuremberg (Allemagne), et les e-mails de votre compte partent de la région européenne de notre prestataire d'e-mails (Irlande). Certains prestataires, comme ceux d'IA ou de connexion, sont aux États-Unis : nous le détaillons par catégories dans la <privacyLink>politique de confidentialité</privacyLink>."
       },
       {
         "title": "Base juridique : intérêt légitime, entre entreprises uniquement",
