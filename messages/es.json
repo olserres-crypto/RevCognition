@@ -185,7 +185,7 @@
       },
       {
         "title": "Pagas por prospecto trabajado",
-        "description": "No por asientos ni suscripciones. Un crédito por cada prospecto nuevo al que se escribe; los seguimientos de esa secuencia no gastan crédito extra."
+        "description": "No por asientos ni suscripciones. Un crédito por cada prospecto nuevo cuyo email se entrega; los rebotes se devuelven solos y los seguimientos de esa secuencia no gastan crédito extra."
       }
     ],
     "moreLink": "Ver todo lo que hace, en detalle"
@@ -214,7 +214,7 @@
   "pricing": {
     "eyebrow": "Precios",
     "heading": "Desde 1€ por prospecto. Cuanto mayor el pack, más barato sale cada uno.",
-    "intro": "No pagas por asientos ni por herramientas. Pagas por prospecto trabajado: 1 crédito se consume en el primer envío a un prospecto nuevo, y los seguimientos de esa misma secuencia no gastan crédito adicional. Si contesta antes, el sistema se para. Si no, cierra con elegancia.",
+    "intro": "No pagas por asientos ni por herramientas. Pagas por prospecto trabajado: 1 crédito se consume cuando el primer email a un prospecto nuevo se entrega (si rebota, el crédito vuelve solo), y los seguimientos de esa misma secuencia no gastan crédito adicional. Si contesta antes, el sistema se para. Si no, cierra con elegancia.",
     "perProspectIncludes": "Cada prospecto incluye: identificación, enriquecimiento con señales reales y secuencia completa (apertura, seguimiento, nuevo ángulo, cierre).",
     "noCommitment": "Sin permanencia y sin suscripción. Los créditos no caducan. Lo único recurrente es tu dominio de envío: 20€ al año a partir del segundo. Si lo dejas, caduca y no se cobra nada más.",
     "startPrice": "Para empezar: 150€ (sin IVA) en pago único, el setup (50€) más el primer pack de 100 prospectos (100€). Una agencia de captación se paga cada mes y contratar a alguien para prospectar cuesta un sueldo; aquí pagas una vez y sigues solo si te funciona.",
@@ -427,7 +427,7 @@
         },
         {
           "q": "¿Qué cuesta?",
-          "a": "Un setup inicial de 50€, pago único, para dejar la cuenta lista, y luego packs de prospectos desde 100€ (100 prospectos), con descuento por volumen: 600 prospectos por 500€ y 1.300 por 1.000€. Precios sin impuestos: el IVA aplicable se añade en factura según el país de tu empresa. Un crédito se consume con el primer envío a un prospecto nuevo; los seguimientos de esa misma secuencia no gastan crédito extra. Sin permanencia y los créditos no caducan. Lo único recurrente es tu dominio de envío: 20€ al año a partir del segundo."
+          "a": "Un setup inicial de 50€, pago único, para dejar la cuenta lista, y luego packs de prospectos desde 100€ (100 prospectos), con descuento por volumen: 600 prospectos por 500€ y 1.300 por 1.000€. Precios sin impuestos: el IVA aplicable se añade en factura según el país de tu empresa. Un crédito se consume cuando el primer email a un prospecto nuevo se entrega, y un email rebotado no consume ninguno; los seguimientos de esa misma secuencia no gastan crédito extra. Sin permanencia y los créditos no caducan. Lo único recurrente es tu dominio de envío: 20€ al año a partir del segundo."
         },
         {
           "q": "¿Funciona en mi sector o en mi país?",
