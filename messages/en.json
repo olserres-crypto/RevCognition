@@ -185,7 +185,7 @@
       },
       {
         "title": "You pay per prospect worked",
-        "description": "Not per seat or subscription. One credit for each new prospect written to; follow-ups in that sequence don't cost extra credit."
+        "description": "Not per seat or subscription. One credit for each new prospect whose email is delivered; bounces are refunded automatically and follow-ups in that sequence don't cost extra credit."
       }
     ],
     "moreLink": "See everything it does, in detail"
@@ -214,7 +214,7 @@
   "pricing": {
     "eyebrow": "Pricing",
     "heading": "From €1 per prospect. The bigger the pack, the cheaper each one gets.",
-    "intro": "You don't pay for seats or tools. You pay per prospect worked: 1 credit is spent on the first email to a new prospect, and the follow-ups in that same sequence don't cost extra. If they reply first, the system stops. If not, it closes gracefully.",
+    "intro": "You don't pay for seats or tools. You pay per prospect worked: 1 credit is spent when the first email to a new prospect is delivered (if it bounces, the credit comes back automatically), and the follow-ups in that same sequence don't cost extra. If they reply first, the system stops. If not, it closes gracefully.",
     "perProspectIncludes": "Every prospect includes: identification, enrichment with real signals, and a full sequence (opener, follow-up, new angle, close).",
     "noCommitment": "No commitment, no subscription. Credits never expire. The only recurring cost is your sending domain: €20 a year from year two. If you stop, it lapses and nothing else is charged.",
     "startPrice": "To get started: €150 (VAT excl.), paid once: the setup (€50) plus the first pack of 100 prospects (€100). A lead-gen agency bills you every month and hiring someone to prospect costs a salary; here you pay once and only carry on if it works for you.",
@@ -427,7 +427,7 @@
         },
         {
           "q": "What does it cost?",
-          "a": "A one-time setup fee of €50 to get the account ready, then prospect packs starting at €100 (100 prospects), with volume discounts: 600 prospects for €500 and 1,300 for €1,000. Prices exclude tax: applicable VAT is added on the invoice based on your company's country. A credit is consumed on the first email to a new prospect; follow-ups in that same sequence don't cost extra credits. No commitment, and credits never expire. The only recurring cost is your sending domain: €20 a year from year two."
+          "a": "A one-time setup fee of €50 to get the account ready, then prospect packs starting at €100 (100 prospects), with volume discounts: 600 prospects for €500 and 1,300 for €1,000. Prices exclude tax: applicable VAT is added on the invoice based on your company's country. A credit is consumed when the first email to a new prospect is delivered, and a bounced email doesn't consume one; follow-ups in that same sequence don't cost extra credits. No commitment, and credits never expire. The only recurring cost is your sending domain: €20 a year from year two."
         },
         {
           "q": "Does it work in my industry or country?",
