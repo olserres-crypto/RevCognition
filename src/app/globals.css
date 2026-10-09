@@ -51,3 +51,76 @@ body {
 h1, h2, h3 {
   letter-spacing: -0.02em;
 }
+
+/* B-2228 React Bits 1-3: StatusMark, cursor de TextType y tachado de «El problema».
+   Solo transform/opacity/stroke; con reduced-motion todo salta a su estado final. */
+.status-mark circle,
+.status-mark path {
+  fill: none;
+  stroke: var(--color-success);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.status-mark circle {
+  stroke-width: 1.6;
+  stroke-dasharray: 63;
+  stroke-dashoffset: 63;
+  transition: stroke-dashoffset 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.status-mark path {
+  stroke-width: 2;
+  stroke-dasharray: 14;
+  stroke-dashoffset: 14;
+  transition: stroke-dashoffset 0.35s cubic-bezier(0.22, 1, 0.36, 1) 0.3s;
+}
+.status-mark.is-on circle,
+.status-mark.is-on path {
+  stroke-dashoffset: 0;
+}
+
+.type-caret {
+  display: inline-block;
+  width: 1px;
+  height: 1.05em;
+  margin-left: 1px;
+  vertical-align: -2px;
+  background: var(--color-ink);
+  animation: type-caret-blink 1s steps(1) infinite;
+}
+@keyframes type-caret-blink {
+  50% { opacity: 0; }
+}
+
+.strike-cost {
+  position: relative;
+  display: inline-block;
+}
+.strike-cost::after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  right: -2px;
+  top: 52%;
+  height: 1.5px;
+  background: var(--color-danger);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--strike-delay, 0ms);
+}
+.ledger-run .strike-cost::after {
+  transform: scaleX(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .status-mark circle,
+  .status-mark path,
+  .strike-cost::after,
+  .ledger-row,
+  .ledger-answer {
+    transition: none !important;
+  }
+  .type-caret {
+    animation: none;
+  }
+}

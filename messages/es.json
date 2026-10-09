@@ -34,10 +34,9 @@
     "signalCard": {
       "detected": "Señal detectada · hace 3 horas",
       "example": "Laboratorios Roca · Depósito OEPM rechazado · clase 5 · 04287391",
-      "live": "En vivo"
+      "label": "Ejemplo"
     },
     "emailPreview": {
-      "badge": "Email generado · listo para enviar",
       "fromLabel": "De:",
       "fromValue": "Alex <alex@martinez-asoc.com>",
       "toLabel": "Para:",
@@ -45,38 +44,50 @@
       "subjectLabel": "Asunto:",
       "subjectValue": "Laboratorios Roca, depósito rechazado el 11/04",
       "greeting": "Hola Ana,",
-      "body1": "El depósito de marca de Laboratorios Roca (clase 5, solicitud 04287391) fue rechazado el pasado 11 de abril. El plazo de recurso corre y, en nuestra experiencia, el 62 % de los titulares aún no tiene abogado de PI asignado a estas alturas.",
-      "body2": "Es exactamente el tipo de señal que gabinetes como Martínez & Asoc. convierten en cliente antes de que el titular busque en Google.",
-      "cta": "¿Hablamos esta semana? →",
-      "signoffLine": "Un saludo,",
-      "signoffName": "Alex"
+      "body": "El depósito de marca de Laboratorios Roca (clase 5, solicitud 04287391) fue rechazado el pasado 11 de abril. El plazo de recurso corre y, en nuestra experiencia, el 62 % de los titulares aún no tiene abogado de PI asignado a estas alturas.",
+      "stateDraft": "Redactando",
+      "statePending": "Pendiente de tu aprobación",
+      "stateApproved": "Aprobado por ti · sale mañana 9:00",
+      "approveHint": "Nada sale sin tu visto bueno.",
+      "approvedAt": "Aprobado hoy, 08:42",
+      "approve": "Aprobar"
     }
   },
   "problem": {
     "eyebrow": "El problema",
     "heading": "¿Qué estás haciendo ahora?",
-    "intro": "Todas las opciones tienen un coste real. Solo que en una de ellas ese coste aparece en la factura.",
-    "items": [
+    "intro": "Todas las opciones tienen un coste. En una de ellas, además, aparece en la factura.",
+    "columns": {
+      "option": "Opción",
+      "what": "Qué pasa",
+      "cost": "Qué te cuesta"
+    },
+    "rows": [
       {
         "label": "Tu red de contactos",
-        "cost": "Oportunidades perdidas",
-        "description": "Prospectas cuando tienes tiempo, que es casi nunca. El sistema se para cuando tú te paras."
+        "what": "Prospectas cuando tienes tiempo, que es casi nunca. Se para cuando tú te paras.",
+        "cost": "0€",
+        "costNote": "Se para cuando tú te paras"
       },
       {
-        "label": "Una agencia de captación",
-        "cost": "500–2.000€/mes, sin ver lo que se envía",
-        "description": "Recibes informes, no reuniones. Los mensajes son genéricos aunque te digan que son personalizados. No ves qué se envía en tu nombre."
+        "label": "Una agencia",
+        "what": "Recibes informes, no reuniones, y no ves qué se envía en tu nombre.",
+        "cost": "500–2.000€/mes",
+        "costNote": "Sin ver lo que se envía"
       },
       {
         "label": "Una herramienta genérica",
-        "cost": "Horas de configuración, spam",
-        "description": "Necesitas ser técnico para usarla, o aceptar que los mensajes no tienen ningún contexto sobre tu negocio ni el del prospecto."
+        "what": "O eres técnico, o los mensajes salen sin contexto.",
+        "cost": "Suscripción + horas de ajuste",
+        "costNote": "Mensajes de spam"
       }
     ],
-    "contrast": {
-      "eyebrow": "RevCognition",
-      "description": "El sistema localiza prospectos que encajan con tu perfil, escribe un mensaje único para cada uno y los envía. Ves cada mensaje antes de salir. Sin configuración técnica, sin intermediarios.",
-      "cost": "0€ en agencias"
+    "answer": {
+      "label": "RevCognition",
+      "what": "Encuentra prospectos que encajan, escribe un mensaje para cada uno y no envía nada sin que lo veas.",
+      "cost": "150€ para empezar",
+      "costNote": "Pago único, sin IVA",
+      "link": "Ver precios →"
     }
   },
   "howItWorks": {
@@ -117,13 +128,32 @@
         "nivelAlto": "Alto",
         "nivelMedio": "Medio"
       },
-      "mensaje": {
-        "title": "Mensaje",
-        "signalNote": "Licitación pública ENISA · hace 2d",
-        "greeting": "Buenos días, Marcos,",
-        "body": "He visto que Bufete Serrano participa en la convocatoria ENISA. En despachos similares hemos ayudado a estructurar la propuesta y...",
-        "readyToSend": "Listo para enviar",
-        "viewFull": "Ver completo"
+      "cola": {
+        "title": "Pendientes de tu aprobación",
+        "today": "hoy",
+        "approve": "Aprobar",
+        "discard": "Descartar",
+        "approveAria": "Aprobar correo a {company}",
+        "discardAria": "Descartar correo a {company}",
+        "hint": "Arrastra a la derecha para aprobar, a la izquierda para descartar.",
+        "done": "{count, plural, =0 {Nada aprobado hoy. No sale ningún correo.} one {1 correo aprobado. Sale mañana a las 9:00.} other {# correos aprobados. Salen mañana a las 9:00.}}",
+        "items": [
+          {
+            "company": "Bufete Serrano & Asoc.",
+            "subject": "Convocatoria ENISA: la propuesta de Bufete Serrano",
+            "signal": "Licitación pública ENISA · hace 2d"
+          },
+          {
+            "company": "Consultoría Nexus RR.HH.",
+            "subject": "Tres puestos de RR.HH. abiertos este mes",
+            "signal": "Contratación reciente · hace 4d"
+          },
+          {
+            "company": "Garriga Fiscalidad SL",
+            "subject": "La nueva sede de Garriga en Sabadell",
+            "signal": "Cambio de sede · hace 1 semana"
+          }
+        ]
       }
     }
   },

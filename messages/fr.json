@@ -34,10 +34,9 @@
     "signalCard": {
       "detected": "Signal détecté · il y a 3 heures",
       "example": "Laboratorios Roca · Dépôt OEPM rejeté · classe 5 · 04287391",
-      "live": "En direct"
+      "label": "Exemple"
     },
     "emailPreview": {
-      "badge": "Email généré · prêt à envoyer",
       "fromLabel": "De :",
       "fromValue": "Alex <alex@martinez-asoc.com>",
       "toLabel": "À :",
@@ -45,38 +44,50 @@
       "subjectLabel": "Objet :",
       "subjectValue": "Laboratorios Roca, dépôt rejeté le 11/04",
       "greeting": "Bonjour Ana,",
-      "body1": "Le dépôt de marque de Laboratorios Roca (classe 5, demande n° 04287391) a été rejeté le 11 avril dernier. Le délai de recours court et, d'après notre expérience, 62 % des titulaires n'ont encore assigné aucun avocat en PI à ce stade.",
-      "body2": "C'est exactement le type de signal que des cabinets comme Martínez & Asoc. transforment en client avant même que le titulaire ne cherche sur Google.",
-      "cta": "On en parle cette semaine ? →",
-      "signoffLine": "Cordialement,",
-      "signoffName": "Alex"
+      "body": "Le dépôt de marque de Laboratorios Roca (classe 5, demande n° 04287391) a été rejeté le 11 avril dernier. Le délai de recours court et, d'après notre expérience, 62 % des titulaires n'ont encore assigné aucun avocat en PI à ce stade.",
+      "stateDraft": "Rédaction en cours",
+      "statePending": "En attente de votre validation",
+      "stateApproved": "Validé par vous · part demain à 9h00",
+      "approveHint": "Rien ne part sans votre accord.",
+      "approvedAt": "Validé aujourd'hui, 08h42",
+      "approve": "Valider"
     }
   },
   "problem": {
     "eyebrow": "Le problème",
     "heading": "Que faites-vous en ce moment ?",
-    "intro": "Chaque option a un coût réel. Simplement, pour l'une d'entre elles, ce coût apparaît sur la facture.",
-    "items": [
+    "intro": "Chaque option a un coût. Pour l'une d'entre elles, en plus, il apparaît sur la facture.",
+    "columns": {
+      "option": "Option",
+      "what": "Ce qui se passe",
+      "cost": "Ce que ça vous coûte"
+    },
+    "rows": [
       {
         "label": "Votre réseau de contacts",
-        "cost": "Opportunités manquées",
-        "description": "Vous prospectez quand vous avez le temps, c'est-à-dire presque jamais. Le système s'arrête dès que vous vous arrêtez."
+        "what": "Vous prospectez quand vous avez le temps, c'est-à-dire presque jamais. Tout s'arrête dès que vous vous arrêtez.",
+        "cost": "0€",
+        "costNote": "Tout s'arrête quand vous vous arrêtez"
       },
       {
-        "label": "Une agence de prospection",
-        "cost": "500–2 000€/mois, sans voir ce qui part",
-        "description": "Vous recevez des rapports, pas des rendez-vous. Les messages sont génériques même si on vous les vend comme personnalisés. Vous ne voyez pas ce qui est envoyé en votre nom."
+        "label": "Une agence",
+        "what": "Vous recevez des rapports, pas des rendez-vous, et vous ne voyez pas ce qui est envoyé en votre nom.",
+        "cost": "500–2 000€/mois",
+        "costNote": "Sans voir ce qui part"
       },
       {
         "label": "Un outil générique",
-        "cost": "Des heures de configuration, du spam",
-        "description": "Il faut être technique pour l'utiliser, ou accepter que les messages n'aient aucun contexte sur votre activité ni sur celle du prospect."
+        "what": "Soit vous êtes technique, soit les messages partent sans contexte.",
+        "cost": "Abonnement + heures de réglage",
+        "costNote": "Des messages de spam"
       }
     ],
-    "contrast": {
-      "eyebrow": "RevCognition",
-      "description": "Le système repère les prospects qui correspondent à votre profil, rédige un message unique pour chacun et l'envoie. Vous voyez chaque message avant son départ. Sans configuration technique, sans intermédiaires.",
-      "cost": "0€ de frais d'agence"
+    "answer": {
+      "label": "RevCognition",
+      "what": "Trouve les prospects qui correspondent, écrit un message pour chacun et n'envoie rien que vous n'ayez vu.",
+      "cost": "150€ pour démarrer",
+      "costNote": "Paiement unique, HT",
+      "link": "Voir les tarifs →"
     }
   },
   "howItWorks": {
@@ -117,13 +128,32 @@
         "nivelAlto": "Élevé",
         "nivelMedio": "Moyen"
       },
-      "mensaje": {
-        "title": "Message",
-        "signalNote": "Appel d'offres public ENISA · il y a 2j",
-        "greeting": "Bonjour Marcos,",
-        "body": "J'ai vu que Bufete Serrano participe à l'appel d'offres ENISA. Dans des cabinets similaires, nous avons aidé à structurer la proposition et...",
-        "readyToSend": "Prêt à envoyer",
-        "viewFull": "Voir tout"
+      "cola": {
+        "title": "En attente de votre validation",
+        "today": "aujourd'hui",
+        "approve": "Valider",
+        "discard": "Écarter",
+        "approveAria": "Valider l'email pour {company}",
+        "discardAria": "Écarter l'email pour {company}",
+        "hint": "Glissez à droite pour valider, à gauche pour écarter.",
+        "done": "{count, plural, =0 {Rien de validé aujourd'hui. Aucun email ne part.} one {1 email validé. Il part demain à 9h00.} other {# emails validés. Ils partent demain à 9h00.}}",
+        "items": [
+          {
+            "company": "Bufete Serrano & Asoc.",
+            "subject": "Appel ENISA : la proposition de Bufete Serrano",
+            "signal": "Appel d'offres public ENISA · il y a 2j"
+          },
+          {
+            "company": "Consultoría Nexus RR.HH.",
+            "subject": "Trois postes RH ouverts ce mois-ci",
+            "signal": "Recrutement récent · il y a 4j"
+          },
+          {
+            "company": "Garriga Fiscalidad SL",
+            "subject": "Le nouveau siège de Garriga à Sabadell",
+            "signal": "Déménagement · il y a 1 semaine"
+          }
+        ]
       }
     }
   },

@@ -34,10 +34,9 @@
     "signalCard": {
       "detected": "Signal detected · 3 hours ago",
       "example": "Laboratorios Roca · OEPM filing rejected · class 5 · 04287391",
-      "live": "Live"
+      "label": "Example"
     },
     "emailPreview": {
-      "badge": "Email generated · ready to send",
       "fromLabel": "From:",
       "fromValue": "Alex <alex@martinez-asoc.com>",
       "toLabel": "To:",
@@ -45,38 +44,50 @@
       "subjectLabel": "Subject:",
       "subjectValue": "Laboratorios Roca, filing rejected Apr 11",
       "greeting": "Hi Ana,",
-      "body1": "Laboratorios Roca's trademark filing (class 5, application 04287391) was rejected on April 11. The appeal deadline is running, and in our experience, 62% of trademark holders still haven't assigned an IP lawyer at this stage.",
-      "body2": "It's exactly the kind of signal that firms like Martínez & Asoc. turn into a client before the holder even searches Google.",
-      "cta": "Can we talk this week? →",
-      "signoffLine": "Best,",
-      "signoffName": "Alex"
+      "body": "Laboratorios Roca's trademark filing (class 5, application 04287391) was rejected on April 11. The appeal deadline is running, and in our experience, 62% of trademark holders still haven't assigned an IP lawyer at this stage.",
+      "stateDraft": "Drafting",
+      "statePending": "Awaiting your approval",
+      "stateApproved": "Approved by you · goes out tomorrow 9:00",
+      "approveHint": "Nothing goes out without your OK.",
+      "approvedAt": "Approved today, 08:42",
+      "approve": "Approve"
     }
   },
   "problem": {
     "eyebrow": "The problem",
     "heading": "What are you doing right now?",
-    "intro": "Every option has a real cost. It's just that with one of them, that cost shows up on the invoice.",
-    "items": [
+    "intro": "Every option has a cost. With one of them, it also shows up on the invoice.",
+    "columns": {
+      "option": "Option",
+      "what": "What happens",
+      "cost": "What it costs you"
+    },
+    "rows": [
       {
         "label": "Your contact network",
-        "cost": "Missed opportunities",
-        "description": "You prospect when you have time, which is almost never. The system stops the moment you do."
+        "what": "You prospect when you have time, which is almost never. It stops the moment you do.",
+        "cost": "€0",
+        "costNote": "It stops when you stop"
       },
       {
-        "label": "A lead-gen agency",
-        "cost": "€500–2,000/month, and you never see what goes out",
-        "description": "You get reports, not meetings. The messages are generic even when you're told they're personalized. You never see what's sent in your name."
+        "label": "An agency",
+        "what": "You get reports, not meetings, and you never see what's sent in your name.",
+        "cost": "€500–2,000/month",
+        "costNote": "Without seeing what goes out"
       },
       {
         "label": "A generic tool",
-        "cost": "Hours of setup, spam",
-        "description": "You need to be technical to use it, or accept that the messages carry no context about your business or your prospect's."
+        "what": "Either you're technical, or the messages go out with no context.",
+        "cost": "Subscription + hours of tuning",
+        "costNote": "Spam messages"
       }
     ],
-    "contrast": {
-      "eyebrow": "RevCognition",
-      "description": "The system finds prospects that match your profile, writes a unique message for each one, and sends it. You see every message before it goes out. No technical setup, no middlemen.",
-      "cost": "0€ in agency fees"
+    "answer": {
+      "label": "RevCognition",
+      "what": "Finds prospects that fit, writes a message for each one, and sends nothing you haven't seen.",
+      "cost": "€150 to start",
+      "costNote": "One-time payment, VAT excl.",
+      "link": "See pricing →"
     }
   },
   "howItWorks": {
@@ -117,13 +128,32 @@
         "nivelAlto": "High",
         "nivelMedio": "Medium"
       },
-      "mensaje": {
-        "title": "Message",
-        "signalNote": "Public tender ENISA · 2d ago",
-        "greeting": "Good morning, Marcos,",
-        "body": "I saw that Bufete Serrano is taking part in the ENISA call. At similar firms we've helped structure the proposal and...",
-        "readyToSend": "Ready to send",
-        "viewFull": "View full"
+      "cola": {
+        "title": "Awaiting your approval",
+        "today": "today",
+        "approve": "Approve",
+        "discard": "Discard",
+        "approveAria": "Approve email to {company}",
+        "discardAria": "Discard email to {company}",
+        "hint": "Drag right to approve, left to discard.",
+        "done": "{count, plural, =0 {Nothing approved today. No email goes out.} one {1 email approved. It goes out tomorrow at 9:00.} other {# emails approved. They go out tomorrow at 9:00.}}",
+        "items": [
+          {
+            "company": "Bufete Serrano & Asoc.",
+            "subject": "ENISA call: Bufete Serrano's proposal",
+            "signal": "Public tender ENISA · 2d ago"
+          },
+          {
+            "company": "Consultoría Nexus RR.HH.",
+            "subject": "Three HR roles open this month",
+            "signal": "Recent hiring · 4d ago"
+          },
+          {
+            "company": "Garriga Fiscalidad SL",
+            "subject": "Garriga's new office in Sabadell",
+            "signal": "Office move · 1 week ago"
+          }
+        ]
       }
     }
   },

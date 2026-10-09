@@ -3,7 +3,7 @@
 import {useTranslations} from "next-intl";
 import {motion, useReducedMotion, type Variants} from "framer-motion";
 import {Button} from "@/components/ui/Button";
-import {EmailPreviewCard} from "@/components/ui/EmailPreviewCard";
+import {HeroSequence} from "@/components/ui/HeroSequence";
 
 const fadeUp: Variants = {
   hidden: {opacity: 0, y: 14},
@@ -12,23 +12,6 @@ const fadeUp: Variants = {
     transition: {duration: 0.45, ease: "easeOut", delay},
   }),
 };
-
-function SignalCard() {
-  const t = useTranslations("hero.signalCard");
-  return (
-    <div className="flex items-center gap-3 px-4 py-3 rounded-xl select-none max-w-sm bg-[color-mix(in_oklch,var(--color-warm)_5%,transparent)] border border-[color-mix(in_oklch,var(--color-warm)_18%,transparent)]">
-      <span aria-hidden="true" className="text-[15px]">⚡</span>
-      <div className="flex-1 min-w-0">
-        <div className="text-[11px] font-semibold text-[var(--color-warm)] mb-0.5">{t("detected")}</div>
-        <div className="text-[10px] text-[var(--color-slate-light)]">{t("example")}</div>
-      </div>
-      <div className="flex items-center gap-1.5 shrink-0">
-        <span aria-hidden="true" className="w-1.5 h-1.5 rounded-full bg-[var(--color-success)] animate-pulse" />
-        <span className="text-[10px] text-[var(--color-slate-light)]">{t("live")}</span>
-      </div>
-    </div>
-  );
-}
 
 export function Hero() {
   const t = useTranslations("hero");
@@ -80,8 +63,7 @@ export function Hero() {
         </div>
 
         <motion.div variants={fadeUp} initial="hidden" animate="show" custom={0.35} className="hidden lg:flex flex-col gap-3">
-          <SignalCard />
-          <EmailPreviewCard />
+          <HeroSequence />
         </motion.div>
       </div>
     </section>
