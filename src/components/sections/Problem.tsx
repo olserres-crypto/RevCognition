@@ -33,7 +33,9 @@ export function Problem() {
 
   const run = phase === "run";
   const STEP = 380;
-  const done = 400 + rows.length * STEP;
+  const STRIKE_MS = 600; // = transition de .strike-cost::after en globals.css
+  // Las filas se atenuan cuando termina el ultimo tachado, no cuando empieza.
+  const done = 400 + (rows.length - 1) * STEP + STRIKE_MS;
 
   return (
     <section className="bg-[var(--color-surface)] py-16 sm:py-24">
@@ -48,12 +50,14 @@ export function Problem() {
           {t("intro")}
         </p>
 
+        {/* El borde redondeado va en un div: con border-collapse la tabla lo ignora.
+            Los role explicitos conservan la semantica de tabla cuando en movil
+            pasa a display:block (Safari/VoiceOver la pierde si no). */}
+        <div className="bg-[var(--color-paper)] border border-[var(--color-border)] rounded-xl overflow-hidden">
         <table
           ref={ref}
-          className={cn(
-            "w-full border-collapse block sm:table sm:table-fixed bg-[var(--color-paper)] border border-[var(--color-border)] rounded-xl overflow-hidden",
-            run && "ledger-run"
-          )}
+          role="table"
+          className={cn("w-full border-collapse block sm:table sm:table-fixed", run && "ledger-run")}
         >
           <colgroup>
             <col className="sm:w-[28%]" />
@@ -61,11 +65,12 @@ export function Problem() {
             <col className="sm:w-[30%]" />
           </colgroup>
           <thead className="hidden sm:table-header-group">
-            <tr>
+            <tr role="row">
               {[t("columns.option"), t("columns.what"), t("columns.cost")].map((h) => (
                 <th
                   key={h}
                   scope="col"
+                  role="columnheader"
                   className="text-left px-[18px] py-4 text-xs font-semibold uppercase tracking-widest text-[var(--color-slate-light)]"
                 >
                   {h}
@@ -73,10 +78,11 @@ export function Problem() {
               ))}
             </tr>
           </thead>
-          <tbody className="block sm:table-row-group">
+          <tbody role="rowgroup" className="block sm:table-row-group">
             {rows.map((r, i) => (
               <tr
                 key={r.label}
+                role="row"
                 className={cn(
                   "ledger-row block sm:table-row px-[18px] py-4 sm:p-0 border-t border-[var(--color-border)] first:border-t-0 sm:first:border-t transition-opacity duration-500 ease-out",
                   run && "opacity-[0.62]"
@@ -85,14 +91,15 @@ export function Problem() {
               >
                 <th
                   scope="row"
+                  role="rowheader"
                   className="block sm:table-cell text-left align-top font-semibold text-base text-[var(--color-ink)] sm:px-[18px] sm:py-4"
                 >
                   {r.label}
                 </th>
-                <td className="block sm:table-cell align-top mt-1.5 sm:mt-0 text-sm text-[var(--color-slate)] leading-relaxed sm:px-[18px] sm:py-4">
+                <td role="cell" className="block sm:table-cell align-top mt-1.5 sm:mt-0 text-sm text-[var(--color-slate)] leading-relaxed sm:px-[18px] sm:py-4">
                   {r.what}
                 </td>
-                <td className="block sm:table-cell align-top mt-1 sm:mt-0 sm:px-[18px] sm:py-4">
+                <td role="cell" className="block sm:table-cell align-top mt-1 sm:mt-0 sm:px-[18px] sm:py-4">
                   <b
                     className="strike-cost text-sm font-semibold text-[var(--color-danger)]"
                     style={{ ["--strike-delay" as string]: reduce ? "0ms" : `${400 + i * STEP}ms` }}
@@ -105,6 +112,7 @@ export function Problem() {
             ))}
           </tbody>
         </table>
+        </div>
 
         <div
           className={cn(

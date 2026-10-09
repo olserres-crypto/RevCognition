@@ -56,6 +56,7 @@ function SwipeRow({
   const decide = (approved: boolean) => {
     if (decided.current) return;
     decided.current = true;
+    ref.current?.closest("li")?.setAttribute("data-leaving", "");
     const width = ref.current?.offsetWidth ?? 320;
     animate(x, (approved ? 1 : -1) * width * 1.1, {
       duration: reduce ? 0 : 0.3,
@@ -127,6 +128,18 @@ export function ApprovalQueue() {
   const [approved, setApproved] = useState(0);
   const [markOn, setMarkOn] = useState(false);
   const done = left.length === 0;
+  const listRef = useRef<HTMLUListElement>(null);
+  const statusRef = useRef<HTMLDivElement>(null);
+  const refocus = useRef(false);
+
+  // Si la decision se tomo con el teclado, el foco no puede caer a <body> al
+  // retirarse la fila: pasa a la siguiente fila o, al final, al mensaje.
+  useEffect(() => {
+    if (!refocus.current) return;
+    refocus.current = false;
+    const next = listRef.current?.querySelector<HTMLButtonElement>("li:not([data-leaving]) button");
+    (next ?? statusRef.current)?.focus();
+  }, [left]);
 
   useEffect(() => {
     if (!done) return;
@@ -143,7 +156,7 @@ export function ApprovalQueue() {
           <b className="tabular-nums text-[var(--color-warning)]">{left.length}</b> {t("today")}
         </span>
       </div>
-      <ul className="list-none m-0 p-2 grid gap-2">
+      <ul ref={listRef} className="list-none m-0 p-2 grid gap-2">
         <AnimatePresence initial={false}>
           {left.map((i) => (
             <motion.li
@@ -156,6 +169,7 @@ export function ApprovalQueue() {
                 item={items[i]}
                 reduce={reduce}
                 onDecide={(ok) => {
+                  refocus.current = !!listRef.current?.contains(document.activeElement);
                   if (ok) setApproved((n) => n + 1);
                   setLeft((l) => l.filter((j) => j !== i));
                 }}
@@ -164,12 +178,17 @@ export function ApprovalQueue() {
           ))}
         </AnimatePresence>
       </ul>
-      {done ? (
-        <div className="flex items-center gap-2.5 px-3 pt-1 pb-3.5 text-xs text-[var(--color-slate)]" role="status">
-          <StatusMark on={markOn} />
-          <span>{t("done", { count: approved })}</span>
-        </div>
-      ) : (
+      {/* La region viva existe desde el principio: si se montara ya con el
+          texto, muchos lectores de pantalla no lo anunciarian. */}
+      <div ref={statusRef} tabIndex={-1} role="status" className="outline-none">
+        {done && (
+          <div className="flex items-center gap-2.5 px-3 pt-1 pb-3.5 text-xs text-[var(--color-slate)]">
+            <StatusMark on={markOn} />
+            <span>{t("done", { count: approved })}</span>
+          </div>
+        )}
+      </div>
+      {!done && (
         <p className="px-3.5 pb-2.5 text-[10px] text-[var(--color-slate-light)]">{t("hint")}</p>
       )}
     </div>

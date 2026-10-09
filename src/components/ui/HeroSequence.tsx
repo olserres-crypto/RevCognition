@@ -29,8 +29,11 @@ export function HeroSequence() {
   const t = useTranslations("hero");
   const reduce = useReducedMotion();
   const body = t("emailPreview.body");
-  const [typed, setTyped] = useState(body.length);
+  // null = texto completo (servidor, reduced-motion o secuencia terminada).
+  const [typed, setTyped] = useState<number | null>(null);
   const [phase, setPhase] = useState<Phase>("approved");
+  // Entrada escalonada de la maqueta: 0 nada, 1 señal, 2 señal + correo.
+  const [enter, setEnter] = useState(2);
 
   useEffect(() => {
     if (reduce !== false) return; // null (aun sin medir) o true: estado final
@@ -41,8 +44,11 @@ export function HeroSequence() {
       setTimeout(() => {
         setTyped(0);
         setPhase("draft");
+        setEnter(0);
       }, 0)
     );
+    timers.push(setTimeout(() => setEnter(1), 150));
+    timers.push(setTimeout(() => setEnter(2), 600));
     let i = 0;
     const tick = () => {
       i = Math.min(body.length, i + 2);
@@ -51,6 +57,7 @@ export function HeroSequence() {
         timers.push(setTimeout(tick, 18));
         return;
       }
+      setTyped(null);
       timers.push(setTimeout(() => setPhase("pending"), 250));
       timers.push(setTimeout(() => setPhase("pressed"), 1700));
       timers.push(setTimeout(() => setPhase("approved"), 1900));
@@ -59,7 +66,12 @@ export function HeroSequence() {
     return () => timers.forEach(clearTimeout);
   }, [reduce, body]);
 
-  const typing = typed < body.length;
+  const typing = typed !== null;
+  const enterClass = (n: number) =>
+    cn(
+      "transition-[opacity,translate] duration-[350ms] ease-[cubic-bezier(0.22,1,0.36,1)]",
+      enter >= n ? "opacity-100 translate-y-0" : "opacity-0 translate-y-1.5"
+    );
   const barVisible = !typing && phase !== "draft";
   const stateLabel =
     phase === "draft"
@@ -70,7 +82,7 @@ export function HeroSequence() {
 
   return (
     <>
-      <div className="flex items-center gap-3 px-4 py-3 rounded-xl select-none max-w-sm bg-[color-mix(in_oklch,var(--color-warm)_5%,transparent)] border border-[color-mix(in_oklch,var(--color-warm)_18%,transparent)]">
+      <div className={cn(enterClass(1), "flex items-center gap-3 px-4 py-3 rounded-xl select-none max-w-sm bg-[color-mix(in_oklch,var(--color-warm)_5%,transparent)] border border-[color-mix(in_oklch,var(--color-warm)_18%,transparent)]")}>
         <span aria-hidden="true" className="text-[15px]">⚡</span>
         <div className="flex-1 min-w-0">
           <div className="text-[11px] font-semibold text-[var(--color-warm)] mb-0.5">{t("signalCard.detected")}</div>
@@ -79,7 +91,7 @@ export function HeroSequence() {
         <span className="shrink-0 text-[10px] text-[var(--color-slate-light)]">{t("signalCard.label")}</span>
       </div>
 
-      <div className="bg-[var(--color-paper-deep)] border border-[var(--color-border)] rounded-xl p-5 shadow-md max-w-sm">
+      <div className={cn(enterClass(2), "bg-[var(--color-paper-deep)] border border-[var(--color-border)] rounded-xl p-5 shadow-md max-w-sm")}>
         <div
           className={cn(
             "flex items-center gap-2 mb-3 text-[10px] font-semibold uppercase tracking-widest transition-colors duration-300",
@@ -104,7 +116,7 @@ export function HeroSequence() {
         <div className="space-y-2 text-sm text-[var(--color-slate)] leading-relaxed">
           <p>{t("emailPreview.greeting")}</p>
           <p aria-hidden="true">
-            {body.slice(0, typed)}
+            {typed === null ? body : body.slice(0, typed)}
             {typing && <span className="type-caret" />}
           </p>
           <p className="sr-only">{body}</p>
