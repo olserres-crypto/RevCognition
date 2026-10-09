@@ -74,7 +74,7 @@ export function UseCases() {
 
         <div className="mt-10">
           <Link
-            href="/soluciones/servicios-b2b"
+            href="/producto"
             className="inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--color-warm)] hover:text-[var(--color-warm-hover)] transition-colors rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2"
           >
             {t("moreLink")}

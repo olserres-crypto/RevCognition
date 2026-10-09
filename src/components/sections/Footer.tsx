@@ -17,12 +17,6 @@ export function Footer() {
         </span>
         <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
           <Link
-            href="/soluciones/servicios-b2b"
-            className="px-2 py-2 rounded-md hover:text-[var(--color-ink)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2"
-          >
-            {t("solutions")}
-          </Link>
-          <Link
             href="/privacy"
             className="px-2 py-2 rounded-md hover:text-[var(--color-ink)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2"
           >

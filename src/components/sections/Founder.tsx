@@ -17,6 +17,7 @@ export function Founder() {
           <div className="space-y-4 text-[var(--color-slate)] leading-relaxed">
             <p>{t("paragraph1")}</p>
             <p>{t("paragraph2")}</p>
+            <p>{t("paragraph3")}</p>
           </div>
         </div>
 

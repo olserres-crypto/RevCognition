@@ -9,6 +9,10 @@ const nextConfig: NextConfig = {
     return [
       {source: "/analisis", destination: APP_URL, permanent: false},
       {source: "/:locale(en|fr)/analisis", destination: APP_URL, permanent: false},
+      // B-2228: servicios-b2b se fusiono en la home. 301 clasico (permanent:true daria 308).
+      {source: "/soluciones/servicios-b2b", destination: "/", statusCode: 301},
+      {source: "/es/soluciones/servicios-b2b", destination: "/", statusCode: 301},
+      {source: "/:locale(en|fr)/soluciones/servicios-b2b", destination: "/:locale", statusCode: 301},
     ];
   },
 };

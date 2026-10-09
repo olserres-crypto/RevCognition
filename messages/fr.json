@@ -18,7 +18,6 @@
     "home": "RevCognition — accueil"
   },
   "footer": {
-    "solutions": "Solutions : services B2B",
     "privacy": "Politique de confidentialité",
     "unsubscribe": "Se désabonner",
     "copyright": "© 2026",
@@ -195,7 +194,7 @@
     "heading": "Le système comprend votre contexte spécifique.",
     "intro": "Il n'envoie pas d'e-mails génériques. Ça, n'importe quelle agence peut le faire.",
     "solutionLabel": "Comment RevCognition le résout",
-    "moreLink": "Comment nous travaillons avec les services B2B",
+    "moreLink": "Voir le produit en détail",
     "cases": [
       {
         "sector": "Cabinet d'avocats spécialisé en droit des marques",
@@ -265,6 +264,7 @@
     "heading": "Vingt ans dans le marketing automation. Aucun outil pour le fondateur solo.",
     "paragraph1": "Cela fait vingt ans que je travaille dans le marketing automation, en observant de près comment les grandes entreprises gèrent leur prospection. Et aussi les outils qui existaient pour les autres.",
     "paragraph2": "La plupart vous demandent d'être technique, d'écrire vous-même les messages, de gérer les séquences à la main, ou de faire aveuglément confiance à une agence qui ne comprend pas votre activité. Aucune des deux options n'était acceptable pour un fondateur avec peu de temps et beaucoup à prouver.",
+    "paragraph3": "C'est aussi ce que nous utilisons pour trouver nos propres clients. Nos campagnes tournent sur ce même produit : le même domaine dédié, le même moteur de messages et la même relecture quotidienne que vous feriez.",
     "closingPre": "RevCognition est ce que",
     "closingItalic": "moi",
     "closingPost": "j'aurais voulu avoir."
@@ -521,84 +521,6 @@
         ],
         "statusLabel": "Réponse classée · Intéressé"
       }
-    }
-  },
-  "serviciosB2B": {
-    "metaTitle": "Services B2B — RevCognition | Prospection à froid pour cabinets et agences",
-    "metaDescription": "Pour les cabinets, agences et cabinets de conseil qui vivent de recommandations : RevCognition trouve de nouveaux clients qui correspondent à votre profil et leur écrit un message qui leur est propre. Vous ne faites que relire et valider, quelques minutes par jour.",
-    "ogAlt": "RevCognition pour les services B2B.",
-    "hero": {
-      "eyebrow": "Services B2B",
-      "heading1": "Vous vivez de vos recommandations.",
-      "heading2": "Et il ne vous reste plus de temps pour prospecter.",
-      "subtitle": "Cabinets, agences et sociétés de conseil dépendent souvent de qui les recommande. RevCognition trouve de nouveaux clients qui correspondent à votre profil et rédige un message propre à chacun, pendant que vous continuez à vous occuper de vos clients actuels. Votre seule tâche : relire et valider les e-mails préparés, quelques minutes par jour."
-    },
-    "steps": {
-      "eyebrow": "Comment ça marche",
-      "heading": "Comment il trouve vos prochains clients.",
-      "intro": "Et si votre spécialité est peu courante, ou votre zone réduite ? La recherche ne repose pas sur une seule liste : nous travaillons avec plusieurs fournisseurs de données qui, à eux tous, couvrent plusieurs millions de profils d'entreprise, et le système les passe en revue en continu pour ne garder que ceux qui correspondent.",
-      "items": [
-        {
-          "title": "Lit votre site web",
-          "body": "Comprend votre activité et le type de client que vous servez, à partir de votre propre site web."
-        },
-        {
-          "title": "Construit votre profil de client idéal",
-          "body": "Le traduit en un profil de client idéal : secteur, localisation et taille d'entreprise."
-        },
-        {
-          "title": "Recherche en continu dans des bases de données partenaires",
-          "body": "Croise ce profil sans interruption avec plusieurs bases de données d'entreprises et note chacune selon sa correspondance."
-        },
-        {
-          "title": "Vérifie les e-mails et détecte les signaux d'achat",
-          "body": "Repère le bon contact dans chaque entreprise, vérifie son e-mail avant de lui écrire, et surveille les signaux récents, comme une embauche."
-        }
-      ],
-      "linkText": "Voir le détail complet"
-    },
-    "stats": {
-      "eyebrow": "Résultats",
-      "heading": "Nous l'avons testé avec nos propres campagnes.",
-      "intro": "Nous utilisons RevCognition pour notre propre prospection : les campagnes avec lesquelles nous partons chercher de nouveaux clients tournent sur ce même produit — le même domaine dédié, le même moteur de messages et la même relecture quotidienne que vous feriez.",
-      "caseStudy": {
-        "label": "Prochain cas client",
-        "title": "Le premier cas client, en cours.",
-        "body": "Premier cas client en cours : nous publierons ici les résultats de la première campagne complète, avec des chiffres réels."
-      },
-      "metrics": [
-        {
-          "label": "E-mails envoyés"
-        },
-        {
-          "label": "Réponses intéressées"
-        },
-        {
-          "label": "Rendez-vous pris"
-        }
-      ]
-    },
-    "faq": {
-      "eyebrow": "Questions",
-      "heading": "Ce qu'on nous demande le plus souvent avant de se lancer.",
-      "items": [
-        {
-          "q": "Est-ce que ça marche dans mon secteur ou mon pays ?",
-          "a": "Le système recherche en continu dans des bases de données partenaires spécialisées : nous travaillons avec plusieurs fournisseurs qui, à eux tous, couvrent plusieurs millions de profils d'entreprise, et il filtre selon le profil client de votre cabinet ou agence — secteur, localisation et taille. Votre spécialité n'a pas besoin d'être courante, ni votre zone d'être grande : la recherche ne dépend pas d'une seule liste."
-        },
-        {
-          "q": "D'où viennent les données des contacts ?",
-          "a": "Les contacts proviennent de bases de données partenaires spécialisées dans l'information professionnelle. Avant l'envoi, chaque adresse e-mail est vérifiée pour maintenir un faible taux de rebond, et chaque e-mail inclut une option de désabonnement : toute personne qui se désabonne ne reçoit plus jamais rien, conformément à la réglementation."
-        },
-        {
-          "q": "Vais-je finir dans les spams ?",
-          "a": "C'est le premier doute légitime, surtout si vous n'avez jamais fait de prospection à froid. C'est pourquoi l'envoi ne se fait jamais depuis votre boîte du cabinet ou de l'agence : vous utilisez un domaine d'envoi dédié et séparé, authentifié automatiquement, qui monte progressivement en volume au cours des premières semaines, jusqu'à atteindre son plein volume. Votre boîte principale n'est jamais touchée, et votre réputation auprès de vos clients actuels reste à l'écart."
-        },
-        {
-          "q": "Que se passe-t-il quand quelqu'un répond ?",
-          "a": "Chaque réponse est lue et classée automatiquement : intéressé, pas intéressé, agressif ou absent. En cas d'intérêt, la séquence est mise en pause instantanément, nous vous prévenons par e-mail et Telegram, et le prospect reçoit votre lien Cal.com pour réserver directement, sans échanges d'e-mails. En l'absence d'intérêt ou en cas de réponse hostile, le fil est clôturé avec soin et n'est plus jamais recontacté. Comme pour tout e-mail, chaque message comporte une option de désabonnement ; toute personne qui se désabonne ne reçoit plus jamais rien."
-        }
-      ]
     }
   },
   "gracias": {

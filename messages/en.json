@@ -18,7 +18,6 @@
     "home": "RevCognition — home"
   },
   "footer": {
-    "solutions": "Solutions: B2B services",
     "privacy": "Privacy policy",
     "unsubscribe": "Unsubscribe",
     "copyright": "© 2026",
@@ -195,7 +194,7 @@
     "heading": "The system understands your specific context.",
     "intro": "It doesn't send generic emails. Any agency can do that.",
     "solutionLabel": "How RevCognition solves it",
-    "moreLink": "How we work with B2B services",
+    "moreLink": "See the product in detail",
     "cases": [
       {
         "sector": "Trademark law firm",
@@ -265,6 +264,7 @@
     "heading": "Twenty years in marketing automation. No tool built for the solo founder.",
     "paragraph1": "I've spent twenty years working in marketing automation, watching up close how large companies handle their outbound. And also the tools that existed for everyone else.",
     "paragraph2": "Most of them ask you to be technical, to write the messages yourself, to manage sequences by hand, or to blindly trust an agency that doesn't understand your business. Neither option was acceptable for a founder with little time and a lot to prove.",
+    "paragraph3": "It's also what we use to find our own clients. Our campaigns run on this same product: the same dedicated domain, the same message engine, and the same daily review you'd do.",
     "closingPre": "RevCognition is what",
     "closingItalic": "I",
     "closingPost": "would have wanted to have."
@@ -521,84 +521,6 @@
         ],
         "statusLabel": "Reply classified · Interested"
       }
-    }
-  },
-  "serviciosB2B": {
-    "metaTitle": "B2B Services — RevCognition | Cold outreach for law firms and agencies",
-    "metaDescription": "For law firms, agencies, and consultancies that live on referrals: RevCognition finds new clients that match your profile and writes them a message of their own. You just review and approve, a few minutes a day.",
-    "ogAlt": "RevCognition for B2B services.",
-    "hero": {
-      "eyebrow": "B2B Services",
-      "heading1": "You live off referrals.",
-      "heading2": "And you have no time left to prospect.",
-      "subtitle": "Law firms, agencies, and consultancies tend to depend on who refers them. RevCognition finds new clients who match your profile and writes each one a message of their own, while you keep serving the clients you already have. Your only task: review and approve the prepared emails, a few minutes a day."
-    },
-    "steps": {
-      "eyebrow": "How it works",
-      "heading": "How it finds your next clients.",
-      "intro": "What if your specialty is uncommon, or your area is small? The search doesn't rely on a single list: we work with several data providers that, between them, cover several million company profiles, and the system reviews them continuously to keep only the ones that fit.",
-      "items": [
-        {
-          "title": "Reads your website",
-          "body": "Understands what you do and what kind of client you serve, starting from your own website."
-        },
-        {
-          "title": "Builds your ideal client profile",
-          "body": "Translates that into an ideal client profile: industry, location, and company size."
-        },
-        {
-          "title": "Searches continuously across partner databases",
-          "body": "Matches that profile nonstop against several company databases and scores each one on how well it fits."
-        },
-        {
-          "title": "Verifies emails and detects buying signals",
-          "body": "Finds the right contact at each company, verifies their email before writing, and checks for recent signals, like a new hire."
-        }
-      ],
-      "linkText": "See the full detail"
-    },
-    "stats": {
-      "eyebrow": "Results",
-      "heading": "We tested it with our own campaigns.",
-      "intro": "We use RevCognition for our own prospecting: the campaigns we run to find new clients run on this same product — the same dedicated domain, the same message engine, and the same daily review you'd do.",
-      "caseStudy": {
-        "label": "Next client case",
-        "title": "The first client case, in progress.",
-        "body": "First client case in progress: we'll publish the results of the first full campaign here, with real numbers."
-      },
-      "metrics": [
-        {
-          "label": "Emails sent"
-        },
-        {
-          "label": "Interested replies"
-        },
-        {
-          "label": "Meetings booked"
-        }
-      ]
-    },
-    "faq": {
-      "eyebrow": "Questions",
-      "heading": "What people usually ask before signing up.",
-      "items": [
-        {
-          "q": "Does it work in my industry or my country?",
-          "a": "The system searches continuously across specialized partner databases: we work with several providers that, between them, cover several million company profiles, and it filters by your firm's or agency's client profile — industry, location, and size. Your specialty doesn't need to be common, nor your area large: the search doesn't depend on a single list."
-        },
-        {
-          "q": "Where does the contact data come from?",
-          "a": "Contacts come from partner databases specialized in professional information. Before writing, every email address is verified to keep bounces low, and every email includes an unsubscribe option: anyone who unsubscribes never receives anything again, in compliance with regulations."
-        },
-        {
-          "q": "Will I end up in spam?",
-          "a": "It's the first reasonable doubt, especially if you've never done cold outreach. That's why we never send from your firm's or agency's own inbox: you use a dedicated, separate sending domain, which authenticates automatically and ramps up its volume gradually over the first few weeks, until it reaches full volume. Your main inbox is never touched, and your reputation with your current clients stays out of it."
-        },
-        {
-          "q": "What happens when someone replies?",
-          "a": "Every reply is read and classified automatically: interested, not interested, aggressive, or out of office. If there's interest, the sequence pauses instantly, we notify you by email and Telegram, and the prospect receives your Cal.com link to book directly, with no back-and-forth emails. If there's no interest or the reply is hostile, the thread is closed carefully and never contacted again. As with any email, every message carries an unsubscribe option; anyone who unsubscribes never receives anything again."
-        }
-      ]
     }
   },
   "gracias": {
