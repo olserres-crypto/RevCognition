@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { motion, useReducedMotion } from "framer-motion";
 import { MockupShell, MockupRow } from "@/components/ui/MockupShell";
+import { ApprovalQueue } from "@/components/ui/ApprovalQueue";
 
 function MockupDiagnostico() {
   const t = useTranslations("howItWorks.mockups.diagnostico");
@@ -78,33 +79,7 @@ function MockupProspectos() {
   );
 }
 
-function MockupMensaje() {
-  const t = useTranslations("howItWorks.mockups.mensaje");
-  return (
-    <MockupShell icon="✦" title={t("title")} meta={{ text: "Bufete Serrano" }}>
-      <div className="p-4 flex flex-col gap-3">
-        <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-[color-mix(in_oklch,var(--color-warm)_5%,transparent)] border border-[color-mix(in_oklch,var(--color-warm)_14%,transparent)]">
-          <span aria-hidden="true" className="text-xs">⚡</span>
-          <span className="text-[10px] font-medium text-[var(--color-warm)]">
-            {t("signalNote")}
-          </span>
-        </div>
-        <div className="text-[11px] text-[var(--color-slate)] leading-relaxed">
-          <div className="mb-1.5">{t("greeting")}</div>
-          <div>{t("body")}</div>
-        </div>
-        <div className="flex items-center justify-between pt-2 border-t border-[var(--color-border)]">
-          <span className="text-[10px] text-[var(--color-slate-light)]">{t("readyToSend")}</span>
-          <span className="text-[10px] font-semibold text-[var(--color-warm)]">
-            {t("viewFull")} ↗
-          </span>
-        </div>
-      </div>
-    </MockupShell>
-  );
-}
-
-const stepMockups = [MockupDiagnostico, MockupProspectos, MockupMensaje];
+const stepMockups = [MockupDiagnostico, MockupProspectos, ApprovalQueue];
 const stepNumbers = ["01", "02", "03"];
 
 export function HowItWorks() {
@@ -160,7 +135,9 @@ export function HowItWorks() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-40px" }}
                     transition={{ delay: i * 0.12 + 0.18, duration: 0.4, ease: "easeOut" }}
-                    className="hidden lg:block shrink-0"
+                    // El paso 3 (cola de aprobacion, B-2228) se ve tambien en movil: es
+                    // la unica maqueta interactiva y el gesto de arrastrar es tactil.
+                    className={i === 2 ? "w-full lg:w-[400px] shrink-0" : "hidden lg:block shrink-0"}
                   >
                     <MockupComponent />
                   </motion.div>

@@ -1,16 +1,42 @@
 "use client";
 
+import { useRef, useSyncExternalStore } from "react";
 import { useTranslations } from "next-intl";
-import { motion, useReducedMotion } from "framer-motion";
+import { useInView, useReducedMotion } from "framer-motion";
+import { cn } from "@/lib/utils";
+
+type Row = { label: string; what: string; cost: string; costNote: string };
+
+/**
+ * «El problema» como libro de cuentas (propuesta React Bits 3, B-2228, patron
+ * inspirado en StrokeText/ScrollReveal sin gsap): al entrar en pantalla se tacha
+ * el coste de cada opcion actual y aparece la fila RevCognition debajo.
+ *
+ * Fases: "ssr" (HTML del servidor / sin JS: tabla completa sin tachar y la
+ * respuesta visible) → "pre" (cliente, respuesta oculta a la espera) → "run".
+ * Con prefers-reduced-motion se salta directo a "run" sin transiciones (CSS).
+ */
+const noopSubscribe = () => () => {};
 
 export function Problem() {
   const t = useTranslations("problem");
-  const reduce = useReducedMotion();
-  const problems = t.raw("items") as {
-    label: string;
-    cost: string;
-    description: string;
-  }[];
+  const prefersReduced = useReducedMotion();
+  const rows = t.raw("rows") as Row[];
+  const ref = useRef<HTMLTableElement>(null);
+  const inView = useInView(ref, { once: true, amount: 0.35 });
+  // false en el servidor y durante la hidratacion, true despues (sin setState en efecto).
+  const hydrated = useSyncExternalStore(noopSubscribe, () => true, () => false);
+  // useReducedMotion ya vale true/false en la hidratacion pero null en el servidor:
+  // si el render dependiera de el antes de hidratar, React no parchea la clase.
+  const reduce = hydrated && prefersReduced === true;
+  const phase = !hydrated ? "ssr" : reduce || inView ? "run" : "pre";
+
+  const run = phase === "run";
+  const STEP = 380;
+  const STRIKE_MS = 600; // = transition de .strike-cost::after en globals.css
+  // Las filas se atenuan cuando termina el ultimo tachado, no cuando empieza.
+  const done = 400 + (rows.length - 1) * STEP + STRIKE_MS;
+
   return (
     <section className="bg-[var(--color-surface)] py-16 sm:py-24">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
@@ -24,53 +50,92 @@ export function Problem() {
           {t("intro")}
         </p>
 
-        <div className="divide-y divide-[var(--color-border)]">
-          {problems.map((p, i) => (
-            <motion.div
-              key={p.label}
-              initial={reduce ? false : { opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-40px" }}
-              transition={{ delay: i * 0.08, duration: 0.35 }}
-              className="py-6 sm:flex sm:items-start sm:gap-8"
-            >
-              <div className="sm:flex-1">
-                <p className="font-semibold text-[var(--color-ink)] mb-1">{p.label}</p>
-                <p className="text-[var(--color-slate)] text-sm leading-relaxed">
-                  {p.description}
-                </p>
-              </div>
-              <div className="mt-3 sm:mt-0 sm:shrink-0 flex sm:justify-end">
-                <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold whitespace-nowrap text-[var(--color-danger)] bg-[var(--color-danger-tint)] border border-[var(--color-danger-border)]">
-                  {p.cost}
-                </span>
-              </div>
-            </motion.div>
-          ))}
+        {/* El borde redondeado va en un div: con border-collapse la tabla lo ignora.
+            Los role explicitos conservan la semantica de tabla cuando en movil
+            pasa a display:block (Safari/VoiceOver la pierde si no). */}
+        <div className="bg-[var(--color-paper)] border border-[var(--color-border)] rounded-xl overflow-hidden">
+        <table
+          ref={ref}
+          role="table"
+          className={cn("w-full border-collapse block sm:table sm:table-fixed", run && "ledger-run")}
+        >
+          <colgroup>
+            <col className="sm:w-[28%]" />
+            <col />
+            <col className="sm:w-[30%]" />
+          </colgroup>
+          <thead className="hidden sm:table-header-group">
+            <tr role="row">
+              {[t("columns.option"), t("columns.what"), t("columns.cost")].map((h) => (
+                <th
+                  key={h}
+                  scope="col"
+                  role="columnheader"
+                  className="text-left px-[18px] py-4 text-xs font-semibold uppercase tracking-widest text-[var(--color-slate-light)]"
+                >
+                  {h}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody role="rowgroup" className="block sm:table-row-group">
+            {rows.map((r, i) => (
+              <tr
+                key={r.label}
+                role="row"
+                className={cn(
+                  "ledger-row block sm:table-row px-[18px] py-4 sm:p-0 border-t border-[var(--color-border)] first:border-t-0 sm:first:border-t transition-opacity duration-500 ease-out",
+                  run && "opacity-[0.62]"
+                )}
+                style={{ transitionDelay: run && !reduce ? `${done}ms` : undefined }}
+              >
+                <th
+                  scope="row"
+                  role="rowheader"
+                  className="block sm:table-cell text-left align-top font-semibold text-base text-[var(--color-ink)] sm:px-[18px] sm:py-4"
+                >
+                  {r.label}
+                </th>
+                <td role="cell" className="block sm:table-cell align-top mt-1.5 sm:mt-0 text-sm text-[var(--color-slate)] leading-relaxed sm:px-[18px] sm:py-4">
+                  {r.what}
+                </td>
+                <td role="cell" className="block sm:table-cell align-top mt-1 sm:mt-0 sm:px-[18px] sm:py-4">
+                  <b
+                    className="strike-cost text-sm font-semibold text-[var(--color-danger)]"
+                    style={{ ["--strike-delay" as string]: reduce ? "0ms" : `${400 + i * STEP}ms` }}
+                  >
+                    {r.cost}
+                  </b>
+                  <small className="block text-xs text-[var(--color-slate)]">{r.costNote}</small>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
         </div>
 
-        {/* Contraste RevCognition: eyebrow pattern, sin side-stripe */}
-        <motion.div
-          initial={reduce ? false : { opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-40px" }}
-          transition={{ delay: 0.28, duration: 0.35 }}
-          className="mt-8 bg-[var(--color-paper)] border border-[var(--color-border)] rounded-xl px-6 py-5 sm:flex sm:items-start sm:gap-8"
+        <div
+          className={cn(
+            "ledger-answer mt-5 grid gap-1.5 sm:grid-cols-[28%_1fr_30%] sm:gap-0 rounded-xl border border-[var(--color-warm)] bg-[color-mix(in_oklch,var(--color-warm)_5%,var(--color-paper))] shadow-[0_0_0_1px_color-mix(in_oklch,var(--color-warm)_20%,transparent)] px-[18px] py-4 transition-[opacity,translate] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]",
+            phase === "pre" ? "opacity-0 translate-y-4" : "opacity-100 translate-y-0"
+          )}
+          style={{ transitionDelay: run && !reduce ? `${done + 200}ms` : undefined }}
         >
-          <div className="sm:flex-1">
-            <p className="text-xs font-semibold uppercase tracking-widest text-[var(--color-warm)] mb-2">
-              {t("contrast.eyebrow")}
-            </p>
-            <p className="text-[var(--color-slate)] text-sm leading-relaxed">
-              {t("contrast.description")}
-            </p>
-          </div>
-          <div className="mt-2 sm:mt-0 sm:text-right sm:shrink-0">
-            <p className="text-sm font-semibold text-[var(--color-warm)]">
-              {t("contrast.cost")}
-            </p>
-          </div>
-        </motion.div>
+          <p className="font-semibold text-[var(--color-ink)] sm:pr-[18px]">{t("answer.label")}</p>
+          <p className="text-sm text-[var(--color-slate)] leading-relaxed sm:px-[18px]">
+            {t("answer.what")}
+          </p>
+          <p className="sm:pl-[18px]">
+            <b className="text-sm font-semibold text-[var(--color-ink)]">{t("answer.cost")}</b>
+            <small className="block text-xs text-[var(--color-slate)]">{t("answer.costNote")}</small>
+            <a
+              href="#precios"
+              className="inline-block mt-1 text-[13px] font-semibold text-[var(--color-warm)] no-underline hover:underline underline-offset-2"
+            >
+              {t("answer.link")}
+            </a>
+          </p>
+        </div>
       </div>
     </section>
   );
