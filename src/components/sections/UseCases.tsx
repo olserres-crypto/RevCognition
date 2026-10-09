@@ -2,7 +2,6 @@
 
 import { useTranslations } from "next-intl";
 import { motion, useReducedMotion } from "framer-motion";
-import { Link } from "@/i18n/navigation";
 
 // Icono/estructura por índice; el texto vive en el catálogo
 // (messages/*.json, namespace useCases, campo "cases").
@@ -71,16 +70,8 @@ export function UseCases() {
             </motion.div>
           ))}
         </div>
-
-        <div className="mt-10">
-          <Link
-            href="/soluciones/servicios-b2b"
-            className="inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--color-warm)] hover:text-[var(--color-warm-hover)] transition-colors rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2"
-          >
-            {t("moreLink")}
-            <span aria-hidden="true">→</span>
-          </Link>
-        </div>
+        {/* B-2228: sin enlace "más": servicios-b2b se fusionó en la home y
+            /producto ya lo enlaza FeaturesGrid justo encima. */}
       </div>
     </section>
   );

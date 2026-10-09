@@ -5,7 +5,6 @@ const BASE = "https://revcognition.com";
 const PATHS = [
   "",
   "/producto",
-  "/soluciones/servicios-b2b",
   "/privacy",
   "/cookies",
 ];

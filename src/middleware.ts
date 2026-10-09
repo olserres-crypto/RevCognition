@@ -7,7 +7,8 @@ import {routing} from './i18n/routing';
 export default createMiddleware(routing);
 
 export const config = {
-  // Excluye api, _next, /analisis (redirect en next.config) y cualquier ruta
-  // con extensión (og.png, favicon, etc.).
-  matcher: ['/((?!api|_next|_vercel|analisis|.*\\..*).*)']
+  // Excluye api, _next, /analisis y /soluciones/servicios-b2b (redirects en
+  // next.config; se excluyen para que next-intl no intercepte antes en el
+  // worker de next-on-pages) y cualquier ruta con extensión (og.png, favicon...).
+  matcher: ['/((?!api|_next|_vercel|analisis|soluciones/servicios-b2b|.*\\..*).*)']
 };
