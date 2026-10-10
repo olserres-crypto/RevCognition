@@ -161,28 +161,6 @@
     "eyebrow": "What it does for you",
     "heading": "All the mechanical work of prospecting, done.",
     "intro": "You keep the judgment calls; the system puts in the hours. Here's what it takes care of, day after day.",
-    "howEncuentra": {
-      "eyebrow": "How it finds your customers",
-      "intro": "What if your industry is niche, or your target area is small? The search doesn't rely on a single list: we work with several data providers that, between them, cover several million company profiles, and the system keeps checking them non-stop to keep only the ones that fit.",
-      "steps": [
-        {
-          "title": "Reads your website",
-          "description": "Understands what problem you solve and what type of customer you serve, from your own website."
-        },
-        {
-          "title": "Builds your ideal customer profile",
-          "description": "Turns that into an ideal customer profile: industry, location, and company size."
-        },
-        {
-          "title": "Searches continuously across partner databases",
-          "description": "Matches that profile non-stop against several company databases and scores each one on how well it fits."
-        },
-        {
-          "title": "Verifies emails and detects buying signals",
-          "description": "Finds the right contact at each company, verifies their email before writing, and checks for recent signals, like a new hire."
-        }
-      ]
-    },
     "features": [
       {
         "title": "You approve what goes out",
@@ -218,26 +196,6 @@
       }
     ],
     "moreLink": "See everything it does, in detail"
-  },
-  "useCases": {
-    "eyebrow": "Use cases we solve",
-    "heading": "The system understands your specific context.",
-    "intro": "It doesn't send generic emails. Any agency can do that.",
-    "solutionLabel": "How RevCognition solves it",
-    "cases": [
-      {
-        "sector": "Trademark law firm",
-        "problem": "A database of perfect signals, emails nobody answers",
-        "problemDetail": "Every rejected trademark filing is a company with a real legal urgency. They have the database. But the emails their agency sends are generic, without mentioning the specific rejection or the concrete risk. Result: almost zero replies, despite having the clearest intent signal there is.",
-        "solution": "RevCognition takes that case base as context, writes a message that mentions each company's specific rejection, and leaves it ready for your daily review."
-      },
-      {
-        "sector": "Advertising space sales agency",
-        "problem": "You prospect through your personal network. When you're busy, everything stops",
-        "problemDetail": "One person handles everything. They know there's a market, they know they should prospect more. But prospecting always gets pushed to whenever there's time, which never comes. There's no system, just sporadic calls to contacts they already know.",
-        "solution": "RevCognition identifies companies in the sector that match the ideal customer profile, enriches them, and writes them contextualized messages. The system keeps running even while the founder is with a client."
-      }
-    ]
   },
   "pricing": {
     "eyebrow": "Pricing",
@@ -388,6 +346,28 @@
       "eyebrow": "The engine",
       "title": "Finds, verifies, and writes. For every prospect.",
       "intro": "Finding good target companies is the slowest part of prospecting. The system does it continuously, and for every contact it writes a message built for them.",
+      "howEncuentra": {
+        "eyebrow": "How it finds your customers",
+        "intro": "What if your industry is niche, or your target area is small? The search doesn't rely on a single list: we work with several data providers that, between them, cover several million company profiles, and the system keeps checking them non-stop to keep only the ones that fit.",
+        "steps": [
+          {
+            "title": "Reads your website",
+            "description": "Understands what problem you solve and what type of customer you serve, from your own website."
+          },
+          {
+            "title": "Builds your ideal customer profile",
+            "description": "Turns that into an ideal customer profile: industry, location, and company size."
+          },
+          {
+            "title": "Searches continuously across partner databases",
+            "description": "Matches that profile non-stop against several company databases and scores each one on how well it fits."
+          },
+          {
+            "title": "Verifies emails and detects buying signals",
+            "description": "Finds the right contact at each company, verifies their email before writing, and checks for recent signals, like a new hire."
+          }
+        ]
+      },
       "depth": [
         {
           "title": "A message written from scratch, not a template",

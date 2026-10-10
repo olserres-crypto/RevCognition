@@ -161,28 +161,6 @@
     "eyebrow": "Ce qu'il fait pour vous",
     "heading": "Tout le travail mécanique de la prospection, fait.",
     "intro": "Vous gardez le jugement ; le système met les heures. Voici ce dont il s'occupe, jour après jour.",
-    "howEncuentra": {
-      "eyebrow": "Comment il trouve vos clients",
-      "intro": "Et si votre secteur est peu courant, ou votre zone géographique restreinte ? La recherche ne repose pas sur une seule liste : nous travaillons avec plusieurs fournisseurs de données qui, à eux tous, couvrent plusieurs millions de profils d'entreprise, et le système les passe en revue sans arrêt pour ne garder que ceux qui correspondent.",
-      "steps": [
-        {
-          "title": "Lit votre site web",
-          "description": "Comprend le problème que vous résolvez et le type de client que vous servez, à partir de votre propre site web."
-        },
-        {
-          "title": "Construit votre profil client idéal",
-          "description": "Traduit cela en un profil client idéal : secteur, localisation et taille d'entreprise."
-        },
-        {
-          "title": "Effectue une recherche continue sur des bases de données partenaires",
-          "description": "Croise ce profil en continu avec plusieurs bases de données d'entreprises et note chacune selon sa pertinence."
-        },
-        {
-          "title": "Vérifie les e-mails et détecte les signaux d'achat",
-          "description": "Repère le bon contact dans chaque entreprise, vérifie son e-mail avant d'écrire, et surveille les signaux récents, comme une embauche."
-        }
-      ]
-    },
     "features": [
       {
         "title": "Vous approuvez ce qui part",
@@ -218,26 +196,6 @@
       }
     ],
     "moreLink": "Voir tout ce qu'il fait, en détail"
-  },
-  "useCases": {
-    "eyebrow": "Cas que nous résolvons",
-    "heading": "Le système comprend votre contexte spécifique.",
-    "intro": "Il n'envoie pas d'e-mails génériques. Ça, n'importe quelle agence peut le faire.",
-    "solutionLabel": "Comment RevCognition le résout",
-    "cases": [
-      {
-        "sector": "Cabinet d'avocats spécialisé en droit des marques",
-        "problem": "Une base de signaux parfaits, des e-mails auxquels personne ne répond",
-        "problemDetail": "Chaque dépôt de marque rejeté est une entreprise avec une urgence juridique réelle. Ils ont la base de données. Mais les e-mails envoyés par leur agence sont génériques, sans mentionner le rejet précis ni le risque concret. Résultat : presque aucune réponse, malgré le signal d'intention le plus clair qui existe.",
-        "solution": "RevCognition prend cette base de dossiers comme contexte, rédige un message qui mentionne le rejet spécifique de chaque entreprise, et le laisse prêt pour votre relecture quotidienne."
-      },
-      {
-        "sector": "Agence de vente d'espaces publicitaires",
-        "problem": "Vous prospectez via votre réseau personnel. Quand vous êtes occupé, tout s'arrête",
-        "problemDetail": "Une seule personne gère tout. Elle sait qu'il y a un marché, elle sait qu'elle devrait prospecter davantage. Mais la prospection est toujours reportée à quand il y aura du temps, ce qui n'arrive jamais. Il n'y a pas de système, juste des appels sporadiques à des contacts déjà connus.",
-        "solution": "RevCognition identifie les marques du secteur qui correspondent au profil client idéal, les enrichit, et leur écrit des messages contextualisés. Le système continue de fonctionner même quand le fondateur est avec un client."
-      }
-    ]
   },
   "pricing": {
     "eyebrow": "Tarifs",
@@ -388,6 +346,28 @@
       "eyebrow": "Le moteur",
       "title": "Trouve, vérifie et rédige. Pour chaque prospect.",
       "intro": "Trouver de bonnes entreprises cibles est la tâche la plus lente de la prospection. Le système le fait en continu, et pour chaque contact, il rédige un message pensé pour lui.",
+      "howEncuentra": {
+        "eyebrow": "Comment il trouve vos clients",
+        "intro": "Et si votre secteur est peu courant, ou votre zone géographique restreinte ? La recherche ne repose pas sur une seule liste : nous travaillons avec plusieurs fournisseurs de données qui, à eux tous, couvrent plusieurs millions de profils d'entreprise, et le système les passe en revue sans arrêt pour ne garder que ceux qui correspondent.",
+        "steps": [
+          {
+            "title": "Lit votre site web",
+            "description": "Comprend le problème que vous résolvez et le type de client que vous servez, à partir de votre propre site web."
+          },
+          {
+            "title": "Construit votre profil client idéal",
+            "description": "Traduit cela en un profil client idéal : secteur, localisation et taille d'entreprise."
+          },
+          {
+            "title": "Effectue une recherche continue sur des bases de données partenaires",
+            "description": "Croise ce profil en continu avec plusieurs bases de données d'entreprises et note chacune selon sa pertinence."
+          },
+          {
+            "title": "Vérifie les e-mails et détecte les signaux d'achat",
+            "description": "Repère le bon contact dans chaque entreprise, vérifie son e-mail avant d'écrire, et surveille les signaux récents, comme une embauche."
+          }
+        ]
+      },
       "depth": [
         {
           "title": "Un message rédigé de zéro, pas un modèle",
