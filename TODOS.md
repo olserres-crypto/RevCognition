@@ -34,7 +34,7 @@ Paridad de claves: `npm run i18n:check` (fail-closed). Deploy = GitHub Action (l
 
 ## A11y
 
-- [x] **Respetar `prefers-reduced-motion` en framer-motion.** `MotionProvider` aplica `MotionConfig reducedMotion="user"` (global) y, además, cada sección animada usa `useReducedMotion()` para desactivar `initial`/entrada cuando el usuario lo prefiere (Hero, Problem, HowItWorks, UseCases, FeaturesGrid, Producto). `scroll-behavior: smooth` se desactiva bajo reduced-motion en `globals.css`. (B-585)
+- [x] **Respetar `prefers-reduced-motion` en framer-motion.** `MotionProvider` aplica `MotionConfig reducedMotion="user"` (global) y, además, cada sección animada usa `useReducedMotion()` para desactivar `initial`/entrada cuando el usuario lo prefiere (Hero, Problem, HowItWorks, FeaturesGrid, Producto; UseCases retirado en B-2228). `scroll-behavior: smooth` se desactiva bajo reduced-motion en `globals.css`. (B-585)
 
 - [x] **Skip-to-content link** en `src/app/layout.tsx` → `<main id="main">`. Presente en la home y en `/producto`.
 
