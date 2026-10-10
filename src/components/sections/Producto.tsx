@@ -119,6 +119,44 @@ function MockupRamp() {
   );
 }
 
+/* ---------- Cómo encuentra a tus clientes (B-2228 Q6: venía de la home) ---------- */
+
+function HowEncuentra({ reduce }: { reduce: boolean | null }) {
+  const t = useTranslations("producto.motor.howEncuentra");
+  const steps = t.raw("steps") as { title: string; description: string }[];
+  return (
+    <div
+      id="como-encuentra"
+      className="scroll-mt-20 md:scroll-mt-32 mb-12 pb-12 border-b border-[var(--color-border)]"
+    >
+      <p className="text-xs font-semibold uppercase tracking-widest text-[var(--color-slate)] mb-3">
+        {t("eyebrow")}
+      </p>
+      <p className="text-[var(--color-ink)] text-base leading-relaxed mb-8 max-w-2xl">
+        {t("intro")}
+      </p>
+      <ol className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-6">
+        {steps.map((step, i) => (
+          <motion.li
+            key={step.title}
+            initial={reduce ? false : { opacity: 0, y: 12 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-40px" }}
+            transition={{ delay: i * 0.08, duration: 0.35, ease: "easeOut" }}
+            className="list-none"
+          >
+            <div className="w-7 h-7 rounded-full border-2 border-[var(--color-warm)] text-[var(--color-warm)] text-xs font-semibold flex items-center justify-center mb-3">
+              {i + 1}
+            </div>
+            <h3 className="text-base text-[var(--color-ink)] mb-1.5">{step.title}</h3>
+            <p className="text-[var(--color-slate)] text-sm leading-relaxed">{step.description}</p>
+          </motion.li>
+        ))}
+      </ol>
+    </div>
+  );
+}
+
 /* ---------- Bloque temático ---------- */
 
 type Feature = { title: string; body: string };
@@ -133,6 +171,7 @@ function ThemeBlock({
   oneLiners,
   mockup,
   reduce,
+  lead,
 }: {
   id: string;
   band: "paper" | "surface";
@@ -143,6 +182,7 @@ function ThemeBlock({
   oneLiners: Feature[];
   mockup: React.ReactNode;
   reduce: boolean | null;
+  lead?: React.ReactNode;
 }) {
   return (
     <section
@@ -155,6 +195,8 @@ function ThemeBlock({
         </p>
         <h2 className="text-3xl sm:text-4xl text-[var(--color-ink)] mb-4">{title}</h2>
         <p className="text-[var(--color-slate)] text-lg mb-12 max-w-xl">{intro}</p>
+
+        {lead}
 
         <div className="flex flex-col lg:flex-row lg:items-start lg:gap-12">
           <div className="flex-1 min-w-0">
@@ -345,6 +387,7 @@ export function Producto() {
         depth={motor.depth}
         oneLiners={motor.oneLiners}
         mockup={<MockupSecuencia />}
+        lead={<HowEncuentra reduce={reduce} />}
       />
 
       <ThemeBlock

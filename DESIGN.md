@@ -75,7 +75,7 @@ Tamaños: `nav` (17px), `md` (24px), `lg` (36px). Componente: `src/components/ui
 
 - **Contenedor**: `max-w-5xl mx-auto px-4 sm:px-6`. El sitio es long-form, no dashboard.
 - **Ritmo vertical**: `py-16 sm:py-24` por sección. Uniforme.
-- **Bandas**: secciones `paper` y `surface` se alternan (dos bandas consecutivas del mismo color apilan sus `py-24` y se leen como un bloque desaparecido — bug corregido 2026-07-09). Actualmente (home): Hero (paper) → Problem (surface) → HowItWorks (paper) → FeaturesGrid (surface) → UseCases (paper, cards `surface`) → Pricing (warm/25) → Founder (surface) → CtaFinal (paper) → Footer (border-top sobre paper). Al insertar una sección nueva, re-verificar la alternancia completa aguas abajo.
+- **Bandas**: secciones `paper` y `surface` se alternan (dos bandas consecutivas del mismo color apilan sus `py-24` y se leen como un bloque desaparecido — bug corregido 2026-07-09). Actualmente (home): Hero (paper) → Problem (surface) → HowItWorks (paper) → FeaturesGrid (surface) → Pricing (warm/25) → Trust (paper) → Founder (surface) → CtaFinal (paper) → Footer (border-top sobre paper). Al insertar una sección nueva, re-verificar la alternancia completa aguas abajo.
 - **Radios**: `rounded-lg` para botones, `rounded-xl` para cards, `rounded-full` para píldoras y números de paso.
 - **Breakpoints**: `sm` (640px) es el quiebre principal; `lg` (1024px) reserva layouts dos-columnas (Hero).
 
@@ -171,7 +171,7 @@ El sitio marketing no tiene estados vacíos. Si en el futuro hay dashboard: empt
 
 ## Social proof
 
-La prueba social se hace vía `ValidationBadge` (estado beta honesto: "En uso activo por 2 fundadores mientras perfeccionamos el sistema"), **no con case studies ficticios**. El componente `UseCases` se eliminó explícitamente para evitar fabricar credibilidad. Cuando haya clientes reales con permiso para citar, se reincorporará con nombres reales.
+La prueba social se hace vía `ValidationBadge` (estado beta honesto: "En uso activo por 2 fundadores mientras perfeccionamos el sistema"), **no con case studies ficticios**. El componente `UseCases` se eliminó explícitamente para evitar fabricar credibilidad (seguía en la home hasta B-2228, retirado del código el 2026-10-10). Cuando haya clientes reales con permiso para citar, se reincorporará con nombres reales.
 
 ## Accessibility baseline
 

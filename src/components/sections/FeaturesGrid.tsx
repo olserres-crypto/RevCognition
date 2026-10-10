@@ -7,16 +7,14 @@ import { Link } from "@/i18n/navigation";
 // Diferenciadores primero (aprobación, entregabilidad, personalización,
 // respuestas), luego el resto. Copy derivado de "Mensaje corto" del inventario.
 // El texto vive en el catálogo (messages/*.json, namespace featuresGrid);
-// aquí solo queda lo estructural (número de pasos, orden).
+// aquí solo queda lo estructural (orden).
+// B-2228 (Q6): los 4 pasos de "Cómo encuentra a tus clientes" viven ahora en
+// /producto (bloque "El motor"); la home ya cuenta el proceso en HowItWorks.
 
 export function FeaturesGrid() {
   const t = useTranslations("featuresGrid");
   const reduce = useReducedMotion();
   const features = t.raw("features") as { title: string; description: string }[];
-  const howEncuentraSteps = t.raw("howEncuentra.steps") as {
-    title: string;
-    description: string;
-  }[];
   return (
     <section className="bg-[var(--color-surface)] py-16 sm:py-24">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
@@ -29,41 +27,6 @@ export function FeaturesGrid() {
         <p className="text-[var(--color-slate)] text-lg mb-12 max-w-xl">
           {t("intro")}
         </p>
-
-        <div
-          id="como-encuentra"
-          className="scroll-mt-20 mb-14 sm:mb-16 pb-12 sm:pb-14 border-b border-[var(--color-border)]"
-        >
-          <p className="text-xs font-semibold uppercase tracking-widest text-[var(--color-slate)] mb-3">
-            {t("howEncuentra.eyebrow")}
-          </p>
-          <p className="text-[var(--color-ink)] text-base leading-relaxed mb-8 max-w-2xl">
-            {t("howEncuentra.intro")}
-          </p>
-
-          <ol className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-6">
-            {howEncuentraSteps.map((step, i) => (
-              <motion.li
-                key={step.title}
-                initial={reduce ? false : { opacity: 0, y: 12 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-40px" }}
-                transition={{ delay: i * 0.08, duration: 0.35, ease: "easeOut" }}
-                className="list-none"
-              >
-                <div className="w-7 h-7 rounded-full border-2 border-[var(--color-warm)] text-[var(--color-warm)] text-xs font-semibold flex items-center justify-center mb-3">
-                  {i + 1}
-                </div>
-                <h3 className="text-base text-[var(--color-ink)] mb-1.5">
-                  {step.title}
-                </h3>
-                <p className="text-[var(--color-slate)] text-sm leading-relaxed">
-                  {step.description}
-                </p>
-              </motion.li>
-            ))}
-          </ol>
-        </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-0">
           {features.map((f, i) => (
