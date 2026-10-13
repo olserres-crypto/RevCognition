@@ -44,6 +44,7 @@ export function OptOutForm({locale}: {locale: string}) {
   const widgetId = useRef<string | undefined>(undefined);
   const [token, setToken] = useState("");
   const [estado, setEstado] = useState<Estado>("idle");
+  const [conBorrado, setConBorrado] = useState(false);
   const pregunta = useSyncExternalStore(sinCambios, parDeLaPagina, () => null);
 
   useEffect(() => {
@@ -78,6 +79,7 @@ export function OptOutForm({locale}: {locale: string}) {
     e.preventDefault();
     if (!pregunta) return;
     const f = new FormData(e.currentTarget);
+    setConBorrado(f.get("borrar") === "on");
     setEstado("enviando");
     try {
       const res = await fetch(API_URL, {
@@ -111,7 +113,7 @@ export function OptOutForm({locale}: {locale: string}) {
     return (
       <div role="status" className="rounded-lg border border-[var(--color-border)] bg-[var(--color-paper-deep)] p-6">
         <h2 className="text-xl text-[var(--color-ink)] mb-2">{t("okHeading")}</h2>
-        <p className="text-[var(--color-slate)]">{t("okBody")}</p>
+        <p className="text-[var(--color-slate)]">{t(conBorrado ? "okBodyErase" : "okBody")}</p>
       </div>
     );
   }
