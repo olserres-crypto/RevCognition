@@ -31,10 +31,22 @@ jobs:
             exit 1
           fi
 
+      - name: Guard - Turnstile site key
+        # B-2307: sin la sitekey el formulario de /opt-out sale desactivado. La sitekey es
+        # publica (va en el HTML); vive en la variable de repositorio TURNSTILE_SITE_KEY.
+        env:
+          NEXT_PUBLIC_TURNSTILE_SITE_KEY: ${{ vars.TURNSTILE_SITE_KEY }}
+        run: |
+          if [ -z "$NEXT_PUBLIC_TURNSTILE_SITE_KEY" ]; then
+            echo "::error::Falta la variable de repositorio TURNSTILE_SITE_KEY (B-2307)"
+            exit 1
+          fi
+
       - name: Build
         run: npx @cloudflare/next-on-pages@1
         env:
           NODE_ENV: production
+          NEXT_PUBLIC_TURNSTILE_SITE_KEY: ${{ vars.TURNSTILE_SITE_KEY }}
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3

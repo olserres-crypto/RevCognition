@@ -7,6 +7,7 @@ const PATHS = [
   "/producto",
   "/privacy",
   "/cookies",
+  "/opt-out",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

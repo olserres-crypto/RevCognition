@@ -58,6 +58,11 @@ export async function LegalDoc({namespace}: {namespace: LegalNamespace}) {
         {chunks}
       </Link>
     ),
+    optOutLink: (chunks: ReactNode) => (
+      <Link href="/opt-out" className={linkClass}>
+        {chunks}
+      </Link>
+    ),
     cookiesLink: (chunks: ReactNode) => (
       <Link href="/cookies" className={linkClass}>
         {chunks}
