@@ -19,7 +19,7 @@
   },
   "footer": {
     "privacy": "Politique de confidentialité",
-    "unsubscribe": "Se désabonner",
+    "unsubscribe": "Se désinscrire",
     "copyright": "© 2026",
     "cookies": "Cookies"
   },
@@ -545,7 +545,7 @@
     "eyebrow": "Politique de confidentialité",
     "heading": "Nous traitons vos données comme nous aimerions que l'on traite les nôtres.",
     "intro": "Un texte en langage clair. Si vous avez besoin de la version juridique complète ou souhaitez exercer l'un de vos droits, écrivez-nous à <email>olivier.serres@revcognition.com</email>.",
-    "version": "Version 2.1 · 4 octobre 2026",
+    "version": "Version 2.2 · 13 octobre 2026",
     "backLink": "← Retour à l'accueil",
     "sections": [
       {
@@ -571,6 +571,10 @@
           {
             "label": "Visites de ce site",
             "body": "mesurées avec Cloudflare Web Analytics, qui compte les pages vues sans cookies et sans identifier les visiteurs."
+          },
+          {
+            "label": "Formulaire de désinscription",
+            "body": "(votre email et, si vous les indiquez, prénom, nom, profil LinkedIn et motif) : pour ne plus vous écrire et, si vous le demandez et le confirmez, effacer vos données (articles 17 et 21 du RGPD). Nous ne conservons votre IP que sous forme de hash, pour limiter les abus, et votre email en clair uniquement le temps de votre confirmation. <optOutLink>Accéder au formulaire</optOutLink>."
           }
         ]
       },
@@ -584,7 +588,7 @@
       {
         "heading": "Où sont vos données et qui y accède",
         "paragraphs": [
-          "<strong>Ce site</strong> (revcognition.com) est servi depuis Cloudflare Pages, le réseau mondial de Cloudflare : il n'a pas de région exclusivement européenne. Le site n'a pas de formulaire ; Cloudflare ne traite que les données techniques de chaque visite (comme l'adresse IP) pour servir la page et la protéger.",
+          "<strong>Ce site</strong> (revcognition.com) est servi depuis Cloudflare Pages, le réseau mondial de Cloudflare : il n'a pas de région exclusivement européenne. Cloudflare traite les données techniques de chaque visite (comme l'adresse IP) pour servir la page et la protéger. Le seul formulaire du site est celui de <optOutLink>désinscription</optOutLink> : il est protégé par Cloudflare Turnstile, et ce que vous y saisissez est transmis à la plateforme (Hetzner, Nuremberg).",
           "<strong>La plateforme</strong> (<appLink>app.revcognition.com</appLink>) et sa base de données sont hébergées sur un serveur Hetzner à Nuremberg (Allemagne)."
         ],
         "intro": "Destinataires des données, par catégories (article 13.1.e du RGPD), et leur localisation :",
@@ -638,7 +642,7 @@
       },
       {
         "heading": "Vos droits",
-        "body": "Accès, rectification, effacement, opposition, limitation et portabilité. Pour exercer l'un d'eux, il suffit d'écrire à <rightsEmail>olivier.serres@revcognition.com</rightsEmail>. Nous répondons en moins de 30 jours. Si vous estimez que nous n'avons pas agi correctement, vous pouvez déposer une réclamation auprès de l'Agence espagnole de protection des données (<aepd>aepd.es</aepd>)."
+        "body": "Accès, rectification, effacement, opposition, limitation et portabilité. Pour ne plus recevoir d'emails, il suffit d'utiliser le <optOutLink>formulaire de désinscription</optOutLink>. Pour exercer l'un d'eux, il suffit d'écrire à <rightsEmail>olivier.serres@revcognition.com</rightsEmail>. Nous répondons en moins de 30 jours. Si vous estimez que nous n'avons pas agi correctement, vous pouvez déposer une réclamation auprès de l'Agence espagnole de protection des données (<aepd>aepd.es</aepd>)."
       },
       {
         "heading": "Cookies",
@@ -709,5 +713,31 @@
         "body": "Comment nous traitons les données personnelles : <privacyLink>politique de confidentialité</privacyLink>."
       }
     ]
+  },
+  "optOut": {
+    "metaTitle": "Se désinscrire — RevCognition",
+    "metaDescription": "Demandez-nous de ne plus vous écrire et, si vous le souhaitez, d'effacer vos données.",
+    "eyebrow": "Se désinscrire",
+    "heading": "Nous ne voulons pas écrire à qui ne veut pas nous lire.",
+    "intro": "Indiquez votre email et vous ne recevrez plus d'emails de prospection envoyés avec RevCognition. La désinscription s'applique immédiatement. Inutile d'avoir reçu un email de notre part.",
+    "email": "Email (obligatoire)",
+    "firstName": "Prénom (facultatif)",
+    "lastName": "Nom (facultatif)",
+    "linkedin": "Profil LinkedIn (facultatif)",
+    "reason": "Motif (facultatif)",
+    "scopeLegend": "Ce que vous demandez",
+    "scopeAlways": "Toujours : ne plus recevoir d'emails à cette adresse. Appliqué immédiatement.",
+    "scopeErase": "En plus, effacer les données que nous détenons sur vous. Nous enverrons un lien à cet email pour le confirmer.",
+    "scopeDomain": "En plus, ne plus écrire à personne de mon domaine (par exemple, toute votre entreprise). Nous enverrons un lien à cet email pour le confirmer. Ne s'applique pas aux adresses personnelles comme Gmail ou Outlook.",
+    "question": "Question de contrôle : combien font {a} + {b} ?",
+    "questionLoading": "Question de contrôle",
+    "submit": "Envoyer la demande",
+    "sending": "Envoi…",
+    "okHeading": "Demande reçue",
+    "okBody": "Si cet email figure dans notre base, il ne recevra plus d'emails. Si vous avez demandé l'effacement de vos données ou la désinscription de votre domaine, consultez votre boîte de réception : nous vous avons envoyé un lien pour le confirmer (il expire dans 24 heures).",
+    "error": "Nous n'avons pas pu envoyer votre demande. Vérifiez les informations et réessayez.",
+    "rateLimited": "Nous avons reçu trop de demandes depuis votre connexion. Réessayez plus tard.",
+    "unavailable": "Le formulaire n'est pas disponible pour le moment. Écrivez-nous à olivier.serres@revcognition.com.",
+    "privacyNote": "Nous utilisons ces données uniquement pour traiter votre demande, et le formulaire est protégé par Cloudflare Turnstile. Plus de détails dans notre <privacyLink>politique de confidentialité</privacyLink>."
   }
 }

@@ -19,7 +19,7 @@
   },
   "footer": {
     "privacy": "Privacy policy",
-    "unsubscribe": "Unsubscribe",
+    "unsubscribe": "Opt out",
     "copyright": "© 2026",
     "cookies": "Cookies"
   },
@@ -545,7 +545,7 @@
     "eyebrow": "Privacy policy",
     "heading": "We treat your data the way we'd want ours treated.",
     "intro": "Written in plain language. If you need the full legal version or want to exercise any of your rights, write to us at <email>olivier.serres@revcognition.com</email>.",
-    "version": "Version 2.1 · 4 October 2026",
+    "version": "Version 2.2 · 13 October 2026",
     "backLink": "← Back to home",
     "sections": [
       {
@@ -571,6 +571,10 @@
           {
             "label": "Visits to this website",
             "body": "measured with Cloudflare Web Analytics, which counts page views without cookies and without identifying visitors."
+          },
+          {
+            "label": "Opt-out form",
+            "body": "(your email and, if you provide them, first name, last name, LinkedIn profile and reason): to stop writing to you and, if you ask and confirm, erase your data (Articles 17 and 21 GDPR). We keep your IP only as a hash, to limit abuse, and your email in clear text only while it awaits your confirmation. <optOutLink>Go to the form</optOutLink>."
           }
         ]
       },
@@ -584,7 +588,7 @@
       {
         "heading": "Where your data is and who has access to it",
         "paragraphs": [
-          "<strong>This website</strong> (revcognition.com) is served from Cloudflare Pages, Cloudflare's global network: it has no EU-only region. The website has no forms; Cloudflare only processes the technical data of each visit (such as the IP address) to serve and protect the page.",
+          "<strong>This website</strong> (revcognition.com) is served from Cloudflare Pages, Cloudflare's global network: it has no EU-only region. Cloudflare processes the technical data of each visit (such as the IP address) to serve and protect the page. The website's only form is the <optOutLink>opt-out</optOutLink> form: it is protected by Cloudflare Turnstile, and what you enter goes to the platform (Hetzner, Nuremberg).",
           "<strong>The platform</strong> (<appLink>app.revcognition.com</appLink>) and its database are hosted on a Hetzner server in Nuremberg (Germany)."
         ],
         "intro": "Recipients of the data, by category (Article 13(1)(e) GDPR), and where they are:",
@@ -638,7 +642,7 @@
       },
       {
         "heading": "Your rights",
-        "body": "Access, rectification, erasure, objection, restriction, and portability. Exercising any of them is as simple as writing to <rightsEmail>olivier.serres@revcognition.com</rightsEmail>. We respond within 30 days. If you believe we haven't handled it properly, you can file a complaint with the Spanish Data Protection Agency (<aepd>aepd.es</aepd>)."
+        "body": "Access, rectification, erasure, objection, restriction, and portability. To stop receiving emails, just use the <optOutLink>opt-out form</optOutLink>. Exercising any of them is as simple as writing to <rightsEmail>olivier.serres@revcognition.com</rightsEmail>. We respond within 30 days. If you believe we haven't handled it properly, you can file a complaint with the Spanish Data Protection Agency (<aepd>aepd.es</aepd>)."
       },
       {
         "heading": "Cookies",
@@ -709,5 +713,31 @@
         "body": "How we process personal data: <privacyLink>privacy policy</privacyLink>."
       }
     ]
+  },
+  "optOut": {
+    "metaTitle": "Opt out — RevCognition",
+    "metaDescription": "Ask us never to email you again and, if you wish, to erase your data.",
+    "eyebrow": "Opt out",
+    "heading": "We don't want to write to people who don't want to read us.",
+    "intro": "Enter your email and you will no longer receive prospecting emails sent with RevCognition. The opt-out applies immediately. You don't need to have received an email from us.",
+    "email": "Email (required)",
+    "firstName": "First name (optional)",
+    "lastName": "Last name (optional)",
+    "linkedin": "LinkedIn profile (optional)",
+    "reason": "Reason (optional)",
+    "scopeLegend": "What you are asking for",
+    "scopeAlways": "Always: stop receiving emails at this address. Applied immediately.",
+    "scopeErase": "Also erase any data we hold about you. We will send a link to that email to confirm it.",
+    "scopeDomain": "Also stop writing to anyone at my domain (for example, your whole company). We will send a link to that email to confirm it. Does not apply to personal addresses such as Gmail or Outlook.",
+    "question": "Check question: what is {a} + {b}?",
+    "questionLoading": "Check question",
+    "submit": "Send request",
+    "sending": "Sending…",
+    "okHeading": "Request received",
+    "okBody": "If that email is in our database, it will receive no more emails. If you asked us to erase your data or opt out your domain, check your inbox: we have sent you a link to confirm it (expires in 24 hours).",
+    "error": "We couldn't send your request. Check the details and try again.",
+    "rateLimited": "We have received too many requests from your connection. Please try again later.",
+    "unavailable": "The form is not available right now. Write to us at olivier.serres@revcognition.com.",
+    "privacyNote": "We use this data only to handle your request, and the form is protected by Cloudflare Turnstile. More in our <privacyLink>privacy policy</privacyLink>."
   }
 }

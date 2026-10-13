@@ -28,12 +28,13 @@ export function Footer() {
           >
             {t("cookies")}
           </Link>
-          <a
-            href="mailto:olivier.serres@revcognition.com?subject=Baja%20de%20comunicaciones"
+          {/* B-2307: el formulario publico de baja sustituye al mailto personal. */}
+          <Link
+            href="/opt-out"
             className="px-2 py-2 rounded-md hover:text-[var(--color-ink)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2"
           >
             {t("unsubscribe")}
-          </a>
+          </Link>
           <LanguageSwitcher />
         </div>
       </div>
