@@ -728,16 +728,16 @@
     "scopeLegend": "Qué quieres pedir",
     "scopeAlways": "Siempre: dejar de recibir correos en este email. Se aplica al momento.",
     "scopeErase": "Además, borrar los datos que tengamos de ti. Te enviaremos un enlace a ese email para confirmarlo.",
-    "scopeDomain": "Además, que no escribamos a nadie de mi dominio (por ejemplo, toda tu empresa). Te enviaremos un enlace a ese email para confirmarlo. No se aplica a correos personales como Gmail u Outlook.",
     "question": "Pregunta de control: ¿cuánto es {a} + {b}?",
     "questionLoading": "Pregunta de control",
     "submit": "Enviar solicitud",
     "sending": "Enviando…",
     "okHeading": "Solicitud recibida",
-    "okBody": "Si ese email está en nuestra base, ya no recibirá más correos. Si pediste borrar tus datos o dar de baja tu dominio, revisa tu bandeja: te hemos enviado un enlace para confirmarlo (caduca en 24 horas).",
+    "okBody": "Si ese email está en nuestra base, ya no recibirá más correos. Si pediste borrar tus datos, revisa tu bandeja: te hemos enviado un enlace para confirmarlo (caduca en 24 horas).",
     "error": "No hemos podido enviar la solicitud. Revisa los datos e inténtalo de nuevo.",
     "rateLimited": "Hemos recibido demasiadas solicitudes desde tu conexión. Inténtalo más tarde.",
-    "unavailable": "El formulario no está disponible ahora mismo. Escríbenos a olivier.serres@revcognition.com.",
+    "unavailable": "El formulario no está disponible ahora mismo. Escríbenos a privacy@revcognition.com.",
+    "otherRequests": "Para cualquier otro trámite de privacidad, escríbenos a <email>privacy@revcognition.com</email>.",
     "privacyNote": "Usamos estos datos solo para atender tu solicitud y protegemos el formulario con Cloudflare Turnstile. Más detalle en la <privacyLink>política de privacidad</privacyLink>."
   }
 }

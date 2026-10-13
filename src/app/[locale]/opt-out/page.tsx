@@ -33,6 +33,13 @@ export default async function OptOutPage({params}: {params: Promise<{locale: str
           <h1 className="text-3xl sm:text-4xl text-[var(--color-ink)] mb-6">{t("heading")}</h1>
           <p className="text-[var(--color-slate)] text-lg leading-relaxed mb-10">{t("intro")}</p>
           <OptOutForm locale={locale} />
+          <p className="mt-8 text-sm text-[var(--color-slate)]">
+            {t.rich("otherRequests", {
+              email: (chunks) => (
+                <a href="mailto:privacy@revcognition.com" className="underline underline-offset-4">{chunks}</a>
+              ),
+            })}
+          </p>
         </div>
       </main>
       <Footer />

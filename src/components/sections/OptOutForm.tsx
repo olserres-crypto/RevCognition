@@ -90,7 +90,6 @@ export function OptOutForm({locale}: {locale: string}) {
           linkedin: f.get("linkedin"),
           motivo: f.get("motivo"),
           borrar: f.get("borrar") === "on",
-          dominio: f.get("dominio") === "on",
           website: f.get("website"),
           pregunta_a: pregunta[0],
           pregunta_b: pregunta[1],
@@ -154,10 +153,6 @@ export function OptOutForm({locale}: {locale: string}) {
         <label className="flex gap-3 items-start text-[var(--color-slate)]">
           <input type="checkbox" name="borrar" className="mt-1" />
           <span>{t("scopeErase")}</span>
-        </label>
-        <label className="flex gap-3 items-start text-[var(--color-slate)]">
-          <input type="checkbox" name="dominio" className="mt-1" />
-          <span>{t("scopeDomain")}</span>
         </label>
       </fieldset>
 

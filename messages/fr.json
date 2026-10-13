@@ -728,16 +728,16 @@
     "scopeLegend": "Ce que vous demandez",
     "scopeAlways": "Toujours : ne plus recevoir d'emails à cette adresse. Appliqué immédiatement.",
     "scopeErase": "En plus, effacer les données que nous détenons sur vous. Nous enverrons un lien à cet email pour le confirmer.",
-    "scopeDomain": "En plus, ne plus écrire à personne de mon domaine (par exemple, toute votre entreprise). Nous enverrons un lien à cet email pour le confirmer. Ne s'applique pas aux adresses personnelles comme Gmail ou Outlook.",
     "question": "Question de contrôle : combien font {a} + {b} ?",
     "questionLoading": "Question de contrôle",
     "submit": "Envoyer la demande",
     "sending": "Envoi…",
     "okHeading": "Demande reçue",
-    "okBody": "Si cet email figure dans notre base, il ne recevra plus d'emails. Si vous avez demandé l'effacement de vos données ou la désinscription de votre domaine, consultez votre boîte de réception : nous vous avons envoyé un lien pour le confirmer (il expire dans 24 heures).",
+    "okBody": "Si cet email figure dans notre base, il ne recevra plus d'emails. Si vous avez demandé l'effacement de vos données, consultez votre boîte de réception : nous vous avons envoyé un lien pour le confirmer (il expire dans 24 heures).",
     "error": "Nous n'avons pas pu envoyer votre demande. Vérifiez les informations et réessayez.",
     "rateLimited": "Nous avons reçu trop de demandes depuis votre connexion. Réessayez plus tard.",
-    "unavailable": "Le formulaire n'est pas disponible pour le moment. Écrivez-nous à olivier.serres@revcognition.com.",
+    "unavailable": "Le formulaire n'est pas disponible pour le moment. Écrivez-nous à privacy@revcognition.com.",
+    "otherRequests": "Pour toute autre démarche relative à la vie privée, écrivez-nous à <email>privacy@revcognition.com</email>.",
     "privacyNote": "Nous utilisons ces données uniquement pour traiter votre demande, et le formulaire est protégé par Cloudflare Turnstile. Plus de détails dans notre <privacyLink>politique de confidentialité</privacyLink>."
   }
 }

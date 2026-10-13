@@ -728,16 +728,16 @@
     "scopeLegend": "What you are asking for",
     "scopeAlways": "Always: stop receiving emails at this address. Applied immediately.",
     "scopeErase": "Also erase any data we hold about you. We will send a link to that email to confirm it.",
-    "scopeDomain": "Also stop writing to anyone at my domain (for example, your whole company). We will send a link to that email to confirm it. Does not apply to personal addresses such as Gmail or Outlook.",
     "question": "Check question: what is {a} + {b}?",
     "questionLoading": "Check question",
     "submit": "Send request",
     "sending": "Sending…",
     "okHeading": "Request received",
-    "okBody": "If that email is in our database, it will receive no more emails. If you asked us to erase your data or opt out your domain, check your inbox: we have sent you a link to confirm it (expires in 24 hours).",
+    "okBody": "If that email is in our database, it will receive no more emails. If you asked us to erase your data, check your inbox: we have sent you a link to confirm it (expires in 24 hours).",
     "error": "We couldn't send your request. Check the details and try again.",
     "rateLimited": "We have received too many requests from your connection. Please try again later.",
-    "unavailable": "The form is not available right now. Write to us at olivier.serres@revcognition.com.",
+    "unavailable": "The form is not available right now. Write to us at privacy@revcognition.com.",
+    "otherRequests": "For any other privacy request, write to us at <email>privacy@revcognition.com</email>.",
     "privacyNote": "We use this data only to handle your request, and the form is protected by Cloudflare Turnstile. More in our <privacyLink>privacy policy</privacyLink>."
   }
 }
