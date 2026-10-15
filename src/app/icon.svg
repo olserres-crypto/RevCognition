@@ -1,13 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="12" fill="#312e81"/>
-  <text x="32" y="46"
-    font-family="Georgia, 'Times New Roman', serif"
-    font-size="32"
-    font-weight="bold"
-    fill="#f4f4f2"
-    stroke="#f4f4f2"
-    stroke-width="0.8"
-    paint-order="stroke fill"
-    text-rendering="geometricPrecision"
-    text-anchor="middle">Rev</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- P1: R sola. Grotesca geometrica (eco de Instrument Sans), trazo 4u = 2px a 16px -->
+  <rect width="32" height="32" rx="7" fill="#6366f1"/>
+  <g transform="translate(-1 0)" fill="none" stroke="#f4f4f2" stroke-width="4" stroke-linejoin="miter">
+    <path d="M11 6V26"/>
+    <path d="M11 8H17A5 5 0 0 1 17 18H11"/>
+    <path d="M16 18L23.5 26"/>
+  </g>
 </svg>
