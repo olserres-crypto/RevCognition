@@ -191,22 +191,22 @@
         "description": "Vous avez déjà une liste ? Importez-la en CSV et elle entre dans la même mécanique de personnalisation et d'envoi que la recherche automatique."
       },
       {
-        "title": "Vous payez par prospect travaillé",
-        "description": "Pas par poste ni par abonnement. Un crédit pour chaque nouveau prospect dont l'e-mail est délivré ; les rebonds sont remboursés automatiquement et les relances de cette séquence ne consomment pas de crédit supplémentaire."
+        "title": "Vous payez par crédit",
+        "description": "Pas par poste ni par abonnement. 1 crédit = 1 nouvelle personne qui reçoit votre premier e-mail ; les rebonds sont remboursés automatiquement et les relances de cette séquence ne consomment pas de crédit supplémentaire."
       }
     ],
     "moreLink": "Voir tout ce qu'il fait, en détail"
   },
   "pricing": {
     "eyebrow": "Tarifs",
-    "heading": "À partir de 1 € par prospect. Plus le pack est grand, moins chacun revient cher.",
-    "intro": "Vous ne payez ni sièges ni outils. Vous payez par prospect travaillé : 1 crédit est consommé lorsque le premier e-mail à un nouveau prospect est délivré (s'il rebondit, le crédit revient automatiquement), et les relances de cette même séquence ne consomment pas de crédit supplémentaire. S'il répond avant, le système s'arrête. Sinon, il se termine avec élégance.",
+    "heading": "À partir de 1 € par crédit. Plus le pack est grand, moins chacun revient cher.",
+    "intro": "Vous ne payez ni sièges ni outils. Vous payez par crédit : 1 crédit = 1 nouvelle personne qui reçoit votre premier e-mail (s'il rebondit, le crédit revient automatiquement), et les relances de cette même séquence ne consomment pas de crédit supplémentaire. S'il répond avant, le système s'arrête. Sinon, il se termine avec élégance.",
     "perProspectIncludes": "Chaque prospect inclut : identification, enrichissement avec des signaux réels et séquence complète (ouverture, relance, nouvel angle, clôture).",
     "noCommitment": "Sans engagement et sans abonnement. Les crédits n'expirent pas. Le seul coût récurrent est votre domaine d'envoi : 20 € par an à partir de la deuxième année. Si vous arrêtez, il expire et rien d'autre n'est facturé.",
-    "startPrice": "Pour démarrer : 150 € (HT) en paiement unique, la mise en place (50 €) plus le premier pack de 100 prospects (100 €). Une agence de prospection se paie chaque mois et embaucher quelqu'un pour prospecter coûte un salaire ; ici, vous payez une fois et ne continuez que si cela fonctionne pour vous.",
+    "startPrice": "Pour démarrer : 150 € (HT) en paiement unique, la mise en place (50 €) plus le premier pack de 100 crédits (100 €). Une agence de prospection se paie chaque mois et embaucher quelqu'un pour prospecter coûte un salaire ; ici, vous payez une fois et ne continuez que si cela fonctionne pour vous.",
     "noVat": "HT",
-    "qualifiedProspects": "{count} prospects qualifiés",
-    "perSend": "{value} / prospect",
+    "qualifiedProspects": "{count} crédits",
+    "perSend": "{value} / crédit",
     "requestAccess": "Demander l'accès avec ce pack",
     "talkToFounder": "Parler au fondateur →",
     "plans": [
@@ -218,12 +218,12 @@
       {
         "name": "Pour grandir",
         "tagline": "Couvrez plusieurs segments ou marchés en parallèle.",
-        "discount": "moins cher par prospect"
+        "discount": "moins cher par crédit"
       },
       {
         "name": "Pour passer à l'échelle",
         "tagline": "Prospection continue sans avoir à recharger sans cesse.",
-        "discount": "moins cher par prospect"
+        "discount": "moins cher par crédit"
       }
     ],
     "setup": {
@@ -337,7 +337,7 @@
           "body": "Quand vous envoyez, comment nous vous prévenons (email et Telegram) et comment se comporte votre campagne, sans ouvrir un ticket pour chaque changement."
         },
         {
-          "title": "Vous payez par prospect traité",
+          "title": "Vous payez par crédit",
           "body": "Pas par poste ni par abonnement. Rechargez vos crédits quand vous voulez, en toute sécurité avec Stripe."
         }
       ]
@@ -436,7 +436,7 @@
         },
         {
           "q": "Combien ça coûte ?",
-          "a": "Des frais de mise en route initiaux de 50 €, paiement unique, pour préparer le compte, puis des packs de prospects à partir de 100 € (100 prospects), avec une remise sur volume : 600 prospects pour 500 € et 1 300 pour 1 000 €. Prix hors taxes : la TVA applicable est ajoutée sur la facture selon le pays de votre entreprise. Un crédit est consommé lorsque le premier e-mail à un nouveau prospect est délivré, et un e-mail qui rebondit n'en consomme aucun ; les relances de cette même séquence ne consomment pas de crédit supplémentaire. Sans engagement, et les crédits n'expirent pas. Le seul coût récurrent est votre domaine d'envoi : 20 € par an à partir de la deuxième année."
+          "a": "Des frais de mise en route initiaux de 50 €, paiement unique, pour préparer le compte, puis des packs de crédits à partir de 100 € (100 crédits), avec une remise sur volume : 600 crédits pour 500 € et 1 300 crédits pour 1 000 €. Prix hors taxes : la TVA applicable est ajoutée sur la facture selon le pays de votre entreprise. 1 crédit = 1 nouvelle personne qui reçoit votre premier e-mail, et un e-mail qui rebondit n'en consomme aucun ; les relances de cette même séquence ne consomment pas de crédit supplémentaire. Sans engagement, et les crédits n'expirent pas. Le seul coût récurrent est votre domaine d'envoi : 20 € par an à partir de la deuxième année."
         },
         {
           "q": "Est-ce que ça marche dans mon secteur ou mon pays ?",
