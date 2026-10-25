@@ -25,6 +25,13 @@ for (const file of files) {
   if (!hero.includes("<h1")) problems.push("la primera <section> no contiene el <h1>");
   const hidden = hero.match(/opacity:\s*0(?![.\d])/g) ?? [];
   if (hidden.length) problems.push(`${hidden.length} estilo(s) opacity:0 en el hero`);
+  // Ocultacion por clase (Tailwind opacity-0) en cualquier parte del hero.
+  const hiddenClass = hero.match(/class="[^"]*\bopacity-0\b[^"]*"/g) ?? [];
+  if (hiddenClass.length) problems.push(`${hiddenClass.length} elemento(s) con clase opacity-0 en el hero`);
+  // La entrada CSS (.hero-rise) es solo para la columna de producto: si envuelve
+  // al H1, el LCP vuelve a esperar a la animacion.
+  const beforeH1 = hero.slice(0, Math.max(0, hero.indexOf("<h1")));
+  if (/\bhero-rise\b/.test(beforeH1)) problems.push("el <h1> esta dentro de .hero-rise");
   if (problems.length) {
     console.error(`ROJO ${file}: ${problems.join("; ")}`);
     failed++;

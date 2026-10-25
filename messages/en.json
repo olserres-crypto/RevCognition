@@ -60,7 +60,7 @@
     "facts": {
       "eu": "Platform hosted in the EU",
       "b2b": "Business to business only (GDPR art. 6.1.f)",
-      "approval": "Nothing goes out without your approval"
+      "unsubscribe": "Unsubscribe in every email"
     }
   },
   "problem": {

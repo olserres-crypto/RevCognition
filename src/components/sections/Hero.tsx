@@ -1,5 +1,3 @@
-"use client";
-
 import {useTranslations} from "next-intl";
 import {Button} from "@/components/ui/Button";
 import {HeroSequence} from "@/components/ui/HeroSequence";
@@ -65,7 +63,7 @@ export function Hero() {
           <ul className="mt-4 flex flex-wrap gap-x-5 gap-y-1.5 text-[13px] text-[var(--color-slate)]">
             <li>{t("facts.eu")}</li>
             <li>{t("facts.b2b")}</li>
-            <li>{t("facts.approval")}</li>
+            <li>{t("facts.unsubscribe")}</li>
           </ul>
         </div>
 

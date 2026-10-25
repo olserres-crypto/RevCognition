@@ -60,7 +60,7 @@
     "facts": {
       "eu": "Plateforme hébergée dans l'UE",
       "b2b": "Entre entreprises uniquement (art. 6.1.f RGPD)",
-      "approval": "Rien ne part sans votre accord"
+      "unsubscribe": "Désinscription dans chaque e-mail"
     }
   },
   "problem": {

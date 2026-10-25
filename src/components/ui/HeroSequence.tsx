@@ -43,8 +43,12 @@ export function HeroSequence() {
     // al hidratar puede estar ya visible. Reiniciar entonces a «texto vacio»
     // seria un parpadeo: solo se reproduce la secuencia si la columna sigue en
     // opacity 0 (dentro del retardo de la animacion). Si no, estado final.
+    // Compromiso asumido: en cargas lentas casi nunca se reproduce; el estado
+    // final (aprobado) ya cuenta la historia. Tampoco corre fuera de pantalla
+    // (en movil la columna queda bajo el pliegue).
     const column = rootRef.current?.closest("[data-hero-rise]");
     if (!column || getComputedStyle(column).opacity !== "0") return;
+    if (column.getBoundingClientRect().top >= window.innerHeight) return;
     const timers: ReturnType<typeof setTimeout>[] = [];
     // Reinicio al estado inicial en un timer, no en el cuerpo del efecto: la
     // columna aun esta en opacity 0 (comprobado arriba), asi que no se ve.

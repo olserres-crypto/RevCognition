@@ -87,7 +87,7 @@ Variantes actuales:
 - **primary** — gradiente vertical indigo 500→600, texto blanco. CTA principal.
 - **secondary** — borde ink 1px + texto ink. CTA secundario.
 
-Variantes pendientes (TODOS.md):
+Variantes también disponibles en `Button.tsx` (antes figuraban como pendientes en TODOS.md):
 - **warm-solid** — fondo warm plano, texto blanco. Para cards con borde warm (featured pricing).
 - **ink-solid** — fondo ink plano, texto paper. Para cards default con CTA firme.
 
@@ -97,7 +97,7 @@ Presión (B-2447): `motion-safe:active:scale-[0.97]` con la curva `--ease-spring
 
 ### Nav — `src/components/sections/Nav.tsx`
 
-`sticky` con la clase `.nav-material` (`globals.css`): fondo `paper` al 72 % con `backdrop-filter: blur(20px) saturate(180%)` y un borde que se desvanece (`::after` en degradado de 12px) en lugar de una línea dura. Es estructura, no glassmorphism decorativo. Con `prefers-reduced-transparency: reduce`, o sin soporte de `backdrop-filter`, el fondo es `paper` opaco. Selector de idioma (`LanguageSwitcher`) en la barra (≥ `sm`) y en el cajón móvil, con zona táctil de 40px.
+`sticky` con la clase `.nav-material` (`globals.css`): fondo `paper` al 72 % con `backdrop-filter: blur(20px) saturate(180%)` y un borde que se desvanece (`::after` en degradado de 12px) en lugar de una línea dura. Es estructura, no glassmorphism decorativo. Con `prefers-reduced-transparency: reduce`, o sin soporte de `backdrop-filter`, el fondo es `paper` opaco. Selector de idioma (`LanguageSwitcher`) en la barra (≥ `sm`) y en el cajón móvil, con 40px de alto de zona táctil (el ancho no crece: la barra va justa a 640px).
 
 ### Eyebrow
 
@@ -179,7 +179,7 @@ El sitio marketing no tiene estados vacíos. Si en el futuro hay dashboard: empt
 
 ## Social proof
 
-La prueba social se hace con la **firma del fundador** bajo los CTA del hero (monograma de iniciales, sin foto, P465 10a; nombre y una frase comprobable de `founder.paragraph3`) y **tres hechos comprobables** que ya están en Trust (UE, solo B2B con su base jurídica, nada sale sin aprobación), **no con case studies ficticios**. (El `ValidationBadge` que citaba esta sección no existe en `src/`.) El componente `UseCases` se eliminó explícitamente para evitar fabricar credibilidad (seguía en la home hasta B-2228, retirado del código el 2026-10-10). Cuando haya clientes reales con permiso para citar, se reincorporará con nombres reales.
+La prueba social se hace con la **firma del fundador** bajo los CTA del hero (monograma de iniciales, sin foto, P465 10a; nombre y una frase comprobable de `founder.paragraph3`) y **tres hechos comprobables** que ya están en Trust (UE, solo B2B con su base jurídica, baja en cada correo), **no con case studies ficticios**. (El `ValidationBadge` que citaba esta sección no existe en `src/`.) El componente `UseCases` se eliminó explícitamente para evitar fabricar credibilidad (seguía en la home hasta B-2228, retirado del código el 2026-10-10). Cuando haya clientes reales con permiso para citar, se reincorporará con nombres reales.
 
 ## Accessibility baseline
 
@@ -214,7 +214,7 @@ La prueba social se hace con la **firma del fundador** bajo los CTA del hero (mo
 - Usar el eyebrow pattern en cada sección nueva.
 - Mantener `max-w-5xl` como tope. Full-bleed solo para Nav y Footer.
 - Alternar `paper` / `surface` para ritmo. Tres bandas `paper` seguidas rompen el pulso.
-- Una sola sans (Instrument Sans) en display y en body; la jerarquía la hacen peso, tamaño y color. Nunca serif (ver §Tesis 1).
+- Una sola sans (Instrument Sans) en display y en body; la jerarquía la hacen peso, tamaño y color. Nunca serif (ver §Tesis, punto 1).
 - Un CTA primario por viewport. Dos CTAs = uno primario + uno secundario.
 
 **Don't**

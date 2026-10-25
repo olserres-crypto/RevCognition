@@ -48,9 +48,6 @@ body {
 
 /* Los encabezados heredan la sans del body a propósito: no hay familia de
    display. Solo se conserva el apretado óptico. */
-h1, h2, h3 {
-  letter-spacing: -0.02em;
-}
 /* B-2447: el apretado crece con el tamaño (display más cerrado que el h3). */
 h1 { letter-spacing: -0.035em; }
 h2 { letter-spacing: -0.025em; }
@@ -81,6 +78,7 @@ h3 { letter-spacing: -0.015em; }
    borde que se desvanece en lugar de una línea dura. Sin transparencia si el
    usuario la ha reducido o si el navegador no tiene backdrop-filter. */
 .nav-material {
+  background: var(--color-paper); /* sin color-mix (Safari < 16.2): opaca */
   background: color-mix(in srgb, var(--color-paper) 72%, transparent);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
   backdrop-filter: blur(20px) saturate(180%);
