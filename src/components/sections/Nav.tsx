@@ -41,7 +41,8 @@ export function Nav() {
 
   return (
     <>
-      <nav className="sticky top-0 z-50 bg-[var(--color-paper)]/95 border-b border-[var(--color-border)]">
+      {/* nav-material (globals.css): translúcida con borde desvanecido, B-2447. */}
+      <nav className="nav-material sticky top-0 z-50">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 flex items-center justify-between h-14">
           <Link
             href="/"
@@ -81,7 +82,7 @@ export function Nav() {
               aria-expanded={open}
               aria-controls="mobile-nav-drawer"
               onClick={() => setOpen((v) => !v)}
-              className="sm:hidden ml-1 inline-flex items-center justify-center w-11 h-11 rounded-md text-[var(--color-ink)] hover:bg-[var(--color-surface)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2"
+              className="sm:hidden ml-1 inline-flex items-center justify-center w-11 h-11 rounded-md text-[var(--color-ink)] hover:bg-[var(--color-surface)] active:bg-[var(--color-border)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2"
             >
               <svg
                 aria-hidden="true"
@@ -150,7 +151,7 @@ export function Nav() {
                   type="button"
                   aria-label={t("closeMenu")}
                   onClick={() => setOpen(false)}
-                  className="inline-flex items-center justify-center w-11 h-11 rounded-md text-[var(--color-ink)] hover:bg-[var(--color-surface)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2"
+                  className="inline-flex items-center justify-center w-11 h-11 rounded-md text-[var(--color-ink)] hover:bg-[var(--color-surface)] active:bg-[var(--color-border)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-warm)] focus-visible:ring-offset-2"
                 >
                   <svg
                     aria-hidden="true"

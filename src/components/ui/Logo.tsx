@@ -12,7 +12,7 @@ export function Logo({ size = "nav", className = "" }: LogoProps) {
 
   return (
     <span className={`font-sans tracking-[-0.03em] leading-none ${sizes[size]} ${className}`}>
-      <span className="font-light text-[var(--color-warm)]">Rev</span>
+      <span className="font-normal text-[var(--color-warm)]">Rev</span>
       <span className="font-medium">Cognition</span>
     </span>
   );

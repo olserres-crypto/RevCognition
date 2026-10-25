@@ -51,6 +51,62 @@ body {
 h1, h2, h3 {
   letter-spacing: -0.02em;
 }
+/* B-2447: el apretado crece con el tamaño (display más cerrado que el h3). */
+h1 { letter-spacing: -0.035em; }
+h2 { letter-spacing: -0.025em; }
+h3 { letter-spacing: -0.015em; }
+
+/* B-2447: curva tipo spring (amortiguada, sin rebote) para entradas y presión. */
+:root {
+  --ease-spring: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* B-2447: entrada de la columna de producto del hero. Es CSS, no JS: sin JS
+   también termina visible. Con reduced-motion no hay animación (estado final).
+   HeroSequence lee la opacidad de [data-hero-rise] para decidir si reproduce
+   su secuencia: no cambiar el nombre del atributo sin tocarla. */
+@media (prefers-reduced-motion: no-preference) {
+  .hero-rise {
+    animation: hero-rise 0.5s var(--ease-spring) 0.35s both;
+  }
+}
+@keyframes hero-rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
+
+/* B-2447: barra de navegación translúcida (material, no decoración) con un
+   borde que se desvanece en lugar de una línea dura. Sin transparencia si el
+   usuario la ha reducido o si el navegador no tiene backdrop-filter. */
+.nav-material {
+  background: color-mix(in srgb, var(--color-paper) 72%, transparent);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  backdrop-filter: blur(20px) saturate(180%);
+}
+.nav-material::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -12px;
+  height: 12px;
+  pointer-events: none;
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--color-ink) 6%, transparent), transparent);
+}
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .nav-material {
+    background: var(--color-paper);
+  }
+}
+@media (prefers-reduced-transparency: reduce) {
+  .nav-material {
+    background: var(--color-paper);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+}
 
 /* B-2228 React Bits 1-3: StatusMark, cursor de TextType y tachado de «El problema».
    Solo transform/opacity/stroke; con reduced-motion todo salta a su estado final. */

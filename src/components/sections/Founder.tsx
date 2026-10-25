@@ -21,8 +21,8 @@ export function Founder() {
           </div>
         </div>
 
-        {/* Cierre — punto de extrañeza tipográfico (display + light, sale del max-w-2xl) */}
-        <p className="mt-12 font-light text-3xl sm:text-5xl lg:text-6xl text-[var(--color-ink)] leading-[1.05] tracking-tight max-w-3xl">
+        {/* Cierre — punto de extrañeza tipográfico (display a 400 (no hay 300 cargado), sale del max-w-2xl) */}
+        <p className="mt-12 font-normal text-3xl sm:text-5xl lg:text-6xl text-[var(--color-ink)] leading-[1.05] tracking-tight max-w-3xl">
           {t("closingPre")}{" "}
           <span className="italic text-[var(--color-warm)]">{t("closingItalic")}</span>{" "}
           {t("closingPost")}

@@ -1,21 +1,18 @@
 "use client";
 
 import {useTranslations} from "next-intl";
-import {motion, useReducedMotion, type Variants} from "framer-motion";
 import {Button} from "@/components/ui/Button";
 import {HeroSequence} from "@/components/ui/HeroSequence";
 
-const fadeUp: Variants = {
-  hidden: {opacity: 0, y: 14},
-  show: (delay: number) => ({
-    opacity: 1, y: 0,
-    transition: {duration: 0.45, ease: "easeOut", delay},
-  }),
-};
-
+/**
+ * B-2447: la columna de texto (H1, lead, CTA, firma) sale del servidor visible
+ * y quieta: el H1 es el elemento LCP y no puede esperar a que hidrate el JS.
+ * Solo la columna de producto entra animada, y en CSS (`.hero-rise` en
+ * globals.css), de modo que sin JS también acaba visible y con
+ * prefers-reduced-motion no se anima.
+ */
 export function Hero() {
   const t = useTranslations("hero");
-  const reduce = useReducedMotion();
   return (
     <section className="max-w-5xl mx-auto px-4 sm:px-6 pt-16 pb-20 sm:pt-24 sm:pb-28">
       <div className="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
@@ -25,46 +22,59 @@ export function Hero() {
               en dos), no los ~976px del resto de la página. A 60px caben ~15
               caracteres por línea y el titular parte en SEIS; a 48px caben ~19 y
               parte en cuatro. Es medida, no estética: donde el h1 ocupa el ancho
-              completo, text-6xl sigue siendo lo correcto. Ver DESIGN.md §Tipografía. */}
-          <motion.h1
-            variants={fadeUp} initial={reduce ? false : "hidden"} animate="show" custom={0}
-            className="text-4xl sm:text-5xl lg:text-5xl text-[var(--color-ink)] leading-tight"
-          >
+              completo, text-6xl sigue siendo lo correcto. Ver DESIGN.md §Tipografía.
+              Pesos 500/400: los dos están cargados (layout.tsx), 300 no. */}
+          <h1 className="text-4xl sm:text-5xl lg:text-5xl font-medium text-[var(--color-ink)] leading-[1.08]">
             {t("line1")}{" "}
             <span className="text-[var(--color-warm)]">{t("line1Accent")}</span>{" "}
-            <span className="block font-light">{t("line2")}</span>
-          </motion.h1>
+            <span className="block font-normal text-[var(--color-slate)]">{t("line2")}</span>
+          </h1>
 
-          <motion.p
-            variants={fadeUp} initial={reduce ? false : "hidden"} animate="show" custom={0.1}
-            className="mt-6 text-lg sm:text-xl text-[var(--color-slate)] leading-relaxed"
-          >
+          <p className="mt-6 text-lg sm:text-xl text-[var(--color-slate)] leading-relaxed">
             {t("subtitle")}
-          </motion.p>
+          </p>
 
-          <motion.div
-            variants={fadeUp} initial={reduce ? false : "hidden"} animate="show" custom={0.2}
-            className="mt-8 flex flex-col sm:flex-row gap-3"
-          >
+          <div className="mt-8 flex flex-col sm:flex-row gap-3">
             <Button href="https://app.revcognition.com/" target="_blank" rel="noopener noreferrer" className="text-base px-7 py-3.5">
               {t("ctaPrimary")}
             </Button>
             <Button variant="secondary" href="#como-funciona" className="text-base px-7 py-3.5">
               {t("ctaSecondary")}
             </Button>
-          </motion.div>
+          </div>
 
-          <motion.p
-            variants={fadeUp} initial={reduce ? false : "hidden"} animate="show" custom={0.28}
-            className="mt-4 text-sm text-[var(--color-slate)] leading-relaxed max-w-sm"
-          >
+          <p className="mt-4 text-sm text-[var(--color-slate)] leading-relaxed max-w-sm">
             {t("note")}
-          </motion.p>
+          </p>
+
+          {/* Firma del fundador, sin foto (P465 10a): iniciales como monograma.
+              Prueba social honesta en la primera pantalla: persona + hechos
+              comprobables, nunca clientes inventados (DESIGN.md §Social proof). */}
+          <div className="mt-7 flex items-center gap-3 text-sm text-[var(--color-slate)] leading-snug">
+            <span
+              aria-hidden="true"
+              className="flex-none w-9 h-9 rounded-full bg-[var(--color-surface)] border border-[var(--color-border)] grid place-items-center text-xs font-semibold text-[var(--color-ink)]"
+            >
+              {t("byline.initials")}
+            </span>
+            <p>
+              <span className="font-medium text-[var(--color-ink)]">{t("byline.name")}</span>{" "}
+              {t("byline.text")}
+            </p>
+          </div>
+          <ul className="mt-4 flex flex-wrap gap-x-5 gap-y-1.5 text-[13px] text-[var(--color-slate)]">
+            <li>{t("facts.eu")}</li>
+            <li>{t("facts.b2b")}</li>
+            <li>{t("facts.approval")}</li>
+          </ul>
         </div>
 
-        <motion.div variants={fadeUp} initial="hidden" animate="show" custom={0.35} className="hidden lg:flex flex-col gap-3">
+        {/* Columna de producto: también en móvil (debajo de los CTA, fuera del
+            primer pliegue), con la entrada en CSS. data-hero-rise lo lee
+            HeroSequence para no reiniciar la secuencia si ya es visible. */}
+        <div data-hero-rise className="hero-rise mt-12 lg:mt-0 flex flex-col gap-3 min-w-0">
           <HeroSequence />
-        </motion.div>
+        </div>
       </div>
     </section>
   );

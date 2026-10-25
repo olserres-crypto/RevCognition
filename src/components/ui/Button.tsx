@@ -10,18 +10,21 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   rel?: string;
 }
 
+// B-2447: feedback al PRESIONAR (no al soltar): escala .97 con curva tipo
+// spring. motion-safe: con prefers-reduced-motion no se escala, y el cambio de
+// color del hover/active sigue dando el feedback.
 const base =
-  "inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-semibold text-base transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:opacity-60 disabled:cursor-not-allowed";
+  "inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-semibold text-base transition-[color,background-color,border-color,filter,opacity,scale] duration-150 ease-[var(--ease-spring)] motion-safe:active:scale-[0.97] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:opacity-60 disabled:cursor-not-allowed disabled:active:scale-100";
 
 const variants: Record<Variant, string> = {
   primary:
-    "text-white bg-[linear-gradient(to_bottom,var(--color-warm),var(--color-warm-hover))] hover:brightness-105 focus-visible:ring-[var(--color-warm)]",
+    "text-white bg-[linear-gradient(to_bottom,var(--color-warm),var(--color-warm-hover))] hover:brightness-105 active:brightness-95 focus-visible:ring-[var(--color-warm)]",
   secondary:
-    "border border-[var(--color-ink)] text-[var(--color-ink)] hover:bg-[var(--color-ink)] hover:text-[var(--color-paper)] focus-visible:ring-[var(--color-ink)]",
+    "border border-[var(--color-ink)] text-[var(--color-ink)] hover:bg-[var(--color-ink)] hover:text-[var(--color-paper)] active:bg-[var(--color-slate)] focus-visible:ring-[var(--color-ink)]",
   "warm-solid":
-    "bg-[var(--color-warm)] text-white hover:bg-[var(--color-warm-hover)] focus-visible:ring-[var(--color-warm)]",
+    "bg-[var(--color-warm)] text-white hover:bg-[var(--color-warm-hover)] active:brightness-95 focus-visible:ring-[var(--color-warm)]",
   "ink-solid":
-    "bg-[var(--color-ink)] text-[var(--color-paper)] hover:opacity-90 focus-visible:ring-[var(--color-ink)]",
+    "bg-[var(--color-ink)] text-[var(--color-paper)] hover:opacity-90 active:opacity-80 focus-visible:ring-[var(--color-ink)]",
 };
 
 export function Button({ variant = "primary", href, target, rel, className, children, ...props }: ButtonProps) {
