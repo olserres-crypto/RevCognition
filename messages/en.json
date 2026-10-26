@@ -554,13 +554,13 @@
     "metaDescription": "How we handle your data at RevCognition: what we collect, why, where it is stored, for how long, and how to exercise your rights.",
     "eyebrow": "Privacy policy",
     "heading": "We treat your data the way we'd want ours treated.",
-    "intro": "Written in plain language. If you need the full legal version or want to exercise any of your rights, write to us at <email>olivier.serres@revcognition.com</email>.",
-    "version": "Version 2.2 · 13 October 2026",
+    "intro": "Written in plain language. If you need the full legal version or want to exercise any of your rights, write to us at <email>privacy@revcognition.com</email>.",
+    "version": "Version 2.3 · 26 October 2026",
     "backLink": "← Back to home",
     "sections": [
       {
         "heading": "Who the data controller is",
-        "body": "RevCognition (Olivier Serres). Contact: <email>olivier.serres@revcognition.com</email>. Based in Barcelona, Spain."
+        "body": "RevCognition (Olivier Serres). Contact: <email>privacy@revcognition.com</email>. Based in Barcelona, Spain."
       },
       {
         "heading": "What data we collect and why",
@@ -640,7 +640,7 @@
             "body": "— meeting booking and messaging tools, to let you know when a prospect replies."
           }
         ],
-        "outro": "If you want to know which specific provider is behind a category, write to us at <email>olivier.serres@revcognition.com</email> and we will tell you. We do not sell data to third parties, we do not use it to train general-purpose models, and we do not share it with advertisers."
+        "outro": "If you want to know which specific provider is behind a category, write to us at <email>privacy@revcognition.com</email> and we will tell you. We do not sell data to third parties, we do not use it to train general-purpose models, and we do not share it with advertisers."
       },
       {
         "heading": "AI-generated content",
@@ -652,7 +652,7 @@
       },
       {
         "heading": "Your rights",
-        "body": "Access, rectification, erasure, objection, restriction, and portability. To stop receiving emails, just use the <optOutLink>opt-out form</optOutLink>. Exercising any of them is as simple as writing to <rightsEmail>olivier.serres@revcognition.com</rightsEmail>. We respond within 30 days. If you believe we haven't handled it properly, you can file a complaint with the Spanish Data Protection Agency (<aepd>aepd.es</aepd>)."
+        "body": "Access, rectification, erasure, objection, restriction, and portability. To stop receiving emails, just use the <optOutLink>opt-out form</optOutLink>. Exercising any of them is as simple as writing to <rightsEmail>privacy@revcognition.com</rightsEmail>. We respond within 30 days. If you believe we haven't handled it properly, you can file a complaint with the Spanish Data Protection Agency (<aepd>aepd.es</aepd>)."
       },
       {
         "heading": "Cookies",

@@ -8,7 +8,7 @@ import {getTranslations} from "next-intl/server";
 // Every string goes through t.rich with the same tag map, so any section of
 // any document can link to the others without per-index special cases.
 
-export const CONTACT_EMAIL = "olivier.serres@revcognition.com";
+export const CONTACT_EMAIL = "privacy@revcognition.com";
 const APP_URL = "https://app.revcognition.com";
 const AEPD_URL = "https://www.aepd.es";
 
