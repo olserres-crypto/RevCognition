@@ -24,6 +24,9 @@ const pages = [
   ...pageArgs.map((file) => ({file, hero: false})),
 ];
 
+// `opacity:0` en linea, sin contar fill-opacity/stop-opacity (SVG) ni 0.5.
+const STYLE_HIDDEN = /(?<![\w-])opacity:\s*0(?![.\d])/g;
+
 let failed = 0;
 for (const {file, hero: checkHero} of pages) {
   if (!existsSync(file)) {
@@ -33,30 +36,31 @@ for (const {file, hero: checkHero} of pages) {
   }
   const html = readFileSync(file, "utf8");
   const problems = [];
-  // Pagina entera (B-2463), sobre el HTML tal cual: la misma cuenta que el censo
-  // de la ficha (`curl -s https://revcognition.com/ | grep -o opacity:0`).
-  const pageHidden = html.match(/opacity:\s*0(?![.\d])/g) ?? [];
-  if (pageHidden.length) problems.push(`${pageHidden.length} estilo(s) opacity:0 en la pagina`);
-  const pageHiddenClass = html.match(/class="(?:[^"]*\s)?opacity-0(?:\s[^"]*)?"/g) ?? [];
-  if (pageHiddenClass.length) problems.push(`${pageHiddenClass.length} elemento(s) con clase opacity-0 en la pagina`);
-  if (!checkHero) {
-    report(file, problems, "pagina visible desde el servidor");
-    continue;
+  let rest = html;
+  if (checkHero) {
+    const start = html.indexOf("<section");
+    const end = html.indexOf("</section>", start);
+    const hero = start >= 0 && end > start ? html.slice(start, end) : "";
+    // El resto de la pagina se mira abajo sin el hero, para no contar dos veces.
+    if (hero) rest = html.slice(0, start) + html.slice(end);
+    if (!hero.includes("<h1")) problems.push("la primera <section> no contiene el <h1>");
+    const hidden = hero.match(STYLE_HIDDEN) ?? [];
+    if (hidden.length) problems.push(`${hidden.length} estilo(s) opacity:0 en el hero`);
+    // Ocultacion por clase (Tailwind opacity-0, con o sin variante) en el hero.
+    const hiddenClass = hero.match(/class="[^"]*\bopacity-0\b[^"]*"/g) ?? [];
+    if (hiddenClass.length) problems.push(`${hiddenClass.length} elemento(s) con clase opacity-0 en el hero`);
+    // La entrada CSS (.hero-rise) es solo para la columna de producto: si envuelve
+    // al H1, el LCP vuelve a esperar a la animacion.
+    const beforeH1 = hero.slice(0, Math.max(0, hero.indexOf("<h1")));
+    if (/\bhero-rise\b/.test(beforeH1)) problems.push("el <h1> esta dentro de .hero-rise");
   }
-  const start = html.indexOf("<section");
-  const end = html.indexOf("</section>", start);
-  const hero = start >= 0 && end > start ? html.slice(start, end) : "";
-  if (!hero.includes("<h1")) problems.push("la primera <section> no contiene el <h1>");
-  const hidden = hero.match(/opacity:\s*0(?![.\d])/g) ?? [];
-  if (hidden.length) problems.push(`${hidden.length} estilo(s) opacity:0 en el hero`);
-  // Ocultacion por clase (Tailwind opacity-0) en cualquier parte del hero.
-  const hiddenClass = hero.match(/class="[^"]*\bopacity-0\b[^"]*"/g) ?? [];
-  if (hiddenClass.length) problems.push(`${hiddenClass.length} elemento(s) con clase opacity-0 en el hero`);
-  // La entrada CSS (.hero-rise) es solo para la columna de producto: si envuelve
-  // al H1, el LCP vuelve a esperar a la animacion.
-  const beforeH1 = hero.slice(0, Math.max(0, hero.indexOf("<h1")));
-  if (/\bhero-rise\b/.test(beforeH1)) problems.push("el <h1> esta dentro de .hero-rise");
-  report(file, problems, "hero y pagina visibles desde el servidor");
+  // Resto de la pagina (B-2463), sobre el HTML tal cual: la misma cuenta que el
+  // censo de la ficha (`curl -s https://revcognition.com/ | grep -o opacity:0`).
+  const pageHidden = rest.match(STYLE_HIDDEN) ?? [];
+  if (pageHidden.length) problems.push(`${pageHidden.length} estilo(s) opacity:0 en la pagina`);
+  const pageHiddenClass = rest.match(/class="(?:[^"]*\s)?opacity-0(?:\s[^"]*)?"/g) ?? [];
+  if (pageHiddenClass.length) problems.push(`${pageHiddenClass.length} elemento(s) con clase opacity-0 en la pagina`);
+  report(file, problems, checkHero ? "hero y pagina visibles desde el servidor" : "pagina visible desde el servidor");
 }
 
 function report(file, problems, okText) {

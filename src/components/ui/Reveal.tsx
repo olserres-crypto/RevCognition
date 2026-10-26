@@ -13,7 +13,8 @@ import { animate, inView } from "framer-motion";
  * animacion solo corre en cliente, sin prefers-reduced-motion y solo si el
  * elemento sigue fuera de pantalla (por debajo) al hidratar: ocultarlo ahi no
  * se ve, y lo que ya esta a la vista no parpadea. Lo protege
- * `npm run check:hero-ssr` (ningun `opacity:0` en el HTML servido).
+ * `npm run check:hero-ssr` (ningun `opacity:0` en el HTML de la home; las rutas
+ * dinamicas como /producto no tienen prerender: `--page` con su HTML de curl).
  */
 export function Reveal({
   as: Tag = "div",
@@ -38,17 +39,23 @@ export function Reveal({
     const el = ref.current;
     if (!el) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    // Con ancla (#faq) o al volver atras el navegador mueve el scroll DESPUES
+    // de este efecto: lo que ahora queda por debajo va a estar a la vista.
+    const nav = performance.getEntriesByType("navigation")[0] as PerformanceNavigationTiming | undefined;
+    if (window.location.hash || nav?.type === "back_forward") return;
     if (el.getBoundingClientRect().top < window.innerHeight) return;
     animate(el, { opacity: 0, x, y }, { duration: 0 });
+    let entry: ReturnType<typeof animate> | undefined;
     const stop = inView(
       el,
       () => {
-        animate(el, { opacity: 1, x: 0, y: 0 }, { delay, duration, ease: "easeOut" });
+        entry = animate(el, { opacity: 1, x: 0, y: 0 }, { delay, duration, ease: "easeOut" });
       },
       { margin: "-40px" }
     );
     return () => {
       stop();
+      entry?.stop();
       // Si el efecto se desmonta antes de entrar en pantalla (StrictMode, cambio
       // de props), el elemento no puede quedarse oculto.
       animate(el, { opacity: 1, x: 0, y: 0 }, { duration: 0 });
