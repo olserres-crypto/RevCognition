@@ -45,8 +45,8 @@ function SwipeRow({
 
   const drag = useRef<{ x0: number; dx: number } | null>(null);
   // B-2463: el cajon (aprobar/descartar) va oculto en reposo con opacity 0.
-  // Solo existe al arrastrar, que requiere JS: no se pinta en el HTML del
-  // servidor para que el SSR no lleve ningun `opacity:0` (check:hero-ssr).
+  // Solo sirve al arrastrar, que requiere JS: se monta tras hidratar y no se
+  // pinta en el HTML del servidor para que el SSR no lleve ningun `opacity:0` (check:hero-ssr).
   const hydrated = useSyncExternalStore(noopSubscribe, () => true, () => false);
 
   const endDrag = () => {
