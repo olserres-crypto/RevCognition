@@ -51,6 +51,16 @@
       "approveHint": "Rien ne part sans votre accord.",
       "approvedAt": "Validé aujourd'hui, 08h42",
       "approve": "Valider"
+    },
+    "byline": {
+      "initials": "OS",
+      "name": "Olivier Serres, fondateur.",
+      "text": "Nos propres campagnes tournent sur ce même produit."
+    },
+    "facts": {
+      "eu": "Plateforme hébergée dans l'UE",
+      "b2b": "Entre entreprises uniquement (art. 6.1.f RGPD)",
+      "unsubscribe": "Désinscription dans chaque e-mail"
     }
   },
   "problem": {

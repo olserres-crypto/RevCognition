@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { useReducedMotion } from "framer-motion";
 import { StatusMark } from "@/components/ui/StatusMark";
@@ -35,11 +35,23 @@ export function HeroSequence() {
   // Entrada escalonada de la maqueta: 0 nada, 1 señal, 2 señal + correo.
   const [enter, setEnter] = useState(2);
 
+  const rootRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     if (reduce !== false) return; // null (aun sin medir) o true: estado final
+    // B-2447: la columna entra por CSS (.hero-rise) aunque no haya JS, asi que
+    // al hidratar puede estar ya visible. Reiniciar entonces a «texto vacio»
+    // seria un parpadeo: solo se reproduce la secuencia si la columna sigue en
+    // opacity 0 (dentro del retardo de la animacion). Si no, estado final.
+    // Compromiso asumido: en cargas lentas casi nunca se reproduce; el estado
+    // final (aprobado) ya cuenta la historia. Tampoco corre fuera de pantalla
+    // (en movil la columna queda bajo el pliegue).
+    const column = rootRef.current?.closest("[data-hero-rise]");
+    if (!column || getComputedStyle(column).opacity !== "0") return;
+    if (column.getBoundingClientRect().top >= window.innerHeight) return;
     const timers: ReturnType<typeof setTimeout>[] = [];
-    // Reinicio al estado inicial en un timer, no en el cuerpo del efecto: el
-    // contenedor del hero aun esta en opacity 0 (fadeUp), asi que no se ve.
+    // Reinicio al estado inicial en un timer, no en el cuerpo del efecto: la
+    // columna aun esta en opacity 0 (comprobado arriba), asi que no se ve.
     timers.push(
       setTimeout(() => {
         setTyped(0);
@@ -82,7 +94,7 @@ export function HeroSequence() {
 
   return (
     <>
-      <div className={cn(enterClass(1), "flex items-center gap-3 px-4 py-3 rounded-xl select-none max-w-sm bg-[color-mix(in_oklch,var(--color-warm)_5%,transparent)] border border-[color-mix(in_oklch,var(--color-warm)_18%,transparent)]")}>
+      <div ref={rootRef} className={cn(enterClass(1), "flex items-center gap-3 px-4 py-3 rounded-xl select-none max-w-sm bg-[color-mix(in_oklch,var(--color-warm)_5%,transparent)] border border-[color-mix(in_oklch,var(--color-warm)_18%,transparent)]")}>
         <span aria-hidden="true" className="text-[15px]">⚡</span>
         <div className="flex-1 min-w-0">
           <div className="text-[11px] font-semibold text-[var(--color-warm)] mb-0.5">{t("signalCard.detected")}</div>

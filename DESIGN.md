@@ -16,14 +16,14 @@ Cuatro decisiones fundacionales:
 **Fuente**
 - `--font-sans`: **Instrument Sans** (Google Fonts), pesos 400/500/600. Única familia.
 - Cargada en `src/app/[locale]/layout.tsx` vía `next/font/google` con `display: swap`.
-- `letter-spacing: -0.02em` en h1/h2/h3 (`globals.css`). Es lo único que los distingue a nivel de regla: la familia la heredan del `body`.
+- `letter-spacing` según el tamaño (`globals.css`, B-2447): h1 `-0.035em`, h2 `-0.025em`, h3 `-0.015em`. Cuanto más grande, más cerrado. Es lo único que los distingue a nivel de regla: la familia la heredan del `body`.
 - ⚠ **La variable de `next/font` va en `<html>`, no en `<body>`.** El `@theme` de Tailwind v4 emite `--font-sans: var(--font-instrument-sans), …` dentro de `:root`; si la variable solo existe en `<body>`, la sustitución falla ahí arriba, `--font-sans` queda inválida y **todo el sitio cae al `ui-sans-serif` del preflight sin avisar**. Fue el estado de producción hasta el 28-jul-2026.
 
 **Escala**
 
 | Nivel | Clases | Familia | Peso | Uso |
 |-------|--------|---------|------|-----|
-| Display XL | `text-4xl sm:text-5xl lg:text-5xl leading-tight` | sans | 400 | H1 hero (único por página). **Excepción deliberada: en `lg` baja un escalón (48px), no sube a `text-6xl`.** El hero vive en `lg:grid-cols-2`, así que su medida útil son ~456px (`max-w-5xl` − `px-6` − `gap-16`, partido en dos), no los ~976px del resto de la página. A 60px entran ~15 caracteres por línea y el titular parte en seis; a 48px entran ~19 y parte en cuatro, y las dos columnas se equilibran. Es **medida, no estética**: donde un H1 ocupa el ancho completo, `text-6xl` es correcto (p. ej. la cita de `Founder.tsx`, `max-w-3xl` a ancho completo). No "corregir" de vuelta. |
+| Display XL | `text-4xl sm:text-5xl lg:text-5xl font-medium leading-[1.08]` | sans | 500 (2.ª línea 400 en `slate`) | H1 hero (único por página). La jerarquía interna la dan dos pesos CARGADOS (500/400) y el color, no un 300 que no existe (B-2447). **Excepción deliberada: en `lg` baja un escalón (48px), no sube a `text-6xl`.** El hero vive en `lg:grid-cols-2`, así que su medida útil son ~456px (`max-w-5xl` − `px-6` − `gap-16`, partido en dos), no los ~976px del resto de la página. A 60px entran ~15 caracteres por línea y el titular parte en seis; a 48px entran ~19 y parte en cuatro, y las dos columnas se equilibran. Es **medida, no estética**: donde un H1 ocupa el ancho completo, `text-6xl` es correcto (p. ej. la cita de `Founder.tsx`, `max-w-3xl` a ancho completo). No "corregir" de vuelta. |
 | H2 | `text-3xl sm:text-4xl` | sans | 400 | Título de sección |
 | H3 | `text-xl` | sans | 400 | Subtítulo en card o paso |
 | Lead | `text-lg sm:text-xl` | sans | 400 | Subtítulo del hero |
@@ -32,7 +32,7 @@ Cuatro decisiones fundacionales:
 | Micro | `text-xs` | sans | 400 | Metadatos, email chrome |
 | Eyebrow | `text-sm font-semibold uppercase tracking-widest` | sans | 600 | Sobre cada H2, color `warm` |
 
-**Pesos disponibles: 400/500/600.** No hay 300 cargado: una clase `font-light` no rinde 300, el navegador cae al 400 más cercano. Si algún día se quiere un 300 de verdad, hay que añadirlo a los `weight` de `Instrument_Sans` en `layout.tsx` y comprobar que la familia lo ofrece — no basta con poner la clase.
+**Pesos disponibles: 400/500/600.** No hay 300 ni 700 cargados: `font-light` cae al 400 y `font-bold` (o un `<strong>`/`<b>` sin clase) hace que el navegador **sintetice** una negrita falsa a partir del 600. Por eso el código no usa ninguna de las dos (`grep -rn "font-light\|font-bold" src` = 0 desde B-2447); un `<strong>` lleva siempre `font-semibold` o `font-medium`. Si algún día se quiere otro peso, hay que añadirlo a los `weight` de `Instrument_Sans` en `src/app/[locale]/layout.tsx` y comprobar que la familia lo ofrece — no basta con poner la clase.
 
 ## Color
 
@@ -53,13 +53,13 @@ Tokens en `src/app/globals.css` bajo `@theme`.
 
 - **warm es escaso.** Un CTA primario por sección. Un acento cromático por heading. Tres `warm` en la misma pantalla = demasiado.
 - **ink nunca con gradientes o shadows complejos.** Es plano.
-- **Card backgrounds**: `paper` por defecto dentro de secciones `surface`, o cuando la card es un contenedor del sistema. `white` (#fff) solo cuando la card representa un artefacto externo (email en EmailPreviewCard).
+- **Card backgrounds**: `paper` por defecto dentro de secciones `surface`, o cuando la card es un contenedor del sistema. `white` (#fff) solo cuando la card representa un artefacto externo (el email de `HeroSequence`).
 
 ## Wordmark — "RevCognition"
 
-- "Rev" — Instrument Sans, `font-light`, color `warm`.
+- "Rev" — Instrument Sans, `font-normal` (400), color `warm`.
 - "Cognition" — Instrument Sans, `font-medium` (500), color `ink`.
-- ⚠ El contraste REAL es **400 vs 500**, no 300 vs 500: `font-light` pide 300 y no hay 300 cargado (ver §Tipografía). El documento describe lo que hace `Logo.tsx`, que es quien manda.
+- El contraste es **400 vs 500** (más el color). Hasta B-2447 `Logo.tsx` pedía `font-light`, que rendía igualmente 400 porque no hay 300 cargado: el cambio de clase no cambia el aspecto, solo deja de mentir. El documento describe lo que hace `Logo.tsx`, que es quien manda.
 - Sin espacio entre las dos palabras (se leen como una).
 - `letter-spacing: -0.03em`, `leading-none`.
 
@@ -87,11 +87,17 @@ Variantes actuales:
 - **primary** — gradiente vertical indigo 500→600, texto blanco. CTA principal.
 - **secondary** — borde ink 1px + texto ink. CTA secundario.
 
-Variantes pendientes (TODOS.md):
+Variantes también disponibles en `Button.tsx` (antes figuraban como pendientes en TODOS.md):
 - **warm-solid** — fondo warm plano, texto blanco. Para cards con borde warm (featured pricing).
 - **ink-solid** — fondo ink plano, texto paper. Para cards default con CTA firme.
 
 Padding base: `px-6 py-3`. Tipografía: `font-semibold text-base`. Focus: `focus-visible:ring-2 focus-visible:ring-offset-2`.
+
+Presión (B-2447): `motion-safe:active:scale-[0.97]` con la curva `--ease-spring` en la base, y un `active:` de color por variante. El feedback llega al presionar, no al soltar; con `prefers-reduced-motion` no hay escala y queda el cambio de color. Los botones de icono del `Nav` y el selector de idioma llevan solo el `active:` de fondo.
+
+### Nav — `src/components/sections/Nav.tsx`
+
+`sticky` con la clase `.nav-material` (`globals.css`): fondo `paper` al 72 % con `backdrop-filter: blur(20px) saturate(180%)` y un borde que se desvanece (`::after` en degradado de 12px) en lugar de una línea dura. Es estructura, no glassmorphism decorativo. Con `prefers-reduced-transparency: reduce`, o sin soporte de `backdrop-filter`, el fondo es `paper` opaco. Selector de idioma (`LanguageSwitcher`) en la barra (≥ `sm`) y en el cajón móvil, con 40px de alto de zona táctil (el ancho no crece: la barra va justa a 640px).
 
 ### Eyebrow
 
@@ -116,9 +122,9 @@ Featured variant (Pricing):
 
 Círculo `w-10 h-10` con `border-2 border-warm`, texto warm `font-semibold`. Connector `w-px bg-border` entre pasos. El número es la jerarquía.
 
-### EmailPreviewCard — `src/components/ui/EmailPreviewCard.tsx`
+### HeroSequence — `src/components/ui/HeroSequence.tsx`
 
-Mockup editorial de un email generado. `bg-white` (artefacto externo), borde `border-l-4 border-l-warm` como acento de hilo. Header con `De:/Para:/Asunto:` en `text-xs`, sin chrome imitativo de cliente de correo (mac window dots están prohibidos). Body con tipografía del sistema.
+(Antes `EmailPreviewCard.tsx`, que ya no existe.) Mockup editorial de un email generado, en la columna derecha del hero: señal detectada → el correo se redacta → pendiente → aprobado, una sola vez. El servidor trae el estado FINAL; la secuencia solo se reproduce si al hidratar la columna sigue en `opacity:0` (dentro del retardo de `.hero-rise`), para no parpadear en dispositivos lentos. Tarjeta `bg-paper-deep` con borde `border` y `shadow-md`. Header con `De:/Para:/Asunto:` en `text-xs`, sin chrome imitativo de cliente de correo (mac window dots están prohibidos). Body con tipografía del sistema.
 
 ## Motion
 
@@ -131,7 +137,9 @@ Librería: **framer-motion**.
 - Stagger 0.08-0.12s entre elementos.
 - **Una sola animación por viewport entry**. No animar color + rotate + scale simultáneamente.
 
-**Requisito (TODO):** todas las animaciones deben respetar `prefers-reduced-motion` via `useReducedMotion()`.
+**Reduced motion (hecho):** `MotionConfig reducedMotion="user"` en `src/components/providers/MotionProvider.tsx` para framer-motion, y `@media (prefers-reduced-motion)` en `globals.css` para lo que es CSS.
+
+**El contenido de la primera pantalla no se oculta nunca desde el servidor (B-2447).** Nada de `initial={{opacity: 0}}` en el H1, el lead ni los CTA del hero: el servidor no conoce `prefers-reduced-motion` (`useReducedMotion()` devuelve `null` en SSR), así que `initial={reduce ? false : "hidden"}` **sí** sale como `style="opacity:0"` en el HTML, y el H1 (el LCP) queda en blanco hasta hidratar. Si algo del primer pliegue entra animado, que sea en CSS (`.hero-rise`), que termina visible sin JS. Comprobación: `npm run build && npm run check:hero-ssr`. Las entradas `whileInView` por debajo del pliegue (HowItWorks, FeaturesGrid, Producto…) siguen con framer-motion.
 
 ## Voz y tono
 
@@ -171,13 +179,14 @@ El sitio marketing no tiene estados vacíos. Si en el futuro hay dashboard: empt
 
 ## Social proof
 
-La prueba social se hace vía `ValidationBadge` (estado beta honesto: "En uso activo por 2 fundadores mientras perfeccionamos el sistema"), **no con case studies ficticios**. El componente `UseCases` se eliminó explícitamente para evitar fabricar credibilidad (seguía en la home hasta B-2228, retirado del código el 2026-10-10). Cuando haya clientes reales con permiso para citar, se reincorporará con nombres reales.
+La prueba social se hace con la **firma del fundador** bajo los CTA del hero (monograma de iniciales, sin foto, P465 10a; nombre y una frase comprobable de `founder.paragraph3`) y **tres hechos comprobables** que ya están en Trust (UE, solo B2B con su base jurídica, baja en cada correo), **no con case studies ficticios**. (El `ValidationBadge` que citaba esta sección no existe en `src/`.) El componente `UseCases` se eliminó explícitamente para evitar fabricar credibilidad (seguía en la home hasta B-2228, retirado del código el 2026-10-10). Cuando haya clientes reales con permiso para citar, se reincorporará con nombres reales.
 
 ## Accessibility baseline
 
 - `lang="es"` en `<html>` ✓
 - `focus-visible:ring-2 focus-visible:ring-offset-2` en todo elemento interactivo ✓
-- `prefers-reduced-motion` respetado — TODO
+- `prefers-reduced-motion` respetado ✓ (§Motion)
+- `prefers-reduced-transparency` respetado en el Nav ✓
 - Skip-to-content link — TODO
 - Touch targets mínimo 44px (Button default `py-3` ≈ 46px con `text-base`) ✓
 - Contraste WCAG AA: `ink` sobre `paper` ✓, `slate` sobre `paper` ✓, `slate-light` sobre `paper` a verificar — TODO
@@ -188,11 +197,11 @@ La prueba social se hace vía `ValidationBadge` (estado beta honesto: "En uso ac
 
 **Breakpoints principales**
 
-- **< 640px** (mobile): layout vertical, nav con hamburger (TODO), Hero sin EmailPreviewCard.
-- **640-1024px**: grids `sm:grid-cols-2` o `sm:grid-cols-3`, sección padding `sm:py-24`.
-- **≥ 1024px**: Hero dos columnas, EmailPreviewCard visible.
+- **< 640px** (mobile): layout vertical, nav con hamburger y cajón. El hero muestra la columna de producto (`HeroSequence`) **debajo** de los CTA y la firma, fuera del primer pliegue, para que la primera pantalla no sea solo texto (B-2447).
+- **640-1024px**: grids `sm:grid-cols-2` o `sm:grid-cols-3`, sección padding `sm:py-24`. Hero en una columna, producto debajo.
+- **≥ 1024px**: Hero dos columnas, producto a la derecha.
 
-**Nav móvil (patrón pendiente)**
+**Nav móvil (implementado en `Nav.tsx`)**
 
 - Botón hamburger visible < `sm`, alineado al lado del CTA "Acceder a la App".
 - Drawer slide-in desde la derecha, fondo `paper`, 80% ancho de viewport.
@@ -205,7 +214,7 @@ La prueba social se hace vía `ValidationBadge` (estado beta honesto: "En uso ac
 - Usar el eyebrow pattern en cada sección nueva.
 - Mantener `max-w-5xl` como tope. Full-bleed solo para Nav y Footer.
 - Alternar `paper` / `surface` para ritmo. Tres bandas `paper` seguidas rompen el pulso.
-- Serif en display, sans en body. Siempre.
+- Una sola sans (Instrument Sans) en display y en body; la jerarquía la hacen peso, tamaño y color. Nunca serif (ver §Tesis, punto 1).
 - Un CTA primario por viewport. Dos CTAs = uno primario + uno secundario.
 
 **Don't**
@@ -223,5 +232,5 @@ La prueba social se hace vía `ValidationBadge` (estado beta honesto: "En uso ac
 - Tokens: `src/app/globals.css`
 - Wordmark: `src/components/ui/Logo.tsx`
 - Button: `src/components/ui/Button.tsx`
-- Cargado de fuentes: `src/app/layout.tsx`
+- Cargado de fuentes: `src/app/[locale]/layout.tsx` (`src/app/layout.tsx` solo pasa `children`)
 - Ritmo de sección canónico: `src/components/sections/Problem.tsx`, `HowItWorks.tsx`, `Pricing.tsx`

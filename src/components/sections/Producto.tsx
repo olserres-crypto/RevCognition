@@ -316,7 +316,7 @@ export function Producto() {
         </p>
         <h1 className="text-4xl sm:text-5xl text-[var(--color-ink)] leading-tight max-w-3xl">
           {t("hero.heading1")}{" "}
-          <span className="font-light">{t("hero.heading2")}</span>
+          <span className="font-normal">{t("hero.heading2")}</span>
         </h1>
         <p className="mt-6 text-lg sm:text-xl text-[var(--color-slate)] leading-relaxed max-w-2xl">
           {t("hero.subtitle")}

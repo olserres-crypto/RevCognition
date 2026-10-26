@@ -51,6 +51,16 @@
       "approveHint": "Nada sale sin tu visto bueno.",
       "approvedAt": "Aprobado hoy, 08:42",
       "approve": "Aprobar"
+    },
+    "byline": {
+      "initials": "OS",
+      "name": "Olivier Serres, fundador.",
+      "text": "Nuestras propias campañas corren sobre este mismo producto."
+    },
+    "facts": {
+      "eu": "Plataforma alojada en la UE",
+      "b2b": "Solo entre empresas (art. 6.1.f RGPD)",
+      "unsubscribe": "Baja en cada correo"
     }
   },
   "problem": {

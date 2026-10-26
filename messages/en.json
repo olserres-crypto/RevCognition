@@ -51,6 +51,16 @@
       "approveHint": "Nothing goes out without your OK.",
       "approvedAt": "Approved today, 08:42",
       "approve": "Approve"
+    },
+    "byline": {
+      "initials": "OS",
+      "name": "Olivier Serres, founder.",
+      "text": "Our own campaigns run on this same product."
+    },
+    "facts": {
+      "eu": "Platform hosted in the EU",
+      "b2b": "Business to business only (GDPR art. 6.1.f)",
+      "unsubscribe": "Unsubscribe in every email"
     }
   },
   "problem": {

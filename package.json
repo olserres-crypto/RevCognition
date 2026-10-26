@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "i18n:check": "node scripts/check-i18n-parity.mjs"
+    "i18n:check": "node scripts/check-i18n-parity.mjs",
+    "check:hero-ssr": "node scripts/check-hero-ssr.mjs"
   },
   "dependencies": {
     "clsx": "^2.1.1",
