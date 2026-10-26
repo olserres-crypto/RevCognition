@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { motion, useReducedMotion } from "framer-motion";
+import { Reveal } from "@/components/ui/Reveal";
 import { Link } from "@/i18n/navigation";
 
 // Diferenciadores primero (aprobación, entregabilidad, personalización,
@@ -13,7 +13,6 @@ import { Link } from "@/i18n/navigation";
 
 export function FeaturesGrid() {
   const t = useTranslations("featuresGrid");
-  const reduce = useReducedMotion();
   const features = t.raw("features") as { title: string; description: string }[];
   return (
     <section className="bg-[var(--color-surface)] py-16 sm:py-24">
@@ -30,12 +29,10 @@ export function FeaturesGrid() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-0">
           {features.map((f, i) => (
-            <motion.div
+            <Reveal
               key={f.title}
-              initial={reduce ? false : { opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-40px" }}
-              transition={{ delay: (i % 2) * 0.06, duration: 0.35, ease: "easeOut" }}
+              y={16}
+              delay={(i % 2) * 0.06}
               className="border-t border-[var(--color-border)] py-5"
             >
               <h3 className="text-xl text-[var(--color-ink)] mb-1.5">
@@ -44,7 +41,7 @@ export function FeaturesGrid() {
               <p className="text-[var(--color-slate)] text-sm leading-relaxed">
                 {f.description}
               </p>
-            </motion.div>
+            </Reveal>
           ))}
         </div>
 

@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { motion, useReducedMotion } from "framer-motion";
+import { Reveal } from "@/components/ui/Reveal";
 import { MockupShell, MockupRow } from "@/components/ui/MockupShell";
 import { ApprovalQueue } from "@/components/ui/ApprovalQueue";
 
@@ -84,7 +84,6 @@ const stepNumbers = ["01", "02", "03"];
 
 export function HowItWorks() {
   const t = useTranslations("howItWorks");
-  const reduce = useReducedMotion();
   const steps = t.raw("steps") as { title: string; description: string; time: string }[];
   return (
     <section id="como-funciona" className="py-16 sm:py-24">
@@ -100,12 +99,11 @@ export function HowItWorks() {
           {steps.map((step, i) => {
             const MockupComponent = stepMockups[i];
             return (
-              <motion.div
+              <Reveal
                 key={stepNumbers[i]}
-                initial={reduce ? false : { opacity: 0, x: -16 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, margin: "-40px" }}
-                transition={{ delay: i * 0.12, duration: 0.4, ease: "easeOut" }}
+                x={-16}
+                delay={i * 0.12}
+                duration={0.4}
                 className="flex gap-6 pb-10 last:pb-0"
               >
                 <div className="flex flex-col items-center shrink-0">
@@ -130,19 +128,18 @@ export function HowItWorks() {
                     </span>
                   </div>
 
-                  <motion.div
-                    initial={reduce ? false : { opacity: 0, y: 12 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: "-40px" }}
-                    transition={{ delay: i * 0.12 + 0.18, duration: 0.4, ease: "easeOut" }}
+                  <Reveal
+                    y={12}
+                    delay={i * 0.12 + 0.18}
+                    duration={0.4}
                     // El paso 3 (cola de aprobacion, B-2228) se ve tambien en movil: es
                     // la unica maqueta interactiva y el gesto de arrastrar es tactil.
                     className={i === 2 ? "w-full lg:w-[400px] shrink-0" : "hidden lg:block shrink-0"}
                   >
                     <MockupComponent />
-                  </motion.div>
+                  </Reveal>
                 </div>
-              </motion.div>
+              </Reveal>
             );
           })}
         </div>

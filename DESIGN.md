@@ -131,7 +131,7 @@ Círculo `w-10 h-10` con `border-2 border-warm`, texto warm `font-semibold`. Con
 Librería: **framer-motion**.
 
 **Principios:**
-- Entrada por scroll con `whileInView` + `viewport: { once: true, margin: "-40px" }`.
+- Entrada por scroll con `<Reveal>` (`src/components/ui/Reveal.tsx`: `x`/`y`, `delay`, `duration`; margen `-40px`, una vez). No `motion.* initial={{opacity: 0}} whileInView`: pinta `opacity:0` en el HTML (B-2463).
 - Transform: fade + translate de 16-20px (y o x).
 - Duración 0.35-0.4s, ease-out o default.
 - Stagger 0.08-0.12s entre elementos.
@@ -139,7 +139,7 @@ Librería: **framer-motion**.
 
 **Reduced motion (hecho):** `MotionConfig reducedMotion="user"` en `src/components/providers/MotionProvider.tsx` para framer-motion, y `@media (prefers-reduced-motion)` en `globals.css` para lo que es CSS.
 
-**El contenido de la primera pantalla no se oculta nunca desde el servidor (B-2447).** Nada de `initial={{opacity: 0}}` en el H1, el lead ni los CTA del hero: el servidor no conoce `prefers-reduced-motion` (`useReducedMotion()` devuelve `null` en SSR), así que `initial={reduce ? false : "hidden"}` **sí** sale como `style="opacity:0"` en el HTML, y el H1 (el LCP) queda en blanco hasta hidratar. Si algo del primer pliegue entra animado, que sea en CSS (`.hero-rise`), que termina visible sin JS. Comprobación: `npm run build && npm run check:hero-ssr`. Las entradas `whileInView` por debajo del pliegue (HowItWorks, FeaturesGrid, Producto…) siguen con framer-motion.
+**El contenido de la primera pantalla no se oculta nunca desde el servidor (B-2447).** Nada de `initial={{opacity: 0}}` en el H1, el lead ni los CTA del hero: el servidor no conoce `prefers-reduced-motion` (`useReducedMotion()` devuelve `null` en SSR), así que `initial={reduce ? false : "hidden"}` **sí** sale como `style="opacity:0"` en el HTML, y el H1 (el LCP) queda en blanco hasta hidratar. Si algo del primer pliegue entra animado, que sea en CSS (`.hero-rise`), que termina visible sin JS. Comprobación: `npm run build && npm run check:hero-ssr`. **Lo mismo vale para toda la página (B-2463):** las entradas por debajo del pliegue van por `<Reveal>`, que sale visible del servidor y solo oculta en cliente, sin reduced-motion y si el elemento sigue por debajo de la pantalla al hidratar. `check:hero-ssr` falla con cualquier `opacity:0` en línea o clase `opacity-0` (sin variante) en el HTML de la home (`--page fichero.html` para rutas dinámicas como /producto).
 
 ## Voz y tono
 
