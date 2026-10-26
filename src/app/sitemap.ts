@@ -9,17 +9,19 @@ const PATHS = [
   "/cookies",
   "/opt-out",
 ];
+// Cada idioma lleva su propio <url> (Google lo pide así para hreflang en sitemap);
+// ES es la raíz sin prefijo.
+const PREFIX = {es: "", en: "/en", fr: "/fr"} as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return PATHS.map((path) => ({
-    url: `${BASE}${path}`,
-    lastModified: new Date(),
-    alternates: {
-      languages: {
-        es: `${BASE}${path}`,
-        en: `${BASE}/en${path}`,
-        fr: `${BASE}/fr${path}`,
-      },
-    },
-  }));
+  return PATHS.flatMap((path) => {
+    const languages = Object.fromEntries(
+      Object.entries(PREFIX).map(([lang, pre]) => [lang, `${BASE}${pre}${path}`]),
+    );
+    return Object.values(PREFIX).map((pre) => ({
+      url: `${BASE}${pre}${path}`,
+      lastModified: new Date(),
+      alternates: {languages},
+    }));
+  });
 }
