@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { useTranslations } from "next-intl";
 import {
   AnimatePresence,
@@ -15,6 +15,7 @@ import { StatusMark } from "@/components/ui/StatusMark";
 type QueueItem = { company: string; subject: string; signal: string };
 
 const EASE = [0.22, 1, 0.36, 1] as const;
+const noopSubscribe = () => () => {};
 
 /**
  * Fila arrastrable (port minimo de SwipeRow, React Bits Micro): derecha
@@ -43,6 +44,10 @@ function SwipeRow({
   );
 
   const drag = useRef<{ x0: number; dx: number } | null>(null);
+  // B-2463: el cajon (aprobar/descartar) va oculto en reposo con opacity 0.
+  // Solo existe al arrastrar, que requiere JS: no se pinta en el HTML del
+  // servidor para que el SSR no lleve ningun `opacity:0` (check:hero-ssr).
+  const hydrated = useSyncExternalStore(noopSubscribe, () => true, () => false);
 
   const endDrag = () => {
     if (!drag.current) return;
@@ -66,14 +71,16 @@ function SwipeRow({
 
   return (
     <div className="relative overflow-hidden rounded-[10px]">
-      <motion.div
-        aria-hidden="true"
-        style={{ backgroundColor: drawerBg, opacity: drawerOpacity }}
-        className="absolute inset-0 flex items-center justify-between px-4 text-xs font-semibold text-white"
-      >
-        <motion.span style={{ opacity: approveOpacity }}>✓ {t("approve")}</motion.span>
-        <motion.span style={{ opacity: discardOpacity }}>{t("discard")} ✕</motion.span>
-      </motion.div>
+      {hydrated && (
+        <motion.div
+          aria-hidden="true"
+          style={{ backgroundColor: drawerBg, opacity: drawerOpacity }}
+          className="absolute inset-0 flex items-center justify-between px-4 text-xs font-semibold text-white"
+        >
+          <motion.span style={{ opacity: approveOpacity }}>✓ {t("approve")}</motion.span>
+          <motion.span style={{ opacity: discardOpacity }}>{t("discard")} ✕</motion.span>
+        </motion.div>
+      )}
       <motion.div
         ref={ref}
         onPointerDown={(e) => {

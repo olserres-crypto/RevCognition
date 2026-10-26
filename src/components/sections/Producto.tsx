@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { motion, useReducedMotion } from "framer-motion";
+import { Reveal } from "@/components/ui/Reveal";
 import { MockupShell, MockupRow } from "@/components/ui/MockupShell";
 
 /* ---------- Mockups (datos ficticios .example) ---------- */
@@ -121,7 +121,7 @@ function MockupRamp() {
 
 /* ---------- Cómo encuentra a tus clientes (B-2228 Q6: venía de la home) ---------- */
 
-function HowEncuentra({ reduce }: { reduce: boolean | null }) {
+function HowEncuentra() {
   const t = useTranslations("producto.motor.howEncuentra");
   const steps = t.raw("steps") as { title: string; description: string }[];
   return (
@@ -137,12 +137,11 @@ function HowEncuentra({ reduce }: { reduce: boolean | null }) {
       </p>
       <ol className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-6">
         {steps.map((step, i) => (
-          <motion.li
+          <Reveal
+            as="li"
             key={step.title}
-            initial={reduce ? false : { opacity: 0, y: 12 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-40px" }}
-            transition={{ delay: i * 0.08, duration: 0.35, ease: "easeOut" }}
+            y={12}
+            delay={i * 0.08}
             className="list-none"
           >
             <div className="w-7 h-7 rounded-full border-2 border-[var(--color-warm)] text-[var(--color-warm)] text-xs font-semibold flex items-center justify-center mb-3">
@@ -150,7 +149,7 @@ function HowEncuentra({ reduce }: { reduce: boolean | null }) {
             </div>
             <h3 className="text-base text-[var(--color-ink)] mb-1.5">{step.title}</h3>
             <p className="text-[var(--color-slate)] text-sm leading-relaxed">{step.description}</p>
-          </motion.li>
+          </Reveal>
         ))}
       </ol>
     </div>
@@ -170,7 +169,6 @@ function ThemeBlock({
   depth,
   oneLiners,
   mockup,
-  reduce,
   lead,
 }: {
   id: string;
@@ -181,7 +179,6 @@ function ThemeBlock({
   depth: Feature[];
   oneLiners: Feature[];
   mockup: React.ReactNode;
-  reduce: boolean | null;
   lead?: React.ReactNode;
 }) {
   return (
@@ -202,16 +199,10 @@ function ThemeBlock({
           <div className="flex-1 min-w-0">
             <div className="flex flex-col gap-8">
               {depth.map((f) => (
-                <motion.div
-                  key={f.title}
-                  initial={reduce ? false : { opacity: 0, y: 16 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: "-40px" }}
-                  transition={{ duration: 0.35, ease: "easeOut" }}
-                >
+                <Reveal key={f.title} y={16}>
                   <h3 className="text-xl text-[var(--color-ink)] mb-2">{f.title}</h3>
                   <p className="text-[var(--color-slate)] leading-relaxed max-w-xl">{f.body}</p>
-                </motion.div>
+                </Reveal>
               ))}
             </div>
 
@@ -227,15 +218,14 @@ function ThemeBlock({
             )}
           </div>
 
-          <motion.div
-            initial={reduce ? false : { opacity: 0, y: 12 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-40px" }}
-            transition={{ delay: 0.12, duration: 0.4, ease: "easeOut" }}
+          <Reveal
+            y={12}
+            delay={0.12}
+            duration={0.4}
             className="hidden lg:block shrink-0 mt-2"
           >
             {mockup}
-          </motion.div>
+          </Reveal>
         </div>
       </div>
     </section>
@@ -244,7 +234,7 @@ function ThemeBlock({
 
 /* ---------- FAQ ---------- */
 
-function Faq({ reduce }: { reduce: boolean | null }) {
+function Faq() {
   const t = useTranslations("producto.faq");
   const faqs = t.raw("items") as { q: string; a: string }[];
   return (
@@ -258,17 +248,15 @@ function Faq({ reduce }: { reduce: boolean | null }) {
         </h2>
         <div className="max-w-3xl divide-y divide-[var(--color-border)]">
           {faqs.map((f, i) => (
-            <motion.div
+            <Reveal
               key={f.q}
-              initial={reduce ? false : { opacity: 0, y: 14 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-40px" }}
-              transition={{ delay: (i % 2) * 0.05, duration: 0.35, ease: "easeOut" }}
+              y={14}
+              delay={(i % 2) * 0.05}
               className="py-6"
             >
               <h3 className="text-xl text-[var(--color-ink)] mb-2">{f.q}</h3>
               <p className="text-[var(--color-slate)] leading-relaxed">{f.a}</p>
-            </motion.div>
+            </Reveal>
           ))}
         </div>
       </div>
@@ -280,7 +268,6 @@ function Faq({ reduce }: { reduce: boolean | null }) {
 
 export function Producto() {
   const t = useTranslations("producto");
-  const reduce = useReducedMotion();
 
   const sections = [
     { id: "setup", label: t("nav.sections.setup") },
@@ -359,7 +346,6 @@ export function Producto() {
         eyebrow={t("setup.eyebrow")}
         title={t("setup.title")}
         intro={t("setup.intro")}
-        reduce={reduce}
         depth={setup.depth}
         oneLiners={setup.oneLiners}
         mockup={<MockupWizard />}
@@ -371,7 +357,6 @@ export function Producto() {
         eyebrow={t("diaADia.eyebrow")}
         title={t("diaADia.title")}
         intro={t("diaADia.intro")}
-        reduce={reduce}
         depth={diaADia.depth}
         oneLiners={diaADia.oneLiners}
         mockup={<MockupAprobacion />}
@@ -383,11 +368,10 @@ export function Producto() {
         eyebrow={t("motor.eyebrow")}
         title={t("motor.title")}
         intro={t("motor.intro")}
-        reduce={reduce}
         depth={motor.depth}
         oneLiners={motor.oneLiners}
         mockup={<MockupSecuencia />}
-        lead={<HowEncuentra reduce={reduce} />}
+        lead={<HowEncuentra />}
       />
 
       <ThemeBlock
@@ -396,13 +380,12 @@ export function Producto() {
         eyebrow={t("entregabilidad.eyebrow")}
         title={t("entregabilidad.title")}
         intro={t("entregabilidad.intro")}
-        reduce={reduce}
         depth={entregabilidad.depth}
         oneLiners={entregabilidad.oneLiners}
         mockup={<MockupRamp />}
       />
 
-      <Faq reduce={reduce} />
+      <Faq />
     </>
   );
 }
