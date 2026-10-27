@@ -554,13 +554,13 @@
     "metaDescription": "Cómo tratamos tus datos en RevCognition: qué recogemos, para qué, dónde están, cuánto tiempo y cómo ejercer tus derechos.",
     "eyebrow": "Política de privacidad",
     "heading": "Tratamos tus datos como nos gustaría que trataran los nuestros.",
-    "intro": "Texto en lenguaje claro. Si necesitas la versión legal completa o quieres ejercer cualquiera de tus derechos, escríbenos a <email>olivier.serres@revcognition.com</email>.",
-    "version": "Versión 2.2 · 13 de octubre de 2026",
+    "intro": "Texto en lenguaje claro. Si necesitas la versión legal completa o quieres ejercer cualquiera de tus derechos, escríbenos a <email>privacy@revcognition.com</email>.",
+    "version": "Versión 2.3 · 26 de octubre de 2026",
     "backLink": "← Volver al inicio",
     "sections": [
       {
         "heading": "Quién es el responsable",
-        "body": "RevCognition (Olivier Serres). Contacto: <email>olivier.serres@revcognition.com</email>. Sede en Barcelona, España."
+        "body": "RevCognition (Olivier Serres). Contacto: <email>privacy@revcognition.com</email>. Sede en Barcelona, España."
       },
       {
         "heading": "Qué datos recogemos y para qué",
@@ -640,7 +640,7 @@
             "body": "— herramientas de reserva de reuniones y de mensajería, para avisarte cuando un prospecto responde."
           }
         ],
-        "outro": "Si quieres saber qué proveedor concreto hay detrás de una categoría, escríbenos a <email>olivier.serres@revcognition.com</email> y te lo decimos. No vendemos datos a terceros, no los usamos para entrenar modelos generales y no los compartimos con anunciantes."
+        "outro": "Si quieres saber qué proveedor concreto hay detrás de una categoría, escríbenos a <email>privacy@revcognition.com</email> y te lo decimos. No vendemos datos a terceros, no los usamos para entrenar modelos generales y no los compartimos con anunciantes."
       },
       {
         "heading": "Contenido generado por IA",
@@ -652,7 +652,7 @@
       },
       {
         "heading": "Tus derechos",
-        "body": "Acceso, rectificación, supresión, oposición, limitación y portabilidad. Para dejar de recibir correos basta con el <optOutLink>formulario de baja</optOutLink>. Ejercer cualquiera de ellos es tan sencillo como escribir a <rightsEmail>olivier.serres@revcognition.com</rightsEmail>. Respondemos en menos de 30 días. Si crees que no lo hemos hecho bien, puedes presentar reclamación ante la Agencia Española de Protección de Datos (<aepd>aepd.es</aepd>)."
+        "body": "Acceso, rectificación, supresión, oposición, limitación y portabilidad. Para dejar de recibir correos basta con el <optOutLink>formulario de baja</optOutLink>. Ejercer cualquiera de ellos es tan sencillo como escribir a <rightsEmail>privacy@revcognition.com</rightsEmail>. Respondemos en menos de 30 días. Si crees que no lo hemos hecho bien, puedes presentar reclamación ante la Agencia Española de Protección de Datos (<aepd>aepd.es</aepd>)."
       },
       {
         "heading": "Cookies",
