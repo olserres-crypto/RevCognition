@@ -44,7 +44,7 @@
       "subjectLabel": "Subject:",
       "subjectValue": "Laboratorios Roca, filing rejected Apr 11",
       "greeting": "Hi Ana,",
-      "body": "Laboratorios Roca's trademark filing (class 5, application 04287391) was rejected on April 11. The appeal deadline is running, and in our experience, 62% of trademark holders still haven't assigned an IP lawyer at this stage.",
+      "body": "Laboratorios Roca's trademark filing (class 5, application 04287391) was rejected on April 11. The appeal deadline is already running: if no IP lawyer is assigned yet, I can walk you through how we handle it.",
       "stateDraft": "Drafting",
       "statePending": "Awaiting your approval",
       "stateApproved": "Approved by you · goes out tomorrow 9:00",
@@ -58,8 +58,8 @@
       "text": "Our own campaigns run on this same product."
     },
     "facts": {
-      "eu": "Platform hosted in the EU",
-      "b2b": "Business to business only (GDPR art. 6.1.f)",
+      "eu": "Emails go out from a separate domain: your main one is never touched",
+      "b2b": "EU-hosted platform. GDPR, in short →",
       "unsubscribe": "Unsubscribe in every email"
     }
   },
@@ -488,7 +488,7 @@
         "toValue": "Ana Ruiz · Bufete Serrano",
         "subjectLabel": "Subject:",
         "subjectValue": "Your ENISA funding call",
-        "body": "Good morning, Ana. I saw that Bufete Serrano is taking part in the ENISA call. At similar firms we've helped...",
+        "body": "Good morning, Ana. I saw that Bufete Serrano is taking part in the ENISA call. I'm writing because...",
         "approve": "Approve",
         "discard": "Discard"
       },

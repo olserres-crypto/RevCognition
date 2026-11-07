@@ -62,7 +62,11 @@ export function Hero() {
           </div>
           <ul className="mt-4 flex flex-wrap gap-x-5 gap-y-1.5 text-[13px] text-[var(--color-slate)]">
             <li>{t("facts.eu")}</li>
-            <li>{t("facts.b2b")}</li>
+            <li>
+              <a href="#confianza" className="underline underline-offset-2 hover:text-[var(--color-ink)]">
+                {t("facts.b2b")}
+              </a>
+            </li>
             <li>{t("facts.unsubscribe")}</li>
           </ul>
         </div>

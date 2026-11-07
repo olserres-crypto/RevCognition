@@ -44,7 +44,7 @@
       "subjectLabel": "Objet :",
       "subjectValue": "Laboratorios Roca, dépôt rejeté le 11/04",
       "greeting": "Bonjour Ana,",
-      "body": "Le dépôt de marque de Laboratorios Roca (classe 5, demande n° 04287391) a été rejeté le 11 avril dernier. Le délai de recours court et, d'après notre expérience, 62 % des titulaires n'ont encore assigné aucun avocat en PI à ce stade.",
+      "body": "Le dépôt de marque de Laboratorios Roca (classe 5, demande n° 04287391) a été rejeté le 11 avril dernier. Le délai de recours court déjà : si aucun avocat en PI n'est encore désigné, je peux vous expliquer comment nous procédons.",
       "stateDraft": "Rédaction en cours",
       "statePending": "En attente de votre validation",
       "stateApproved": "Validé par vous · part demain à 9h00",
@@ -58,8 +58,8 @@
       "text": "Nos propres campagnes tournent sur ce même produit."
     },
     "facts": {
-      "eu": "Plateforme hébergée dans l'UE",
-      "b2b": "Entre entreprises uniquement (art. 6.1.f RGPD)",
+      "eu": "Vos envois partent d'un domaine dédié : votre domaine principal n'est jamais touché",
+      "b2b": "Plateforme hébergée dans l'UE. Le RGPD, en bref →",
       "unsubscribe": "Désinscription dans chaque e-mail"
     }
   },
@@ -488,7 +488,7 @@
         "toValue": "Ana Ruiz · Bufete Serrano",
         "subjectLabel": "Objet :",
         "subjectValue": "Votre appel à projets ENISA",
-        "body": "Bonjour Ana. J'ai vu que Bufete Serrano participe à l'appel à projets ENISA. Dans des cabinets similaires, nous avons aidé à...",
+        "body": "Bonjour Ana. J'ai vu que Bufete Serrano participe à l'appel à projets ENISA. Je vous écris parce que...",
         "approve": "Approuver",
         "discard": "Écarter"
       },
