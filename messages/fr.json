@@ -254,7 +254,7 @@
     },
     "fiscalNote": "Prix hors taxes : la TVA ou toute autre taxe applicable est ajoutée sur la facture selon le pays de votre entreprise.",
     "ownList": "Vous avez déjà votre propre base de prospects ? Vous pouvez l'utiliser directement. Le système l'enrichit et génère les messages à partir de celle-ci.",
-    "betaNote": "Un essai par entreprise, avec votre e-mail professionnel. Nous ouvrons 20 essais par mois ; s'ils sont tous pris, vous passez sur liste d’attente et nous vous prévenons par e-mail."
+    "betaNote": "Un essai par entreprise, avec votre e-mail professionnel. Nous ouvrons 20 essais par mois ; s'ils sont tous pris, vous passez sur liste d'attente et nous vous prévenons par e-mail."
   },
   "founder": {
     "eyebrow": "Pourquoi ça existe",
@@ -458,7 +458,7 @@
         },
         {
           "q": "Que comprend l'essai gratuit ?",
-          "a": "Nous analysons votre site, proposons votre client idéal et écrivons 20 messages pour de vraies personnes de votre marché, en quatre lots de 5, chacun avec sa séquence complète. Vous les validez, les rejetez ou les corrigez, et chaque lot tient compte du précédent. Rien ne part et nous ne demandons pas de carte bancaire. Un seul essai par entreprise et 20 par mois ; s'ils sont tous pris, vous passez sur liste d’attente et nous vous prévenons par e-mail."
+          "a": "Nous analysons votre site, proposons votre client idéal et écrivons 20 messages pour de vraies personnes de votre marché, en quatre lots de 5, chacun avec sa séquence complète. Vous les validez, les rejetez ou les corrigez, et chaque lot tient compte du précédent. Rien ne part et nous ne demandons pas de carte bancaire. Un seul essai par entreprise et 20 par mois ; s'ils sont tous pris, vous passez sur liste d'attente et nous vous prévenons par e-mail."
         },
         {
           "q": "Pourquoi demandez-vous mon e-mail professionnel ?",
