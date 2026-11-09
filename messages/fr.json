@@ -193,8 +193,8 @@
         "description": "Vos e-mails partent de six boîtes mail, incluses dans la mise en place : vous n'en achetez aucune. Chacune porte un nom et un poste réels, pour préserver la réputation du domaine."
       },
       {
-        "title": "D'une réponse à un rendez-vous",
-        "description": "Quand quelqu'un répond avec intérêt, la séquence se met en pause et nous vous prévenons instantanément par e-mail et Telegram. Le lien de votre Cal.com voyage dans chaque e-mail, il peut donc aussi réserver directement depuis là."
+        "title": "Chaque clic arrive sur votre page",
+        "description": "Votre domaine d'envoi affiche une page à votre logo et à vos couleurs, avec un formulaire de contact, rédigée à partir de votre profil. Le visiteur sait qui lui écrit ; s'il remplit le formulaire ou répond avec intérêt, la séquence se met en pause et nous vous prévenons aussitôt."
       },
       {
         "title": "Apportez vos propres contacts",
@@ -306,6 +306,10 @@
         {
           "title": "À l'achat : un domaine dédié, authentifié",
           "body": "À l'achat, vous choisissez un domaine dédié pour vos envois : votre domaine principal n'est jamais touché. Le système l'authentifie (SPF, DKIM, DMARC) et construit sa réputation à partir de zéro, sans IP partagée. Il est alors prêt pour vos premiers emails, qui partent progressivement, au rythme de la chauffe. Ce que vous avez validé pendant l'essai reste en file d'attente et part quand le domaine est prêt, après une nouvelle vérification de chaque contact."
+        },
+        {
+          "title": "Chaque clic arrive sur une page à vous, sans rien concevoir",
+          "body": "À l'activation de votre campagne, votre domaine d'envoi affiche une page à votre logo et à vos couleurs, avec ce que vous proposez, rédigée à partir de votre profil. Quiconque clique dans un e-mail, ou cherche qui lui écrit, trouve votre entreprise et non une adresse vide. Il peut vous contacter sur place, via un formulaire qui vous prévient par e-mail ou le bouton de votre agenda si vous en avez un. S'il remplit le formulaire, sa séquence se met en pause : il ne reçoit plus d'e-mail après vous avoir écrit. Vous ne concevez ni n'hébergez rien. Vous relisez la page avant publication et modifiez textes, logo ou couleur depuis les Paramètres quand vous voulez. Elle s'affiche en français, anglais ou espagnol selon la langue du visiteur et renvoie vers votre site et vos pages légales. Si vous préférez votre propre page, vos e-mails y renvoient."
         }
       ],
       "oneLiners": [
@@ -475,6 +479,10 @@
         {
           "q": "Et si ça ne marche pas pour moi ?",
           "a": "Nous ne promettons pas de rendez-vous. Nous promettons ceci : vous payez pour chaque personne qui reçoit votre premier email. S'il rebondit, le crédit revient tout seul. Et les crédits n'expirent pas."
+        },
+        {
+          "q": "Que voit la personne qui clique sur un lien de mes e-mails ?",
+          "a": "Votre entreprise : dès l'activation de votre campagne, une page sur votre domaine d'envoi avec votre logo, vos couleurs, ce que vous proposez et un formulaire pour vous contacter. Ce n'est pas une page générique de RevCognition : le visiteur sait qui lui écrit et peut vous répondre sans vous chercher. Si vous avez déjà une page de campagne, vous pouvez l'utiliser à la place."
         }
       ]
     },

@@ -193,8 +193,8 @@
         "description": "Your emails go out across six mailboxes, included in the setup: you don't buy any. Each has a real name and title, to protect the domain's reputation."
       },
       {
-        "title": "From a reply to a meeting",
-        "description": "When someone replies with interest, the sequence pauses and we notify you instantly by email and Telegram. Your Cal.com link travels in every email, so they can also book directly from there."
+        "title": "Every click lands on your page",
+        "description": "Your sending domain shows a page with your logo, your colours and a contact form, written from your profile. Visitors know who's writing to them; if they fill in the form or reply with interest, the sequence pauses and we tell you right away."
       },
       {
         "title": "Bring your own contacts",
@@ -306,6 +306,10 @@
         {
           "title": "When you buy: a dedicated, authenticated domain",
           "body": "When you buy, you choose a dedicated domain for your outreach: your main domain is never touched. The system authenticates it (SPF, DKIM, DMARC) and builds its reputation from zero, with no shared IP. It's then ready for your first emails, which go out gradually as it warms up. What you approved in the trial stays queued and goes out once the domain is ready, after each contact is rechecked."
+        },
+        {
+          "title": "Every click lands on a page of yours, with nothing to design",
+          "body": "When your campaign goes live, your sending domain shows a page with your logo, your colours and what you offer, written from your profile. Anyone who clicks an email, or looks up who is writing to them, finds your company instead of an empty address. They can contact you right there, through a form that notifies you by email or your booking button if you have one. If they fill in the form, their sequence pauses: they get no further email after writing to you. You design and host nothing. You review the page before it goes live and change copy, logo or colour from Settings whenever you like. It shows in English, Spanish or French depending on the visitor's language and links to your website and your legal pages. If you'd rather use your own page, your emails link there instead."
         }
       ],
       "oneLiners": [
@@ -475,6 +479,10 @@
         {
           "q": "What if it doesn't work for me?",
           "a": "We don't promise meetings. We promise this: you pay for each person who receives your first email. If it bounces, the credit comes back on its own. And credits never expire."
+        },
+        {
+          "q": "What do people see when they click a link in my emails?",
+          "a": "Your company: once your campaign is live, a page on your sending domain with your logo, your colours, what you offer and a form to contact you. It isn't a generic RevCognition page: visitors know who is writing to them and can reply without looking you up. If you already have a campaign page, you can use it instead."
         }
       ]
     },

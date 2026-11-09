@@ -193,8 +193,8 @@
         "description": "Tus correos salen repartidos entre seis buzones, incluidos en el setup: no compras ninguno. Cada uno lleva nombre y cargo reales, para cuidar la reputación del dominio."
       },
       {
-        "title": "De una respuesta a una reunión",
-        "description": "Cuando alguien contesta con interés, la secuencia se pausa y te avisamos al instante por correo y Telegram. El enlace de tu Cal.com viaja en cada correo, así que también puede reservar directamente desde ahí."
+        "title": "Quien hace clic llega a tu página",
+        "description": "Tu dominio de envío muestra una página con tu logo, tus colores y un formulario de contacto, escrita a partir de tu perfil. Quien la visita sabe quién le escribe; si rellena el formulario o contesta con interés, la secuencia se pausa y te avisamos al instante."
       },
       {
         "title": "Trae tus propios contactos",
@@ -306,6 +306,10 @@
         {
           "title": "Al comprar: un dominio dedicado y autenticado",
           "body": "Al comprar eliges un dominio dedicado para tus envíos: tu dominio principal nunca se toca. El sistema lo autentica (SPF, DKIM, DMARC) y arranca su reputación desde cero, sin IP compartida. Queda listo para tus primeros correos, que salen poco a poco, respetando el calentamiento. Lo que aprobaste en la prueba queda en cola y sale cuando el dominio está listo, tras revalidar cada contacto."
+        },
+        {
+          "title": "Cada clic llega a una página tuya, sin diseñar nada",
+          "body": "Al activar tu campaña, tu dominio de envío muestra una página con tu logo, tus colores y lo que ofreces, escrita a partir de tu perfil. Quien hace clic en un correo, o busca quién le escribe, encuentra tu empresa y no una dirección vacía. Puede contactarte ahí mismo, con un formulario que te avisa por email o con el botón de tu agenda si la tienes. Si rellena el formulario, su secuencia se pausa: no le llega otro correo después de haberte escrito. No diseñas ni alojas nada. La revisas antes de publicarla y cambias textos, logo o color desde Ajustes cuando quieras. Se muestra en español, inglés o francés según el idioma de quien la visita y enlaza a tu web y a tus páginas legales. Si prefieres tu propia página, tus correos enlazan a ella."
         }
       ],
       "oneLiners": [
@@ -475,6 +479,10 @@
         {
           "q": "¿Y si no me funciona?",
           "a": "No prometemos reuniones. Prometemos esto: pagas por cada persona a la que llega tu primer email. Si rebota, el crédito vuelve solo. Y los créditos no caducan."
+        },
+        {
+          "q": "¿Qué ve quien hace clic en un enlace de mis correos?",
+          "a": "Tu empresa: desde que activas tu campaña, una página en tu dominio de envío con tu logo, tus colores, lo que ofreces y un formulario para contactarte. No es una página genérica de RevCognition: quien llega sabe quién le escribe y puede responderte sin buscarte. Si ya tienes una página de campaña, puedes usarla en su lugar."
         }
       ]
     },
