@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Cold outreach for firms that live on referrals | RevCognition",
-    "description": "RevCognition identifies your ideal clients and writes each one a unique message. You write nothing and pay no agency: you just review and approve, a few minutes a day.",
+    "description": "Paste your website and get 20 free messages for real people in your market, in four batches of 5 that learn your style. No mailboxes to buy. You only pay if you want to send.",
     "ogAlt": "RevCognition — Your clients come from referrals."
   },
   "a11y": {
@@ -27,10 +27,10 @@
     "line1": "Your clients come",
     "line1Accent": "from referrals.",
     "line2": "And there's no time left to go find more.",
-    "subtitle": "RevCognition identifies your ideal clients and writes each one a unique message. You write nothing and pay no agency: you just review and approve, a few minutes a day.",
-    "ctaPrimary": "Request beta access",
+    "subtitle": "RevCognition reads your website, finds your ideal clients and writes each one a unique message. With no mailboxes to buy, your first 5 are ready to review. Correct them, and the next batch picks up your style.",
+    "ctaPrimary": "20 free messages, no mailboxes to buy",
     "ctaSecondary": "See how it works",
-    "note": "Closed beta: we review every request and you're in if your case fits. You start with €150 (VAT excl.), paid once, and before you decide anything we analyze your website and propose an ideal customer profile.",
+    "note": "Free, no card, with your company email. Nothing is sent until you buy, and you can buy whenever you like: €150 (VAT excl.), paid once. Once you buy, the system is ready for your first emails, which go out gradually as your domain warms up.",
     "signalCard": {
       "detected": "Signal detected · 3 hours ago",
       "example": "Laboratorios Roca · OEPM filing rejected · class 5 · 04287391",
@@ -40,14 +40,14 @@
       "fromLabel": "From:",
       "fromValue": "Alex <alex@martinez-asoc.com>",
       "toLabel": "To:",
-      "toValue": "Ana Martínez <a.martinez@gab-marcas.es>",
+      "toValue": "Ana Martínez · Gab Marcas",
       "subjectLabel": "Subject:",
       "subjectValue": "Laboratorios Roca, filing rejected Apr 11",
       "greeting": "Hi Ana,",
       "body": "Laboratorios Roca's trademark filing (class 5, application 04287391) was rejected on April 11. The appeal deadline is already running: if no IP lawyer is assigned yet, I can walk you through how we handle it.",
       "stateDraft": "Drafting",
       "statePending": "Awaiting your approval",
-      "stateApproved": "Approved by you · goes out tomorrow 9:00",
+      "stateApproved": "Approved by you · queued",
       "approveHint": "Nothing goes out without your OK.",
       "approvedAt": "Approved today, 08:42",
       "approve": "Approve"
@@ -95,19 +95,19 @@
     "answer": {
       "label": "RevCognition",
       "what": "Finds prospects that fit, writes a message for each one, and sends nothing you haven't seen.",
-      "cost": "€150 to start",
-      "costNote": "One-time payment, VAT excl.",
+      "cost": "20 free messages",
+      "costNote": "To send: €150, paid once (VAT excl.)",
       "link": "See pricing →"
     }
   },
   "howItWorks": {
     "eyebrow": "How it works",
-    "heading": "Three steps. Then the system works on its own.",
+    "heading": "Three free steps. Buy whenever you like.",
     "steps": [
       {
-        "title": "Tell us who you are",
+        "title": "Paste your website",
         "description": "We analyze your website and automatically generate positioning proposals: what problem you solve, your tone, your services, and your ideal customer profile. You pick the strategy that fits you best.",
-        "time": "Setup: one guided session"
+        "time": "Free: a few minutes, no mailboxes to buy"
       },
       {
         "title": "The system identifies your prospects",
@@ -115,9 +115,9 @@
         "time": "No effort from you"
       },
       {
-        "title": "Every prospect gets a message written for them",
-        "description": "An LLM combines your profile, our bank of high-performing sales messages, and the prospect's data to write a unique message. You approve the daily sends or let them go out on their own.",
-        "time": "Optional review: a few minutes a day"
+        "title": "You review 20 messages, in four batches of 5",
+        "description": "Each message is written for a real person in your market. Approve it, reject it or correct it, and the next batch shows the system learning your style. You can adjust your strategy at any time too.",
+        "time": "Free: nothing is sent until you buy"
       }
     ],
     "mockups": {
@@ -146,7 +146,7 @@
         "approveAria": "Approve email to {company}",
         "discardAria": "Discard email to {company}",
         "hint": "Drag right to approve, left to discard.",
-        "done": "{count, plural, =0 {Nothing approved today. No email goes out.} one {1 email approved. It goes out tomorrow at 9:00.} other {# emails approved. They go out tomorrow at 9:00.}}",
+        "done": "{count, plural, =0 {Nothing approved yet. No email goes out.} one {1 message approved. The next batch picks up your corrections.} other {# messages approved. The next batch picks up your corrections.}}",
         "items": [
           {
             "company": "Bufete Serrano & Asoc.",
@@ -190,7 +190,7 @@
       },
       {
         "title": "Six senders with their own signature",
-        "description": "Your emails go out spread across six mailboxes, each with its real name and title, to protect the domain's reputation."
+        "description": "Your emails go out across six mailboxes, included in the setup: you don't buy any. Each has a real name and title, to protect the domain's reputation."
       },
       {
         "title": "From a reply to a meeting",
@@ -213,16 +213,16 @@
     "intro": "You don't pay for seats or tools. You pay per credit: 1 credit = 1 new person who receives your first email (if it bounces, the credit comes back automatically), and the follow-ups in that same sequence don't cost extra. If they reply first, the system stops. If not, it closes gracefully.",
     "perProspectIncludes": "Every prospect includes: identification, enrichment with real signals, and a full sequence (opener, follow-up, new angle, close).",
     "noCommitment": "No commitment, no subscription. Credits never expire. The only recurring cost is your sending domain: €20 a year from year two. If you stop, it lapses and nothing else is charged.",
-    "startPrice": "To get started: €150 (VAT excl.), paid once: the setup (€50) plus the first pack of 100 credits (€100). A lead-gen agency bills you every month and hiring someone to prospect costs a salary; here you pay once and only carry on if it works for you.",
+    "startPrice": "Trying it is free. To send: €150 (VAT excl.), paid once: the setup (€50) plus the first pack of 100 credits (€100). What you approved in the trial stays queued and comes out of those credits. A lead-gen agency bills you every month and hiring someone to prospect costs a salary; here you pay once and only carry on if it works for you.",
     "noVat": "VAT excl.",
     "qualifiedProspects": "{count} credits",
     "perSend": "{value} / credit",
-    "requestAccess": "Request access with this pack",
+    "requestAccess": "Start with 20 free messages",
     "talkToFounder": "Talk to the founder →",
     "plans": [
       {
         "name": "To get started",
-        "tagline": "Try the system with your first market segment.",
+        "tagline": "Launch your first market segment.",
         "discount": null
       },
       {
@@ -238,7 +238,7 @@
     ],
     "setup": {
       "title": "Setup: €50 (VAT excl.) — one-time.",
-      "description": "Initial system setup, analysis of your website, and strategy definition.",
+      "description": "Everything you need to send from your dedicated domain, with no mailboxes to buy separately.",
       "includes": [
         "Purchase and setup of the sending domain",
         "Automatic SPF, DKIM, and DMARC configuration",
@@ -254,7 +254,7 @@
     },
     "fiscalNote": "Prices exclude tax: VAT or other applicable taxes are added to the invoice based on your company's country.",
     "ownList": "Already have your own prospect list? You can use it directly. The system enriches it and writes the messages on top of it.",
-    "betaNote": "Closed beta: we review every request one by one and, if your case fits, we give you access."
+    "betaNote": "One trial per company, with your company email. We open 20 trials a month; if they fill up, you join the waiting list and we email you."
   },
   "founder": {
     "eyebrow": "Why this exists",
@@ -267,21 +267,21 @@
     "closingPost": "would have wanted to have."
   },
   "ctaFinal": {
-    "heading": "Join the closed beta.",
-    "subtitle": "We review every request one by one to take care of every account. Request access and we'll start by analyzing your website and your market.",
-    "ctaButton": "Request access to the beta",
+    "heading": "See your 20 messages before you pay.",
+    "subtitle": "Paste your website, sign in with your company email and judge the messages yourself: four batches of 5, for real people in your market. No mailboxes to buy. If you're not convinced, you pay nothing.",
+    "ctaButton": "20 free messages, no mailboxes to buy",
     "legalPre": "Prefer to see it with the founder first?",
     "legalMailtoLink": "Email me directly.",
     "legalCalLink": "Book a meeting"
   },
   "producto": {
     "metaTitle": "Product — RevCognition | Cold outreach, start to finish",
-    "metaDescription": "Everything RevCognition does: set up in one session, a few minutes of review a day, messages written for each prospect, your own domain warmed up patiently, and replies sorted automatically.",
+    "metaDescription": "Everything RevCognition does: your first messages in a few minutes, with no mailboxes to buy; a short daily review; your own domain warmed up patiently, and replies sorted automatically.",
     "ogAlt": "RevCognition — the product in detail.",
     "hero": {
       "eyebrow": "Product",
       "heading1": "Everything the system does,",
-      "heading2": "from the first session to the first yes.",
+      "heading2": "from your website to every reply.",
       "subtitle": "RevCognition sets up your cold outreach end to end and keeps it running, day after day. Here's what happens under the hood, no jargon."
     },
     "nav": {
@@ -296,16 +296,16 @@
     },
     "setup": {
       "eyebrow": "Getting started",
-      "title": "From your website to an active campaign, in one session.",
-      "intro": "Setting up cold outreach from scratch — domain, mailboxes, sequence, messages — usually takes weeks and several tools. Here it's a single guided session, start to finish.",
+      "title": "From your website to your first messages, in a few minutes.",
+      "intro": "Setting up cold outreach from scratch — domain, mailboxes, sequence, messages — usually takes weeks and several tools, and most platforms make you buy mailboxes before you see anything. Here you see your first messages before you buy anything.",
       "depth": [
         {
-          "title": "An assistant that gets your account ready to send",
-          "body": "You paste your website URL and the system drafts a first commercial profile: who you're targeting, what sets you apart, and your tone. You review it, choose a dedicated domain, set up your senders and your booking link, and once you're done the domain enters warm-up. No agencies, no weeks of setup."
+          "title": "Four batches to watch it learn your style",
+          "body": "You paste your website URL and the system drafts a first commercial profile: who you're targeting, what sets you apart, and your tone. You review it, set how you want people to reach you, and ask for your first batch: 5 messages for real people in your market, each with its full sequence. Approve, reject or correct them; the next batch picks up your corrections, and so on up to 20. You can buy at any time, without waiting to finish, and you keep the batches you have left."
         },
         {
-          "title": "Your own, authenticated email domain",
-          "body": "You choose a dedicated domain for your outreach. The system authenticates it (SPF, DKIM, DMARC) and builds its reputation from zero, so it never touches your main inbox or depends on a shared IP."
+          "title": "When you buy: a dedicated, authenticated domain",
+          "body": "When you buy, you choose a dedicated domain for your outreach: your main domain is never touched. The system authenticates it (SPF, DKIM, DMARC) and builds its reputation from zero, with no shared IP. It's then ready for your first emails, which go out gradually as it warms up. What you approved in the trial stays queued and goes out once the domain is ready, after each contact is rechecked."
         }
       ],
       "oneLiners": [
@@ -326,7 +326,7 @@
       "depth": [
         {
           "title": "You approve what goes out, and only that",
-          "body": "In the Approval Center you see every email already drafted — subject and body, with name, company, and address — before it's sent. Edit the text if you want, expand the full follow-up sequence, mark the ones you approve, and discard the rest. Once you trust the system, you can turn off approval and let sends go out on their own."
+          "body": "In the Approval Center you see every message already drafted — subject and body, with the contact's name, role and LinkedIn — before it's sent. Edit the text if you want, expand the full follow-up sequence, mark the ones you approve, and discard the rest. Once you trust the system, you can turn off approval and let sends go out on their own."
         }
       ],
       "oneLiners": [
@@ -446,7 +446,7 @@
         },
         {
           "q": "What does it cost?",
-          "a": "A one-time setup fee of €50 to get the account ready, then credit packs starting at €100 (100 credits), with volume discounts: 600 credits for €500 and 1,300 credits for €1,000. Prices exclude tax: applicable VAT is added on the invoice based on your company's country. 1 credit = 1 new person who receives your first email, and a bounced email doesn't consume one; follow-ups in that same sequence don't cost extra credits. No commitment, and credits never expire. The only recurring cost is your sending domain: €20 a year from year two."
+          "a": "Trying it is free. To send, a one-time setup fee of €50 to get the account ready, then credit packs starting at €100 (100 credits), with volume discounts: 600 credits for €500 and 1,300 credits for €1,000. Prices exclude tax: applicable VAT is added on the invoice based on your company's country. 1 credit = 1 new person who receives your first email, and a bounced email doesn't consume one; follow-ups in that same sequence don't cost extra credits. No commitment, and credits never expire. The only recurring cost is your sending domain: €20 a year from year two."
         },
         {
           "q": "Does it work in my industry or country?",
@@ -455,13 +455,33 @@
         {
           "q": "Where do the contact details come from?",
           "a": "Contacts come from partner databases specialized in professional information. Before writing, every email address is verified to keep bounces low, and every email includes an opt-out option: whoever unsubscribes never receives anything again, in compliance with regulations."
+        },
+        {
+          "q": "What's in the free trial?",
+          "a": "We analyze your website, propose your ideal client and write 20 messages for real people in your market, in four batches of 5, each with its full sequence. You approve, reject or correct them, and each batch picks up what came before. Nothing is sent and we don't ask for a card. One trial per company and 20 a month; if they fill up, you join the waiting list and we email you."
+        },
+        {
+          "q": "Why do you ask for my company email?",
+          "a": "To check that the website we analyze is yours: your email domain has to match your website."
+        },
+        {
+          "q": "Do I have to buy mailboxes?",
+          "a": "No. Most platforms ask for them before you start. Here you don't need any to try it, and when you buy, the six senders are included in the setup."
+        },
+        {
+          "q": "When do my first emails go out?",
+          "a": "When you buy, not before. You can do that at any time, without finishing the batches. The system is ready to start, but a new domain warms up gradually: from a range of 4 to 16 emails a day in the first week up to 50 in the fourth. What you approved stays queued and goes out at that pace."
+        },
+        {
+          "q": "What if it doesn't work for me?",
+          "a": "We don't promise meetings. We promise this: you pay for each person who receives your first email. If it bounces, the credit comes back on its own. And credits never expire."
         }
       ]
     },
     "mockups": {
       "wizard": {
         "title": "Setup",
-        "metaText": "Step 5 of 6",
+        "metaText": "When you buy",
         "domainLabel": "Sending domain",
         "domainValue": "mail-yourcompany.example",
         "sendersHeading": "Senders · 6 mailboxes",
@@ -483,7 +503,7 @@
       },
       "aprobacion": {
         "title": "Approval",
-        "metaText": "1 of 8 pending",
+        "metaText": "1 of 5 · batch 1",
         "toLabel": "To:",
         "toValue": "Ana Ruiz · Bufete Serrano",
         "subjectLabel": "Subject:",

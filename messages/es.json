@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Prospección en frío para quien vive de la recomendación | RevCognition",
-    "description": "RevCognition identifica a tus clientes ideales y les escribe un mensaje único a cada uno. No escribes nada ni pagas a ninguna agencia: tú solo revisas y apruebas en unos minutos al día.",
+    "description": "Pega tu web y mira 20 mensajes gratis para personas reales de tu mercado, en cuatro tandas de 5 que aprenden tu estilo. Sin comprar buzones. Pagas solo si quieres enviar.",
     "ogAlt": "RevCognition — Tus clientes llegan por recomendación."
   },
   "a11y": {
@@ -27,10 +27,10 @@
     "line1": "Tus clientes llegan",
     "line1Accent": "por recomendación.",
     "line2": "Y no te queda tiempo para prospectar.",
-    "subtitle": "RevCognition identifica a tus clientes ideales y les escribe un mensaje único a cada uno. No escribes nada ni pagas a ninguna agencia: tú solo revisas y apruebas en unos minutos al día.",
-    "ctaPrimary": "Solicita acceso a la beta",
+    "subtitle": "RevCognition lee tu web, encuentra a tus clientes ideales y escribe un mensaje único para cada uno. Sin comprar buzones, tienes los 5 primeros para revisar. Corriges, y la tanda siguiente ya recoge tu estilo.",
+    "ctaPrimary": "20 mensajes gratis, sin comprar buzones",
     "ctaSecondary": "Ver cómo funciona",
-    "note": "Beta cerrada: revisamos cada solicitud y entras si tu caso encaja. Empiezas con 150€ (sin IVA) en pago único y, antes de que decidas nada, analizamos tu web y te proponemos un perfil de cliente ideal.",
+    "note": "Gratis, sin tarjeta y con el email de tu empresa. No se envía nada hasta que compres, y puedes comprar cuando quieras: 150€ (sin IVA) en pago único. Desde ahí, el sistema queda listo para tus primeros correos, que salen poco a poco, respetando el calentamiento de tu dominio.",
     "signalCard": {
       "detected": "Señal detectada · hace 3 horas",
       "example": "Laboratorios Roca · Depósito OEPM rechazado · clase 5 · 04287391",
@@ -40,14 +40,14 @@
       "fromLabel": "De:",
       "fromValue": "Alex <alex@martinez-asoc.com>",
       "toLabel": "Para:",
-      "toValue": "Ana Martínez <a.martinez@gab-marcas.es>",
+      "toValue": "Ana Martínez · Gab Marcas",
       "subjectLabel": "Asunto:",
       "subjectValue": "Laboratorios Roca, depósito rechazado el 11/04",
       "greeting": "Hola Ana,",
       "body": "El depósito de marca de Laboratorios Roca (clase 5, solicitud 04287391) fue rechazado el pasado 11 de abril. El plazo de recurso ya corre: si aún no tenéis abogado de PI asignado, puedo contaros cómo lo llevamos.",
       "stateDraft": "Redactando",
       "statePending": "Pendiente de tu aprobación",
-      "stateApproved": "Aprobado por ti · sale mañana 9:00",
+      "stateApproved": "Aprobado por ti · queda en cola",
       "approveHint": "Nada sale sin tu visto bueno.",
       "approvedAt": "Aprobado hoy, 08:42",
       "approve": "Aprobar"
@@ -95,19 +95,19 @@
     "answer": {
       "label": "RevCognition",
       "what": "Encuentra prospectos que encajan, escribe un mensaje para cada uno y no envía nada sin que lo veas.",
-      "cost": "150€ para empezar",
-      "costNote": "Pago único, sin IVA",
+      "cost": "20 mensajes gratis",
+      "costNote": "Para enviar, 150€ en pago único (sin IVA)",
       "link": "Ver precios →"
     }
   },
   "howItWorks": {
     "eyebrow": "Cómo funciona",
-    "heading": "Tres pasos. Luego el sistema trabaja solo.",
+    "heading": "Tres pasos gratis. Compras cuando quieras.",
     "steps": [
       {
-        "title": "Cuéntanos quién eres",
+        "title": "Pega tu web",
         "description": "Analizamos tu web y generamos automáticamente propuestas de posicionamiento: qué problema resuelves, tu tono, tus servicios, y tu perfil de cliente ideal. Tú eliges la estrategia que más te representa.",
-        "time": "Setup: una sesión guiada"
+        "time": "Gratis: unos minutos, sin comprar buzones"
       },
       {
         "title": "El sistema identifica a tus prospectos",
@@ -115,9 +115,9 @@
         "time": "Sin intervención tuya"
       },
       {
-        "title": "Cada prospecto recibe un mensaje escrito para él",
-        "description": "Un LLM combina tu perfil, nuestro banco de mensajes comerciales de alto nivel, y los datos del prospecto para escribir un mensaje único. Tú apruebas los envíos diarios o los dejas ir solos.",
-        "time": "Validación opcional: unos minutos al día"
+        "title": "Revisas 20 mensajes, en cuatro tandas de 5",
+        "description": "Cada mensaje está escrito para una persona real de tu mercado. Lo apruebas, lo rechazas o lo corriges, y en la tanda siguiente ves cómo el sistema aprende tu estilo. También puedes ajustar tu estrategia en cualquier momento.",
+        "time": "Gratis: nada se envía hasta que compres"
       }
     ],
     "mockups": {
@@ -146,7 +146,7 @@
         "approveAria": "Aprobar correo a {company}",
         "discardAria": "Descartar correo a {company}",
         "hint": "Arrastra a la derecha para aprobar, a la izquierda para descartar.",
-        "done": "{count, plural, =0 {Nada aprobado hoy. No sale ningún correo.} one {1 correo aprobado. Sale mañana a las 9:00.} other {# correos aprobados. Salen mañana a las 9:00.}}",
+        "done": "{count, plural, =0 {Nada aprobado todavía. No sale ningún correo.} one {1 mensaje aprobado. La tanda siguiente recoge lo que has corregido.} other {# mensajes aprobados. La tanda siguiente recoge lo que has corregido.}}",
         "items": [
           {
             "company": "Bufete Serrano & Asoc.",
@@ -190,7 +190,7 @@
       },
       {
         "title": "Seis remitentes con firma propia",
-        "description": "Tus correos salen repartidos entre seis buzones, cada uno con su nombre y su cargo reales, para cuidar la reputación del dominio."
+        "description": "Tus correos salen repartidos entre seis buzones, incluidos en el setup: no compras ninguno. Cada uno lleva nombre y cargo reales, para cuidar la reputación del dominio."
       },
       {
         "title": "De una respuesta a una reunión",
@@ -213,16 +213,16 @@
     "intro": "No pagas por asientos ni por herramientas. Pagas por crédito: 1 crédito = 1 persona nueva a la que llega tu primer email (si rebota, el crédito vuelve solo), y los seguimientos de esa misma secuencia no gastan crédito adicional. Si contesta antes, el sistema se para. Si no, cierra con elegancia.",
     "perProspectIncludes": "Cada prospecto incluye: identificación, enriquecimiento con señales reales y secuencia completa (apertura, seguimiento, nuevo ángulo, cierre).",
     "noCommitment": "Sin permanencia y sin suscripción. Los créditos no caducan. Lo único recurrente es tu dominio de envío: 20€ al año a partir del segundo. Si lo dejas, caduca y no se cobra nada más.",
-    "startPrice": "Para empezar: 150€ (sin IVA) en pago único, el setup (50€) más el primer pack de 100 créditos (100€). Una agencia de captación se paga cada mes y contratar a alguien para prospectar cuesta un sueldo; aquí pagas una vez y sigues solo si te funciona.",
+    "startPrice": "Probar es gratis. Para enviar: 150€ (sin IVA) en pago único, el setup (50€) más el primer pack de 100 créditos (100€). Lo que aprobaste en la prueba queda en cola y descuenta de esos créditos. Una agencia de captación se paga cada mes y contratar a alguien para prospectar cuesta un sueldo; aquí pagas una vez y sigues solo si te funciona.",
     "noVat": "sin IVA",
     "qualifiedProspects": "{count} créditos",
     "perSend": "{value} / crédito",
-    "requestAccess": "Solicitar acceso con este pack",
+    "requestAccess": "Empieza con 20 mensajes gratis",
     "talkToFounder": "Hablar con el fundador →",
     "plans": [
       {
         "name": "Para empezar",
-        "tagline": "Prueba el sistema con tu primer segmento de mercado.",
+        "tagline": "Lanza tu primer segmento de mercado.",
         "discount": null
       },
       {
@@ -238,7 +238,7 @@
     ],
     "setup": {
       "title": "Setup: 50€ (sin IVA), pago único.",
-      "description": "Configuración inicial del sistema, análisis de tu web y definición de estrategia.",
+      "description": "Todo lo necesario para enviar desde tu dominio dedicado, sin comprar buzones aparte.",
       "includes": [
         "Compra y configuración del dominio de envío",
         "Auto-configuración de SPF, DKIM y DMARC",
@@ -254,7 +254,7 @@
     },
     "fiscalNote": "Precios sin impuestos: el IVA u otros impuestos aplicables se añaden en factura según el país de tu empresa.",
     "ownList": "¿Tienes una base de prospectos propia? Puedes usarla directamente. El sistema la enriquece y genera los mensajes sobre ella.",
-    "betaNote": "Beta cerrada: revisamos cada solicitud una a una y, si tu caso encaja, te damos acceso."
+    "betaNote": "Una prueba por empresa, con el email de tu empresa. Abrimos 20 pruebas al mes; si se llenan, quedas en lista de espera y te avisamos por email."
   },
   "founder": {
     "eyebrow": "Por qué existe esto",
@@ -267,21 +267,21 @@
     "closingPost": "habría querido tener."
   },
   "ctaFinal": {
-    "heading": "Entra en la beta cerrada.",
-    "subtitle": "Revisamos cada solicitud una a una para cuidar cada cuenta. Solicita acceso y empezamos por analizar tu web y tu mercado.",
-    "ctaButton": "Solicita acceso a la beta",
+    "heading": "Mira tus 20 mensajes antes de pagar.",
+    "subtitle": "Pega tu web, entra con el email de tu empresa y juzga los mensajes por ti mismo: cuatro tandas de 5, para personas reales de tu mercado. Sin buzones que comprar. Si no te convencen, no pagas nada.",
+    "ctaButton": "20 mensajes gratis, sin comprar buzones",
     "legalPre": "¿Prefieres verlo antes con el fundador?",
     "legalMailtoLink": "Escríbeme directamente.",
     "legalCalLink": "Reservar reunión"
   },
   "producto": {
     "metaTitle": "Producto — RevCognition | Prospección en frío, de principio a fin",
-    "metaDescription": "Todo lo que hace RevCognition: puesta en marcha en una sesión, unos minutos al día de revisión, mensajes escritos para cada prospecto, dominio propio calentado con paciencia y respuestas clasificadas solas.",
+    "metaDescription": "Todo lo que hace RevCognition: tus primeros mensajes en unos minutos, sin comprar buzones; una revisión corta al día; dominio propio calentado con paciencia y respuestas clasificadas solas.",
     "ogAlt": "RevCognition — el producto en detalle.",
     "hero": {
       "eyebrow": "Producto",
       "heading1": "Todo lo que hace el sistema,",
-      "heading2": "de la primera sesión al primer sí.",
+      "heading2": "de tu web a cada respuesta.",
       "subtitle": "RevCognition monta tu prospección en frío de principio a fin y la sostiene día tras día. Esto es lo que ocurre por dentro, sin jerga."
     },
     "nav": {
@@ -296,16 +296,16 @@
     },
     "setup": {
       "eyebrow": "Puesta en marcha",
-      "title": "De tu web a una campaña activa, en una sesión.",
-      "intro": "Montar prospección en frío desde cero —dominio, buzones, secuencia, mensajes— suele llevar semanas y varias herramientas. Aquí es una sola sesión guiada de principio a fin.",
+      "title": "De tu web a tus primeros mensajes, en unos minutos.",
+      "intro": "Montar prospección en frío desde cero —dominio, buzones, secuencia, mensajes— suele llevar semanas y varias herramientas, y la mayoría de plataformas te hacen comprar buzones antes de ver nada. Aquí ves tus primeros mensajes antes de comprar nada.",
       "depth": [
         {
-          "title": "Un asistente que deja la cuenta lista para enviar",
-          "body": "Pegas la URL de tu web y el sistema redacta un primer perfil comercial: a quién te diriges, qué te diferencia y tu tono. Lo revisas, eliges un dominio dedicado, defines tus remitentes y tu enlace para agendar, y al terminar el dominio entra en calentamiento. Sin agencias y sin semanas de configuración."
+          "title": "Cuatro tandas para ver cómo aprende tu estilo",
+          "body": "Pegas la URL de tu web y el sistema redacta un primer perfil comercial: a quién te diriges, qué te diferencia y tu tono. Lo revisas, defines cómo quieres que te contacten y pides tu primera tanda: 5 mensajes para personas reales de tu mercado, cada uno con su secuencia completa. Los apruebas, rechazas o corriges; la tanda siguiente recoge tus correcciones, y así hasta 20. Puedes comprar en cualquier momento, sin esperar a terminar, y conservas las tandas que te queden."
         },
         {
-          "title": "Un dominio de correo propio, autenticado",
-          "body": "Eliges un dominio dedicado para tus envíos. El sistema lo autentica (SPF, DKIM, DMARC) y arranca su reputación desde cero, para no tocar tu buzón principal ni depender de una IP compartida."
+          "title": "Al comprar: un dominio dedicado y autenticado",
+          "body": "Al comprar eliges un dominio dedicado para tus envíos: tu dominio principal nunca se toca. El sistema lo autentica (SPF, DKIM, DMARC) y arranca su reputación desde cero, sin IP compartida. Queda listo para tus primeros correos, que salen poco a poco, respetando el calentamiento. Lo que aprobaste en la prueba queda en cola y sale cuando el dominio está listo, tras revalidar cada contacto."
         }
       ],
       "oneLiners": [
@@ -326,7 +326,7 @@
       "depth": [
         {
           "title": "Apruebas lo que sale, y solo eso",
-          "body": "En el Centro de Aprobación ves cada correo ya redactado —asunto y cuerpo, con nombre, empresa y dirección— antes de que salga. Editas el texto si quieres, despliegas la secuencia completa de seguimientos, marcas los que apruebas y descartas el resto. Cuando confíes en el sistema, puedes desactivar la aprobación y dejar que salgan solos."
+          "body": "En el Centro de Aprobación ves cada mensaje ya redactado —asunto y cuerpo, con el nombre, el cargo y el LinkedIn del contacto— antes de que salga. Editas el texto si quieres, despliegas la secuencia completa de seguimientos, marcas los que apruebas y descartas el resto. Cuando confíes en el sistema, puedes desactivar la aprobación y dejar que salgan solos."
         }
       ],
       "oneLiners": [
@@ -446,7 +446,7 @@
         },
         {
           "q": "¿Qué cuesta?",
-          "a": "Un setup inicial de 50€, pago único, para dejar la cuenta lista, y luego packs de créditos desde 100€ (100 créditos), con descuento por volumen: 600 créditos por 500€ y 1.300 créditos por 1.000€. Precios sin impuestos: el IVA aplicable se añade en factura según el país de tu empresa. 1 crédito = 1 persona nueva a la que llega tu primer email, y un email rebotado no consume ninguno; los seguimientos de esa misma secuencia no gastan crédito extra. Sin permanencia y los créditos no caducan. Lo único recurrente es tu dominio de envío: 20€ al año a partir del segundo."
+          "a": "Probar es gratis. Para enviar, un setup inicial de 50€, pago único, para dejar la cuenta lista, y luego packs de créditos desde 100€ (100 créditos), con descuento por volumen: 600 créditos por 500€ y 1.300 créditos por 1.000€. Precios sin impuestos: el IVA aplicable se añade en factura según el país de tu empresa. 1 crédito = 1 persona nueva a la que llega tu primer email, y un email rebotado no consume ninguno; los seguimientos de esa misma secuencia no gastan crédito extra. Sin permanencia y los créditos no caducan. Lo único recurrente es tu dominio de envío: 20€ al año a partir del segundo."
         },
         {
           "q": "¿Funciona en mi sector o en mi país?",
@@ -455,13 +455,33 @@
         {
           "q": "¿De dónde salen los datos de los contactos?",
           "a": "Los contactos salen de bases de datos partner especializadas en información profesional. Antes de escribir, cada dirección de correo se verifica para mantener el rebote bajo, y cada correo incluye una opción de baja: quien se da de baja no vuelve a recibir nada, en cumplimiento con la normativa."
+        },
+        {
+          "q": "¿Qué incluye la prueba gratis?",
+          "a": "Analizamos tu web, proponemos tu cliente ideal y escribimos 20 mensajes para personas reales de tu mercado, en cuatro tandas de 5, cada uno con su secuencia completa. Los apruebas, rechazas o corriges, y cada tanda recoge lo anterior. No se envía nada y no te pedimos tarjeta. Hay una prueba por empresa y 20 al mes; si se llenan, quedas en lista de espera y te avisamos por email."
+        },
+        {
+          "q": "¿Por qué me pedís el email de mi empresa?",
+          "a": "Para comprobar que la web que analizamos es tuya: el dominio de tu email tiene que ser el de tu web."
+        },
+        {
+          "q": "¿Tengo que comprar buzones?",
+          "a": "No. La mayoría de plataformas te los pide antes de empezar. Aquí no hacen falta para probar, y al comprar los seis remitentes vienen incluidos en el setup."
+        },
+        {
+          "q": "¿Cuándo salen mis primeros correos?",
+          "a": "Cuando compres, no antes. Puedes hacerlo en cualquier momento, sin terminar las tandas. El sistema queda listo para empezar, pero un dominio nuevo se calienta poco a poco: de una franja de 4 a 16 correos al día en la primera semana hasta 50 en la cuarta. Lo que aprobaste queda en cola y sale a ese ritmo."
+        },
+        {
+          "q": "¿Y si no me funciona?",
+          "a": "No prometemos reuniones. Prometemos esto: pagas por cada persona a la que llega tu primer email. Si rebota, el crédito vuelve solo. Y los créditos no caducan."
         }
       ]
     },
     "mockups": {
       "wizard": {
         "title": "Configuración",
-        "metaText": "Paso 5 de 6",
+        "metaText": "Al comprar",
         "domainLabel": "Dominio de envío",
         "domainValue": "correo-tuempresa.example",
         "sendersHeading": "Remitentes · 6 buzones",
@@ -483,7 +503,7 @@
       },
       "aprobacion": {
         "title": "Aprobación",
-        "metaText": "1 de 8 pendientes",
+        "metaText": "1 de 5 · tanda 1",
         "toLabel": "Para:",
         "toValue": "Ana Ruiz · Bufete Serrano",
         "subjectLabel": "Asunto:",

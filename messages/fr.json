@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Prospection à froid pour ceux qui vivent du bouche-à-oreille | RevCognition",
-    "description": "RevCognition identifie vos clients idéaux et écrit à chacun un message unique. Vous n'écrivez rien et ne payez aucune agence : vous ne faites que relire et valider, quelques minutes par jour.",
+    "description": "Collez l'URL de votre site et recevez 20 messages offerts pour de vraies personnes de votre marché, en quatre lots de 5 qui apprennent votre style. Aucune boîte mail à acheter. Vous ne payez que si vous voulez envoyer.",
     "ogAlt": "RevCognition — Vous vivez du bouche-à-oreille."
   },
   "a11y": {
@@ -27,10 +27,10 @@
     "line1": "Vous vivez",
     "line1Accent": "du bouche-à-oreille.",
     "line2": "Et il ne vous reste pas de temps pour prospecter.",
-    "subtitle": "RevCognition identifie vos clients idéaux et écrit à chacun un message unique. Vous n'écrivez rien et ne payez aucune agence : vous ne faites que relire et valider, quelques minutes par jour.",
-    "ctaPrimary": "Demander l'accès à la bêta",
+    "subtitle": "RevCognition lit votre site, trouve vos clients idéaux et écrit à chacun un message unique. Sans acheter de boîtes mail, les 5 premiers sont prêts à relire. Corrigez-les : le lot suivant reprend votre style.",
+    "ctaPrimary": "20 messages offerts, sans boîtes mail à acheter",
     "ctaSecondary": "Voir comment ça marche",
-    "note": "Bêta fermée : nous examinons chaque demande et vous entrez si votre cas correspond. Vous démarrez avec 150 € (HT) en paiement unique et, avant que vous ne décidiez quoi que ce soit, nous analysons votre site et vous proposons un profil de client idéal.",
+    "note": "Gratuit, sans carte bancaire, avec votre e-mail professionnel. Rien ne part avant votre achat, et vous achetez quand vous voulez : 150 € (HT) en paiement unique. Le système est alors prêt pour vos premiers e-mails, qui partent progressivement, au rythme de la chauffe de votre domaine.",
     "signalCard": {
       "detected": "Signal détecté · il y a 3 heures",
       "example": "Laboratorios Roca · Dépôt OEPM rejeté · classe 5 · 04287391",
@@ -40,14 +40,14 @@
       "fromLabel": "De :",
       "fromValue": "Alex <alex@martinez-asoc.com>",
       "toLabel": "À :",
-      "toValue": "Ana Martínez <a.martinez@gab-marcas.es>",
+      "toValue": "Ana Martínez · Gab Marcas",
       "subjectLabel": "Objet :",
       "subjectValue": "Laboratorios Roca, dépôt rejeté le 11/04",
       "greeting": "Bonjour Ana,",
       "body": "Le dépôt de marque de Laboratorios Roca (classe 5, demande n° 04287391) a été rejeté le 11 avril dernier. Le délai de recours court déjà : si aucun avocat en PI n'est encore désigné, je peux vous expliquer comment nous procédons.",
       "stateDraft": "Rédaction en cours",
       "statePending": "En attente de votre validation",
-      "stateApproved": "Validé par vous · part demain à 9h00",
+      "stateApproved": "Validé par vous · en file d'attente",
       "approveHint": "Rien ne part sans votre accord.",
       "approvedAt": "Validé aujourd'hui, 08h42",
       "approve": "Valider"
@@ -95,19 +95,19 @@
     "answer": {
       "label": "RevCognition",
       "what": "Trouve les prospects qui correspondent, écrit un message pour chacun et n'envoie rien que vous n'ayez vu.",
-      "cost": "150€ pour démarrer",
-      "costNote": "Paiement unique, HT",
+      "cost": "20 messages offerts",
+      "costNote": "Pour envoyer : 150 € en paiement unique (HT)",
       "link": "Voir les tarifs →"
     }
   },
   "howItWorks": {
     "eyebrow": "Comment ça marche",
-    "heading": "Trois étapes. Ensuite, le système travaille seul.",
+    "heading": "Trois étapes gratuites. Vous achetez quand vous voulez.",
     "steps": [
       {
-        "title": "Dites-nous qui vous êtes",
+        "title": "Collez l'URL de votre site",
         "description": "Nous analysons votre site et générons automatiquement des propositions de positionnement : quel problème vous résolvez, votre ton, vos services, et votre profil de client idéal. Vous choisissez la stratégie qui vous représente le mieux.",
-        "time": "Mise en place : une session guidée"
+        "time": "Gratuit : quelques minutes, aucune boîte mail à acheter"
       },
       {
         "title": "Le système identifie vos prospects",
@@ -115,9 +115,9 @@
         "time": "Sans intervention de votre part"
       },
       {
-        "title": "Chaque prospect reçoit un message écrit pour lui",
-        "description": "Un LLM combine votre profil, notre banque de messages commerciaux à haute performance, et les données du prospect pour rédiger un message unique. Vous validez les envois quotidiens ou les laissez partir seuls.",
-        "time": "Validation optionnelle : quelques minutes par jour"
+        "title": "Vous relisez 20 messages, en quatre lots de 5",
+        "description": "Chaque message est écrit pour une vraie personne de votre marché. Vous le validez, le rejetez ou le corrigez, et le lot suivant montre comment le système apprend votre style. Vous pouvez aussi ajuster votre stratégie à tout moment.",
+        "time": "Gratuit : rien ne part avant votre achat"
       }
     ],
     "mockups": {
@@ -146,7 +146,7 @@
         "approveAria": "Valider l'email pour {company}",
         "discardAria": "Écarter l'email pour {company}",
         "hint": "Glissez à droite pour valider, à gauche pour écarter.",
-        "done": "{count, plural, =0 {Rien de validé aujourd'hui. Aucun email ne part.} one {1 email validé. Il part demain à 9h00.} other {# emails validés. Ils partent demain à 9h00.}}",
+        "done": "{count, plural, =0 {Rien de validé pour l'instant. Aucun e-mail ne part.} one {1 message validé. Le lot suivant reprend vos corrections.} other {# messages validés. Le lot suivant reprend vos corrections.}}",
         "items": [
           {
             "company": "Bufete Serrano & Asoc.",
@@ -190,7 +190,7 @@
       },
       {
         "title": "Six expéditeurs avec leur propre signature",
-        "description": "Vos e-mails partent répartis entre six boîtes mail, chacune avec son nom et son poste réels, pour préserver la réputation du domaine."
+        "description": "Vos e-mails partent de six boîtes mail, incluses dans la mise en place : vous n'en achetez aucune. Chacune porte un nom et un poste réels, pour préserver la réputation du domaine."
       },
       {
         "title": "D'une réponse à un rendez-vous",
@@ -213,16 +213,16 @@
     "intro": "Vous ne payez ni sièges ni outils. Vous payez par crédit : 1 crédit = 1 nouvelle personne qui reçoit votre premier e-mail (s'il rebondit, le crédit revient automatiquement), et les relances de cette même séquence ne consomment pas de crédit supplémentaire. S'il répond avant, le système s'arrête. Sinon, il se termine avec élégance.",
     "perProspectIncludes": "Chaque prospect inclut : identification, enrichissement avec des signaux réels et séquence complète (ouverture, relance, nouvel angle, clôture).",
     "noCommitment": "Sans engagement et sans abonnement. Les crédits n'expirent pas. Le seul coût récurrent est votre domaine d'envoi : 20 € par an à partir de la deuxième année. Si vous arrêtez, il expire et rien d'autre n'est facturé.",
-    "startPrice": "Pour démarrer : 150 € (HT) en paiement unique, la mise en place (50 €) plus le premier pack de 100 crédits (100 €). Une agence de prospection se paie chaque mois et embaucher quelqu'un pour prospecter coûte un salaire ; ici, vous payez une fois et ne continuez que si cela fonctionne pour vous.",
+    "startPrice": "L'essai est gratuit. Pour envoyer : 150 € (HT) en paiement unique, la mise en place (50 €) plus le premier pack de 100 crédits (100 €). Ce que vous avez validé pendant l'essai reste en file d'attente et se déduit de ces crédits. Une agence de prospection se paie chaque mois et embaucher quelqu'un pour prospecter coûte un salaire ; ici, vous payez une fois et ne continuez que si cela fonctionne pour vous.",
     "noVat": "HT",
     "qualifiedProspects": "{count} crédits",
     "perSend": "{value} / crédit",
-    "requestAccess": "Demander l'accès avec ce pack",
+    "requestAccess": "Commencer par 20 messages offerts",
     "talkToFounder": "Parler au fondateur →",
     "plans": [
       {
         "name": "Pour démarrer",
-        "tagline": "Testez le système avec votre premier segment de marché.",
+        "tagline": "Lancez votre premier segment de marché.",
         "discount": null
       },
       {
@@ -238,7 +238,7 @@
     ],
     "setup": {
       "title": "Setup : 50 € (HT), paiement unique.",
-      "description": "Configuration initiale du système, analyse de votre site et définition de la stratégie.",
+      "description": "Tout le nécessaire pour envoyer depuis votre domaine dédié, sans boîtes mail à acheter en plus.",
       "includes": [
         "Achat et configuration du domaine d'envoi",
         "Configuration automatique de SPF, DKIM et DMARC",
@@ -254,7 +254,7 @@
     },
     "fiscalNote": "Prix hors taxes : la TVA ou toute autre taxe applicable est ajoutée sur la facture selon le pays de votre entreprise.",
     "ownList": "Vous avez déjà votre propre base de prospects ? Vous pouvez l'utiliser directement. Le système l'enrichit et génère les messages à partir de celle-ci.",
-    "betaNote": "Bêta fermée : nous examinons chaque demande une par une et, si votre cas correspond, nous vous donnons accès."
+    "betaNote": "Un essai par entreprise, avec votre e-mail professionnel. Nous ouvrons 20 essais par mois ; s'ils sont tous pris, vous passez sur liste d’attente et nous vous prévenons par e-mail."
   },
   "founder": {
     "eyebrow": "Pourquoi ça existe",
@@ -267,21 +267,21 @@
     "closingPost": "j'aurais voulu avoir."
   },
   "ctaFinal": {
-    "heading": "Rejoignez la bêta fermée.",
-    "subtitle": "Nous examinons chaque demande une par une pour soigner chaque compte. Demandez l'accès et nous commençons par analyser votre site et votre marché.",
-    "ctaButton": "Demander l'accès à la bêta",
+    "heading": "Voyez vos 20 messages avant de payer.",
+    "subtitle": "Collez l'URL de votre site, entrez avec votre e-mail professionnel et jugez les messages par vous-même : quatre lots de 5, pour de vraies personnes de votre marché. Aucune boîte mail à acheter. S'ils ne vous convainquent pas, vous ne payez rien.",
+    "ctaButton": "20 messages offerts, sans boîtes mail à acheter",
     "legalPre": "Vous préférez d'abord en discuter avec le fondateur ?",
     "legalMailtoLink": "Écrivez-moi directement.",
     "legalCalLink": "Réserver un rendez-vous"
   },
   "producto": {
     "metaTitle": "Produit — RevCognition | Prospection à froid, de bout en bout",
-    "metaDescription": "Tout ce que fait RevCognition : mise en route en une session, quelques minutes de révision par jour, messages rédigés pour chaque prospect, domaine propre chauffé avec patience et réponses triées automatiquement.",
+    "metaDescription": "Tout ce que fait RevCognition : vos premiers messages en quelques minutes, sans acheter de boîtes mail ; une courte revue quotidienne ; un domaine propre chauffé avec patience et des réponses triées automatiquement.",
     "ogAlt": "RevCognition — le produit en détail.",
     "hero": {
       "eyebrow": "Produit",
       "heading1": "Tout ce que fait le système,",
-      "heading2": "de la première session au premier oui.",
+      "heading2": "de votre site à chaque réponse.",
       "subtitle": "RevCognition met en place votre prospection à froid de bout en bout et la fait vivre au quotidien. Voici ce qui se passe en coulisses, sans jargon."
     },
     "nav": {
@@ -296,16 +296,16 @@
     },
     "setup": {
       "eyebrow": "Mise en route",
-      "title": "De votre site à une campagne active, en une seule session.",
-      "intro": "Mettre en place une prospection à froid depuis zéro — domaine, boîtes mail, séquence, messages — prend généralement des semaines et plusieurs outils. Ici, c'est une seule session guidée, de bout en bout.",
+      "title": "De votre site à vos premiers messages, en quelques minutes.",
+      "intro": "Mettre en place une prospection à froid depuis zéro — domaine, boîtes mail, séquence, messages — prend généralement des semaines et plusieurs outils, et la plupart des plateformes vous font acheter des boîtes mail avant de vous montrer quoi que ce soit. Ici, vous voyez vos premiers messages avant d'acheter quoi que ce soit.",
       "depth": [
         {
-          "title": "Un assistant qui prépare votre compte à envoyer",
-          "body": "Vous collez l'URL de votre site et le système rédige un premier profil commercial : à qui vous vous adressez, ce qui vous différencie et votre ton. Vous le validez, choisissez un domaine dédié, définissez vos expéditeurs et votre lien de prise de rendez-vous, et une fois terminé, le domaine entre en chauffe. Sans agence et sans semaines de configuration."
+          "title": "Quatre lots pour le voir apprendre votre style",
+          "body": "Vous collez l'URL de votre site et le système rédige un premier profil commercial : à qui vous parlez, ce qui vous différencie et votre ton. Vous le validez, définissez comment on peut vous joindre et demandez votre premier lot : 5 messages pour de vraies personnes de votre marché, chacun avec sa séquence complète. Vous les validez, les rejetez ou les corrigez ; le lot suivant reprend vos corrections, et ainsi de suite jusqu'à 20. Vous pouvez acheter à tout moment, sans attendre la fin, et vous conservez les lots restants."
         },
         {
-          "title": "Un domaine d'envoi propre, authentifié",
-          "body": "Vous choisissez un domaine dédié pour vos envois. Le système l'authentifie (SPF, DKIM, DMARC) et construit sa réputation à partir de zéro, pour ne jamais toucher à votre boîte mail principale ni dépendre d'une IP partagée."
+          "title": "À l'achat : un domaine dédié, authentifié",
+          "body": "À l'achat, vous choisissez un domaine dédié pour vos envois : votre domaine principal n'est jamais touché. Le système l'authentifie (SPF, DKIM, DMARC) et construit sa réputation à partir de zéro, sans IP partagée. Il est alors prêt pour vos premiers emails, qui partent progressivement, au rythme de la chauffe. Ce que vous avez validé pendant l'essai reste en file d'attente et part quand le domaine est prêt, après une nouvelle vérification de chaque contact."
         }
       ],
       "oneLiners": [
@@ -326,7 +326,7 @@
       "depth": [
         {
           "title": "Vous approuvez ce qui part, et rien d'autre",
-          "body": "Dans le Centre de validation, vous voyez chaque email déjà rédigé — objet et corps, avec nom, entreprise et adresse — avant son départ. Modifiez le texte si vous le souhaitez, déployez la séquence complète de relances, cochez ceux que vous approuvez et écartez le reste. Une fois que vous faites confiance au système, vous pouvez désactiver la validation et laisser les envois partir seuls."
+          "body": "Dans le Centre de validation, vous voyez chaque message déjà rédigé — objet et corps, avec le nom, le poste et le LinkedIn du contact — avant son départ. Modifiez le texte si vous le souhaitez, déployez la séquence complète de relances, cochez ceux que vous approuvez et écartez le reste. Une fois que vous faites confiance au système, vous pouvez désactiver la validation et laisser les envois partir seuls."
         }
       ],
       "oneLiners": [
@@ -446,7 +446,7 @@
         },
         {
           "q": "Combien ça coûte ?",
-          "a": "Des frais de mise en route initiaux de 50 €, paiement unique, pour préparer le compte, puis des packs de crédits à partir de 100 € (100 crédits), avec une remise sur volume : 600 crédits pour 500 € et 1 300 crédits pour 1 000 €. Prix hors taxes : la TVA applicable est ajoutée sur la facture selon le pays de votre entreprise. 1 crédit = 1 nouvelle personne qui reçoit votre premier e-mail, et un e-mail qui rebondit n'en consomme aucun ; les relances de cette même séquence ne consomment pas de crédit supplémentaire. Sans engagement, et les crédits n'expirent pas. Le seul coût récurrent est votre domaine d'envoi : 20 € par an à partir de la deuxième année."
+          "a": "L'essai est gratuit. Pour envoyer, des frais de mise en route initiaux de 50 €, paiement unique, pour préparer le compte, puis des packs de crédits à partir de 100 € (100 crédits), avec une remise sur volume : 600 crédits pour 500 € et 1 300 crédits pour 1 000 €. Prix hors taxes : la TVA applicable est ajoutée sur la facture selon le pays de votre entreprise. 1 crédit = 1 nouvelle personne qui reçoit votre premier e-mail, et un e-mail qui rebondit n'en consomme aucun ; les relances de cette même séquence ne consomment pas de crédit supplémentaire. Sans engagement, et les crédits n'expirent pas. Le seul coût récurrent est votre domaine d'envoi : 20 € par an à partir de la deuxième année."
         },
         {
           "q": "Est-ce que ça marche dans mon secteur ou mon pays ?",
@@ -455,13 +455,33 @@
         {
           "q": "D'où viennent les données des contacts ?",
           "a": "Les contacts proviennent de bases de données partenaires spécialisées dans l'information professionnelle. Avant la rédaction, chaque adresse email est vérifiée pour maintenir un faible taux de rebond, et chaque email inclut une option de désinscription : qui se désinscrit ne reçoit plus jamais rien, dans le respect de la réglementation."
+        },
+        {
+          "q": "Que comprend l'essai gratuit ?",
+          "a": "Nous analysons votre site, proposons votre client idéal et écrivons 20 messages pour de vraies personnes de votre marché, en quatre lots de 5, chacun avec sa séquence complète. Vous les validez, les rejetez ou les corrigez, et chaque lot tient compte du précédent. Rien ne part et nous ne demandons pas de carte bancaire. Un seul essai par entreprise et 20 par mois ; s'ils sont tous pris, vous passez sur liste d’attente et nous vous prévenons par e-mail."
+        },
+        {
+          "q": "Pourquoi demandez-vous mon e-mail professionnel ?",
+          "a": "Pour vérifier que le site que nous analysons est bien le vôtre : le domaine de votre e-mail doit être celui de votre site."
+        },
+        {
+          "q": "Dois-je acheter des boîtes mail ?",
+          "a": "Non. La plupart des plateformes les exigent avant de commencer. Ici, il n'en faut aucune pour essayer, et à l'achat, les six expéditeurs sont inclus dans la mise en place."
+        },
+        {
+          "q": "Quand partent mes premiers emails ?",
+          "a": "Quand vous achetez, pas avant. Vous pouvez le faire à tout moment, sans terminer les lots. Le système est prêt à démarrer, mais un domaine neuf chauffe progressivement : de 4 à 16 emails par jour la première semaine jusqu'à 50 la quatrième. Ce que vous avez validé reste en file d'attente et part à ce rythme."
+        },
+        {
+          "q": "Et si ça ne marche pas pour moi ?",
+          "a": "Nous ne promettons pas de rendez-vous. Nous promettons ceci : vous payez pour chaque personne qui reçoit votre premier email. S'il rebondit, le crédit revient tout seul. Et les crédits n'expirent pas."
         }
       ]
     },
     "mockups": {
       "wizard": {
         "title": "Configuration",
-        "metaText": "Étape 5 sur 6",
+        "metaText": "À l'achat",
         "domainLabel": "Domaine d'envoi",
         "domainValue": "mail-votreentreprise.example",
         "sendersHeading": "Expéditeurs · 6 boîtes mail",
@@ -483,7 +503,7 @@
       },
       "aprobacion": {
         "title": "Validation",
-        "metaText": "1 sur 8 en attente",
+        "metaText": "1 sur 5 · lot 1",
         "toLabel": "À :",
         "toValue": "Ana Ruiz · Bufete Serrano",
         "subjectLabel": "Objet :",
