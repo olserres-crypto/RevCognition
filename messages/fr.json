@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Prospection à froid pour ceux qui vivent du bouche-à-oreille | RevCognition",
-    "description": "Collez l'URL de votre site et recevez 20 messages offerts pour de vraies personnes de votre marché, en quatre lots de 5 qui apprennent votre style. Aucune boîte mail à acheter. Vous ne payez que si vous voulez envoyer.",
+    "description": "Collez l'URL de votre site et recevez 20 messages offerts pour de vraies personnes de votre marché, en quatre lots de 5 : vous corrigez un lot, le suivant écrit déjà comme vous. Vous ne payez que si vous voulez envoyer.",
     "ogAlt": "RevCognition — Vous vivez du bouche-à-oreille."
   },
   "a11y": {
@@ -27,10 +27,10 @@
     "line1": "Vous vivez",
     "line1Accent": "du bouche-à-oreille.",
     "line2": "Et il ne vous reste pas de temps pour prospecter.",
-    "subtitle": "RevCognition lit votre site, trouve vos clients idéaux et écrit à chacun un message unique. Sans acheter de boîtes mail, les 5 premiers sont prêts à relire. Corrigez-les : le lot suivant reprend votre style.",
-    "ctaPrimary": "20 messages offerts, sans boîtes mail à acheter",
+    "subtitle": "RevCognition lit votre site, trouve vos clients idéaux et écrit un message pour chacun. Vous corrigez les 5 premiers ; les 5 suivants arrivent déjà avec votre style.",
+    "ctaPrimary": "Essayer l'app gratuitement",
     "ctaSecondary": "Voir comment ça marche",
-    "note": "Gratuit, sans carte bancaire, avec votre e-mail professionnel. Rien ne part avant votre achat, et vous achetez quand vous voulez : 150 € (HT) en paiement unique. Le système est alors prêt pour vos premiers e-mails, qui partent progressivement, au rythme de la chauffe de votre domaine.",
+    "note": "Gratuit, sans carte bancaire, avec votre e-mail professionnel. Rien ne part avant que vous achetiez des crédits.",
     "signalCard": {
       "detected": "Signal détecté · il y a 3 heures",
       "example": "Laboratorios Roca · Dépôt OEPM rejeté · classe 5 · 04287391",
@@ -96,7 +96,7 @@
       "label": "RevCognition",
       "what": "Trouve les prospects qui correspondent, écrit un message pour chacun et n'envoie rien que vous n'ayez vu.",
       "cost": "20 messages offerts",
-      "costNote": "Pour envoyer : 150 € en paiement unique (HT)",
+      "costNote": "Pour envoyer : packs de 100, 600 ou 1 300 crédits. Plus le pack est grand, moins le crédit vous coûte.",
       "link": "Voir les tarifs →"
     }
   },
@@ -107,7 +107,7 @@
       {
         "title": "Collez l'URL de votre site",
         "description": "Nous analysons votre site et générons automatiquement des propositions de positionnement : quel problème vous résolvez, votre ton, vos services, et votre profil de client idéal. Vous choisissez la stratégie qui vous représente le mieux.",
-        "time": "Gratuit : quelques minutes, aucune boîte mail à acheter"
+        "time": "Gratuit : quelques minutes"
       },
       {
         "title": "Le système identifie vos prospects",
@@ -115,8 +115,8 @@
         "time": "Sans intervention de votre part"
       },
       {
-        "title": "Vous relisez 20 messages, en quatre lots de 5",
-        "description": "Chaque message est écrit pour une vraie personne de votre marché. Vous le validez, le rejetez ou le corrigez, et le lot suivant montre comment le système apprend votre style. Vous pouvez aussi ajuster votre stratégie à tout moment.",
+        "title": "Vous corrigez, le système apprend : 20 messages en quatre lots de 5",
+        "description": "Chaque message s'adresse à une vraie personne de votre marché. Vous le validez, le rejetez ou le corrigez. Le système note chaque correction (le ton, la longueur, ce que vous ne diriez jamais) et le lot suivant l'applique. Comparez le premier lot au quatrième : vous verrez ce qu'il a appris.",
         "time": "Gratuit : rien ne part avant votre achat"
       }
     ],
@@ -268,8 +268,8 @@
   },
   "ctaFinal": {
     "heading": "Voyez vos 20 messages avant de payer.",
-    "subtitle": "Collez l'URL de votre site, entrez avec votre e-mail professionnel et jugez les messages par vous-même : quatre lots de 5, pour de vraies personnes de votre marché. Aucune boîte mail à acheter. S'ils ne vous convainquent pas, vous ne payez rien.",
-    "ctaButton": "20 messages offerts, sans boîtes mail à acheter",
+    "subtitle": "Collez l'URL de votre site et corrigez le premier lot. Les trois suivants vous montrent si le système a appris votre style. S'il ne vous convainc pas, vous ne payez rien.",
+    "ctaButton": "Essayer l'app gratuitement",
     "legalPre": "Vous préférez d'abord en discuter avec le fondateur ?",
     "legalMailtoLink": "Écrivez-moi directement.",
     "legalCalLink": "Réserver un rendez-vous"
@@ -300,7 +300,7 @@
       "intro": "Mettre en place une prospection à froid depuis zéro — domaine, boîtes mail, séquence, messages — prend généralement des semaines et plusieurs outils, et la plupart des plateformes vous font acheter des boîtes mail avant de vous montrer quoi que ce soit. Ici, vous voyez vos premiers messages avant d'acheter quoi que ce soit.",
       "depth": [
         {
-          "title": "Quatre lots pour le voir apprendre votre style",
+          "title": "Quatre lots : vous en corrigez un, le suivant écrit déjà comme vous",
           "body": "Vous collez l'URL de votre site et le système rédige un premier profil commercial : à qui vous parlez, ce qui vous différencie et votre ton. Vous le validez, définissez comment on peut vous joindre et demandez votre premier lot : 5 messages pour de vraies personnes de votre marché, chacun avec sa séquence complète. Vous les validez, les rejetez ou les corrigez ; le lot suivant reprend vos corrections, et ainsi de suite jusqu'à 20. Vous pouvez acheter à tout moment, sans attendre la fin, et vous conservez les lots restants."
         },
         {
@@ -463,6 +463,10 @@
         {
           "q": "Que comprend l'essai gratuit ?",
           "a": "Nous analysons votre site, proposons votre client idéal et écrivons 20 messages pour de vraies personnes de votre marché, en quatre lots de 5, chacun avec sa séquence complète. Vous les validez, les rejetez ou les corrigez, et chaque lot tient compte du précédent. Rien ne part et nous ne demandons pas de carte bancaire. Un seul essai par entreprise et 20 par mois ; s'ils sont tous pris, vous passez sur liste d'attente et nous vous prévenons par e-mail."
+        },
+        {
+          "q": "Qu'apprend le système de mes corrections ?",
+          "a": "Tout ce que vous modifiez : le ton, la longueur, votre façon de saluer, ce que vous ne voulez pas dire. Il l'enregistre dans votre profil et l'applique au lot suivant."
         },
         {
           "q": "Pourquoi demandez-vous mon e-mail professionnel ?",

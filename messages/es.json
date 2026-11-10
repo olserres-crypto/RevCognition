@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Prospección en frío para quien vive de la recomendación | RevCognition",
-    "description": "Pega tu web y mira 20 mensajes gratis para personas reales de tu mercado, en cuatro tandas de 5 que aprenden tu estilo. Sin comprar buzones. Pagas solo si quieres enviar.",
+    "description": "Pega tu web y mira 20 mensajes gratis para personas reales de tu mercado, en cuatro tandas de 5: corriges una y la siguiente ya escribe como tú. Pagas solo si quieres enviar.",
     "ogAlt": "RevCognition — Tus clientes llegan por recomendación."
   },
   "a11y": {
@@ -27,10 +27,10 @@
     "line1": "Tus clientes llegan",
     "line1Accent": "por recomendación.",
     "line2": "Y no te queda tiempo para prospectar.",
-    "subtitle": "RevCognition lee tu web, encuentra a tus clientes ideales y escribe un mensaje único para cada uno. Sin comprar buzones, tienes los 5 primeros para revisar. Corriges, y la tanda siguiente ya recoge tu estilo.",
-    "ctaPrimary": "20 mensajes gratis, sin comprar buzones",
+    "subtitle": "RevCognition lee tu web, encuentra a tus clientes ideales y escribe un mensaje para cada uno. Corriges los 5 primeros; los 5 siguientes ya llegan con tu estilo.",
+    "ctaPrimary": "Probar la app gratis",
     "ctaSecondary": "Ver cómo funciona",
-    "note": "Gratis, sin tarjeta y con el email de tu empresa. No se envía nada hasta que compres, y puedes comprar cuando quieras: 150€ (sin IVA) en pago único. Desde ahí, el sistema queda listo para tus primeros correos, que salen poco a poco, respetando el calentamiento de tu dominio.",
+    "note": "Gratis, sin tarjeta y con el email de tu empresa. No se envía nada hasta que compres créditos.",
     "signalCard": {
       "detected": "Señal detectada · hace 3 horas",
       "example": "Laboratorios Roca · Depósito OEPM rechazado · clase 5 · 04287391",
@@ -96,7 +96,7 @@
       "label": "RevCognition",
       "what": "Encuentra prospectos que encajan, escribe un mensaje para cada uno y no envía nada sin que lo veas.",
       "cost": "20 mensajes gratis",
-      "costNote": "Para enviar, 150€ en pago único (sin IVA)",
+      "costNote": "Para enviar: packs de 100, 600 o 1.300 créditos. Cuanto más grande el pack, menos pagas por crédito.",
       "link": "Ver precios →"
     }
   },
@@ -107,7 +107,7 @@
       {
         "title": "Pega tu web",
         "description": "Analizamos tu web y generamos automáticamente propuestas de posicionamiento: qué problema resuelves, tu tono, tus servicios, y tu perfil de cliente ideal. Tú eliges la estrategia que más te representa.",
-        "time": "Gratis: unos minutos, sin comprar buzones"
+        "time": "Gratis: unos minutos"
       },
       {
         "title": "El sistema identifica a tus prospectos",
@@ -115,8 +115,8 @@
         "time": "Sin intervención tuya"
       },
       {
-        "title": "Revisas 20 mensajes, en cuatro tandas de 5",
-        "description": "Cada mensaje está escrito para una persona real de tu mercado. Lo apruebas, lo rechazas o lo corriges, y en la tanda siguiente ves cómo el sistema aprende tu estilo. También puedes ajustar tu estrategia en cualquier momento.",
+        "title": "Corriges, y el sistema aprende: 20 mensajes en cuatro tandas de 5",
+        "description": "Cada mensaje va a una persona real de tu mercado. Lo apruebas, lo rechazas o lo corriges. El sistema toma nota de cada corrección (el tono, la longitud, lo que tú nunca dirías) y la tanda siguiente ya la aplica. Compara la primera con la cuarta y verás qué ha aprendido.",
         "time": "Gratis: nada se envía hasta que compres"
       }
     ],
@@ -268,8 +268,8 @@
   },
   "ctaFinal": {
     "heading": "Mira tus 20 mensajes antes de pagar.",
-    "subtitle": "Pega tu web, entra con el email de tu empresa y juzga los mensajes por ti mismo: cuatro tandas de 5, para personas reales de tu mercado. Sin buzones que comprar. Si no te convencen, no pagas nada.",
-    "ctaButton": "20 mensajes gratis, sin comprar buzones",
+    "subtitle": "Pega tu web y corrige la primera tanda. Las tres siguientes te enseñan si el sistema ha aprendido tu estilo. Si no te convence, no pagas nada.",
+    "ctaButton": "Probar la app gratis",
     "legalPre": "¿Prefieres verlo antes con el fundador?",
     "legalMailtoLink": "Escríbeme directamente.",
     "legalCalLink": "Reservar reunión"
@@ -300,7 +300,7 @@
       "intro": "Montar prospección en frío desde cero —dominio, buzones, secuencia, mensajes— suele llevar semanas y varias herramientas, y la mayoría de plataformas te hacen comprar buzones antes de ver nada. Aquí ves tus primeros mensajes antes de comprar nada.",
       "depth": [
         {
-          "title": "Cuatro tandas para ver cómo aprende tu estilo",
+          "title": "Cuatro tandas: corriges una, la siguiente ya escribe como tú",
           "body": "Pegas la URL de tu web y el sistema redacta un primer perfil comercial: a quién te diriges, qué te diferencia y tu tono. Lo revisas, defines cómo quieres que te contacten y pides tu primera tanda: 5 mensajes para personas reales de tu mercado, cada uno con su secuencia completa. Los apruebas, rechazas o corriges; la tanda siguiente recoge tus correcciones, y así hasta 20. Puedes comprar en cualquier momento, sin esperar a terminar, y conservas las tandas que te queden."
         },
         {
@@ -463,6 +463,10 @@
         {
           "q": "¿Qué incluye la prueba gratis?",
           "a": "Analizamos tu web, proponemos tu cliente ideal y escribimos 20 mensajes para personas reales de tu mercado, en cuatro tandas de 5, cada uno con su secuencia completa. Los apruebas, rechazas o corriges, y cada tanda recoge lo anterior. No se envía nada y no te pedimos tarjeta. Hay una prueba por empresa y 20 al mes; si se llenan, quedas en lista de espera y te avisamos por email."
+        },
+        {
+          "q": "¿Qué aprende el sistema de mis correcciones?",
+          "a": "Todo lo que cambias: el tono, la longitud, cómo saludas, lo que no quieres decir. Lo guarda en tu perfil y lo aplica a la tanda siguiente."
         },
         {
           "q": "¿Por qué me pedís el email de mi empresa?",
