@@ -466,7 +466,7 @@
         },
         {
           "q": "What does the system learn from my corrections?",
-          "a": "Everything you change: the tone, the length, how you open, what you don't want to say. It saves it to your profile and applies it to the next batch."
+          "a": "Everything you change: the tone, the length, how you open, what you don't want to say. It saves it as an example for your campaign and applies it to the next batch."
         },
         {
           "q": "Why do you ask for my company email?",
