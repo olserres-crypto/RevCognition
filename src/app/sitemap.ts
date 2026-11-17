@@ -6,6 +6,7 @@ const PATHS = [
   "",
   "/producto",
   "/privacy",
+  "/legal",
   "/cookies",
   "/opt-out",
 ];

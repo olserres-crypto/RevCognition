@@ -21,6 +21,7 @@
     "privacy": "Política de privacidad",
     "unsubscribe": "Darse de baja",
     "copyright": "© 2026",
+    "legal": "Aviso legal",
     "cookies": "Cookies"
   },
   "hero": {
@@ -687,6 +688,62 @@
       }
     ],
     "footnote": "Plazos de conservación, encargados de tratamiento y cómo ejercer tus derechos: <privacyLink>política de privacidad</privacyLink>."
+  },
+  "legal": {
+    "metaTitle": "Aviso legal — RevCognition",
+    "metaDescription": "Datos identificativos del titular de revcognition.com, condiciones de uso de la web y ley aplicable.",
+    "eyebrow": "Aviso legal",
+    "heading": "Quién está detrás de esta web.",
+    "intro": "Información que exige el artículo 10 de la Ley 34/2002, de servicios de la sociedad de la información y de comercio electrónico (LSSI).",
+    "version": "Versión 1.0 · 3 de octubre de 2026",
+    "backLink": "← Volver al inicio",
+    "sections": [
+      {
+        "heading": "Titular",
+        "items": [
+          {
+            "label": "Titular:",
+            "body": "REVCOGNITION LABS, S.L."
+          },
+          {
+            "label": "NIF:",
+            "body": "B05885462"
+          },
+          {
+            "label": "Domicilio:",
+            "body": "Travessera de Gràcia, 372, planta 4, puerta 1, 08025 Barcelona (España)"
+          },
+          {
+            "label": "Correo electrónico:",
+            "body": "<email>olivier.serres@revcognition.com</email>"
+          },
+          {
+            "label": "Registro:",
+            "body": "Registro Mercantil de Barcelona, hoja B-666511, folio 1, inscripción 1.ª (I.R.U.S. 1000481589579)"
+          }
+        ]
+      },
+      {
+        "heading": "Objeto",
+        "body": "Esta web presenta RevCognition, un servicio de prospección comercial para empresas. El servicio se contrata y se usa en <appLink>app.revcognition.com</appLink>,."
+      },
+      {
+        "heading": "Propiedad intelectual e industrial",
+        "body": "Los textos, el diseño, la marca, el logotipo y el código de esta web pertenecen a su titular o se usan con licencia. No pueden reproducirse ni reutilizarse con fines comerciales sin autorización escrita."
+      },
+      {
+        "heading": "Responsabilidad",
+        "body": "Procuramos que la información de esta web sea exacta y esté al día, pero puede contener errores o quedar desactualizada. Lo que vincula es lo que dicen las condiciones de contratación vigentes en el momento de la compra. Los enlaces a sitios de terceros se ofrecen como referencia; no controlamos su contenido."
+      },
+      {
+        "heading": "Privacidad y cookies",
+        "body": "Cómo tratamos los datos personales: <privacyLink>política de privacidad</privacyLink>. Qué cookies usa esta web: <cookiesLink>política de cookies</cookiesLink>."
+      },
+      {
+        "heading": "Ley aplicable y jurisdicción",
+        "body": "Esta web y su uso se rigen por la legislación española. Para cualquier controversia, las partes se someten a los juzgados y tribunales del domicilio social del titular (Barcelona), salvo que la normativa aplicable establezca otro fuero imperativo."
+      }
+    ]
   },
   "cookies": {
     "metaTitle": "Política de cookies — RevCognition",

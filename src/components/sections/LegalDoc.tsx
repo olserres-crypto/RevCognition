@@ -4,7 +4,7 @@ import {Nav} from "@/components/sections/Nav";
 import {Footer} from "@/components/sections/Footer";
 import {getTranslations} from "next-intl/server";
 
-// Shared renderer for the legal documents (/privacy, /cookies).
+// Shared renderer for the legal documents (/privacy, /legal, /cookies).
 // Every string goes through t.rich with the same tag map, so any section of
 // any document can link to the others without per-index special cases.
 
@@ -24,7 +24,7 @@ type Section = {
   outro?: string;
 };
 
-export type LegalNamespace = "privacy" | "cookies";
+export type LegalNamespace = "privacy" | "legal" | "cookies";
 
 export async function LegalDoc({namespace}: {namespace: LegalNamespace}) {
   const t = await getTranslations(namespace);
@@ -60,6 +60,11 @@ export async function LegalDoc({namespace}: {namespace: LegalNamespace}) {
     ),
     optOutLink: (chunks: ReactNode) => (
       <Link href="/opt-out" className={linkClass}>
+        {chunks}
+      </Link>
+    ),
+    legalLink: (chunks: ReactNode) => (
+      <Link href="/legal" className={linkClass}>
         {chunks}
       </Link>
     ),
