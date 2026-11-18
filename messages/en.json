@@ -21,6 +21,7 @@
     "privacy": "Privacy policy",
     "unsubscribe": "Opt out",
     "copyright": "© 2026",
+    "legal": "Legal notice",
     "cookies": "Cookies"
   },
   "hero": {
@@ -587,12 +588,12 @@
     "eyebrow": "Privacy policy",
     "heading": "We treat your data the way we'd want ours treated.",
     "intro": "Written in plain language. If you need the full legal version or want to exercise any of your rights, write to us at <email>privacy@revcognition.com</email>.",
-    "version": "Version 2.3 · 27 October 2026",
+    "version": "Version 2.4 · 17 November 2026",
     "backLink": "← Back to home",
     "sections": [
       {
         "heading": "Who the data controller is",
-        "body": "RevCognition (Olivier Serres). Contact: <email>privacy@revcognition.com</email>. Based in Barcelona, Spain."
+        "body": "REVCOGNITION LABS, S.L. (Spanish tax ID B05885462). Contact: <email>privacy@revcognition.com</email>. Registered office: Travessera de Gràcia, 372, planta 4, puerta 1, 08025 Barcelona, Spain."
       },
       {
         "heading": "What data we collect and why",
@@ -719,6 +720,62 @@
       }
     ],
     "footnote": "Retention periods, data processors and how to exercise your rights: <privacyLink>privacy policy</privacyLink>."
+  },
+  "legal": {
+    "metaTitle": "Legal notice — RevCognition",
+    "metaDescription": "Identification of the owner of revcognition.com, terms of use of the website and governing law.",
+    "eyebrow": "Legal notice",
+    "heading": "Who is behind this website.",
+    "intro": "Information required by Article 10 of Spanish Law 34/2002 on information society services and electronic commerce (LSSI).",
+    "version": "Version 1.0 · 17 November 2026",
+    "backLink": "← Back to home",
+    "sections": [
+      {
+        "heading": "Owner",
+        "items": [
+          {
+            "label": "Owner:",
+            "body": "REVCOGNITION LABS, S.L."
+          },
+          {
+            "label": "Tax ID (NIF):",
+            "body": "B05885462"
+          },
+          {
+            "label": "Registered address:",
+            "body": "Travessera de Gràcia, 372, 4th floor, door 1, 08025 Barcelona (Spain)"
+          },
+          {
+            "label": "Email:",
+            "body": "<email>olivier.serres@revcognition.com</email>"
+          },
+          {
+            "label": "Registry:",
+            "body": "Barcelona Commercial Registry (Registro Mercantil de Barcelona), sheet B-666511, folio 1, entry 1 (I.R.U.S. 1000481589579)"
+          }
+        ]
+      },
+      {
+        "heading": "Purpose",
+        "body": "This website presents RevCognition, a business prospecting service for companies. The service is purchased and used at <appLink>app.revcognition.com</appLink>."
+      },
+      {
+        "heading": "Intellectual and industrial property",
+        "body": "The text, design, brand, logo and code of this website belong to its owner or are used under licence. They may not be reproduced or reused for commercial purposes without written permission."
+      },
+      {
+        "heading": "Liability",
+        "body": "We try to keep the information on this website accurate and up to date, but it may contain errors or become outdated. What is binding is the terms of purchase in force at the time of purchase. Links to third-party sites are provided for reference; we do not control their content."
+      },
+      {
+        "heading": "Privacy and cookies",
+        "body": "How we process personal data: <privacyLink>privacy policy</privacyLink>. Which cookies this website uses: <cookiesLink>cookie policy</cookiesLink>."
+      },
+      {
+        "heading": "Governing law and jurisdiction",
+        "body": "This website and its use are governed by Spanish law. For any dispute, the parties submit to the courts of the owner's registered office (Barcelona), unless applicable law establishes a different mandatory jurisdiction."
+      }
+    ]
   },
   "cookies": {
     "metaTitle": "Cookie policy — RevCognition",
